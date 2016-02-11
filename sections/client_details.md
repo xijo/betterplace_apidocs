@@ -153,6 +153,11 @@ The number of <a href="client_donations_list.md">client donations</a> for this c
 </td>
     </tr>
     <tr>
+      <th align="left">volunteering</th>
+      <td>Link to the <a href="volunteering_list.md">volunteering list</a> of this client
+</td>
+    </tr>
+    <tr>
       <th align="left">client_donations</th>
       <td>Link to the <a href="client_donations_list.md">client donations list</a> of this client
 </td>
@@ -207,6 +212,10 @@ part of you client projects list.
     {
       "rel": "projects",
       "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/projects.json"
+    },
+    {
+      "rel": "volunteering",
+      "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/volunteering.json"
     },
     {
       "rel": "client_donations",
