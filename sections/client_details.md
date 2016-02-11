@@ -204,7 +204,7 @@ part of you client projects list.
   "pool_balance_in_cents": 10920892,
   "open_amount_in_cents": 30919243,
   "requested_amount_in_cents": 194181245,
-  "projects_count": 0,
+  "projects_count": 353,
   "client_donated_amount_in_cents": 146476940,
   "client_matched_amount_in_cents": 0,
   "client_donations_count": 14101,

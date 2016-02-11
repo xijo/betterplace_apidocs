@@ -13,6 +13,10 @@ service announcements](README.md#mailing-list-for-service-announcements).
 - donated_amount_in_cents does no longer include external donations [client statistics](sections/client_project_statistics.md)
 - client_donated_amount_in_cents now includes matching fund forwardings [client statistics](sections/client_project_statistics.md)
 - client_donated_amount_in_cents doesn't include pool donations any more [client statistics](sections/client_project_statistics.md)
+- [donation pledges](sections/client_donation_pledges.md): introduced `validate_address` option
+
+### Added
+- [**Client** Details](sections/client_details.md): client specific endpoint for volunteering offers
 
 
 ## 2015-10-09
