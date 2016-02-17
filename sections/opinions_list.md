@@ -302,13 +302,141 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 0,
+  "total_entries": 27,
   "offset": 0,
-  "total_pages": 0,
+  "total_pages": 9,
   "current_page": 1,
   "per_page": 3,
   "data": [
-
+    {
+      "id": 5442,
+      "created_at": "2010-11-14T09:43:17+01:00",
+      "updated_at": "2010-11-14T09:43:17+01:00",
+      "score": "positive",
+      "author": {
+        "name": "Joel S.",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/018/797/fill_100x100_original_profil.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/018/797/crop_original_original_profil.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/joel_s"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/18797/contact_data.json"
+          }
+        ]
+      },
+      "message": "Wenig kann viel bewirken. Gerade Skateistan vermag mit einem sehr kleinen Budget - für Afghanistan  klein - wirklich ne Menge zu bewegen, und so das Leben von ner Menge Kids nachhaltig verändern.<br>Vor Ort durfte ich erfahren, wie effizient und hart die Jungs und Mädels von Skateistan in diesem schwierigen Umfeld arbeiten und wie mit den ihnen zur Verfügung stehenden Mitteln sorgsam gewirtschaftet wird.<br>Keep goin !!!",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/5442.json"
+        },
+        {
+          "rel": "project",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        }
+      ]
+    },
+    {
+      "id": 5548,
+      "created_at": "2010-11-25T20:55:23+01:00",
+      "updated_at": "2010-11-25T20:55:23+01:00",
+      "score": "positive",
+      "author": {
+        "name": "R. Bader",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/132/423/fill_100x100_original_Picture_1.png"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/132/423/crop_original_original_Picture_1.png"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/rhianon_b"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/132423/contact_data.json"
+          }
+        ]
+      },
+      "message": "I spent six months this year as a volunteer with Skateistan. During my internship I taught creative arts and multimedia in classroom, taught skateboarding to over 100 girls every week, liaised with international media, wrote donor reports and proposals, managed online content, and worked with Afghan staff/volunteers to pass on responsibilities and a sense of ownership. The children that attend Skateistan are so grateful to have the sports and educational opportunities open to them, and every single day the NGO is growing and improving its work with youth in Afghanistan. Skateistan is the most important, exciting and rewarding thing I've ever been a part of.",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/5548.json"
+        },
+        {
+          "rel": "project",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        }
+      ]
+    },
+    {
+      "id": 1572,
+      "created_at": "2009-07-22T22:23:26+02:00",
+      "updated_at": "2009-07-22T22:23:26+02:00",
+      "score": "positive",
+      "author": {
+        "name": "U. Köhler",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/015/597/fill_100x100_original_Ute_SchloGraFe.sw1.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/015/597/crop_original_original_Ute_SchloGraFe.sw1.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/ute_k2"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/15597/contact_data.json"
+          }
+        ]
+      },
+      "message": "Ich bin Fürsprecherin des Projekts Skateistan, weil ich den Projektverantwortlichen Max Henninger letztes Jahr im Zuge meines Studiums kennengelernt habe und er uns über seine Arbeit in Afghanistan berichtet hat. <br>Ich bin begeistert von seiner Überzeugung, seiner Tatkraft und seinem Mut, Kindern in einem vom Krieg erschütterten Land ein bisschen Lebensfreude zu geben!",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/1572.json"
+        },
+        {
+          "rel": "project",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        }
+      ]
+    }
   ]
 }
 ```

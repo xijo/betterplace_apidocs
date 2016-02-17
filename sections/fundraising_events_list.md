@@ -367,14 +367,14 @@ access rights in order to see this information.
     {
       "id": 3457,
       "created_at": "2010-04-28T17:20:10+02:00",
-      "updated_at": "2016-01-25T17:50:42+01:00",
+      "updated_at": "2016-02-08T14:56:39+01:00",
       "title": "\"Mail raus&Attachment vergessen? 1Euro!\"",
       "description": "Wir alle machen mal Fehler. Sie zu vermeiden lernt man am besten durch eine kleine Strafe - in diesem Fall einer Spende von einem Euro. Also: Alle die Euch eine Mail schicken, in der das Attachment vergessen wurde, müssen von Euch den Link zu diesem Fundraising-Team gemailt kriegen - und dann einen Euro spenden. Damit schön viel Geld für einen guten Zweck zusammen kommt und von betterplace.org zu 100 Prozent weitergeleitet wird. Und damit alle Attachmentvergesser endlich aus ihren unverzeihlichen Fehlern lernen.",
       "tax_deductible": true,
       "donations_prohibited": false,
       "closed_at": null,
       "donor_count": 113,
-      "donated_amount_in_cents": 34900,
+      "donated_amount_in_cents": 35100,
       "requested_amount_in_cents": null,
       "progress_percentage": null,
       "contact": {
@@ -557,16 +557,16 @@ access rights in order to see this information.
     {
       "id": 26452,
       "created_at": "2016-01-07T21:47:49+01:00",
-      "updated_at": "2016-02-03T15:18:36+01:00",
+      "updated_at": "2016-02-15T16:51:17+01:00",
       "title": "Warme Füße für alle!",
       "description": "Wir sammeln Geld für die Obdachlosenhilfe in Berlin und freuen uns über eure Unterstützung!<br><br>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br><br>Frohes Neues nachträglich! Falls ihr in den letzten Tagen eure beheizten Gemächer verlassen haben solltet, könnte euch folgender Fakt um die Ohren geweht sein: Es ist verdammt kalt! Keine besonders schöne Vorstellung, bei diesem arktischen Klima im Freien übernachten zu müssen. Doch leider ist genau das für einige Menschen bittere Realität. Das Thema Obdachlosigkeit fristet leider immer noch ein viel zu wenig beachtetes Schattendasein am äußersten Rande unserer Gesellschaft. Das möchten wir gerne im Rahmen unserer bescheidenen Mittel ändern.<br><br>Warum leben in einem Staat mit Sozialsystem überhaupt Menschen auf der Straße? Die Gründe dafür sind so unterschiedlich wie die Menschen selbst: Drogenmissbrauch, Verschuldung, abgewiesene Asylanträge, Depressionen oder andere psychische Erkrankungen ... Gerade in Berlin ist der Wohnungsmarkt durch die stetige Gentrifizierung sehr angespannt, so dass auch immer wieder Menschen wohnungslos werden, obwohl sie in einer festen Arbeit oder Ausbildung sind. Fakt ist - wenn man einmal auf der Straße gelandet ist, ist es verdammt schwer wieder in die Gesellschaft zurück zu finden. Ein Leben ohne Dach über dem Kopf ist menschenunwürdig.<br><br>Darum haben wir zusammen mit unseren Freunden vom „mob e.V.“ und „Strassenfeger\" die Aktion „Warme Füße für alle!“ ins Leben gerufen. Unser Ziel ist es, ein paar überschüssige Euros in konkrete Projekte zu bringen, die die Lebenssituation von Menschen ohne Obdach über die kalte Jahreszeit ein wenig besser machen können. Der „Strassenfeger\" dürfte einigen von euch schon aus U-Bahnen und Restaurants bekannt sein. Obdachlose verkaufen die Zeitung, um mit ihrem Teil der Einnahmen ihr Leben zu finanzieren. Aber die Organisatoren unter dem Dach des „mob e.V.“ betreiben noch viele weitere Institutionen, die Hilfeleistungen für Wohnungslose anbieten. Darunter fallen eine Notunterkunft mit Dusch- und Schlafmöglichkeiten, ein Café mit preisgünstigem Speiseangebot und beheiztem Aufenthaltsbereich, ein Sozialwarenkaufhaus, in dem Bedürftige und sozialschwache Menschen günstig Möbel etc. erwerben können, sowie kostenlose Sozialberatung und Rechtsbeistand für alle Fälle. Der Grundgedanke des Vereins ist Hilfe zur Selbsthilfe: Obdachlosen wieder auf die Beine helfen und ihren harten Weg zu einem Leben mit Wohnung und Job begleiten. Auch immer mehr Rentner, Hartz IV-Empfänger, Sozialhilfeempfänger u.a. wenden sich aufgrund ihrer schlechten Situation an den mob e.V.<br><br>Das ist viel Arbeit und ein immenser logistischer Aufwand. Man kann nicht müde werden zu betonen, dass das fast alles ehrenamtlich geschieht. Die Mädels und Jungs vor Ort sind dementsprechend auf jeden Euro angewiesen. Und da kommt ihr ins Spiel! Seid doch so nett und lasst hier ein bisschen von eurem Weihnachtsgeld liegen, damit auch die Menschen außerhalb der Komfortzone mit unserer gemeinsamen Hilfe einen menschenwürdigen Winter verbringen können. Es wäre uns eine wahnsinnige Freude, wenn ihr euch beteiligt!<br><br>WARME FÜSSE FÜR ALLE!<br><br>Eure Rostocks",
       "tax_deductible": true,
       "donations_prohibited": false,
       "closed_at": null,
       "donor_count": 238,
-      "donated_amount_in_cents": 661964,
+      "donated_amount_in_cents": 711464,
       "requested_amount_in_cents": 1000000,
-      "progress_percentage": 66,
+      "progress_percentage": 71,
       "contact": {
         "name": "Jennifer Rostock ..",
         "picture": {

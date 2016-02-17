@@ -116,7 +116,7 @@ that where tagged with this tag.
     },
     {
       "tag": "KinderJugendliche",
-      "projects_count": 37,
+      "projects_count": 38,
       "links": [
         {
           "rel": "projects",

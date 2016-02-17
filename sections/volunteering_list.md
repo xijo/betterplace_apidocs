@@ -554,9 +554,9 @@ subscribe to the change-log newsletter so we can inform you about upcomming chan
 
 ```json
 {
-  "total_entries": 10312,
+  "total_entries": 10451,
   "offset": 3,
-  "total_pages": 3438,
+  "total_pages": 3484,
   "current_page": 2,
   "per_page": 3,
   "data": [
@@ -677,129 +677,9 @@ subscribe to the change-log newsletter so we can inform you about upcomming chan
       ]
     },
     {
-      "id": 6717,
-      "created_at": "2013-02-03T20:20:25+01:00",
-      "updated_at": "2016-02-10T14:53:00+01:00",
-      "latitude": 6.69561,
-      "longitude": -1.54106,
-      "street": "Madina",
-      "zip": "00233",
-      "city": "Accra",
-      "country": "Ghana",
-      "title": "Volunteer in Ghana to provide impoverished,orphaned & street children with Educations & Health Care ",
-      "description": "We work in Ghana to provide impoverished, orphaned and street children with Health Care and Education.\r\nWe need volunteers to help with teaching in one of our partner schools (any subject of your preferred choice), helping in local hospitals (i.e. during child delivery in the Maternity Unit), holding HIV/Aids awareness talks etc. These are only a few examples of the things you could be doing here in Ghana and we are willing to accommodate you with any skills you may have and Certificate will always be provided by TANF after placement. If you have an idea in which area you would like to volunteer you can also let us know and we will see if such an opportunity is available.",
-      "carrier": {
-        "latitude": 5.7061254,
-        "longitude": -0.14565709999999,
-        "name": "The Anidaso Nsae Foundation (TANF)",
-        "street": "Adenta",
-        "city": "Accra",
-        "zip": "",
-        "country": "Ghana",
-        "links": [
-          {
-            "rel": "logo",
-            "href": ""
-          }
-        ]
-      },
-      "vacancies": 13,
-      "image": {
-        "description": "Mark Taylor, Richard Cook and Matthew Hine (Volunteers) from New Zealand having some nice time.",
-        "links": [
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_618x322_DSCI0143.JPG"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_270x141_DSCI0143.JPG"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/DSCI0143.JPG"
-          },
-          {
-            "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/thumb_DSCI0143.JPG"
-          },
-          {
-            "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/medium_DSCI0143.JPG"
-          },
-          {
-            "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/regular_DSCI0143.JPG"
-          }
-        ]
-      },
-      "contact": {
-        "name": "Laud Akuffo",
-        "phone": "+233 244 246 094",
-        "email": "info@tanfghana.org",
-        "picture": null,
-        "links": [
-
-        ]
-      },
-      "topics": [
-        "Bildung",
-        "Entwicklungszusammenarbeit",
-        "Kinder & Jugendliche",
-        "Kultur, Freizeit & Sport"
-      ],
-      "activities": [
-        "Büroarbeit",
-        "organisieren/planen",
-        "pflegen/betreuen",
-        "Sport machen"
-      ],
-      "imported_from": null,
-      "import_information": null,
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_960x500_DSCI0143.JPG"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_730x380_DSCI0143.JPG"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_618x322_DSCI0143.JPG"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_410x214_DSCI0143.JPG"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/fill_270x141_DSCI0143.JPG"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/717/crop_original_DSCI0143.JPG"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6717.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6717-volunteer-in-ghana-to-provide-impoverished-orphaned-street-children-with-educations-health-care"
-        }
-      ]
-    },
-    {
       "id": 6775,
       "created_at": "2013-02-10T15:48:45+01:00",
-      "updated_at": "2016-02-10T15:15:27+01:00",
+      "updated_at": "2015-10-27T15:10:27+01:00",
       "latitude": 0.945,
       "longitude": 33.125,
       "street": "kiyunga mbulamuti kamuli road",
@@ -911,6 +791,124 @@ subscribe to the change-log newsletter so we can inform you about upcomming chan
         {
           "rel": "platform",
           "href": "https://www.betterplace.org/de/volunteering/6775-give-the-children-ideas-knowledge-and-support-to-become-responsible-citizens"
+        }
+      ]
+    },
+    {
+      "id": 6776,
+      "created_at": "2013-02-10T15:49:29+01:00",
+      "updated_at": "2015-10-28T16:45:59+01:00",
+      "latitude": 0.945,
+      "longitude": 33.125,
+      "street": "kiyunga mbulamuti kamuli road",
+      "zip": "256",
+      "city": "kamuli",
+      "country": "Uganda",
+      "title": "Give the children ideas,knowledge and support to become responsible citizens",
+      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.\r\nThe volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.\r\nThe organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
+      "carrier": {
+        "latitude": 0.9386024,
+        "longitude": 33.1197774,
+        "name": "Children's Hope Uganda",
+        "street": "nawanyago-kisozi-kamuli road",
+        "city": "kamuli",
+        "zip": "+256",
+        "country": "Uganda",
+        "links": [
+          {
+            "rel": "logo",
+            "href": ""
+          }
+        ]
+      },
+      "vacancies": 5,
+      "image": {
+        "description": null,
+        "links": [
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
+          },
+          {
+            "rel": "thumb",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.betterplace.png"
+          },
+          {
+            "rel": "medium",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.betterplace.png"
+          },
+          {
+            "rel": "regular",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.betterplace.png"
+          }
+        ]
+      },
+      "contact": {
+        "name": "Kawomera David",
+        "phone": "+256779996702",
+        "email": "caomera@gmail.com",
+        "picture": null,
+        "links": [
+
+        ]
+      },
+      "topics": [
+        "Bildung",
+        "Kinder & Jugendliche"
+      ],
+      "activities": [
+        "beraten/coachen",
+        "besuchen/begleiten",
+        "organisieren/planen",
+        "pflegen/betreuen"
+      ],
+      "imported_from": null,
+      "import_information": null,
+      "profile_picture": {
+        "fallback": true,
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.betterplace.png"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.betterplace.png"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.betterplace.png"
+          }
+        ]
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/6776.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/volunteering/6776-give-the-children-ideas-knowledge-and-support-to-become-responsible-citizens"
         }
       ]
     }
