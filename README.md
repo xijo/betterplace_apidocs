@@ -153,6 +153,8 @@ All list requests can be paginated with the following parameters.
   </tr>
 </table>
 
+The <code>per_page</code> parameter is capped at 200. Any higher value for <code>per_page</code> grants at most 200 results.
+
 The following attributes are returned in all list view responses:
 
 <table>

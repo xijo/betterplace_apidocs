@@ -302,9 +302,9 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 27,
+  "total_entries": 30,
   "offset": 0,
-  "total_pages": 9,
+  "total_pages": 10,
   "current_page": 1,
   "per_page": 3,
   "data": [

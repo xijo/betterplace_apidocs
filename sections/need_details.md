@@ -153,20 +153,20 @@ offline donations and also(!) external donations)
 
 ```json
 {
-  "id": 110496,
-  "created_at": "2015-05-19T15:01:38+02:00",
-  "updated_at": "2016-01-22T08:07:22+01:00",
-  "title": "New security door for the Mazar skatepark ",
-  "description": "The equivalent amount to providing the Mazar Skatepark with a new security door.",
-  "completed": true,
-  "progress_percentage": 100.0,
-  "donated_amount_in_cents": 29600,
-  "open_amount_in_cents": 0,
-  "requested_amount_in_cents": 29600,
+  "id": 137988,
+  "created_at": "2016-02-17T16:18:37+01:00",
+  "updated_at": "2016-02-18T10:36:07+01:00",
+  "title": "223423v 234",
+  "description": "asd qasdas dasd asda sdasd asd",
+  "completed": false,
+  "progress_percentage": 0.4,
+  "donated_amount_in_cents": 4000,
+  "open_amount_in_cents": 995900,
+  "requested_amount_in_cents": 999900,
   "links": [
     {
       "rel": "self",
-      "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs/110496.json"
+      "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs/137988.json"
     },
     {
       "rel": "project",
@@ -174,12 +174,12 @@ offline donations and also(!) external donations)
     },
     {
       "rel": "new_client_donation",
-      "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D&donation_earmark_id=110496",
+      "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D&donation_earmark_id=137988",
       "templated": true
     },
     {
       "rel": "new_donation",
-      "href": "https://www.betterplace.org/de/projects/1114/donations/new?donation_earmark_id=110496"
+      "href": "https://www.betterplace.org/de/projects/1114/donations/new?donation_earmark_id=137988"
     }
   ]
 }

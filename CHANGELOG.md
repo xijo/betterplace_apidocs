@@ -3,6 +3,11 @@ All notable changes to the betterplace.org API v4 will be documented in this
 file. Notifications about changes will also be send to the [mailing list for
 service announcements](README.md#mailing-list-for-service-announcements).
 
+## 2016-02-16
+### Changed
+- [pagination](README.md#pagination): introduced a limit for the `per_page` parameter
+
+
 ## 2016-02-12
 ### Removed some deprecated attributes
 - Removed `donated_amount_in_cents` from [client endpoing](sections/client_details.md)
