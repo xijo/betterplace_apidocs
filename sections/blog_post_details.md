@@ -76,12 +76,9 @@ to make sure you only request data that is associated with one of your projects.
     <tr>
       <th align="left">type</th>
       <td>string</td>
-      <td>PayoutBlogPost</td>
-      <td>Blogposts can be created by a user <code>BlogPost</code>
-to update your donors about new developments
-or as part of the payout process <code>PayoutBlogPost</code>
-where you tell what needs you payed our and
-what you plan to do with the money.
+      <td>BlogPost</td>
+      <td>Blogposts are always created by a user, and this
+field always has the value <code>BlogPost</code>.
 </td>
     </tr>
     <tr>

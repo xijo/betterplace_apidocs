@@ -152,7 +152,7 @@ Only valid email addresses will be accepted.
     <td>yes</td>
     <td>The amount of cents that are donated.
 Must be a positive integer between
-100
+1
 and 100000.
 </td>
   </tr>

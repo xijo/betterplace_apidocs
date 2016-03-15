@@ -607,7 +607,7 @@ set for organisations.
 {
   "id": 1114,
   "created_at": "2009-03-10T11:12:16+01:00",
-  "updated_at": "2016-02-18T10:36:07+01:00",
+  "updated_at": "2016-03-09T16:59:52+01:00",
   "latitude": 34.531617284782,
   "longitude": 69.13581752939456,
   "street": "Taimani, behind Qasemi Winhouse",
@@ -620,11 +620,11 @@ set for organisations.
   "donations_prohibited": false,
   "completed_at": null,
   "closed_at": null,
-  "open_amount_in_cents": 995900,
-  "donated_amount_in_cents": 4749852,
-  "positive_opinions_count": 730,
+  "open_amount_in_cents": 993900,
+  "donated_amount_in_cents": 4751852,
+  "positive_opinions_count": 731,
   "negative_opinions_count": 0,
-  "donor_count": 553,
+  "donor_count": 554,
   "progress_percentage": 82,
   "incomplete_need_count": 1,
   "completed_need_count": 86,
@@ -706,7 +706,39 @@ set for organisations.
       }
     ]
   },
-  "active_matching_fund": null,
+  "active_matching_fund": {
+    "id": 27,
+    "created_at": "2016-02-08T12:45:24+01:00",
+    "updated_at": "2016-02-22T10:46:54+01:00",
+    "activated_at": "2016-02-22T10:42:45+01:00",
+    "title": "2016-03-11 Gut für München",
+    "description": "",
+    "company_name": "Stadtsparkasse München",
+    "client_id": "volksfreund",
+    "provided_amount_in_cents": 123433,
+    "donated_amount_in_cents": 0,
+    "state": "activated",
+    "logo_url": null,
+    "maximum_matching_amount_in_cents": 20000,
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://api.betterplace.org/de/api_v4/matching_funds/27.json"
+      },
+      {
+        "rel": "platform",
+        "href": "https://www.betterplace.org/de/matching-funds/27-stadtsparkasse-munchen"
+      },
+      {
+        "rel": "projects",
+        "href": "https://api.betterplace.org/de/api_v4/matching_funds/27/projects.json"
+      },
+      {
+        "rel": "documentation",
+        "href": "https://github.com/betterplace/betterplace_apidocs/blob/master/sections/matching_fund_details.md"
+      }
+    ]
+  },
   "links": [
     {
       "rel": "self",
@@ -731,6 +763,10 @@ set for organisations.
     {
       "rel": "blog_posts",
       "href": "https://api.betterplace.org/de/api_v4/projects/1114/blog_posts.json"
+    },
+    {
+      "rel": "active_matching_fund",
+      "href": "https://api.betterplace.org/de/api_v4/matching_funds/27.json"
     },
     {
       "rel": "matching_funds",

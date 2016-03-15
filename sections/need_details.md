@@ -155,13 +155,13 @@ offline donations and also(!) external donations)
 {
   "id": 137988,
   "created_at": "2016-02-17T16:18:37+01:00",
-  "updated_at": "2016-02-18T10:36:07+01:00",
+  "updated_at": "2016-03-09T16:59:51+01:00",
   "title": "223423v 234",
   "description": "asd qasdas dasd asda sdasd asd",
   "completed": false,
-  "progress_percentage": 0.4,
-  "donated_amount_in_cents": 4000,
-  "open_amount_in_cents": 995900,
+  "progress_percentage": 0.6,
+  "donated_amount_in_cents": 6000,
+  "open_amount_in_cents": 993900,
   "requested_amount_in_cents": 999900,
   "links": [
     {
