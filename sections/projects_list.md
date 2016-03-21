@@ -66,24 +66,14 @@ values have been used for the query.
     <th align="left">around_distance</th>
     <td><code>25km</code></td>
     <td>no</td>
-    <td>Order the results by the distance to the given location from near to far.
+    <td>In combination with the <code>around</code> parameter the search will be
+limited to results whose location is closer than the given value to the
+location provided through the <code>around</code> parameter. Possible
+values are all integer values followed by <code>m</code> for meters or
+<code>km</code> for kilometers, e.g. <code>1000m</code>, <code>1km</code>.
 <br>
-Location can be provided as …
-<br>
-<em>… Lat/Lng:</em> <code>52.50,13.45</code>
-<br>
-<em>… ZIP:</em> <code>10997 Berlin, Germany</code>.
-We use the centre of the ZIP code area as center for the search.
-Please add enough context information (like the Country name)
-so google knows what place you are looking for.
-<br>
-<em>… any location search:</em> All queries other than a float tuple
-are send to the google location service. For the provided response we
-take a fitting lat/lng value as center of the search. So in theory,
-you can use any search that works for google maps.
-<br>
-Check the <code>around_location</code> to see what latitude/longitude
-values have been used for the query.
+When <code>around_distance</code> is given without <code>around</code> it
+will be ignored.
 </td>
   </tr>
   <tr>
