@@ -2,7 +2,7 @@
 # Volunteering List ⇄ [Details](volunteering_details.md)
 
 ```Rebol
-GET https://api.betterplace.org/de/api_v4/volunteering.json?around=10997+Berlin%2C+Germany&foobar=10997+Berlin%2C+Germany&nelat=51.123&nelng=12.123&order=created_at%3AASC&q=Homework+help&scope=location&swlat=51.001&swlng=12.001
+GET https://api.betterplace.org/de/api_v4/volunteering.json?around=10997+Berlin%2C+Germany&around_distance=25km&nelat=51.123&nelng=12.123&order=created_at%3AASC&q=Homework+help&scope=location&swlat=51.001&swlng=12.001
 ```
 
 A list of betterplace.org volunteering offers (donate time).
@@ -63,8 +63,8 @@ values have been used for the query.
 </td>
   </tr>
   <tr>
-    <th align="left">foobar</th>
-    <td><code>10997 Berlin, Germany</code></td>
+    <th align="left">around_distance</th>
+    <td><code>25km</code></td>
     <td>no</td>
     <td>Order the results by the distance to the given location from near to far.
 <br>
