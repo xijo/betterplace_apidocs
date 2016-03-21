@@ -159,45 +159,13 @@ A list of betterplace.org matching funds.
 
 ```json
 {
-  "total_entries": 1,
+  "total_entries": 0,
   "offset": 0,
   "total_pages": 1,
   "current_page": 1,
   "per_page": 2,
   "data": [
-    {
-      "id": 27,
-      "created_at": "2016-02-08T12:45:24+01:00",
-      "updated_at": "2016-02-22T10:46:54+01:00",
-      "activated_at": "2016-02-22T10:42:45+01:00",
-      "title": "2016-03-11 Gut für München",
-      "description": "",
-      "company_name": "Stadtsparkasse München",
-      "client_id": "volksfreund",
-      "provided_amount_in_cents": 123433,
-      "donated_amount_in_cents": 0,
-      "state": "activated",
-      "logo_url": null,
-      "maximum_matching_amount_in_cents": 20000,
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/matching_funds/27.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/matching-funds/27-stadtsparkasse-munchen"
-        },
-        {
-          "rel": "projects",
-          "href": "https://api.betterplace.org/de/api_v4/matching_funds/27/projects.json"
-        },
-        {
-          "rel": "documentation",
-          "href": "https://github.com/betterplace/betterplace_apidocs/blob/master/sections/matching_fund_details.md"
-        }
-      ]
-    }
+
   ]
 }
 ```
