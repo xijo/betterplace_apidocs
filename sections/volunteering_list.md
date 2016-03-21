@@ -2,7 +2,7 @@
 # Volunteering List ⇄ [Details](volunteering_details.md)
 
 ```Rebol
-GET https://api.betterplace.org/de/api_v4/volunteering.json?around=10997+Berlin%2C+Germany&nelat=51.123&nelng=12.123&order=created_at%3AASC&q=Homework+help&scope=location&swlat=51.001&swlng=12.001
+GET https://api.betterplace.org/de/api_v4/volunteering.json?around=10997+Berlin%2C+Germany&foobar=10997+Berlin%2C+Germany&nelat=51.123&nelng=12.123&order=created_at%3AASC&q=Homework+help&scope=location&swlat=51.001&swlng=12.001
 ```
 
 A list of betterplace.org volunteering offers (donate time).
@@ -40,6 +40,30 @@ This resource is not avaliable at the moment.
   </tr>
   <tr>
     <th align="left">around</th>
+    <td><code>10997 Berlin, Germany</code></td>
+    <td>no</td>
+    <td>Order the results by the distance to the given location from near to far.
+<br>
+Location can be provided as …
+<br>
+<em>… Lat/Lng:</em> <code>52.50,13.45</code>
+<br>
+<em>… ZIP:</em> <code>10997 Berlin, Germany</code>.
+We use the centre of the ZIP code area as center for the search.
+Please add enough context information (like the Country name)
+so google knows what place you are looking for.
+<br>
+<em>… any location search:</em> All queries other than a float tuple
+are send to the google location service. For the provided response we
+take a fitting lat/lng value as center of the search. So in theory,
+you can use any search that works for google maps.
+<br>
+Check the <code>around_location</code> to see what latitude/longitude
+values have been used for the query.
+</td>
+  </tr>
+  <tr>
+    <th align="left">foobar</th>
     <td><code>10997 Berlin, Germany</code></td>
     <td>no</td>
     <td>Order the results by the distance to the given location from near to far.
