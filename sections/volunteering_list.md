@@ -338,6 +338,32 @@ was indeed imported.
       <td>"Germany"</td>
       <td>Contact data for the organisation</td>
     </tr>
+    <tr>
+        <th align="left" style="white-space: nowrap">
+          <a id="carrier.picture-ref" href="#carrier.picture">
+            ↓carrier.picture
+          </a>
+        </th>
+      <td>null &#124; object</td>
+      <td></td>
+      <td>TODO</td>
+    </tr>
+  </table>
+### <a id="carrier.picture" href="#carrier.picture-ref">↑Nested Attributes: carrier.picture</a>
+
+  <table>
+    <tr>
+      <th>Attribute</th>
+      <th>Types</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">carrier.picture.fallback</th>
+      <td>boolean</td>
+      <td>true</td>
+      <td>Specifies whether a fallback image is given or not</td>
+    </tr>
   </table>
 ### <a id="image" href="#image-ref">↑Nested Attributes: image</a>
 
@@ -498,13 +524,20 @@ betterplace.
       <td>Permalink to betterplace.org</td>
     </tr>
     <tr>
-      <th align="left">carrier.logo</th>
-      <td>The original image version as uploaded by the organisation manager.
-
-Please note: This image might change in the future since this attribute
-does not follow the general API pattern for image attributes. You should
-subscribe to the change-log newsletter so we can inform you about upcomming changes.
-</td>
+      <th align="left">carrier.picture.fill_100x100</th>
+      <td>100×100 Pixel</td>
+    </tr>
+    <tr>
+      <th align="left">carrier.picture.fill_200x200</th>
+      <td>200×200 Pixel</td>
+    </tr>
+    <tr>
+      <th align="left">carrier.picture.fill_400x400</th>
+      <td>400×400 Pixel</td>
+    </tr>
+    <tr>
+      <th align="left">carrier.picture.original</th>
+      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
     </tr>
     <tr>
       <th align="left">image.fill_618x322</th>
@@ -594,11 +627,29 @@ subscribe to the change-log newsletter so we can inform you about upcomming chan
         "city": "Berlin",
         "zip": "10407",
         "country": "Deutschland",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/fill_100x100_WELL_WBM_pHndG_4c_klein.jpg"
+            },
+            {
+              "rel": "fill_200x200",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/fill_200x200_WELL_WBM_pHndG_4c_klein.jpg"
+            },
+            {
+              "rel": "fill_400x400",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/fill_400x400_WELL_WBM_pHndG_4c_klein.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/crop_original_WELL_WBM_pHndG_4c_klein.jpg"
+            }
+          ]
+        },
         "links": [
-          {
-            "rel": "logo",
-            "href": ""
-          }
+
         ]
       },
       "vacancies": 10,
@@ -710,11 +761,29 @@ subscribe to the change-log newsletter so we can inform you about upcomming chan
         "city": "kamuli",
         "zip": "+256",
         "country": "Uganda",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.betterplace.jpg"
+            },
+            {
+              "rel": "fill_200x200",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.betterplace.jpg"
+            },
+            {
+              "rel": "fill_400x400",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.betterplace.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.betterplace.jpg"
+            }
+          ]
+        },
         "links": [
-          {
-            "rel": "logo",
-            "href": ""
-          }
+
         ]
       },
       "vacancies": 5,
@@ -828,11 +897,29 @@ subscribe to the change-log newsletter so we can inform you about upcomming chan
         "city": "kamuli",
         "zip": "+256",
         "country": "Uganda",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.betterplace.jpg"
+            },
+            {
+              "rel": "fill_200x200",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.betterplace.jpg"
+            },
+            {
+              "rel": "fill_400x400",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.betterplace.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.betterplace.jpg"
+            }
+          ]
+        },
         "links": [
-          {
-            "rel": "logo",
-            "href": ""
-          }
+
         ]
       },
       "vacancies": 5,
