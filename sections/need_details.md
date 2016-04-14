@@ -68,6 +68,12 @@ to make sure you only request data that is associated with one of your projects.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">title</th>
       <td>string</td>
       <td></td>
@@ -153,20 +159,20 @@ offline donations and also(!) external donations)
 
 ```json
 {
-  "id": 137988,
-  "created_at": "2016-02-17T16:18:37+01:00",
-  "updated_at": "2016-03-09T16:59:51+01:00",
-  "title": "223423v 234",
-  "description": "asd qasdas dasd asda sdasd asd",
+  "id": 143007,
+  "created_at": "2016-04-06T11:00:51+02:00",
+  "updated_at": "2016-04-06T11:00:51+02:00",
+  "title": "Special Events Fund",
+  "description": "The equivalent of 12 months worth of funding for special events across both Afghanistan facilities in 2016.",
   "completed": false,
-  "progress_percentage": 0.6,
-  "donated_amount_in_cents": 6000,
-  "open_amount_in_cents": 993900,
-  "requested_amount_in_cents": 999900,
+  "progress_percentage": 0.0,
+  "donated_amount_in_cents": 0,
+  "open_amount_in_cents": 240000,
+  "requested_amount_in_cents": 240000,
   "links": [
     {
       "rel": "self",
-      "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs/137988.json"
+      "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs/143007.json"
     },
     {
       "rel": "project",
@@ -174,12 +180,12 @@ offline donations and also(!) external donations)
     },
     {
       "rel": "new_client_donation",
-      "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D&donation_earmark_id=137988",
+      "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D&donation_earmark_id=143007",
       "templated": true
     },
     {
       "rel": "new_donation",
-      "href": "https://www.betterplace.org/de/projects/1114/donations/new?donation_earmark_id=137988"
+      "href": "https://www.betterplace.org/de/projects/1114/donations/new?donation_earmark_id=143007"
     }
   ]
 }

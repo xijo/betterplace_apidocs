@@ -59,6 +59,12 @@ This resource is not avaliable at the moment.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">latitude</th>
       <td>number</td>
       <td>52.499007</td>
@@ -103,8 +109,10 @@ This resource is not avaliable at the moment.
     <tr>
       <th align="left">description</th>
       <td>string</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td></td>
+      <td>A description of the offer. This may contain any of the following
+HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -141,6 +149,50 @@ This resource is not avaliable at the moment.
       <td>object</td>
       <td>TODO</td>
       <td>Contact person, contact data and contact address</td>
+    </tr>
+    <tr>
+      <th align="left">location_fixed</th>
+      <td>boolean</td>
+      <td>true</td>
+      <td>Specifies whether the volunteering offer is limited to a certain location or if it may be
+executed remotely.
+</td>
+    </tr>
+    <tr>
+      <th align="left">working_time_selection</th>
+      <td>string</td>
+      <td>regular commitment</td>
+      <td>Working time selection, specifies if this is a one-time event or if
+this volunteering can takes place regulary.
+</td>
+    </tr>
+    <tr>
+      <th align="left">working_time_weekends</th>
+      <td>array</td>
+      <td>["in the mornings"]</td>
+      <td>Up to three working time preferences. They specify when this volunteering
+should take place on weekends.
+</td>
+    </tr>
+    <tr>
+      <th align="left">working_time_weekdays</th>
+      <td>array</td>
+      <td>["in the mornings"]</td>
+      <td>Up to three working time preferences. They specify when this volunteering
+should take place on weekdays.
+</td>
+    </tr>
+    <tr>
+      <th align="left">begins_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">ends_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
       <th align="left">topics</th>
@@ -327,7 +379,7 @@ No validations on input apply.
             ↓contact.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//assets.betterplace.org/…</td>
       <td>User profile picture or a fallback image</td>
     </tr>
@@ -431,6 +483,12 @@ betterplace.
       <td>Permalink to betterplace.org</td>
     </tr>
     <tr>
+      <th align="left">carrier.self</th>
+      <td>Link to this resource itself
+(<a href="organisation_details.md">organisation details</a>)
+</td>
+    </tr>
+    <tr>
       <th align="left">carrier.picture.fill_100x100</th>
       <td>100×100 Pixel</td>
     </tr>
@@ -510,7 +568,8 @@ betterplace.
 {
   "id": 28428,
   "created_at": "2015-11-04T18:07:48+01:00",
-  "updated_at": "2016-01-07T17:19:36+01:00",
+  "updated_at": "2016-04-07T04:30:35+02:00",
+  "content_updated_at": "2016-01-07T17:19:36+01:00",
   "latitude": 53.6815,
   "longitude": 9.98472,
   "street": "Ochsenzoller Straße 134",
@@ -518,7 +577,7 @@ betterplace.
   "city": "Norderstedt",
   "country": "Deutschland",
   "title": "SOS - Public Relation - Texter - Pressesprecher gesucht",
-  "description": "SOS und Hilfe,\r\n\r\nwir kümmern uns um Kinder mit und ohne Migrantionshintergrund.\r\nDarin sind wir gut - sehr gut sogar, wenn man den Eltern Glauben schenken kann.\r\n\r\nWir sind aber auch ein Paria unter den Kindergärten dieser Welt und schwimmen gegen den Strom (gegen den Strom der Obrigkeit, nicht den der Kinder und Eltern!).\r\n\r\nWir starten gerade mehrere Aktionen in der Öffentlichkeit und brauchen dringend proffesionelle Hilfe und Unterstützung in Sachen PR.\r\nSelbstverständlich ist jegliche Tätigkeit im Zusammenhang mit dem gemeinnützigen Verein versichert.",
+  "description": "SOS und Hilfe,<br><br>wir kümmern uns um Kinder mit und ohne Migrantionshintergrund.<br>Darin sind wir gut - sehr gut sogar, wenn man den Eltern Glauben schenken kann.<br><br>Wir sind aber auch ein Paria unter den Kindergärten dieser Welt und schwimmen gegen den Strom (gegen den Strom der Obrigkeit, nicht den der Kinder und Eltern!).<br><br>Wir starten gerade mehrere Aktionen in der Öffentlichkeit und brauchen dringend proffesionelle Hilfe und Unterstützung in Sachen PR.<br>Selbstverständlich ist jegliche Tätigkeit im Zusammenhang mit dem gemeinnützigen Verein versichert.",
   "carrier": {
     "latitude": 53.6815137,
     "longitude": 9.98471559999996,
@@ -549,7 +608,10 @@ betterplace.
       ]
     },
     "links": [
-
+      {
+        "rel": "self",
+        "href": "https://api.betterplace.org/de/api_v4/organisations/25356.json"
+      }
     ]
   },
   "vacancies": 1,
@@ -586,11 +648,33 @@ betterplace.
     "name": "Ulrich Eidecker",
     "phone": "040-523 23 81",
     "email": "eidecker@focus-success.de",
-    "picture": null,
+    "picture": {
+      "fallback": true,
+      "links": [
+        {
+          "rel": "fill_100x100",
+          "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.betterplace.jpg"
+        },
+        {
+          "rel": "original",
+          "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.betterplace.jpg"
+        }
+      ]
+    },
     "links": [
 
     ]
   },
+  "location_fixed": true,
+  "working_time_selection": "egal wann / nach Vereinbarung",
+  "working_time_weekends": [
+
+  ],
+  "working_time_weekdays": [
+
+  ],
+  "begins_at": null,
+  "ends_at": null,
   "topics": [
     "Bildung",
     "Kinder & Jugendliche",

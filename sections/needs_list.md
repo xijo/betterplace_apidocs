@@ -87,6 +87,12 @@ Documented and supported filters are:
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">title</th>
       <td>string</td>
       <td></td>
@@ -172,9 +178,9 @@ offline donations and also(!) external donations)
 
 ```json
 {
-  "total_entries": 87,
+  "total_entries": 97,
   "offset": 0,
-  "total_pages": 29,
+  "total_pages": 33,
   "current_page": 1,
   "per_page": 3,
   "data": [

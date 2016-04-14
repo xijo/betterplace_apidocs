@@ -58,6 +58,12 @@ project manager.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">latitude</th>
       <td>number</td>
       <td>52.499007</td>
@@ -103,7 +109,9 @@ project manager.
       <th align="left">description</th>
       <td>string</td>
       <td></td>
-      <td></td>
+      <td>A description of the project. This may contain any of the following
+HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+</td>
     </tr>
     <tr>
       <th align="left">tax_deductible</th>
@@ -287,7 +295,7 @@ empty/null for anonymous donations for anonymous donations.
             ↓contact.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</td>
       <td>User profile picture or a fallback image</td>
     </tr>
@@ -329,7 +337,7 @@ empty/null for anonymous donations for anonymous donations.
             ↓carrier.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//assets.betterplace.org/…</td>
       <td>The organisation logo, user profile picture or a fallback image</td>
     </tr>
@@ -389,6 +397,12 @@ empty/null for anonymous donations for anonymous donations.
     </tr>
     <tr>
       <th align="left">active_matching_fund.updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">active_matching_fund.content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -611,7 +625,8 @@ set for organisations.
     {
       "id": 14784,
       "created_at": "2013-09-23T16:29:10+02:00",
-      "updated_at": "2016-01-26T17:38:33+01:00",
+      "updated_at": "2016-03-23T09:32:44+01:00",
+      "content_updated_at": "2016-03-21T09:00:28+01:00",
       "latitude": 53.55808469999999,
       "longitude": 10.01197890000003,
       "street": "",
@@ -624,15 +639,15 @@ set for organisations.
       "donations_prohibited": false,
       "completed_at": null,
       "closed_at": null,
-      "open_amount_in_cents": 93900,
-      "donated_amount_in_cents": 2027600,
-      "positive_opinions_count": 85,
+      "open_amount_in_cents": 91700,
+      "donated_amount_in_cents": 2029800,
+      "positive_opinions_count": 87,
       "negative_opinions_count": 0,
-      "donor_count": 72,
+      "donor_count": 74,
       "progress_percentage": 95,
       "incomplete_need_count": 2,
       "completed_need_count": 4,
-      "blog_post_count": 21,
+      "blog_post_count": 22,
       "contact": {
         "name": "A. Jahn",
         "picture": {

@@ -73,6 +73,12 @@ to make sure you only request data that is associated with one of your projects.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">donated_amount_in_cents</th>
       <td>number</td>
       <td>5000</td>
@@ -161,7 +167,7 @@ empty/null for anonymous donations for anonymous donations.
             ↓author.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</td>
       <td>User profile picture or a fallback image</td>
     </tr>

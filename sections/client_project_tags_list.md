@@ -106,7 +106,7 @@ that where tagged with this tag.
   "data": [
     {
       "tag": "Trier",
-      "projects_count": 39,
+      "projects_count": 36,
       "links": [
         {
           "rel": "projects",
@@ -116,7 +116,7 @@ that where tagged with this tag.
     },
     {
       "tag": "KinderJugendliche",
-      "projects_count": 38,
+      "projects_count": 33,
       "links": [
         {
           "rel": "projects",
@@ -126,7 +126,7 @@ that where tagged with this tag.
     },
     {
       "tag": "Familien",
-      "projects_count": 14,
+      "projects_count": 15,
       "links": [
         {
           "rel": "projects",

@@ -86,7 +86,7 @@ that where tagged with this tag.
   "data": [
     {
       "tag": "Bedürftige",
-      "projects_count": 12,
+      "projects_count": 11,
       "links": [
         {
           "rel": "projects",

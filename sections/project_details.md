@@ -61,6 +61,12 @@ project manager.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">latitude</th>
       <td>number</td>
       <td>52.499007</td>
@@ -106,7 +112,9 @@ project manager.
       <th align="left">description</th>
       <td>string</td>
       <td></td>
-      <td></td>
+      <td>A description of the project. This may contain any of the following
+HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+</td>
     </tr>
     <tr>
       <th align="left">tax_deductible</th>
@@ -290,7 +298,7 @@ empty/null for anonymous donations for anonymous donations.
             ↓contact.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</td>
       <td>User profile picture or a fallback image</td>
     </tr>
@@ -332,7 +340,7 @@ empty/null for anonymous donations for anonymous donations.
             ↓carrier.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//assets.betterplace.org/…</td>
       <td>The organisation logo, user profile picture or a fallback image</td>
     </tr>
@@ -392,6 +400,12 @@ empty/null for anonymous donations for anonymous donations.
     </tr>
     <tr>
       <th align="left">active_matching_fund.updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">active_matching_fund.content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -607,11 +621,12 @@ set for organisations.
 {
   "id": 1114,
   "created_at": "2009-03-10T11:12:16+01:00",
-  "updated_at": "2016-03-17T12:22:35+01:00",
+  "updated_at": "2016-04-06T11:00:51+02:00",
+  "content_updated_at": "2016-03-18T14:17:55+01:00",
   "latitude": 34.531617284782,
   "longitude": 69.13581752939456,
   "street": "Taimani, behind Qasemi Winhouse",
-  "zip": "234",
+  "zip": "",
   "city": "Kabul",
   "country": "Afghanistan",
   "title": "Skateistan Afghanistan",
@@ -620,14 +635,14 @@ set for organisations.
   "donations_prohibited": false,
   "completed_at": null,
   "closed_at": null,
-  "open_amount_in_cents": 993900,
-  "donated_amount_in_cents": 4751852,
-  "positive_opinions_count": 731,
+  "open_amount_in_cents": 1818000,
+  "donated_amount_in_cents": 4745852,
+  "positive_opinions_count": 728,
   "negative_opinions_count": 0,
-  "donor_count": 554,
-  "progress_percentage": 82,
-  "incomplete_need_count": 1,
-  "completed_need_count": 86,
+  "donor_count": 552,
+  "progress_percentage": 72,
+  "incomplete_need_count": 10,
+  "completed_need_count": 87,
   "blog_post_count": 91,
   "contact": {
     "name": "E. Kinast",

@@ -2,7 +2,7 @@
 # Volunteering List ⇄ [Details](volunteering_details.md)
 
 ```Rebol
-GET https://api.betterplace.org/de/api_v4/volunteering.json?around=10997+Berlin%2C+Germany&around_distance=25km&nelat=51.123&nelng=12.123&order=created_at%3AASC&q=Homework+help&scope=location&swlat=51.001&swlng=12.001
+GET https://api.betterplace.org/de/api_v4/volunteering.json?around=10997+Berlin%2C+Germany&around_distance=25km&nelat=51.123&nelng=12.123&order=content_updated_at%3AASC&q=Homework+help&scope=location&swlat=51.001&swlng=12.001
 ```
 
 A list of betterplace.org volunteering offers (donate time).
@@ -108,15 +108,16 @@ will be ignored.
   </tr>
   <tr>
     <th align="left">order</th>
-    <td><code>created_at:ASC</code></td>
+    <td><code>content_updated_at:ASC</code></td>
     <td>no</td>
-    <td>Order the result by <code>has_image</code> (default), <code>created_at</code> (second default).
-Use the optional <code>ASC</code> (default) or <code>DESC</code>.
+    <td>Order the result by <code>has_image</code> (default),
+<code>content_updated_at</code> (second default). Use the optional
+<code>ASC</code> (default) or <code>DESC</code>.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
 <br>
 The default order is the same as for the
 <a href="http://www.betterplace.org/en/volunteering/list">betterplace.org volunteering list</a>:
-<code>has_image:desc| carrier_has_image:desc| created_at:desc</code>
+<code>has_image:desc| carrier_has_image:desc| content_updated_at:desc</code>
 </td>
   </tr>
 </table>
@@ -147,6 +148,12 @@ The default order is the same as for the
     </tr>
     <tr>
       <th align="left">updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -196,8 +203,10 @@ The default order is the same as for the
     <tr>
       <th align="left">description</th>
       <td>string</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td></td>
+      <td>A description of the offer. This may contain any of the following
+HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -234,6 +243,50 @@ The default order is the same as for the
       <td>object</td>
       <td>TODO</td>
       <td>Contact person, contact data and contact address</td>
+    </tr>
+    <tr>
+      <th align="left">location_fixed</th>
+      <td>boolean</td>
+      <td>true</td>
+      <td>Specifies whether the volunteering offer is limited to a certain location or if it may be
+executed remotely.
+</td>
+    </tr>
+    <tr>
+      <th align="left">working_time_selection</th>
+      <td>string</td>
+      <td>regular commitment</td>
+      <td>Working time selection, specifies if this is a one-time event or if
+this volunteering can takes place regulary.
+</td>
+    </tr>
+    <tr>
+      <th align="left">working_time_weekends</th>
+      <td>array</td>
+      <td>["in the mornings"]</td>
+      <td>Up to three working time preferences. They specify when this volunteering
+should take place on weekends.
+</td>
+    </tr>
+    <tr>
+      <th align="left">working_time_weekdays</th>
+      <td>array</td>
+      <td>["in the mornings"]</td>
+      <td>Up to three working time preferences. They specify when this volunteering
+should take place on weekdays.
+</td>
+    </tr>
+    <tr>
+      <th align="left">begins_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">ends_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
       <th align="left">topics</th>
@@ -420,7 +473,7 @@ No validations on input apply.
             ↓contact.picture
           </a>
         </th>
-      <td>string</td>
+      <td>object</td>
       <td>//assets.betterplace.org/…</td>
       <td>User profile picture or a fallback image</td>
     </tr>
@@ -524,6 +577,12 @@ betterplace.
       <td>Permalink to betterplace.org</td>
     </tr>
     <tr>
+      <th align="left">carrier.self</th>
+      <td>Link to this resource itself
+(<a href="organisation_details.md">organisation details</a>)
+</td>
+    </tr>
+    <tr>
       <th align="left">carrier.picture.fill_100x100</th>
       <td>100×100 Pixel</td>
     </tr>
@@ -601,9 +660,9 @@ betterplace.
 
 ```json
 {
-  "total_entries": 10451,
+  "total_entries": 10954,
   "offset": 3,
-  "total_pages": 3484,
+  "total_pages": 3652,
   "current_page": 2,
   "per_page": 3,
   "data": [
@@ -611,6 +670,7 @@ betterplace.
       "id": 6633,
       "created_at": "2013-01-29T14:55:36+01:00",
       "updated_at": "2016-01-06T10:27:10+01:00",
+      "content_updated_at": "2016-01-06T10:27:10+01:00",
       "latitude": 52.4986,
       "longitude": 13.3918,
       "street": "",
@@ -618,7 +678,7 @@ betterplace.
       "city": "Berlin-Kreuzberg",
       "country": "Deutschland",
       "title": "wellcome-Ehrenamtliche für Berlin-Kreuzberg",
-      "description": "Wir suchen Freiwillige, die Freude und Erfahrung im Umgang mit Säuglingen und Kleinkindern sowie Lust haben, junge Familien zu unterstützen. Als wellcome-Ehrenamtliche unterstützen sie Familien mit Kindern im 1. Lebensjahr individuell und alltagspraktisch. Für einen Zeitraum von ca. 3-5 Monaten besuchen sie \"ihre Familie\" ca. 1-2 mal wöchentlich und helfen die neue Situation zu meistern. wellcome-Ehrenamtliche fahren beispielsweise den Säugling spazieren, damit die Mutter ausruhen kann, sie begleiten die Zwillingsmutter zum Kinderarzt, holen das Geschwisterkind von der Kita ab oder sind einfach da und hören zu.\r\nNach einem Kennlerngespräch mit der wellcome-Koordinatorin erhalten die Ehrenamtlichen fachliche Begleitung, Fortbildungen und Möglichkeiten des Austauschs im Rahmen reegelmäßiger Ehrenamtstreffen. Die anfallenden Fahrtkosten werden erstattet und es besteht Versicherungsschutz.",
+      "description": "Wir suchen Freiwillige, die Freude und Erfahrung im Umgang mit Säuglingen und Kleinkindern sowie Lust haben, junge Familien zu unterstützen. Als wellcome-Ehrenamtliche unterstützen sie Familien mit Kindern im 1. Lebensjahr individuell und alltagspraktisch. Für einen Zeitraum von ca. 3-5 Monaten besuchen sie \"ihre Familie\" ca. 1-2 mal wöchentlich und helfen die neue Situation zu meistern. wellcome-Ehrenamtliche fahren beispielsweise den Säugling spazieren, damit die Mutter ausruhen kann, sie begleiten die Zwillingsmutter zum Kinderarzt, holen das Geschwisterkind von der Kita ab oder sind einfach da und hören zu.<br>Nach einem Kennlerngespräch mit der wellcome-Koordinatorin erhalten die Ehrenamtlichen fachliche Begleitung, Fortbildungen und Möglichkeiten des Austauschs im Rahmen reegelmäßiger Ehrenamtstreffen. Die anfallenden Fahrtkosten werden erstattet und es besteht Versicherungsschutz.",
       "carrier": {
         "latitude": 52.53200149536133,
         "longitude": 13.43490028381348,
@@ -649,7 +709,10 @@ betterplace.
           ]
         },
         "links": [
-
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/2772.json"
+          }
         ]
       },
       "vacancies": 10,
@@ -686,11 +749,33 @@ betterplace.
         "name": "Canan  Gerner",
         "phone": "030/ 32 53 23 42",
         "email": "berlin.kreuzberg@wellcome-online.de",
-        "picture": null,
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/274/514/fill_100x100_20140827_160426.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/274/514/crop_original_20140827_160426.jpg"
+            }
+          ]
+        },
         "links": [
 
         ]
       },
+      "location_fixed": true,
+      "working_time_selection": "egal wann / nach Vereinbarung",
+      "working_time_weekends": [
+
+      ],
+      "working_time_weekdays": [
+
+      ],
+      "begins_at": null,
+      "ends_at": null,
       "topics": [
         "Nachbarschaft",
         "Kinder & Jugendliche"
@@ -744,7 +829,8 @@ betterplace.
     {
       "id": 6775,
       "created_at": "2013-02-10T15:48:45+01:00",
-      "updated_at": "2015-10-27T15:10:27+01:00",
+      "updated_at": "2016-03-31T04:30:35+02:00",
+      "content_updated_at": "2015-10-27T15:10:27+01:00",
       "latitude": 0.945,
       "longitude": 33.125,
       "street": "kiyunga mbulamuti kamuli road",
@@ -752,7 +838,7 @@ betterplace.
       "city": "kamuli",
       "country": "Uganda",
       "title": "Give the children ideas,knowledge and support to become responsible citizens",
-      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.\r\nThe volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.\r\nThe organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
+      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.<br>The volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.<br>The organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
       "carrier": {
         "latitude": 0.9386024,
         "longitude": 33.1197774,
@@ -783,7 +869,10 @@ betterplace.
           ]
         },
         "links": [
-
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/13032.json"
+          }
         ]
       },
       "vacancies": 5,
@@ -820,11 +909,33 @@ betterplace.
         "name": "Kawomera David",
         "phone": "+256779996702",
         "email": "caomera@gmail.com",
-        "picture": null,
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/fill_100x100_original_Picture_037.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/crop_original_original_Picture_037.jpg"
+            }
+          ]
+        },
         "links": [
 
         ]
       },
+      "location_fixed": true,
+      "working_time_selection": "egal wann / nach Vereinbarung",
+      "working_time_weekends": [
+
+      ],
+      "working_time_weekdays": [
+
+      ],
+      "begins_at": null,
+      "ends_at": null,
       "topics": [
         "Bildung",
         "Kinder & Jugendliche"
@@ -880,7 +991,8 @@ betterplace.
     {
       "id": 6776,
       "created_at": "2013-02-10T15:49:29+01:00",
-      "updated_at": "2015-10-28T16:45:59+01:00",
+      "updated_at": "2016-04-01T04:30:36+02:00",
+      "content_updated_at": "2015-10-28T16:45:59+01:00",
       "latitude": 0.945,
       "longitude": 33.125,
       "street": "kiyunga mbulamuti kamuli road",
@@ -888,7 +1000,7 @@ betterplace.
       "city": "kamuli",
       "country": "Uganda",
       "title": "Give the children ideas,knowledge and support to become responsible citizens",
-      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.\r\nThe volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.\r\nThe organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
+      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.<br>The volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.<br>The organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
       "carrier": {
         "latitude": 0.9386024,
         "longitude": 33.1197774,
@@ -919,7 +1031,10 @@ betterplace.
           ]
         },
         "links": [
-
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/13032.json"
+          }
         ]
       },
       "vacancies": 5,
@@ -956,11 +1071,33 @@ betterplace.
         "name": "Kawomera David",
         "phone": "+256779996702",
         "email": "caomera@gmail.com",
-        "picture": null,
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/fill_100x100_original_Picture_037.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/crop_original_original_Picture_037.jpg"
+            }
+          ]
+        },
         "links": [
 
         ]
       },
+      "location_fixed": true,
+      "working_time_selection": "egal wann / nach Vereinbarung",
+      "working_time_weekends": [
+
+      ],
+      "working_time_weekdays": [
+
+      ],
+      "begins_at": null,
+      "ends_at": null,
       "topics": [
         "Bildung",
         "Kinder & Jugendliche"

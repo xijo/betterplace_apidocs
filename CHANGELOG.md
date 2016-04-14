@@ -3,6 +3,17 @@ All notable changes to the betterplace.org API v4 will be documented in this
 file. Notifications about changes will also be send to the [mailing list for
 service announcements](README.md#mailing-list-for-service-announcements).
 
+## 2016-04-12
+### Added
+- [Volunteering List](sections/volunteering_list.md) can now be sorted by the
+  `content_updated_at` order parameter.
+
+## 2016-04-11
+### Changed
+- [Organisation Details](sections/organisation_details.md): The `description` now contains `br` tags instead of newlines
+- [Volunteering Details](sections/volunteering_details.md): The `description` now contains `br` tags instead of newlines
+
+
 ## 2016-03-15
 ### Changed
 - [donation pledges](sections/client_donation_pledges.md): lowered the minimum value for `amount_in_cents` to 1
