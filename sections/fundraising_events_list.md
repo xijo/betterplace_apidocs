@@ -90,7 +90,7 @@ is given.
 <li><code>rank:ASC/DESC</code> – a betterplace.org-specific, platform-wide activity indicator
 <li><code>tax_deductible:ASC/DESC</code> – true (1) or false (0)
 <li><code>last_donation_at:ASC/DESC</code>
-<li><code>completed:asc| score:desc | rank:desc| last_donation_at:desc</code>
+<li><code>completed:asc</code>
 </ul>
 It is possible to set multiple order parameters.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
