@@ -13,7 +13,8 @@ on the postdonation page. Only users that give the
 explicit permission to provide the data to the client
 will be included.
 
-**:lock: Only available if authenticated as a client and only if this clients has permissions to access this data.**
+**:lock: Only available if authenticated as a client and only
+if this client has permissions to access this data.**
 See [betterplace.org clients](../README.md#client-api).
 
 

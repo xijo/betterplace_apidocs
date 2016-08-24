@@ -23,7 +23,7 @@ A list of forwarings from the fundraising event to its projects.
     <th align="left">fundraising_event_id</th>
     <td><code>19267</code></td>
     <td>yes</td>
-    <td>Fundraising-Event-id as an integer number ≥ 1.</td>
+    <td>Fundraising Event id as an integer number ≥ 1.</td>
   </tr>
 </table>
 

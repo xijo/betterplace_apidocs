@@ -21,7 +21,7 @@ A list of betterplace.org matching funds.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
   <tr>
     <th align="left">facets</th>
@@ -59,12 +59,6 @@ A list of betterplace.org matching funds.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -152,7 +146,9 @@ A list of betterplace.org matching funds.
     </tr>
     <tr>
       <th align="left">projects</th>
-      <td>Link to the list of projects belonging to this matching fund</td>
+      <td>Link to the <a href="projects_list.md">list of projects</a>
+belonging to this matching fund
+</td>
     </tr>
     <tr>
       <th align="left">documentation</th>

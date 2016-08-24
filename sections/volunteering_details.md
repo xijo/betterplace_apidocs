@@ -2,7 +2,7 @@
 # Volunteering Details ⇄ [List](volunteering_list.md)
 
 ```Rebol
-GET https://api.betterplace.org/de/api_v4/volunteering/28428.json
+GET https://api.betterplace.org/de/api_v4/volunteering/39655.json
 ```
 
 The details of a betterplace.org volunteering offer (donate time).
@@ -22,7 +22,7 @@ This resource is not avaliable at the moment.
   </tr>
   <tr>
     <th align="left">id</th>
-    <td><code>28428</code></td>
+    <td><code>39655</code></td>
     <td>yes</td>
     <td>Volunteering-id as an integer number ≥ 1.</td>
   </tr>
@@ -54,12 +54,6 @@ This resource is not avaliable at the moment.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -99,6 +93,12 @@ This resource is not avaliable at the moment.
       <td>null &#124; string</td>
       <td>"Deutschland"</td>
       <td>Name of the country</td>
+    </tr>
+    <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
       <th align="left">title</th>
@@ -483,6 +483,13 @@ betterplace.
       <td>Permalink to betterplace.org</td>
     </tr>
     <tr>
+      <th align="left">inquiries</th>
+      <td>The URL to which inquiries about this offer can be POSTed
+(<a href="volunteering_inquiries.md">inquiry details</a>).
+Templated, needs insertion of the client_id.
+</td>
+    </tr>
+    <tr>
       <th align="left">carrier.self</th>
       <td>Link to this resource itself
 (<a href="organisation_details.md">organisation details</a>)
@@ -566,101 +573,86 @@ betterplace.
 
 ```json
 {
-  "id": 28428,
-  "created_at": "2015-11-04T18:07:48+01:00",
-  "updated_at": "2016-04-07T04:30:35+02:00",
-  "content_updated_at": "2016-01-07T17:19:36+01:00",
-  "latitude": 53.6815,
-  "longitude": 9.98472,
-  "street": "Ochsenzoller Straße 134",
-  "zip": "22848",
-  "city": "Norderstedt",
+  "id": 39655,
+  "created_at": "2016-07-19T02:41:52+02:00",
+  "updated_at": "2016-07-19T02:41:52+02:00",
+  "latitude": 52.5276,
+  "longitude": 13.4682,
+  "street": "",
+  "zip": "10369",
+  "city": "Berlin",
   "country": "Deutschland",
-  "title": "SOS - Public Relation - Texter - Pressesprecher gesucht",
-  "description": "SOS und Hilfe,<br><br>wir kümmern uns um Kinder mit und ohne Migrantionshintergrund.<br>Darin sind wir gut - sehr gut sogar, wenn man den Eltern Glauben schenken kann.<br><br>Wir sind aber auch ein Paria unter den Kindergärten dieser Welt und schwimmen gegen den Strom (gegen den Strom der Obrigkeit, nicht den der Kinder und Eltern!).<br><br>Wir starten gerade mehrere Aktionen in der Öffentlichkeit und brauchen dringend proffesionelle Hilfe und Unterstützung in Sachen PR.<br>Selbstverständlich ist jegliche Tätigkeit im Zusammenhang mit dem gemeinnützigen Verein versichert.",
+  "content_updated_at": "2016-07-19T02:41:52+02:00",
+  "title": "Kursangebot für unbegleitete minderjährige Flüchtlinge",
+  "description": "<p>Die abw gGmbH hat ein Wohnprojekt für unbegleitete minderjährige Flüchtlinge, die z.T. schon seit Monaten auf Plätze in Deutschkursen oder Willkommensklassen warten. Wir würden diese Angebotslücke gerne mit Hilfe von Ehrenamtlichen schließen und an möglichst vielen Tagen in der Woche ein ca. dreistündiges Angebot für diese Jugendlichen machen. Über geeignete Räumlichkeiten verfügen wir in Lichtenberg. Sie stehen vormittags zwischen 9 und 13 Uhr zur Verfügung. Vorgesehen sind 4 - 5 TN. Das Kursangebot sollte umfassen: Deutsch als Fremdsprache (Lehrwerke sind vorhanden) und auf einfachem Niveau auch andere Aufgaben (z.B. Rechnen oder Landeskunde). Auch kreative Angebote wie z.B. ein Fotokurs wären denkbar. Vorschläge der Ehrenamtlichen werden gerne aufgenommen. Da das Projekt noch im Aufbau ist, ist eine Mitarbeit an der Feinplanung problemlos möglich.</p><br><br><p>Voraussetzungen: gute Deutschkenntnisse in Wort und Schrift, Allgemeinwissen, Geduld, didaktisches Geschick, Freude am interkulturellen Umgang</p><br><br><p>Zeitbedarf: 1 x wöchentlich ca. 3 Std.</p><br><br><p>Dauer: nach Vereinbarung</p><br><br><p>Gültigkeit: 04.06.2016-31.12.2016</p><br><br><p><strong>Tätigkeiten</strong>:</p><br><br><ul>\n<li>Freizeit gestalten und Spaß erleben</li>\n<br><li>Beraten und zuhören</li>\n<br><li>Üben, Nachhilfe geben und unterrichten</li>\n</ul>",
   "carrier": {
-    "latitude": 53.6815137,
-    "longitude": 9.98471559999996,
-    "name": "Musischer Jugendkreis Norderstedt e.V.",
-    "street": "Ochsenzoller Straße 134",
-    "city": "Norderstedt",
-    "zip": "22848",
+    "latitude": 52.5317,
+    "longitude": 13.3827,
+    "name": "Stiftung Gute-Tat.de",
+    "street": "Zinnowitzer Straße 1",
+    "city": "Berlin",
+    "zip": "10115",
     "country": "Deutschland",
     "picture": {
       "fallback": true,
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/025/356/fill_100x100_F_chse_LOGO.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.betterplace.jpg"
         },
         {
           "rel": "fill_200x200",
-          "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/025/356/fill_200x200_F_chse_LOGO.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.betterplace.jpg"
         },
         {
           "rel": "fill_400x400",
-          "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/025/356/fill_400x400_F_chse_LOGO.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.betterplace.jpg"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/025/356/crop_original_F_chse_LOGO.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.betterplace.jpg"
         }
       ]
     },
     "links": [
-      {
-        "rel": "self",
-        "href": "https://api.betterplace.org/de/api_v4/organisations/25356.json"
-      }
+
     ]
   },
   "vacancies": 1,
   "image": {
-    "description": "Die KIDS brauchen uns und vor allem Dich",
+    "description": null,
     "links": [
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_618x322_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_270x141_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
       },
       {
         "rel": "thumb",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/thumb_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.betterplace.png"
       },
       {
         "rel": "medium",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/medium_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.betterplace.png"
       },
       {
         "rel": "regular",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/regular_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.betterplace.png"
       }
     ]
   },
   "contact": {
-    "name": "Ulrich Eidecker",
-    "phone": "040-523 23 81",
-    "email": "eidecker@focus-success.de",
-    "picture": {
-      "fallback": true,
-      "links": [
-        {
-          "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.betterplace.jpg"
-        },
-        {
-          "rel": "original",
-          "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.betterplace.jpg"
-        }
-      ]
-    },
+    "name": "Beate Bera",
+    "phone": "",
+    "email": "b.bera@gute-tat.de",
+    "picture": null,
     "links": [
 
     ]
@@ -676,53 +668,64 @@ betterplace.
   "begins_at": null,
   "ends_at": null,
   "topics": [
-    "Bildung",
-    "Kinder & Jugendliche",
-    "Flüchtlinge & Migranten",
-    "Sozial Benachteiligte"
+    "Kinder & Jugendliche"
   ],
   "activities": [
-    "PR / Social Media"
+
   ],
-  "imported_from": null,
-  "import_information": null,
+  "imported_from": "aktion_mensch",
+  "import_information": {
+    "created_at": "2016-07-18T00:00:00+02:00",
+    "updated_at": "2016-07-18T00:00:00+02:00",
+    "import_type": "Bettertime::AktionMensch::Import",
+    "import_id": "nf-7460",
+    "imported_at": "2016-07-19T02:41:52+02:00",
+    "links": [
+
+    ]
+  },
   "profile_picture": {
     "fallback": true,
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_960x500_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.betterplace.png"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_730x380_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_618x322_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_410x214_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.betterplace.png"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/fill_270x141_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/028/428/crop_original_Gruppenbild_.jpg"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.betterplace.png"
       }
     ]
   },
   "links": [
     {
       "rel": "self",
-      "href": "https://api.betterplace.org/de/api_v4/volunteering/28428.json"
+      "href": "https://api.betterplace.org/de/api_v4/volunteering/39655.json"
     },
     {
       "rel": "platform",
-      "href": "https://www.betterplace.org/de/volunteering/28428-sos-public-relation-texter-pressesprecher-gesucht"
+      "href": "https://www.betterplace.org/de/volunteering/39655-kursangebot-fur-unbegleitete-minderjahrige-fluchtlinge"
+    },
+    {
+      "rel": "inquiries",
+      "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/39655-kursangebot-fur-unbegleitete-minderjahrige-fluchtlinge/inquiries.json",
+      "templated": true
     }
   ]
 }

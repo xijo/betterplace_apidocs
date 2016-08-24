@@ -1,15 +1,20 @@
 
-# Client Mailing Subscriptions
+# Volunteering Inquiries
 
 ```Rebol
-POST https://api.betterplace.org/de/api_v4/clients/volksfreund/projects/4425/mailing_subscriptions.json
+POST https://api.betterplace.org/de/api_v4/clients/volksfreund/volunteering/37443/inquiries.json
 ```
 
-Create or update a mailing subscriptions for a project.
-[There is flow chart that describes this process](http://ixwphj.axshare.com/user-subscriptions-flow.html).
+Submit a volunteering inquiry into the system. It will be sent as
+email to the manager of the volunteering. A copy of the inquiry will
+be sent to the inquiring user. The request has to be a POST request
+with a JSON body.
 
-**:lock: Only available if authenticated as a client.**
+
+**:lock: Only available if authenticated as a client and only
+if this client has permissions to use this feature.**
 See [betterplace.org clients](../README.md#client-api).
+
 
 **Response and error codes:**
 
@@ -29,26 +34,16 @@ entity). [More error codes](../README.md#http-status-codes).
     <th>Description</th>
   </tr>
   <tr>
-    <th align="left">language</th>
-    <td><code>en</code></td>
-    <td>yes</td>
-    <td>The subscription is marked with the language you use in your URL.
-Newsletter authors write their content in a specific lang which you can
-target with the subscription lang. To target a lang see
-<a href="../README.md#addressing-the-locale-of-a-resource">api setting lang</a>.
-</td>
-  </tr>
-  <tr>
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
     <td>The betterplace.org-internal client permalink.</td>
   </tr>
   <tr>
-    <th align="left">project_id</th>
-    <td><code>4425</code></td>
+    <th align="left">volunteering_id</th>
+    <td><code>37443</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+    <td>volunteering/job description id as an integer number.</td>
   </tr>
 </table>
 
@@ -63,10 +58,14 @@ are optional.
 
 ```json
 {
-  "email": "peter.paul@betterplace.org",
   "first_name": "Peter",
   "last_name": "Paul",
-  "active": true
+  "email": "peter.paul@betterplace.org",
+  "phone": "+49 (0)30 / 123456",
+  "availability": "I can help every Sunday evening.",
+  "profile": "I have taken care of kittens many times before.",
+  "questions": "Will I work in a team or on my own?",
+  "terms_of_use": true
 }
 ```
 
@@ -79,13 +78,6 @@ are optional.
     <th>Types</th>
     <th>Required</th>
     <th>Description</th>
-  </tr>
-  <tr>
-    <th align="left">email</th>
-    <td><code>peter.paul@betterplace.org</code></td>
-    <td>string</td>
-    <td>yes</td>
-    <td>The email of the user</td>
   </tr>
   <tr>
     <th align="left">first_name</th>
@@ -102,11 +94,51 @@ are optional.
     <td>The last name of the user</td>
   </tr>
   <tr>
-    <th align="left">active</th>
+    <th align="left">email</th>
+    <td><code>peter.paul@betterplace.org</code></td>
+    <td>string</td>
+    <td>yes</td>
+    <td>The email of the user</td>
+  </tr>
+  <tr>
+    <th align="left">phone</th>
+    <td><code>+49 (0)30 / 123456</code></td>
+    <td>string</td>
+    <td>no</td>
+    <td>The phone number of the user</td>
+  </tr>
+  <tr>
+    <th align="left">availability</th>
+    <td><code>I can help every Sunday evening.</code></td>
+    <td>string</td>
+    <td>yes</td>
+    <td>Information about the user’s availability.
+How much time would he like to spend, what are his preferred dates,
+would he prefer a short-term or a long-term involvement, etc.
+</td>
+  </tr>
+  <tr>
+    <th align="left">profile</th>
+    <td><code>I have taken care of kittens many times before.</code></td>
+    <td>string</td>
+    <td>no</td>
+    <td>Information about the user himself, his skills, etc.</td>
+  </tr>
+  <tr>
+    <th align="left">questions</th>
+    <td><code>Will I work in a team or on my own?</code></td>
+    <td>string</td>
+    <td>no</td>
+    <td>Any questions the user might have about the offer</td>
+  </tr>
+  <tr>
+    <th align="left">terms_of_use</th>
     <td><code>true</code></td>
     <td>boolean</td>
     <td>yes</td>
-    <td>State of the subscription: active/inactive</td>
+    <td>Confirmation that the user has accepted the privacy terms,
+e.g. via a checkbox.
+</td>
   </tr>
 </table>
 

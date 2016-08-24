@@ -9,7 +9,11 @@ A list of betterplace.org projects (donate money).
 Results are contained in a *data* attribute.
 
 **For [betterplace.org clients](../README.md#client-api):**
-Use this resource like `/clients/PERMALINK/projects.json`
+Use this resource as follows: `/clients/PERMALINK/projects.json`.
+
+To guarantee stable search results,
+all clients are required to specify at least one facet and order with each request as explained
+below.
 
 
 ## URL Parameters
@@ -25,15 +29,15 @@ Use this resource like `/clients/PERMALINK/projects.json`
     <th align="left">scope</th>
     <td><code>location</code></td>
     <td>no</td>
-    <td>Use the scope to specify how the search-query <code>q</code> should behave:
+    <td>Use the scope to specify how the search query <code>q</code> should behave:
 <ul>
 <li>"no scope" (default) performs a full text search
 <li><code>human_name</code> searches only on the manager-fullname and carrier-fullname.
   Use this to get all entities by "Unicef" or by "Till Behnke".
 <li><code>location</code> does a reverse geocoding lookup.
-  This lookup returns a bounding-box. We transform this bounding-box in a
-  rectangle that is large enough to encapsulate the whole bounding-box.
-  We then return all entities that belong to this rectangle.
+  This lookup returns a bounding box. We transform this bounding box to a
+  rectangle that is large enough to encapsulate the whole bounding box.
+  We then return all entities that are within this rectangle.
 </ul>
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
 </td>
@@ -54,7 +58,7 @@ Please add enough context information (like the Country name)
 so google knows what place you are looking for.
 <br>
 <em>… any location search:</em> All queries other than a float tuple
-are send to the google location service. For the provided response we
+are sent to the google location service. For the provided response we
 take a fitting lat/lng value as center of the search. So in theory,
 you can use any search that works for google maps.
 <br>
@@ -111,13 +115,19 @@ will be ignored.
     <td><code>completed:false</code></td>
     <td>no</td>
     <td>Filter the result set.
-Documented and supported filters are:
+<br>
+It is strongly recommended to <strong>specify facets</strong> with each request.
+A recommended set of facets is <code>tax_deductible:true| completed:false|
+closed:false| prohibit_donations:false</code> (without the spaces) which
+only shows active projects that can receive donations.
+<br>
+<em>Supported filters are:</em>
 <ul>
 <li><code>tax_deductible:true/false</code>
 <li><code>completed:true/false</code> –
 is this project fully financed (100 %)? See <code>completed_at</code>
 <li><code>closed:true/false</code> –
-is this project closed by the project manager? See <code>closed_at</code>
+has this project been closed by the project manager? See <code>closed_at</code>
 <li><code>prohibit_donations:true/false</code> –
 are donations to this project forbidden at the moment? Closed and blocked projects
 will always return true, for example.
@@ -130,15 +140,28 @@ It is possible to set multiple facet filters.
     <th align="left">order</th>
     <td><code>rank:DESC</code></td>
     <td>no</td>
-    <td>Order the results by <code>score</code>, <code>rank</code>, <code>id</code>,
-<code>progress_percentage</code>, <code>tax_deductible</code>, <code>created_at</code>,
-<code>updated_at</code>, <code>last_donation_at</code>, <code>completed</code>.
-Use the optional <code>ASC</code> (default) or <code>DESC</code>.
-<a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
+    <td>Order the result set.
 <br>
-The default order is the same as for the
-<a href="http://www.betterplace.org/en/projects/list">betterplace.org project list</a>:
-<code>completed:asc| score:desc | rank:desc| last_donation_at:desc</code>
+It is strongly recommended to <strong>specify an order</strong> with each request.
+The default order might change at any time without notice.
+A recommended order is <code>completed:asc| score:desc | rank:desc|
+last_donation_at:desc</code> (without the spaces). This is the order betterplace.org uses
+<a href="http://www.betterplace.org/en/projects/list">for the project list</a>.
+<br>
+<em>Supported orders are:</em>
+<ul>
+<li><code>score:ASC/DESC</code> – as provided by the search engine whenever a search term
+is given.
+<li><code>rank:ASC/DESC</code> – a betterplace.org-specific, platform-wide activity indicator
+<li><code>progress_percentage:ASC/DESC</code> – financing goal fulfillment given as 0 to 100
+<li><code>tax_deductible:ASC/DESC</code> – true (1) or false (0)
+<li><code>completed:ASC/DESC</code> – true (1) or false (0)
+<li><code>created_at:ASC/DESC</code> and <code>updated_at:ASC/DESC</code>
+<li><code>last_donation_at:ASC/DESC</code>
+<li><code>id:ASC/DESC</code>
+</ul>
+It is possible to set multiple order parameters.
+<a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
 </td>
   </tr>
 </table>
@@ -171,12 +194,6 @@ project manager.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -216,6 +233,20 @@ project manager.
       <td>null &#124; string</td>
       <td>"Deutschland"</td>
       <td>Name of the country</td>
+    </tr>
+    <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">activated_at</th>
+      <td>null &#124; string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone) when the project was activated
+by us, otherwise it is null.
+</td>
     </tr>
     <tr>
       <th align="left">title</th>
@@ -384,7 +415,12 @@ donation needs (pre ~2014). This percentage includes those needs.
         </th>
       <td>null &#124; object</td>
       <td>TODO</td>
-      <td>TODO</td>
+      <td>**DEPRECATED** Do not use this data. We will remove the nested
+matching fund data in the future.
+
+To get this data follow the active_matching_fund link and retrieve
+the data from the appropriate endpoint.
+</td>
     </tr>
   </table>
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
@@ -395,6 +431,12 @@ donation needs (pre ~2014). This percentage includes those needs.
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">contact.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">contact.name</th>
@@ -520,12 +562,6 @@ empty/null for anonymous donations for anonymous donations.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
-      <th align="left">active_matching_fund.content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
       <th align="left">active_matching_fund.activated_at</th>
       <td>null &#124; string</td>
       <td>"1994-11-05T13:15:30Z"</td>
@@ -632,6 +668,11 @@ empty/null for anonymous donations for anonymous donations.
 </td>
     </tr>
     <tr>
+      <th align="left">video</th>
+      <td>Link to a youtube video of this project
+</td>
+    </tr>
+    <tr>
       <th align="left">matching_funds</th>
       <td>Link to <a href="matching_funds_list.md">matching funds list</a>
 </td>
@@ -721,7 +762,9 @@ set for organisations.
     </tr>
     <tr>
       <th align="left">active_matching_fund.projects</th>
-      <td>Link to the list of projects belonging to this matching fund</td>
+      <td>Link to the <a href="projects_list.md">list of projects</a>
+belonging to this matching fund
+</td>
     </tr>
     <tr>
       <th align="left">active_matching_fund.documentation</th>
@@ -743,30 +786,32 @@ set for organisations.
     {
       "id": 1114,
       "created_at": "2009-03-10T11:12:16+01:00",
-      "updated_at": "2016-04-06T11:00:51+02:00",
-      "content_updated_at": "2016-03-18T14:17:55+01:00",
+      "updated_at": "2016-08-19T14:30:02+02:00",
       "latitude": 34.531617284782,
       "longitude": 69.13581752939456,
       "street": "Taimani, behind Qasemi Winhouse",
       "zip": "",
       "city": "Kabul",
       "country": "Afghanistan",
+      "content_updated_at": "2016-03-18T14:17:55+01:00",
+      "activated_at": "2009-03-10T12:29:29+01:00",
       "title": "Skateistan Afghanistan",
       "description": "With 68% of Afghanistan’s population under the age of 25, Skateistan strongly believes that youth are the ones most capable of bringing about social change.<br><br>Skateistan is an Afghan NGO which operates Afghanistan’s (and the world’s) first co-educational skateboarding school. The Skateistan school engages nearly 400 Kabul youth weekly through skateboarding, and provides them with new opportunities in cross-cultural interaction, education, and personal empowerment programs. <br><br>The students (ages 5-17) come from all of Afghanistan’s diverse ethnic and socioeconomic backgrounds, and include 40% female students, hundreds of streetworking children, and youth with disabilities. They develop skills in skateboarding, leadership, problem-solving, multimedia, and creative arts. The students themselves decide what they want to learn; we connect them with a safe space and opportunities for them to develop the skills that they consider important. <br><br>For Afghan girls Skateistan's programming is especially important as there are very few recreational opportunities for females. For example, it is not culturally acceptable for girls in Afghanistan to ride bicycles or play sports in public. <br><br>Skateistan has been active in Kabul since 2007 - with our facility built in 2009 - and in that time we’ve seen that Afghan youth of all ethnicities, genders, and socioeconomic backgrounds love to skateboard. Skateistan brings them together, equipping young men and women to lead their communities toward social change and development.<br><br>In 2012 Skateistan will be opening its second Afghan facility in Mazar-e-Sharif, Northern Afghanistan. It will have space to teach up to 1000 youth weekly.<br><br>Our program gives hundreds of oppressed youth a voice. Education and the opportunity for self-expression can break the cycles of poverty, illiteracy and exclusion, with sport paving the way.",
       "tax_deductible": true,
       "donations_prohibited": false,
       "completed_at": null,
       "closed_at": null,
-      "open_amount_in_cents": 1818000,
-      "donated_amount_in_cents": 4745852,
-      "positive_opinions_count": 728,
+      "open_amount_in_cents": 1757984,
+      "donated_amount_in_cents": 4805868,
+      "positive_opinions_count": 746,
       "negative_opinions_count": 0,
-      "donor_count": 552,
-      "progress_percentage": 72,
+      "donor_count": 560,
+      "progress_percentage": 73,
       "incomplete_need_count": 10,
       "completed_need_count": 87,
-      "blog_post_count": 91,
+      "blog_post_count": 95,
       "contact": {
+        "id": 130618,
         "name": "E. Kinast",
         "picture": {
           "fallback": true,
@@ -815,31 +860,30 @@ set for organisations.
         ]
       },
       "profile_picture": {
-        "fallback": true,
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_original_girls-merza-sm.jpg"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_original_girls-merza-sm.jpg"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_original_girls-merza-sm.jpg"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_original_girls-merza-sm.jpg"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_original_girls-merza-sm.jpg"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_original_girls-merza-sm.jpg"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
           }
         ]
       },
@@ -887,23 +931,24 @@ set for organisations.
     {
       "id": 6233,
       "created_at": "2011-02-25T08:48:43+01:00",
-      "updated_at": "2016-04-04T18:07:56+02:00",
-      "content_updated_at": "2016-02-29T09:00:37+01:00",
+      "updated_at": "2016-08-19T14:30:02+02:00",
       "latitude": 11.55883121490479,
       "longitude": 104.9174423217773,
       "street": null,
       "zip": null,
       "city": "Phnom Penh",
       "country": "Kambodscha",
+      "content_updated_at": "2016-02-29T09:00:37+01:00",
+      "activated_at": "2011-02-25T09:03:15+01:00",
       "title": "Skateistan Cambodia",
       "description": "Skateistan Cambodia began operations in March 2011, building the country's first skatepark in Phnom Penh. Since then the NGO has been teaching skateboarding and creative arts classes with marginalized and streetworking Khmer youth six days a week. <br><br>Skateboarding is a low-barrier, accessible activity that attracts girls and boys of all backgrounds and abilities. The interest from Cambodia's youth has grown so much since March 2011 that Skateistan Cambodia is now building its own facility to accommodate more than the 150 youth we currently work with weekly.<br><br>By building a safe and covered Skateistan facility in Phnom Pehn, Skateistan will provide year-round opportunities for youth to engage in recreational activities that encourages girls and boys of all backgrounds to build relationships with one another, while increasing their self-confidence and leadership skills. The facility will also have classroom spaces providing creative arts and multimedia activities for the students.<br><br>Partnering with local, best-practice NGOs in Cambodia, such as Pour un Sourire d'Enfant (PSE), Friends Intl., and Tiny Toones, Skateistan Cambodia also aims to use skateboarding as a tool to create a bridge between at-risk youth and the quality support services already existing in Phnom Penh.<br><br>Help us grow this grassroots project and create a safe space for all Cambodian youth to be a part of!",
       "tax_deductible": true,
       "donations_prohibited": false,
       "completed_at": null,
       "closed_at": null,
-      "open_amount_in_cents": 51619,
-      "donated_amount_in_cents": 569381,
-      "positive_opinions_count": 55,
+      "open_amount_in_cents": 51596,
+      "donated_amount_in_cents": 569404,
+      "positive_opinions_count": 56,
       "negative_opinions_count": 0,
       "donor_count": 53,
       "progress_percentage": 91,
@@ -911,6 +956,7 @@ set for organisations.
       "completed_need_count": 15,
       "blog_post_count": 35,
       "contact": {
+        "id": 272452,
         "name": "A. Buck",
         "picture": {
           "fallback": true,

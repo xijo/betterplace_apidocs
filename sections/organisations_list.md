@@ -55,12 +55,6 @@ This resource is not avaliable at the moment.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
-      <th align="left">content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
       <th align="left">latitude</th>
       <td>number</td>
       <td>52.499007</td>
@@ -95,6 +89,12 @@ This resource is not avaliable at the moment.
       <td>null &#124; string</td>
       <td>"Deutschland"</td>
       <td>Name of the country</td>
+    </tr>
+    <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
       <th align="left">slug</th>
@@ -155,6 +155,12 @@ If so, Users can request a tax-receipt for donations to that organisation.
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">contact.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">contact.name</th>
@@ -293,19 +299,20 @@ access rights in order to see this information.
     {
       "id": 2262,
       "created_at": "2009-11-02T16:12:49+01:00",
-      "updated_at": "2016-02-23T17:03:44+01:00",
-      "content_updated_at": "2016-02-23T17:03:44+01:00",
+      "updated_at": "2016-07-06T15:03:30+02:00",
       "latitude": 50.91569900512695,
       "longitude": 6.94116020202637,
       "street": "Höninger Weg 104",
       "zip": "50969",
       "city": "Köln",
       "country": "Deutschland",
+      "content_updated_at": "2016-07-06T15:03:30+02:00",
       "slug": "unicef",
       "name": "UNICEF",
       "description": "UNICEF, das Kinderhilfswerk der Vereinten Nationen, arbeitet weltweit mit Programmen in rund 150 Ländern. UNICEF hilft, dass das Recht jedes Kindes auf Überleben, Bildung und Schutz Wirklichkeit wird: mit konkreten Projekten, umfassenden Programmen und politischer Lobbyarbeit. UNICEF ist in jedem Land seit vielen Jahren vor Ort und hat ein dichtes Netzwerk lokaler Partner. So ist nachhaltige und effiziente Hilfe möglich. Mit dem jährlichen Geschäftsbericht informiert UNICEF ausführlich über Arbeitsweise, Strukturen und Kosten. Sie finden ihn unter www.unicef.de",
       "tax_deductible": true,
       "contact": {
+        "id": 20505,
         "name": "B.  Hell",
         "picture": {
           "fallback": true,
@@ -374,19 +381,20 @@ access rights in order to see this information.
     {
       "id": 125,
       "created_at": "2008-02-06T17:10:42+01:00",
-      "updated_at": "2016-02-23T17:18:26+01:00",
-      "content_updated_at": "2016-02-23T17:18:26+01:00",
+      "updated_at": "2016-07-06T15:01:06+02:00",
       "latitude": 53.55759811401367,
       "longitude": 9.96815967559815,
       "street": "Neuer Kamp 32",
       "zip": "20357",
       "city": "Hamburg",
       "country": "Deutschland",
+      "content_updated_at": "2016-07-06T15:01:06+02:00",
       "slug": "vivaconagua",
       "name": "Viva con Agua de Sankt Pauli e.V.",
       "description": "Die Organisation Viva con Agua:<br><br>Viva con Agua de Sankt Pauli e.V. ist eine international tätige Wasserinitiative und wird vom FC St. Pauli ideell unterstützt. Initiator Benjamin Adrion, ehemaliger Mittelfeldspieler des Fußballclubs, gründete 2005 nach einem Trainingslager auf Kuba den gemeinnützigen Verein. <br><br>Ziel der Initiative ist es, die Versorgung mit sauberem Trinkwasser und sanitären Anlagen in Entwicklungsländern nachhaltig zu verbessern. Viva con Agua ist Projektpartner der Welthungerhilfe.<br><br>21 Projekte in 15 Projektländern hat Viva con Agua bereits in Zusammenarbeit mit der Welthungerhilfe realisiert und damit über 300.000 Menschen Zugang zu sauberem Trinkwasser ermöglicht. Des Weiteren haben mehr als 100.000 Schüler und Studenten im deutschsprachigen Raum VcA-Bildungsworkshops, Seminare und Spendenläufe mitgemacht.<br><br>Auszeichnungen:<br><br>ISPO Award 2013<br>HAMMA Award 2012<br>Utopia Award 2012<br>B.A.U.M.-Umweltpreis 2011<br>Werkstatt N-Projekt 2010<br>Bundesverdienstkreuz 2009<br>Utopia Award 2008<br>Ausgewählter Ort im Land der Ideen 2007 (Schirmherrschaft Bundespräsident Horst Köhler)<br>Bundessieger start social 2007 (Schirmherrschaft Bundeskanzlerin Angela Merkel)<br>taz-Panter-Preis 2006 <br><br><br>Aktivitäten und Initiativen<br><br>Viva con Agua veranstaltet laufend Konzerte, Partys, Sport- und Kulturevents, deren Erlöse als Spende in Trinkwasserprojekte fließen.<br><br>Schärfung des Bewusstseins, besonders bei jungen Menschen in Deutschland, für die Themen Wasser und Entwicklungshilfe ist das zweite wichtige Anliegen von Viva con Agua.<br><br>Die Sensibilisierung für diese Bereiche soll einerseits durch die zahlreichen Veranstaltungen von Viva con Agua erfolgen, aber auch in intensiver Bildungsarbeit an Schulen. Damit führt Viva con Agua schon frühzeitig Kinder und Jugendliche an soziales und humanitäres Engagement heran.",
       "tax_deductible": true,
       "contact": {
+        "id": 449830,
         "name": "Johannes T.",
         "picture": {
           "fallback": true,

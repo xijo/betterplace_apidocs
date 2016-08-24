@@ -10,18 +10,18 @@ Results are contained in a *data* attribute.
 
 *Custom picture-sizes:* This API will only deliver the orginal image.
 That is the largest image betterplace.org can provide.
-Please use an image-transformation-service of your choice to resize this
-image to your liking. Note howevers that some have non-url-save characters
-that might break services like Sencha Source.
+Please use an image transformation service of your choice to resize this
+image to your liking. Note, however, that some image names contain
+non-url-safe characters that might break services such as Sencha Source.
 
 We are working on a better solution. Please contact us for more information.
 
 In the meantime, the following links might help:
 
-* [Sencha Source](http://docs.sencha.io/current/index.html#!/guide/src) provides a easy URL-based solution
+* [Sencha Source](http://docs.sencha.io/current/index.html#!/guide/src) provides a simple URL-based solution
 * [adaptive-images.com](http://adaptive-images.com/) is a self-hosted solution
 * [Google mod_pagespeed "image resizing"](https://developers.google.com/speed/docs/mod_pagespeed/filter-image-optimize)
-  should also help – and give you more performance-goodies as well
+  should also help – and give you more performance goodies as well
 
 **For [betterplace.org clients](../README.md#client-api):**
 If you request data for a project that is not part of the client
@@ -41,7 +41,7 @@ projects, the API will return a `404` HTTP code.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
 </table>
 
@@ -71,12 +71,6 @@ projects, the API will return a `404` HTTP code.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>

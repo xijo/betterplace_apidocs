@@ -3,10 +3,22 @@ All notable changes to the betterplace.org API v4 will be documented in this
 file. Notifications about changes will also be send to the [mailing list for
 service announcements](README.md#mailing-list-for-service-announcements).
 
+## 2016-06-28
+### Changed
+- [Opinion Lists](sections/opinions_list.md) now come with the same default order as opinions on betterplace.org - newest first.
+
+
+## 2016-04-18
+### Added
+- Added client API endpoint to submit volunteering inquiries to.
+  See [here](sections/volunteering_inquiries.md)
+
+
 ## 2016-04-12
 ### Added
 - [Volunteering List](sections/volunteering_list.md) can now be sorted by the
   `content_updated_at` order parameter.
+
 
 ## 2016-04-11
 ### Changed
@@ -26,14 +38,14 @@ service announcements](README.md#mailing-list-for-service-announcements).
 
 ## 2016-02-12
 ### Removed some deprecated attributes
-- Removed `donated_amount_in_cents` from [client endpoing](sections/client_details.md)
-- Removed `pool_balance_in_cents` from [client endpoing](sections/client_details.md)
-- Removed `open_amount_in_cents` from [client endpoing](sections/client_details.md)
-- Removed `requested_amount_in_cents` from [client endpoing](sections/client_details.md)
-- Removed `projects_count` from [client endpoing](sections/client_details.md)
-- Removed `client_donated_amount_in_cents` from [client endpoing](sections/client_details.md)
-- Removed `client_matched_amount_in_cents` from [client endpoing](sections/client_details.md)
-- Removed `client_donations_count` from [client endpoing](sections/client_details.md)
+- Removed `donated_amount_in_cents` from [client endpoint](sections/client_details.md)
+- Removed `pool_balance_in_cents` from [client endpoint](sections/client_details.md)
+- Removed `open_amount_in_cents` from [client endpoint](sections/client_details.md)
+- Removed `requested_amount_in_cents` from [client endpoint](sections/client_details.md)
+- Removed `projects_count` from [client endpoint](sections/client_details.md)
+- Removed `client_donated_amount_in_cents` from [client endpoint](sections/client_details.md)
+- Removed `client_matched_amount_in_cents` from [client endpoint](sections/client_details.md)
+- Removed `client_donations_count` from [client endpoint](sections/client_details.md)
 
 
 ## 2016-01-12

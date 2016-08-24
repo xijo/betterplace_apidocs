@@ -5,16 +5,16 @@
 GET https://api.betterplace.org/de/api_v4/projects/1114/blog_posts.json
 ```
 
-A list of betterplace.org projects blog posts.
+A list of the blog posts of a betterplace.org project.
 Results are contained in a *data* attribute.
 
 **For [betterplace.org clients](../README.md#client-api):**
 
-* _Project-Blogposts:_ There is no client-scoped-url.
-Please use the api calls that are provided inside the client project _url_ response
+* _Project Blogposts:_ There is no client-scoped URL.
+Please use the API calls that are provided inside the client project _url_ response
 to make sure you only request data that is associated with one of your projects.
 
-* _All Blogposts:_ Clients can retrieve a list of all blogpost of all client-projects:
+* _All Blogposts:_ Clients can retrieve a list of all blogpost of all client projects:
 `/clients/PERMALINK/blog_posts.json`
 
 
@@ -31,7 +31,7 @@ to make sure you only request data that is associated with one of your projects.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
 </table>
 
@@ -66,16 +66,10 @@ to make sure you only request data that is associated with one of your projects.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
-      <th align="left">content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
       <th align="left">lang</th>
       <td>string</td>
       <td>en</td>
-      <td>Blog posts have only one language at the moments</td>
+      <td>Blog posts have only one language at the moment</td>
     </tr>
     <tr>
       <th align="left">type</th>
@@ -95,7 +89,7 @@ field always has the value <code>BlogPost</code>.
       <th align="left">body</th>
       <td>string</td>
       <td>I am so happy to hear about the first donation for the Good Gifted Garden. If I told Chun …</td>
-      <td>The body has html like links, embeded videos, pictures.</td>
+      <td>The body may contain html such as links, embedded videos, and pictures.</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -170,6 +164,12 @@ Possible formats: "Till B.", "T. Behnke", "Till Behnke"
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">author.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">author.name</th>
@@ -263,55 +263,56 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 92,
+  "total_entries": 95,
   "offset": 0,
-  "total_pages": 46,
+  "total_pages": 48,
   "current_page": 1,
   "per_page": 2,
   "data": [
     {
-      "id": 74128,
-      "created_at": "2012-11-28T10:27:50+01:00",
-      "updated_at": "2012-11-28T10:27:50+01:00",
+      "id": 10413,
+      "created_at": "2009-10-28T11:48:26+01:00",
+      "updated_at": "2009-10-28T11:51:35+01:00",
       "lang": "de",
       "type": "BlogPost",
-      "title": "Skateistan in der ARD-Sendung \"Weltbilder\"",
-      "body": "<p>Die ARD-Sendung Weltbilder besch&auml;ftigt sich mit der Lage der Kinder in Afghanistan. Der Fokus des Beitrags liegt dabei auf den Skateistan-Sch&uuml;lern <span>Khorshid und Parwana, die bei dem Selbstmord-Anschlag in der N&auml;he des ISAF-Hauptquartier Anfang September ums Leben kamen. Skateistan-Gr&uuml;nder Oli Percovich erkl&auml;rt in einem kurzen Interview, warum es wichtig ist, dass das Projekt weitergeht.</span></p>\r\n<p><span>Eine k&uuml;rzere Version des Beitrags zusammen mit einem Interview mit Rudi Tarneden von UNICEF Deutschland findet sich in der Tagesschau-Mediathek:</span></p>\r\n<p><a href=\"http://www.tagesschau.de/multimedia/video/video1218890.html\" target=\"_blank\">http://www.tagesschau.de/multimedia/video/video1218890.html</a></p>\r\n<p>Eine etwas l&auml;ngere Version gibt es in der Mediathek des NDR:</p>\r\n<p><a href=\"http://www.ndr.de/mediathek/index.html?media=weltbilder2659\" target=\"_blank\">http://www.ndr.de/mediathek/index.html?media=weltbilder2659</a></p>",
+      "title": "Kabul: Eröffnung der Skatehalle am 29.10.2009",
+      "body": "<p>Seit zwei Jahren arbeitet das Skateistan-Team mit ganzer Kraft daran, einen indoor Skatepark in Kabul zu er&ouml;ffnen. Dementsprechend gl&uuml;cklich sind Alle, nun die die offizielle Er&ouml;ffnung Kabul's gr&ouml;&szlig;ter Sport-und Skatehalle bekannt geben zu k&ouml;nnen. Am 29. Oktober findet die feierliche Er&ouml;ffnung endlich statt. Dieser Meilenstein konnte nur durch die Zusammenarbeit von afghanischen und internationalen Teams erm&ouml;glicht werden - und nat&uuml;rlich durch Ihre Spendengelder!</p>\r\n<p>Die Er&ouml;ffnungsfeier wird mit kurzen Reden von G&auml;sten und Gratulaten aus aller Welt beginnen. Danach zeigen die afghanischen Kinder, was sie auf den Skateboards schon gelernt haben. Auch international bekannte Skate-Profis werden vor Ort sein und die neuen Rampen und Hindernissen einweihen. Bilder der Veranstaltung finden Sie in den n&auml;chsten Tagen hier auf Betterplace.</p>",
       "payout": null,
       "author": {
-        "name": "E. Kinast",
+        "id": 11872,
+        "name": "j. wardag",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/130/618/fill_100x100_original_Picture_023.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/011/872/fill_100x100_original_jana.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/130/618/crop_original_original_Picture_023.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/011/872/crop_original_original_jana.jpg"
             }
           ]
         },
         "links": [
           {
             "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/erika_k2"
+            "href": "https://www.betterplace.org/de/users/jana_w2"
           },
           {
             "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/130618/contact_data.json"
+            "href": "https://api.betterplace.org/de/api_v4/users/11872/contact_data.json"
           }
         ]
       },
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/blog_posts/74128.json"
+          "href": "https://api.betterplace.org/de/api_v4/blog_posts/10413.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan/news/74128"
+          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan/news/10413"
         },
         {
           "rel": "documentation",
@@ -320,15 +321,16 @@ access rights in order to see this information.
       ]
     },
     {
-      "id": 49498,
-      "created_at": "2011-11-24T09:58:42+01:00",
-      "updated_at": "2011-11-24T09:58:42+01:00",
-      "lang": "en",
+      "id": 5029,
+      "created_at": "2009-05-21T10:50:46+02:00",
+      "updated_at": "2014-02-26T15:27:11+01:00",
+      "lang": "de",
       "type": "BlogPost",
-      "title": "Young Skateistan volunteer wins UNESCO drawing contest",
-      "body": "<p>Skateistan students recently took part in a United Nations Educational, Scientific and Cultural Organisation (UNESCO) and United Nations Girls&rsquo; Education Initiative (UNGEI) drawing contest to promote the importance of gender equality in education.</p>\r\n<p>This semester at Skateistan our curriculum is all about the arts, so the drawing contest was a perfect opportunity to explore how we can express ourselves visually. Each class had discussions about equality in education before starting the drawings back in September.</p>\r\n<p>The winners were recently announced on the UNESCO website and one of our very own students, Hamdullah, was selected as a contest winner alongside other young artists from as far away as Bhutan, Timor and Mongolia. His drawing will be published in the UNGEI 2012 calendar.</p>\r\n<p>According to UNGEI, \"More than 3,000 drawings were received from 24 countries illustrating how gender equality in education benefits everyone. The aim of the contest and of the calendar is to raise public awareness on regional issues of gender equality in education, and to paint a picture of the benefits reaped from gender equality in education for both girls and boys.\"</p>\r\n<p>Hamdullah first came to Skateistan as a student, but has since become a volunteer, helping to teach and translate in workshops. He is also one of the star students in our advanced film-making classes. Keep it up Hamdullah, we are all proud of you!</p>\r\n<p>Check out the drawing&nbsp;<a href=\"http://skateistan.org/skateistan_blog/young-volunteer-wins-unesco-drawing-contest\" title=\"\" target=\"_blank\">here</a>.</p>",
+      "title": "Skateistan-Trailer",
+      "body": "<p><a href=\"http://youtube.com/watch?v=i6W6_G-h6is\">http://youtube.com/watch?v=i6W6_G-h6is</a></p>",
       "payout": null,
       "author": {
+        "id": 9238,
         "name": "M. Henninger",
         "picture": {
           "fallback": true,
@@ -357,11 +359,11 @@ access rights in order to see this information.
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/blog_posts/49498.json"
+          "href": "https://api.betterplace.org/de/api_v4/blog_posts/5029.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan/news/49498"
+          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan/news/5029"
         },
         {
           "rel": "documentation",

@@ -25,15 +25,15 @@ This resource is not avaliable at the moment.
     <th align="left">scope</th>
     <td><code>location</code></td>
     <td>no</td>
-    <td>Use the scope to specify how the search-query <code>q</code> should behave:
+    <td>Use the scope to specify how the search query <code>q</code> should behave:
 <ul>
 <li>"no scope" (default) performs a full text search
 <li><code>human_name</code> searches only on the manager-fullname and carrier-fullname.
   Use this to get all entities by "Unicef" or by "Till Behnke".
 <li><code>location</code> does a reverse geocoding lookup.
-  This lookup returns a bounding-box. We transform this bounding-box in a
-  rectangle that is large enough to encapsulate the whole bounding-box.
-  We then return all entities that belong to this rectangle.
+  This lookup returns a bounding box. We transform this bounding box to a
+  rectangle that is large enough to encapsulate the whole bounding box.
+  We then return all entities that are within this rectangle.
 </ul>
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
 </td>
@@ -54,7 +54,7 @@ Please add enough context information (like the Country name)
 so google knows what place you are looking for.
 <br>
 <em>… any location search:</em> All queries other than a float tuple
-are send to the google location service. For the provided response we
+are sent to the google location service. For the provided response we
 take a fitting lat/lng value as center of the search. So in theory,
 you can use any search that works for google maps.
 <br>
@@ -153,12 +153,6 @@ The default order is the same as for the
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
-      <th align="left">content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
       <th align="left">latitude</th>
       <td>number</td>
       <td>52.499007</td>
@@ -193,6 +187,12 @@ The default order is the same as for the
       <td>null &#124; string</td>
       <td>"Deutschland"</td>
       <td>Name of the country</td>
+    </tr>
+    <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
       <th align="left">title</th>
@@ -577,6 +577,13 @@ betterplace.
       <td>Permalink to betterplace.org</td>
     </tr>
     <tr>
+      <th align="left">inquiries</th>
+      <td>The URL to which inquiries about this offer can be POSTed
+(<a href="volunteering_inquiries.md">inquiry details</a>).
+Templated, needs insertion of the client_id.
+</td>
+    </tr>
+    <tr>
       <th align="left">carrier.self</th>
       <td>Link to this resource itself
 (<a href="organisation_details.md">organisation details</a>)
@@ -660,105 +667,105 @@ betterplace.
 
 ```json
 {
-  "total_entries": 10954,
+  "total_entries": 6042,
   "offset": 3,
-  "total_pages": 3652,
+  "total_pages": 2014,
   "current_page": 2,
   "per_page": 3,
   "data": [
     {
-      "id": 6633,
-      "created_at": "2013-01-29T14:55:36+01:00",
-      "updated_at": "2016-01-06T10:27:10+01:00",
-      "content_updated_at": "2016-01-06T10:27:10+01:00",
-      "latitude": 52.4986,
-      "longitude": 13.3918,
+      "id": 6801,
+      "created_at": "2013-02-12T12:58:15+01:00",
+      "updated_at": "2016-07-13T10:01:28+02:00",
+      "latitude": 53.5511,
+      "longitude": 9.99368,
       "street": "",
       "zip": "",
-      "city": "Berlin-Kreuzberg",
+      "city": "Hamburg",
       "country": "Deutschland",
-      "title": "wellcome-Ehrenamtliche für Berlin-Kreuzberg",
-      "description": "Wir suchen Freiwillige, die Freude und Erfahrung im Umgang mit Säuglingen und Kleinkindern sowie Lust haben, junge Familien zu unterstützen. Als wellcome-Ehrenamtliche unterstützen sie Familien mit Kindern im 1. Lebensjahr individuell und alltagspraktisch. Für einen Zeitraum von ca. 3-5 Monaten besuchen sie \"ihre Familie\" ca. 1-2 mal wöchentlich und helfen die neue Situation zu meistern. wellcome-Ehrenamtliche fahren beispielsweise den Säugling spazieren, damit die Mutter ausruhen kann, sie begleiten die Zwillingsmutter zum Kinderarzt, holen das Geschwisterkind von der Kita ab oder sind einfach da und hören zu.<br>Nach einem Kennlerngespräch mit der wellcome-Koordinatorin erhalten die Ehrenamtlichen fachliche Begleitung, Fortbildungen und Möglichkeiten des Austauschs im Rahmen reegelmäßiger Ehrenamtstreffen. Die anfallenden Fahrtkosten werden erstattet und es besteht Versicherungsschutz.",
+      "content_updated_at": "2016-02-23T13:22:58+01:00",
+      "title": "Als Mentor/in bei Kindern die Lust am Lesen wecken",
+      "description": "Unsere ehrenamtlichen Mentoren sind Leselernhelfer. Mit Nachhilfe oder Förderunterricht hat dies nichts zu tun. Mentoren wissen, wie wertvoll Bücher und Bildung sind. Und dass man Lesen fürs Leben lernt, nicht nur für die Schule. Ihr Wissen und ihre Begeisterung geben die Mentoren weiter an Schülerinnen und Schüler, die sich mit Sprache schwer tun.<br><br>Wir suchen Menschen, die:<br>    - selbst Freude am Lesen haben<br>    - geduldig, freundlich und respektvoll mit Kindern umgehen<br>    - Spaß am Gespräch und auch am Zuhören haben<br>    - Menschen aus anderen Kulturen vorurteilsfrei begegnen<br>    - zuverlässig sind<br><br>Einmal wöchentlich treffen sich Mentor und Lesekind für circa eine Stunde in der Schule zur gemeinsamen Lesestunde. Ihre Tätigkeit soll nicht den Deutschunterricht ersetzen und ist auch nicht als Nachhilfe gedacht. Das Lesekind soll keinen Leistungsdruck erleben, sondern mit Freude an die Bücher herangeführt werden. <br><br>MENTOR HAMBURG e.V. bietet den Mentoren:<br>    - eine sorgfältige Vorbereitung für ihre Mentortätigkeit<br>    - eine Vermittlung mit einem Lesekind an einer wohnortsnahen Schule<br>    - regelmäßige Mentorentreffen zum kollegialen Austausch<br>    - vielfältige Weiterbildungsangebote über das ganze Jahr<br>    - Bücherlisten, Lesetipps und Ideen, wie die Lesestunden gestaltet werden könnten<br>    - einmal im Jahr die Möglichkeit gemeinsam mit dem Lesekind ins Theater zu gehen<br>    - die Möglichkeit, kostenlos mit dem Lesekind ins Kinderbuchhaus oder Schulmuseum zu gehen",
       "carrier": {
-        "latitude": 52.53200149536133,
-        "longitude": 13.43490028381348,
-        "name": "wellcome in Berlin",
-        "street": "Liselotte-Herrmann-Str. 33",
-        "city": "Berlin",
-        "zip": "10407",
+        "latitude": 53.549379,
+        "longitude": 10.008464,
+        "name": "MENTOR - Die Leselernhelfer HAMBURG e.V.",
+        "street": "Hühnerposten 1 C",
+        "city": "Hamburg",
+        "zip": "20539",
         "country": "Deutschland",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/fill_100x100_WELL_WBM_pHndG_4c_klein.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/fill_100x100_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/fill_200x200_WELL_WBM_pHndG_4c_klein.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/fill_200x200_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/fill_400x400_WELL_WBM_pHndG_4c_klein.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/fill_400x400_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/772/crop_original_WELL_WBM_pHndG_4c_klein.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/crop_original_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
             }
           ]
         },
         "links": [
           {
             "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/2772.json"
+            "href": "https://api.betterplace.org/de/api_v4/organisations/13116.json"
           }
         ]
       },
-      "vacancies": 10,
+      "vacancies": 20,
       "image": {
-        "description": "wellcome-Ehrenamtliche im Einsatz",
+        "description": "",
         "links": [
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_618x322_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_618x322_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_270x141_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_270x141_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/Foto-MENTOR-2.jpg"
           },
           {
             "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/thumb_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/thumb_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/medium_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/medium_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/regular_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/regular_Foto-MENTOR-2.jpg"
           }
         ]
       },
       "contact": {
-        "name": "Canan  Gerner",
-        "phone": "030/ 32 53 23 42",
-        "email": "berlin.kreuzberg@wellcome-online.de",
+        "name": "Sandra Weis",
+        "phone": "",
+        "email": "info@mentor-hamburg.de",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/274/514/fill_100x100_20140827_160426.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/993/fill_100x100_original_MENTOR_HH_Logo.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/274/514/crop_original_20140827_160426.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/993/crop_original_original_MENTOR_HH_Logo.jpg"
             }
           ]
         },
@@ -777,12 +784,15 @@ betterplace.
       "begins_at": null,
       "ends_at": null,
       "topics": [
-        "Nachbarschaft",
-        "Kinder & Jugendliche"
+        "Bildung",
+        "Kinder & Jugendliche",
+        "Flüchtlinge & Migranten",
+        "Sozial Benachteiligte"
       ],
       "activities": [
+        "beraten/coachen",
         "besuchen/begleiten",
-        "pflegen/betreuen"
+        "Nachhilfe/vorlesen"
       ],
       "imported_from": null,
       "import_information": null,
@@ -791,91 +801,96 @@ betterplace.
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_960x500_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_960x500_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_730x380_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_730x380_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_618x322_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_618x322_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_410x214_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_410x214_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/fill_270x141_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_270x141_Foto-MENTOR-2.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/633/crop_original_well_Ehrenamtliche.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/crop_original_Foto-MENTOR-2.jpg"
           }
         ]
       },
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6633.json"
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/6801.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6633-wellcome-ehrenamtliche-fur-berlin-kreuzberg"
+          "href": "https://www.betterplace.org/de/volunteering/6801-als-mentor-in-bei-kindern-die-lust-am-lesen-wecken"
+        },
+        {
+          "rel": "inquiries",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/6801-als-mentor-in-bei-kindern-die-lust-am-lesen-wecken/inquiries.json",
+          "templated": true
         }
       ]
     },
     {
-      "id": 6775,
-      "created_at": "2013-02-10T15:48:45+01:00",
-      "updated_at": "2016-03-31T04:30:35+02:00",
-      "content_updated_at": "2015-10-27T15:10:27+01:00",
-      "latitude": 0.945,
-      "longitude": 33.125,
-      "street": "kiyunga mbulamuti kamuli road",
-      "zip": "256",
-      "city": "kamuli",
-      "country": "Uganda",
-      "title": "Give the children ideas,knowledge and support to become responsible citizens",
-      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.<br>The volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.<br>The organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
+      "id": 6831,
+      "created_at": "2013-02-13T18:44:17+01:00",
+      "updated_at": "2016-03-01T12:38:46+01:00",
+      "latitude": 0.1893,
+      "longitude": 34.9484,
+      "street": "57726",
+      "zip": "",
+      "city": "Kisumu",
+      "country": "Kenia",
+      "content_updated_at": "2016-03-01T12:38:46+01:00",
+      "title": "experience the diverse village stories and mythologies",
+      "description": "Teaching and instructing young children to read and write",
       "carrier": {
-        "latitude": 0.9386024,
-        "longitude": 33.1197774,
-        "name": "Children's Hope Uganda",
-        "street": "nawanyago-kisozi-kamuli road",
-        "city": "kamuli",
-        "zip": "+256",
-        "country": "Uganda",
+        "latitude": -0.15000000596046,
+        "longitude": 35.20000076293945,
+        "name": "Center For People Development",
+        "street": "Akodhe Loth road",
+        "city": "Kisumu",
+        "zip": "40107",
+        "country": "Kenia",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/fill_100x100_profile_thumb_LOGO_2.png"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/fill_200x200_profile_thumb_LOGO_2.png"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/fill_400x400_profile_thumb_LOGO_2.png"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/crop_original_profile_thumb_LOGO_2.png"
             }
           ]
         },
         "links": [
           {
             "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/13032.json"
+            "href": "https://api.betterplace.org/de/api_v4/organisations/4629.json"
           }
         ]
       },
-      "vacancies": 5,
+      "vacancies": 2,
       "image": {
         "description": "",
         "links": [
@@ -906,19 +921,19 @@ betterplace.
         ]
       },
       "contact": {
-        "name": "Kawomera David",
-        "phone": "+256779996702",
-        "email": "caomera@gmail.com",
+        "name": "PETER OTIENO",
+        "phone": "+254722261101",
+        "email": "khayombe@gmail.com",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/fill_100x100_original_Picture_037.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/127/272/fill_100x100_peter_o320140319-23207-8rvpxr.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/crop_original_original_Picture_037.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/127/272/crop_original_peter_o320140319-23207-8rvpxr.jpg"
             }
           ]
         },
@@ -941,10 +956,7 @@ betterplace.
         "Kinder & Jugendliche"
       ],
       "activities": [
-        "beraten/coachen",
-        "besuchen/begleiten",
-        "organisieren/planen",
-        "pflegen/betreuen"
+        "Nachhilfe/vorlesen"
       ],
       "imported_from": null,
       "import_information": null,
@@ -980,107 +992,112 @@ betterplace.
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6775.json"
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/6831.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6775-give-the-children-ideas-knowledge-and-support-to-become-responsible-citizens"
+          "href": "https://www.betterplace.org/de/volunteering/6831-experience-the-diverse-village-stories-and-mythologies"
+        },
+        {
+          "rel": "inquiries",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/6831-experience-the-diverse-village-stories-and-mythologies/inquiries.json",
+          "templated": true
         }
       ]
     },
     {
-      "id": 6776,
-      "created_at": "2013-02-10T15:49:29+01:00",
-      "updated_at": "2016-04-01T04:30:36+02:00",
-      "content_updated_at": "2015-10-28T16:45:59+01:00",
-      "latitude": 0.945,
-      "longitude": 33.125,
-      "street": "kiyunga mbulamuti kamuli road",
-      "zip": "256",
-      "city": "kamuli",
-      "country": "Uganda",
-      "title": "Give the children ideas,knowledge and support to become responsible citizens",
-      "description": "The opportunity of the volunteers is guiding and counseling the community and teaching the young generation on how to behave in the orphanage life they are in.<br>The volunteers are required to pay for their transport to kiyunga in kisozi sub county in kamuli district.<br>The organization offers accommodation, feeding and some others the organization can afford.They willbe secured by the organization.for more inquiry  contact this(caomera@gmail.com)",
+      "id": 6843,
+      "created_at": "2013-02-14T18:55:53+01:00",
+      "updated_at": "2016-02-22T10:50:07+01:00",
+      "latitude": 7.52694,
+      "longitude": 1.12667,
+      "street": "Doulassame",
+      "zip": "",
+      "city": "Atakpamé",
+      "country": "Togo",
+      "content_updated_at": "2016-02-22T10:50:07+01:00",
+      "title": "Mit Kreativiät und Engagement den Schulalltag gehörloser Kinder bereichern!",
+      "description": "Zur Unterstützung unseres Lehrers an der Gehörlosenschule in Atakpamé (Togo) suchen wir freiwillige Helfer. Sie helfen bei verschiedenen Aufgaben, lernen die Gebärdensprache, betreuen die Kinder und unterrichten nach Einarbeitung eigenverantwortlich eine Kleingruppe. Natürlich sind eigene Ideen und Projekte bei Schülern und Lehrer sehr willkommen: Kunst, Theater, Sport, Spiele, Wettbewerbe, Ausflüge.. Ihre Kreativität ist gefragt!<br><br>Vorraussetzungen:<br>Freude am Umgang mit Kindern, Einfühlungsvermögen, Kreativität, Verantwortungsbewusstsein, Engagement und vorallem Geduld!!<br><br>Der/Die Freiwillige ist NICHT über uns versichert und trägt selbst alle Kosten! Gerne organisieren wir die Unterbringung vor Ort - (Bevorzugt in Gastfamilien)! Außerdem wird der/die Freiwillige während seiner/ihrer gesamten Aufenthaltszeit von unseren Mitarbeitern betreut! Auf Wunsch findet vor Arbeitsantritt ein Sprachkurs der Landes- und Gebärdensprache statt.<br>Nach erfolgreicher Tätigkeit stellen wir dem/der Freiwilligen ein Zertifikat aus.<br><br>Dauer des Einsatzes: mind. 3 Wochen<br>                                  höchs. 24 Monate (Ausnahmen möglich)<br>Der Einstieg ist, ab September 2013, während des kompletten Jahres möglich. Die Schule ist Anfang Juli bis Ende September geschlossen.<br>Zum Abreisezeitpunkt sollte der Freiwillige bereits volljährig sein! <br>Ausnahmen nur in Absprache mit den Eltern.<br><br>Bewerbung:<br>*Lebenslauf<br>*Motivationsschreiben<br>*Abschlusszeugnis<br><br>Gerne stehe ich Ihnen für weitere Fragen und zusätzliche Informationen zur Verfügung!<br><br>Liebe Grüße,<br>Carola Burkl",
       "carrier": {
-        "latitude": 0.9386024,
-        "longitude": 33.1197774,
-        "name": "Children's Hope Uganda",
-        "street": "nawanyago-kisozi-kamuli road",
-        "city": "kamuli",
-        "zip": "+256",
-        "country": "Uganda",
+        "latitude": 7.5269444,
+        "longitude": 1.1266667,
+        "name": "Engagement Enfants sans Limites",
+        "street": "Doulassame",
+        "city": "Atakpamé",
+        "zip": "",
+        "country": "Togo",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/fill_100x100_profile_thumb_logoaufwei_.png"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/fill_200x200_profile_thumb_logoaufwei_.png"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/fill_400x400_profile_thumb_logoaufwei_.png"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.betterplace.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/crop_original_profile_thumb_logoaufwei_.png"
             }
           ]
         },
         "links": [
           {
             "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/13032.json"
+            "href": "https://api.betterplace.org/de/api_v4/organisations/13144.json"
           }
         ]
       },
-      "vacancies": 5,
+      "vacancies": 2,
       "image": {
-        "description": null,
+        "description": "Eine Freiwillige bei der Arbeit mit einer Schülerin der ersten Klasse. Zählen von 1 bis 10",
         "links": [
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_618x322_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_270x141_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "thumb",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/thumb_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "medium",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/medium_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "regular",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/regular_861691_484177131642632_1960199284_n.jpg"
           }
         ]
       },
       "contact": {
-        "name": "Kawomera David",
-        "phone": "+256779996702",
-        "email": "caomera@gmail.com",
+        "name": "Carola Burkl",
+        "phone": "015777329641",
+        "email": "carola.burkl@schlucht.net",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/fill_100x100_original_Picture_037.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/291/196/fill_100x100_original_IMG_3402.JPG"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/170/crop_original_original_Picture_037.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/291/196/crop_original_original_IMG_3402.JPG"
             }
           ]
         },
@@ -1089,24 +1106,27 @@ betterplace.
         ]
       },
       "location_fixed": true,
-      "working_time_selection": "egal wann / nach Vereinbarung",
+      "working_time_selection": "regelmäßig/langfristig",
       "working_time_weekends": [
 
       ],
       "working_time_weekdays": [
-
+        "vormittags",
+        "nachmittags"
       ],
       "begins_at": null,
       "ends_at": null,
       "topics": [
         "Bildung",
-        "Kinder & Jugendliche"
+        "Kinder & Jugendliche",
+        "Menschen mit Behinderung",
+        "Menschenrechte"
       ],
       "activities": [
-        "beraten/coachen",
-        "besuchen/begleiten",
-        "organisieren/planen",
-        "pflegen/betreuen"
+        "Gruppen betreuen",
+        "malen/gestalten",
+        "Sport machen",
+        "Nachhilfe/vorlesen"
       ],
       "imported_from": null,
       "import_information": null,
@@ -1115,38 +1135,43 @@ betterplace.
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_960x500_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_730x380_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_618x322_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_410x214_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_270x141_861691_484177131642632_1960199284_n.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.betterplace.png"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/crop_original_861691_484177131642632_1960199284_n.jpg"
           }
         ]
       },
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6776.json"
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/6843.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6776-give-the-children-ideas-knowledge-and-support-to-become-responsible-citizens"
+          "href": "https://www.betterplace.org/de/volunteering/6843-mit-kreativiat-und-engagement-den-schulalltag-gehorloser-kinder-bereichern"
+        },
+        {
+          "rel": "inquiries",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/6843-mit-kreativiat-und-engagement-den-schulalltag-gehorloser-kinder-bereichern/inquiries.json",
+          "templated": true
         }
       ]
     }

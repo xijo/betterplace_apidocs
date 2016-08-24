@@ -16,18 +16,21 @@ Results are contained in a *data* attribute.
 
 **For [betterplace.org clients](../README.md#client-api):**
 
-* _Project-Opinions:_ There is no client-scoped-url.
-  Please use the api calls that are provided inside the client project _url_ response
+* _Project Opinions:_ There is no client-scoped URL.
+  Please use the API calls that are provided inside the client project _url_ response
   to make sure you only request data that is associated with one of your projects.
 
-* _Fundraising-Event-Opinions:_ There is no client-scoped-url.
-  Please use the api calls that are provided inside the client fundraising event _url_ response
+* _Fundraising Event Opinions:_ There is no client-scoped URL.
+  Please use the API calls that are provided inside the client fundraising event _url_ response
   to make sure you only request data that is associated with one of your fundraising event.
 
-* _All Opinions:_ Clients can retrieve a list of all opinions of all client-projects:
+* _All Opinions:_ Clients can retrieve a list of all opinions of all client projects:
   ```Rebol
   GET https://api.betterplace.org/de/api_v4/clients/{client_id}/opinions.json
   ```
+
+To guarantee stable search results, all clients are required to specify at least one facet
+and order with each request as explained below.
 
 
 ## URL Parameters
@@ -43,8 +46,8 @@ Results are contained in a *data* attribute.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>no</td>
-    <td>Project-id as an integer number ≥ 14.
-This url-part is required in case you want to show project opinions.
+    <td>Project id as an integer number ≥ 14.
+This parameter is required in case you want to show project opinions.
 Also check the URL example in the introduction.
 </td>
   </tr>
@@ -52,8 +55,8 @@ Also check the URL example in the introduction.
     <th align="left">fundraising_event_id</th>
     <td><code>19267</code></td>
     <td>no</td>
-    <td>Fundraising-event-id as an integer number ≥ 1.
-This url-part is required in case you want to show fundraising event opinions.
+    <td>Fundraising Event id as an integer number ≥ 1.
+This parameter is required in case you want to show fundraising event opinions.
 Also check the URL example in the introduction.
 </td>
   </tr>
@@ -61,8 +64,8 @@ Also check the URL example in the introduction.
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>no</td>
-    <td>The betterplace.org-internal client permalink.'
-This url-part is required for the "all opinions" list.
+    <td>The betterplace.org-internal client permalink.
+This parameter is required for the "all opinions" list.
 Also check the URL example in the introduction.
 </td>
   </tr>
@@ -70,9 +73,18 @@ Also check the URL example in the introduction.
     <th align="left">order</th>
     <td><code>created_at:ASC</code></td>
     <td>no</td>
-    <td>Order the result by
-<code>created_at</code> (default), <code>id</code>, <code>score</code>
-Use the optional <code>ASC</code> (default) or <code>DESC</code>.
+    <td>Order the result set.
+<br>
+It is strongly recommended to <strong>specify an order</strong> with each request.
+The default order might change at any time without notice.
+A recommended order is <code>id:DESC</code>. This is the order in <a href=" http://www.betterplace.org/de/projects/1114/opinions">for the opinions list</a>
+<br>
+<em>Supported orders are:</em>
+<ul>
+<li><code>created_at:ASC/DESC</code>
+<li><code>id:ASC/DESC</code>
+</ul>
+It is possible to set multiple order parameters.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
 </td>
   </tr>
@@ -80,12 +92,10 @@ Use the optional <code>ASC</code> (default) or <code>DESC</code>.
     <th align="left">facets</th>
     <td><code>has_message:true</code></td>
     <td>no</td>
-    <td>Filter the result set:
+    <td>Filter the result set.
 <ul>
 <li><code>facets=score:positive</code> / <code>negative</code> only positive / negative opinion.
-
 <li><code>facets=has_message:true</code> / <code>false</code> only opinions with / without a message.
-
 <li><code>facets=has_donation:true</code> / <code>false</code> only opinions with / without a donation.
 Note that "has_donation:true" might also show donations where <code>donated_amount_in_cents</code> is not avaliable,
 see 'donated_amount_in_cents' response attribute documentation for details.
@@ -125,12 +135,6 @@ It is possible to set multiple facet filters.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -206,6 +210,12 @@ why they like or dislike this project.
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">author.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">author.name</th>
@@ -308,48 +318,26 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 31,
+  "total_entries": 746,
   "offset": 0,
-  "total_pages": 11,
+  "total_pages": 249,
   "current_page": 1,
   "per_page": 3,
   "data": [
     {
-      "id": 5442,
-      "created_at": "2010-11-14T09:43:17+01:00",
-      "updated_at": "2010-11-14T09:43:17+01:00",
+      "id": 937147,
+      "created_at": "2016-07-20T19:07:35+02:00",
+      "updated_at": "2016-07-20T19:07:35+02:00",
+      "donated_amount_in_cents": 102,
+      "matched_amount_in_cents": 0,
+      "matched": false,
       "score": "positive",
-      "author": {
-        "name": "Joel S.",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/018/797/fill_100x100_original_profil.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/018/797/crop_original_original_profil.jpg"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/joel_s"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/18797/contact_data.json"
-          }
-        ]
-      },
-      "message": "Wenig kann viel bewirken. Gerade Skateistan vermag mit einem sehr kleinen Budget - für Afghanistan  klein - wirklich ne Menge zu bewegen, und so das Leben von ner Menge Kids nachhaltig verändern.<br>Vor Ort durfte ich erfahren, wie effizient und hart die Jungs und Mädels von Skateistan in diesem schwierigen Umfeld arbeiten und wie mit den ihnen zur Verfügung stehenden Mitteln sorgsam gewirtschaftet wird.<br>Keep goin !!!",
+      "author": null,
+      "message": "",
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/5442.json"
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/937147.json"
         },
         {
           "rel": "project",
@@ -358,41 +346,19 @@ access rights in order to see this information.
       ]
     },
     {
-      "id": 5548,
-      "created_at": "2010-11-25T20:55:23+01:00",
-      "updated_at": "2010-11-25T20:55:23+01:00",
+      "id": 937146,
+      "created_at": "2016-07-20T18:57:26+02:00",
+      "updated_at": "2016-07-20T18:57:26+02:00",
+      "donated_amount_in_cents": 102,
+      "matched_amount_in_cents": 0,
+      "matched": false,
       "score": "positive",
-      "author": {
-        "name": "R. Bader",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/132/423/fill_100x100_original_Picture_1.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/132/423/crop_original_original_Picture_1.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/rhianon_b"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/132423/contact_data.json"
-          }
-        ]
-      },
-      "message": "I spent six months this year as a volunteer with Skateistan. During my internship I taught creative arts and multimedia in classroom, taught skateboarding to over 100 girls every week, liaised with international media, wrote donor reports and proposals, managed online content, and worked with Afghan staff/volunteers to pass on responsibilities and a sense of ownership. The children that attend Skateistan are so grateful to have the sports and educational opportunities open to them, and every single day the NGO is growing and improving its work with youth in Afghanistan. Skateistan is the most important, exciting and rewarding thing I've ever been a part of.",
+      "author": null,
+      "message": "",
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/5548.json"
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/937146.json"
         },
         {
           "rel": "project",
@@ -401,41 +367,19 @@ access rights in order to see this information.
       ]
     },
     {
-      "id": 1572,
-      "created_at": "2009-07-22T22:23:26+02:00",
-      "updated_at": "2009-07-22T22:23:26+02:00",
+      "id": 937145,
+      "created_at": "2016-07-20T18:55:12+02:00",
+      "updated_at": "2016-07-20T18:55:12+02:00",
+      "donated_amount_in_cents": 102,
+      "matched_amount_in_cents": 0,
+      "matched": false,
       "score": "positive",
-      "author": {
-        "name": "U. Köhler",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/015/597/fill_100x100_original_Ute_SchloGraFe.sw1.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/015/597/crop_original_original_Ute_SchloGraFe.sw1.jpg"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/ute_k2"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/15597/contact_data.json"
-          }
-        ]
-      },
-      "message": "Ich bin Fürsprecherin des Projekts Skateistan, weil ich den Projektverantwortlichen Max Henninger letztes Jahr im Zuge meines Studiums kennengelernt habe und er uns über seine Arbeit in Afghanistan berichtet hat. <br>Ich bin begeistert von seiner Überzeugung, seiner Tatkraft und seinem Mut, Kindern in einem vom Krieg erschütterten Land ein bisschen Lebensfreude zu geben!",
+      "author": null,
+      "message": "",
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/1572.json"
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/937145.json"
         },
         {
           "rel": "project",

@@ -8,7 +8,7 @@ GET https://api.betterplace.org/de/api_v4/fundraising_events/19267.json
 The details of a betterplace.org fundraising events (donate money).
 
 **For [betterplace.org clients](../README.md#client-api):**
-Use this resource like `/clients/PERMALINK/fundraising-events/ID.json`
+Use this resource as follows: `/clients/PERMALINK/fundraising-events/ID.json`
 
 
 ## URL Parameters
@@ -24,7 +24,7 @@ Use this resource like `/clients/PERMALINK/fundraising-events/ID.json`
     <th align="left">id</th>
     <td><code>19267</code></td>
     <td>yes</td>
-    <td>Fundraising-Event-id as an integer number ≥ 1.</td>
+    <td>Fundraising Event id as an integer number ≥ 1.</td>
   </tr>
 </table>
 
@@ -165,6 +165,12 @@ decided to add a <code>requested_amount_in_cents</code>.
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">contact.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">contact.name</th>
@@ -334,6 +340,7 @@ access rights in order to see this information.
   "requested_amount_in_cents": null,
   "progress_percentage": null,
   "contact": {
+    "id": 397832,
     "name": "J. & J.",
     "picture": {
       "fallback": true,

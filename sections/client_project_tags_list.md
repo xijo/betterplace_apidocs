@@ -11,7 +11,10 @@ This API returns all tags assigned by this client for this project.
 Client project tags are a custom client feature and andministered
 as a service of [betterplace solutions](http://www.betterplace-solutions.de/#buergerzeitung).
 
-Results are contains in a *data* attribute.
+Results are contained in a *data* attribute.
+
+To guarantee stable search results, all clients are required to specify an order with each
+request as explained below.
 
 
 ## URL Parameters
@@ -33,18 +36,26 @@ Results are contains in a *data* attribute.
     <th align="left">project_id</th>
     <td><code>4425</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
   <tr>
     <th align="left">order</th>
     <td><code>projects_count:DESC</code></td>
     <td>no</td>
-    <td>Order the result by
-<code>slug</code> (tag name) or <code>projects_count</code>.
-Use the optional <code>ASC</code> (default) or <code>DESC</code> to
-change the order of the results. <a
-href="../README.md#request-parameter-format">Learn how to format the
-parameter</a>.
+    <td>Order the result set.
+<br>
+It is strongly recommended to <strong>specify an order</strong> with each request.
+The default order might change at any time without notice.
+A recommended order is
+<code>projects_count:asc| slug:asc</code> (without the spaces).
+<br>
+<em>Supported orders are:</em>
+<ul>
+<li><code>slug:ASC/DESC</code> – tag name
+<li><code>projects_count:ASC/DESC</code> - how many projects are using that client?
+</ul>
+It is possible to set multiple facet filters.
+<a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
 </td>
   </tr>
 </table>
@@ -106,7 +117,7 @@ that where tagged with this tag.
   "data": [
     {
       "tag": "Trier",
-      "projects_count": 36,
+      "projects_count": 29,
       "links": [
         {
           "rel": "projects",
@@ -116,7 +127,7 @@ that where tagged with this tag.
     },
     {
       "tag": "KinderJugendliche",
-      "projects_count": 33,
+      "projects_count": 28,
       "links": [
         {
           "rel": "projects",
@@ -126,7 +137,7 @@ that where tagged with this tag.
     },
     {
       "tag": "Familien",
-      "projects_count": 15,
+      "projects_count": 12,
       "links": [
         {
           "rel": "projects",

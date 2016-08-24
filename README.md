@@ -4,13 +4,13 @@
 
 This is the latest API for betterplace.org. It's a REST-style API that returns
 JSON for serialization.
-It incorporates some ideas from [hypermedia apis](https://www.google.de/search?q=hypermedia+api)
-like the link-strukture.
+It incorporates some ideas from [hypermedia APIs](https://www.google.de/search?q=hypermedia+api)
+such as the link structure.
 
 
 #### Please provide feedback
-Please don't hesitate to provide any feedback about the API and this documentation
-at developers@betterplace.org.
+Please don't hesitate to send feedback about the API and this documentation
+to developers@betterplace.org.
 
 
 #### Mailing list for service announcements
@@ -56,13 +56,13 @@ about updates and scheduled downtimes.
   1. **Volunteering**
     1. [**Volunteering** List and Search](sections/volunteering_list.md)
     1. [**Volunteering** Details](sections/volunteering_details.md)
+    1. [Volunteering **Inquiries**](sections/volunteering_inquiries.md)
   1. **Organisations**
     1. [**Organisations** List](sections/organisations_list.md)
     1. [**Organisation** Details](sections/organisation_details.md)
   1. **MatchingFunds**
     1. [**MatchingFunds** List](sections/matching_funds_list.md)
     1. [**MatchingFund** Details](sections/matching_fund_details.md)
-    1. [MatchingFund **Projects** List](sections/matching_fund_projects_list.md)
   1. **FundraisingChallenge**
     1. [Fundraising Challenge **Contest** Details](sections/fundraising_challenge_contest_details.md)
     1. [Fundraising Challenge Contest **Results** List](sections/fundraising_challenge_contest_results_list.md)
@@ -96,38 +96,38 @@ about updates and scheduled downtimes.
 ## General information
 
 * The API is https only, all non-https requests will be redirected accordingly
-* The response/response format is JSON
+* The response format is JSON
 * We support [Cross-origin resource sharing (CORS)](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), so no proxy or JSONP is required
-* Authentication: Most api calls are public.
-  Some client API feature require authentication. [Learn more](#client-authentication)
-* Users, Companies and Portals are not part of the API at this moment.
+* Authentication: Most API calls are public.
+  Some client API features require authentication. [Learn more](#client-authentication)
+* The data of betterplace Users, Companies and Portals is not part of the API at this moment.
 
 
 ### Request parameter format
 
-The `order` and `facets` request parameters accept multiple key-value-parameter.
+The `order` and `facets` request parameters accept multiple key-value pairs.
 We use the same convention as the [Google Static Maps API V2](https://developers.google.com/maps/documentation/staticmaps/#URL_Parameters).
 
 Example: `foo:bar|lorem:ipsum`
 
-This way you may specify a primary and secondaray sort order like this
+This way you may specify a primary and secondary sort order such as
 `order=rank:DESC|created_at:DESC`, which will cause higher ranked objects to
-come first and more recently created objects come first if they have equal
+come first and more recently created objects to come first if they have equal
 rank.
 
 * Split key and value by a colon `:`
-* Split multiple key-value-parameter by a pipe `|` (`%7C`)
-* [URL encode](http://de.wikipedia.org/wiki/URL-Encoding) all params, so the Pipe becomes `%7C`
-* Note that for readability-reasons we don't URL encode the params in this documentation
+* Split multiple key-value pairs by a pipe `|` (`%7C`)
+* [URL-encode](http://de.wikipedia.org/wiki/URL-Encoding) all params, so the pipe becomes `%7C`
+* Note that for readability reasons we don't URL-encode the params in this documentation
 
 
 ### Addressing the locale of a resource
 * Some resources offer translated content. To access the translated content you
-  need to set the lang-prefix in the API-URL.
-  `api_v4/de/projects/…` returns the german translations while
-  `api_v4/en/projects/…` return the english translated content. Not translated
-  content will fallback to the original content language.
-  We currently support content with german or english translations.
+  need to set the lang-prefix in the API URL.
+  `api_v4/de/projects/…` returns the German translations while
+  `api_v4/en/projects/…` return the English ones. Non-translated
+  content will fall back to the original content language.
+  We currently support content with German and English translations.
 * The same pattern applies to creating resources for a specific language.
 
 
@@ -193,10 +193,10 @@ The following attributes are returned in all list view responses:
 
 ### Picture formats
 
-Please note that all over the API only the `original` version will always be available. There are more image versions
-for different entities, e.g. fill_960x500 for projects. You can use these versions, but they might change in the future!
+Please note that all over the API only the `original` image version will always be available. There are additional image versions
+for various entities, e.g. fill_960x500 for projects. You can use these versions, but they might change in the future!
 
-To avoid problems stay tuned and subscribe to the [Mailing list for service announcements ↑](#mailing-list-for-service-announcements).
+To avoid problems, stay tuned and subscribe to the [Mailing list for service announcements ↑](#mailing-list-for-service-announcements).
 
 
 ### HTTP Status Codes
@@ -222,7 +222,7 @@ The following HTTP result codes can be returned:
   but no client was authenticated.
 * [HTTP Code `404`](http://httpstatus.es/404)
   if a requested resource could not be found.
-  Also used for projects that are not part of a given client-scope.
+  Also used for projects that are not part of a given client scope.
 * [HTTP Code `422`](http://httpstatus.es/422)
   if the submitted resource could not be accepted due to erroneous parameters.
 * [HTTP Code `500`](http://httpstatus.es/500)
@@ -233,8 +233,8 @@ The following HTTP result codes can be returned:
 
 ### Error Messages
 
-If an error occurs, a JSON response messages is returned with a `name` and `reason` (optional).
-Clients that use the betterplace.org-staging-environment will also see a
+If an error occurs, a JSON response message is returned with a `name` and `reason` (optional).
+Clients that use the betterplace.org staging environment will also see a
 `backtrace` and `message` property.
 
 Example:
@@ -254,11 +254,11 @@ Example:
 }
 ```
 
-If errors occur during the creation process of a resource the answer will
-contain helpful information about how to resolve the issues. Please note
+If errors occur during the creation process of a resource, the answer will
+contain helpful information about how to resolve the issue. Please note
 that this information is not meant to be used in your application directly
 but only for your development process. We might change the specs for the
-errors-response at any time without further notice.
+error response at any time without further notice.
 
 Example with validation errors:
 
@@ -282,14 +282,14 @@ Example with validation errors:
 
 Please contact developers@betterplace.org for more information
 
-* Documentation: Not all resources have a documentation-url as part of the json
-* Documentation: The response-table does not show the root-documentation for response-elements with sub-elements (for example carrier.name is documented but carrier is not)
-* Blogposts: There is no way yet to filter BlogPosts from PayoutBlogPost
+* Documentation: Not all resources have a documentation URL as part of the JSON response
+* Documentation: The response table does not show the root documentation for response elements with sub-elements (for example carrier.name is documented but carrier is not)
+* BlogPosts: There is no way yet to filter BlogPosts from PayoutBlogPosts
 
 
 ### API Client Libraries
 
-While we currently officially do not offer any client api libraries [Duilio Ruggiero](https://github.com/sinetris) implemented the prototypical
+While we currently do not offer any official client API libraries, [Duilio Ruggiero](https://github.com/sinetris) implemented the prototypical
 ruby client [bettery](https://github.com/sinetris/bettery).
 
 We would love to hear from you if you plan to use/extend bettery or implement your own client and publish the code.
@@ -304,33 +304,33 @@ We would love to hear from you if you plan to use/extend bettery or implement yo
 
 ### Example apps
 
-* The "Deutsch Tansanische Partnerschaft" uses this API to present their betterplace.org projects right on their website: [Project list](http://www.dtpev.de/unterstuetzen/projekte), [Project details](http://www.dtpev.de/unterstuetzen/projekte/one-child-one-light)
-* [The "Förderverein Freie Netzwerke e.V."](http://foerderverein.freie-netzwerke.de/spenden/) uses this API to present their betterplace.org projects right on their website.
-* [The "Alfred-Kunze-Sportpark"](http://alfred-kunze-sportpark.de/teilziele.php) uses this API to present all needs for their one betterplace.org project right on their website.
-* [The "Earthship Tempelhof"](http://www.earthship-tempelhof.de/#spenden) uses this API to embed our integrated donation form (iframe) with more information about the project status.
+* "Deutsch-Tansanische Partnerschaft e.V." uses this API to present their betterplace.org projects right on their website: [Project list](http://www.dtpev.de/unterstuetzen/projekte), [Project details](http://www.dtpev.de/unterstuetzen/projekte/one-child-one-light)
+* ["Förderverein Freie Netzwerke e.V."](http://foerderverein.freie-netzwerke.de/spenden/) uses this API to present their betterplace.org projects right on their website.
+* ["Alfred-Kunze-Sportpark"](http://alfred-kunze-sportpark.de/teilziele.php) uses this API to present all needs for their one betterplace.org project right on their website.
+* ["Earthship Tempelhof"](http://www.earthship-tempelhof.de/#spenden) uses this API to embed our integrated donation form (iframe) alongside information about the project status.
 * _Please send us your sites to developers@betterplace.org_
 
 
 ## Client API
 
 This API provides special features for companies and organisations as
-part of the services offered by our [betterplace solutions](http://www.betterplace-solutions.de/#buergerzeitung).
+part of the services offered by our [betterplace solutions](http://www.betterplace-solutions.de).
 This client access requires a special contract.
-Please [contact us](http://www.betterplace-solutions.de/#buergerzeitung)
+Please [contact us](http://www.betterplace-solutions.de)
 with your questions.
 
 
 ### Client Projects
 
 Clients projects are projects on betterplace.org that are associated with a client.
-This way clients can control what projects are visible on their plattform.
+This way clients can control what projects are visible on their platform.
 
 Some URLs have a special scope for clients. Examples:
 
-* `/clients/example/projects`
-  will only show projects of the example-client
-* `/clients/example/tags/rainforest/projects`
-  will only show projects of the example-client and tagged with "rainforest".
+* `/clients/example_client/projects`
+  will only show projects of the client "example_client"
+* `/clients/example_client/tags/rainforest/projects`
+  will only show projects of the client "example_client" that are tagged with "rainforest".
 
 If you request data for a project that is not part of the client
 projects, the API will return an HTTP error code `404`.
@@ -339,26 +339,26 @@ projects, the API will return an HTTP error code `404`.
 ### Client Volunteering Offers
 
 It is possible to associate volunteering offers with a client in order to control
-which offers will be shown in the API endpoint. It works analogue to the way
-projects are treated, see ["Client Projects"](#client-api).
+which offers will be shown in the API endpoint. It works the same way as with
+projects, see ["Client Projects"](#client-projects).
 
 
 ### Client Authentication
 
-Some feature of the betterplace.org client API require your authentication.
+Some features of the betterplace.org client API require your authentication.
 
 * Please use your API Credentials to authenticate with [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication#Client_side) username and password.
-* Please use the special scope for clients that is described above.
+* Please use the special scope for clients that is described [above](#client-projects).
 
-Username, password and client-scope are provided as part of the contract with our
+Username, password and client scope are provided as part of a contract with our
 [betterplace solutions](http://www.betterplace-solutions.de/#buergerzeitung).
 
 
 ### Usage example
 
-The local german newspaper "Trierischer Volksfreund"
+The local German newspaper "Trierischer Volksfreund"
 has it's own donation portal at ["Meine Hilfe zählt"](http://www.meine-hilfe-zaehlt.de/).
-All data are pulled from this api. In addition they use the betterplace.org
+All data is pulled from this API. They also use the betterplace.org
 whitelabel donation form, which is another service betterplace.org provides for clients.
 
 
@@ -379,5 +379,5 @@ See the [license file](LICENSE).
 
 ## Shareable URL
 
-Share this docs with your friends and family:
+Share these docs with your friends and family:
 [api-docs.betterplace.org](https://api-docs.betterplace.org)

@@ -8,7 +8,7 @@ GET https://api.betterplace.org/de/api_v4/projects/1114.json
 The details of a betterplace.org project (donate money).
 
 **For [betterplace.org clients](../README.md#client-api):**
-Use this resource like `/clients/PERMALINK/projects/ID.json`
+Use this resource as follows: `/clients/PERMALINK/projects/ID.json`
 
 
 ## URL Parameters
@@ -24,7 +24,7 @@ Use this resource like `/clients/PERMALINK/projects/ID.json`
     <th align="left">id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
 </table>
 
@@ -56,12 +56,6 @@ project manager.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -101,6 +95,20 @@ project manager.
       <td>null &#124; string</td>
       <td>"Deutschland"</td>
       <td>Name of the country</td>
+    </tr>
+    <tr>
+      <th align="left">content_updated_at</th>
+      <td>string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">activated_at</th>
+      <td>null &#124; string</td>
+      <td>"1994-11-05T13:15:30Z"</td>
+      <td>DateTime (ISO8601 with Timezone) when the project was activated
+by us, otherwise it is null.
+</td>
     </tr>
     <tr>
       <th align="left">title</th>
@@ -269,7 +277,12 @@ donation needs (pre ~2014). This percentage includes those needs.
         </th>
       <td>null &#124; object</td>
       <td>TODO</td>
-      <td>TODO</td>
+      <td>**DEPRECATED** Do not use this data. We will remove the nested
+matching fund data in the future.
+
+To get this data follow the active_matching_fund link and retrieve
+the data from the appropriate endpoint.
+</td>
     </tr>
   </table>
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
@@ -280,6 +293,12 @@ donation needs (pre ~2014). This percentage includes those needs.
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">contact.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">contact.name</th>
@@ -405,12 +424,6 @@ empty/null for anonymous donations for anonymous donations.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
-      <th align="left">active_matching_fund.content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
       <th align="left">active_matching_fund.activated_at</th>
       <td>null &#124; string</td>
       <td>"1994-11-05T13:15:30Z"</td>
@@ -517,6 +530,11 @@ empty/null for anonymous donations for anonymous donations.
 </td>
     </tr>
     <tr>
+      <th align="left">video</th>
+      <td>Link to a youtube video of this project
+</td>
+    </tr>
+    <tr>
       <th align="left">matching_funds</th>
       <td>Link to <a href="matching_funds_list.md">matching funds list</a>
 </td>
@@ -606,7 +624,9 @@ set for organisations.
     </tr>
     <tr>
       <th align="left">active_matching_fund.projects</th>
-      <td>Link to the list of projects belonging to this matching fund</td>
+      <td>Link to the <a href="projects_list.md">list of projects</a>
+belonging to this matching fund
+</td>
     </tr>
     <tr>
       <th align="left">active_matching_fund.documentation</th>
@@ -621,30 +641,32 @@ set for organisations.
 {
   "id": 1114,
   "created_at": "2009-03-10T11:12:16+01:00",
-  "updated_at": "2016-04-06T11:00:51+02:00",
-  "content_updated_at": "2016-03-18T14:17:55+01:00",
+  "updated_at": "2016-08-19T14:30:02+02:00",
   "latitude": 34.531617284782,
   "longitude": 69.13581752939456,
   "street": "Taimani, behind Qasemi Winhouse",
   "zip": "",
   "city": "Kabul",
   "country": "Afghanistan",
+  "content_updated_at": "2016-03-18T14:17:55+01:00",
+  "activated_at": "2009-03-10T12:29:29+01:00",
   "title": "Skateistan Afghanistan",
   "description": "With 68% of Afghanistan’s population under the age of 25, Skateistan strongly believes that youth are the ones most capable of bringing about social change.<br><br>Skateistan is an Afghan NGO which operates Afghanistan’s (and the world’s) first co-educational skateboarding school. The Skateistan school engages nearly 400 Kabul youth weekly through skateboarding, and provides them with new opportunities in cross-cultural interaction, education, and personal empowerment programs. <br><br>The students (ages 5-17) come from all of Afghanistan’s diverse ethnic and socioeconomic backgrounds, and include 40% female students, hundreds of streetworking children, and youth with disabilities. They develop skills in skateboarding, leadership, problem-solving, multimedia, and creative arts. The students themselves decide what they want to learn; we connect them with a safe space and opportunities for them to develop the skills that they consider important. <br><br>For Afghan girls Skateistan's programming is especially important as there are very few recreational opportunities for females. For example, it is not culturally acceptable for girls in Afghanistan to ride bicycles or play sports in public. <br><br>Skateistan has been active in Kabul since 2007 - with our facility built in 2009 - and in that time we’ve seen that Afghan youth of all ethnicities, genders, and socioeconomic backgrounds love to skateboard. Skateistan brings them together, equipping young men and women to lead their communities toward social change and development.<br><br>In 2012 Skateistan will be opening its second Afghan facility in Mazar-e-Sharif, Northern Afghanistan. It will have space to teach up to 1000 youth weekly.<br><br>Our program gives hundreds of oppressed youth a voice. Education and the opportunity for self-expression can break the cycles of poverty, illiteracy and exclusion, with sport paving the way.",
   "tax_deductible": true,
   "donations_prohibited": false,
   "completed_at": null,
   "closed_at": null,
-  "open_amount_in_cents": 1818000,
-  "donated_amount_in_cents": 4745852,
-  "positive_opinions_count": 728,
+  "open_amount_in_cents": 1757984,
+  "donated_amount_in_cents": 4805868,
+  "positive_opinions_count": 746,
   "negative_opinions_count": 0,
-  "donor_count": 552,
-  "progress_percentage": 72,
+  "donor_count": 560,
+  "progress_percentage": 73,
   "incomplete_need_count": 10,
   "completed_need_count": 87,
-  "blog_post_count": 91,
+  "blog_post_count": 95,
   "contact": {
+    "id": 130618,
     "name": "E. Kinast",
     "picture": {
       "fallback": true,
@@ -693,31 +715,30 @@ set for organisations.
     ]
   },
   "profile_picture": {
-    "fallback": true,
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_original_girls-merza-sm.jpg"
+        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_original_girls-merza-sm.jpg"
+        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_original_girls-merza-sm.jpg"
+        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_original_girls-merza-sm.jpg"
+        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_original_girls-merza-sm.jpg"
+        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_original_girls-merza-sm.jpg"
+        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
       }
     ]
   },

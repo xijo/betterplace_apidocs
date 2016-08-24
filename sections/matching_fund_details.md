@@ -57,12 +57,6 @@ The details and list view show the same data.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
-      <th align="left">content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
       <th align="left">activated_at</th>
       <td>null &#124; string</td>
       <td>"1994-11-05T13:15:30Z"</td>
@@ -145,7 +139,9 @@ The details and list view show the same data.
     </tr>
     <tr>
       <th align="left">projects</th>
-      <td>Link to the list of projects belonging to this matching fund</td>
+      <td>Link to the <a href="projects_list.md">list of projects</a>
+belonging to this matching fund
+</td>
     </tr>
     <tr>
       <th align="left">documentation</th>

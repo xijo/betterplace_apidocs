@@ -9,8 +9,8 @@ The details of a betterplace.org project need (donate money).
 The details and list view show the same data per project need.
 
 **For [betterplace.org clients](../README.md#client-api):**
-There is no client-scoped-url.
-Please use the api calls that are provided inside the client project _url_ response
+There is no client-scoped URL.
+Please use the API calls that are provided inside the client project _url_ response
 to make sure you only request data that is associated with one of your projects.
 
 
@@ -27,7 +27,7 @@ to make sure you only request data that is associated with one of your projects.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
   <tr>
     <th align="left">id</th>
@@ -63,12 +63,6 @@ to make sure you only request data that is associated with one of your projects.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>

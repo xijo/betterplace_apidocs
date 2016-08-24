@@ -14,8 +14,8 @@ This will always show the data if a valid opinion id is given, even if that opin
 does not belong to the project in the URL.
 
 **For [betterplace.org clients](../README.md#client-api):**
-There is no client-scoped-url.
-Please use the api calls that are provided inside the client project _url_ response
+There is no client-scoped URL.
+Please use the API calls that are provided inside the client project _url_ response
 to make sure you only request data that is associated with one of your projects.
 
 
@@ -32,13 +32,13 @@ to make sure you only request data that is associated with one of your projects.
     <th align="left">project_id</th>
     <td><code>38</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
   <tr>
     <th align="left">id</th>
     <td><code>22</code></td>
     <td>yes</td>
-    <td>Blog-post-id as an integer number ≥ 9.</td>
+    <td>Blogpost id as an integer number ≥ 9.</td>
   </tr>
 </table>
 
@@ -68,12 +68,6 @@ to make sure you only request data that is associated with one of your projects.
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">content_updated_at</th>
       <td>string</td>
       <td>"1994-11-05T13:15:30Z"</td>
       <td>DateTime (ISO8601 with Timezone)</td>
@@ -149,6 +143,12 @@ why they like or dislike this project.
       <th>Types</th>
       <th>Example</th>
       <th>Description</th>
+    </tr>
+    <tr>
+      <th align="left">author.id</th>
+      <td>number</td>
+      <td>1</td>
+      <td>An integer number ≥ 1</td>
     </tr>
     <tr>
       <th align="left">author.name</th>
@@ -256,6 +256,7 @@ access rights in order to see this information.
   "updated_at": "2007-11-24T14:14:02+01:00",
   "score": "positive",
   "author": {
+    "id": 759,
     "name": "G. Krabbe",
     "picture": {
       "fallback": true,

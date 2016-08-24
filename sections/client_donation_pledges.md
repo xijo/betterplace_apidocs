@@ -7,14 +7,13 @@ POST https://api.betterplace.org/de/api_v4/clients/volksfreund/projects/1114/don
 
 Submit a donation pledge into the system. This will be transformed into
 a donation to the receiver. The request has to be a POST request with a
-JSON body.
-
+JSON body. Here is [a flow chart that describes this process in full](http://ixwphj.axshare.com/donation-pledge-flow.html).
 
 **:lock: Only available if authenticated as a client.**
 See [betterplace.org clients](../README.md#client-api).
 
 
-**What if the donation receiver is fully funded?**
+#### What if the donation receiver is fully funded?
 
 The donation will be booked in the receiver account even
 if the receiver is fully funded. The receiver will than show a
@@ -24,7 +23,7 @@ manager has to add new money needs to pay out the additional funds.
 Please note that a closed project is prohibited from receiving donations.
 
 
-**What if the donation receiver is prohibited from receiving donations?**
+#### What if the donation receiver is prohibited from receiving donations?
 
 At the time when the pledge is received the system does not check the receiver
 status. Therefore the API will always respond with a success message for all
@@ -34,25 +33,59 @@ specific client donation pool. Clients can later forward this money to
 projects they choose.
 
 
-**Reconciliation of donation pledges**
+#### Reconciliation of donation pledges
 
-The process of reconciliation for donation pledges has yet to be documented.
-Please contact product-at-betterplace.org for details.
+Part of the contract for the usage of this donation pledge API will
+be the time period in which the pledges need to be reconciled. Ususally
+every two weeks or once a month. At the end of this time, the client
+will sum all pledges in the client system, wire us the donations and
+also send us a CSV file which allows betterplace.org to check the amounts.
+
+Required fields for the CSV files are:
+- receiver_type
+- receiver_id
+- amount_in_cents
+- first_name
+- last_name
+- client_reference
+- datetime (ISO8601 with Timezone)
+
+Please use these names as column titles, use utf-8, use ","
+as a separator and force double quotes around all values.
+
+Here is [a flow chart describing the process](http://ixwphj.axshare.com/money-transfer-flow.html).
 
 
-**Response and error codes:**
+#### Response and error codes:
 
+[A list of all response and error codes](../README.md#http-status-codes).
+
+The most likely ones are:
+
+[HTTP Code **`202`**](http://httpstatus.es/202)
+if a resource was successfully submitted for delayed processing.
 A successful request will return HTTP status 202 (accepted). The
 donation pledge is now saved and queued and will be processed
 by background workers. This part takes place asynchronously and might
 take up to a few minutes, especially in high traffic scenarios.
 Please make sure that you queue and retry your API calls until you
 receive a 202 response from us. Note that we will book only one
-donation per <code>client_reference</code> so there is no need to
+donation per <code>client_reference</code> so there's no need to
 worry about retrying the pledge-sending.
 
-If an error occurs the HTTP return code will be 422 (unprocessable
-entity). [More error codes](../README.md#http-status-codes).
+[HTTP Code **`422`**](http://httpstatus.es/422)
+if the submitted resource could not be accepted due to erroneous parameters.
+Please remember to validate all user input on your side before submitting
+it to the API.
+
+[HTTP Code **`404`**](http://httpstatus.es/404)
+if a requested resource could not be found. This might happen if
+the resource has been deleted in the timeframe between selection by the
+user and confirmation of the pledge by the client. In this case, either
+contact your user and change the resource (most likely a project) or
+redirect the donation to the client pool (the URL is provided by
+betterplace.org).
+
 
 
 ## URL Parameters
@@ -69,9 +102,10 @@ entity). [More error codes](../README.md#http-status-codes).
     <td><code>en</code></td>
     <td>yes</td>
     <td>The donation is marked with the language you use in your URL.
-Project manager use this language information for their donation
-thank you message, for example. To target a lang see
-<a href="../README.md#addressing-the-locale-of-a-resource">api setting lang</a>.
+A Project manager can use this language information for their
+donation thank you message, for example. To target a lang see <a
+href="../README.md#addressing-the-locale-of-a-resource">API setting
+lang</a>.
 </td>
   </tr>
   <tr>
@@ -84,7 +118,7 @@ thank you message, for example. To target a lang see
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project-id as an integer number ≥ 14.</td>
+    <td>Project id as an integer number ≥ 14.</td>
   </tr>
 </table>
 
@@ -104,6 +138,7 @@ are optional.
   "email": "mm@example.com",
   "amount_in_cents": 100,
   "client_reference": "djksbf23u4sjkdn234p",
+  "earmark": 123,
   "street": "Rheinstrasse 202",
   "city": "Wiesbaden",
   "zip": "65185",
@@ -173,6 +208,18 @@ the donation pledge endpoint will still respond with success.
 However the pledge will <em>not be processed</em> into a donation but ignored.
 <br>
 This is to make sure that one transaction is only processed once.
+</td>
+  </tr>
+  <tr>
+    <th align="left">earmark</th>
+    <td><code>123</code></td>
+    <td>number</td>
+    <td>no</td>
+    <td>An "earmark" indicating which need this donation should go to.
+<em>Attention:</em> this parameter may be completely ignored by the API
+at any time. There is no guarantee that the earmark will have an effect
+on the donation, and support for the feature may be pulled in the
+future.
 </td>
   </tr>
   <tr>

@@ -6,7 +6,7 @@ GET https://api.betterplace.org/de/api_v4/clients/volksfreund/project_statistics
 ```
 
 **For [betterplace.org clients](../README.md#client-api) only:**
-Some client-statistics for a betterplace.org client. All results are cached for 20 minutes.
+Some client statistics for a betterplace.org client. All results are cached for 20 minutes.
 
 
 ## URL Parameters
