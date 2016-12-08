@@ -73,7 +73,10 @@ about updates and scheduled downtimes.
   0. [**Client** Fundraising Event Statistics](sections/client_fundraising_event_statistics.md)
   0. [**Client** Donations List](sections/client_donations_list.md)
   0. [**Client** Donor Contact Data](sections/donor_contact_data_details.md)
-  0. [**Client** Donation Pledges](sections/client_donation_pledges.md) [:lock:](#client-api)
+  0. [**Client** Donation Pledges List](sections/client_donation_pledges_list.md) [:lock:](#client-api)
+  0. [**Client** Donation Pledge Details](sections/client_donation_pledge_details.md) [:lock:](#client-api)
+  0. [**Client** Forwarding Requests List](sections/client_forwarding_requests_list.md) [:lock:](#client-api)
+  0. [**Client** Forwarding Request Details](sections/client_forwarding_request_details.md) [:lock:](#client-api)
   0. [**Client** Mailing Subscribtions](sections/client_mailing_subscriptions.md) [:lock:](#client-api)
   0. [**Client** Volunteering List and Search](sections/volunteering_list.md) – 
       See client section [and "Client Volunteering Offers"](#client-api)
