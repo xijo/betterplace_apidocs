@@ -78,6 +78,18 @@ lang</a>.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">confirmed_at</th>
+      <td>undefined</td>
+      <td>2016-11-11T09:50:06+01:00</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
+      <th align="left">failed_at</th>
+      <td>undefined</td>
+      <td>2016-11-11T09:50:06+01:00</td>
+      <td>DateTime (ISO8601 with Timezone)</td>
+    </tr>
+    <tr>
       <th align="left">state</th>
       <td>string</td>
       <td>"confirmed"</td>
@@ -93,18 +105,6 @@ The donation failed. Please check the <code>failure_code</code>.
 This state is final.
 </ul>
 </td>
-    </tr>
-    <tr>
-      <th align="left">confirmed_at</th>
-      <td>undefined</td>
-      <td>2016-11-11T09:50:06+01:00</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
-    </tr>
-    <tr>
-      <th align="left">failed_at</th>
-      <td>undefined</td>
-      <td>2016-11-11T09:50:06+01:00</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
       <th align="left">failure_code</th>
@@ -165,9 +165,9 @@ string.
   "id": 1,
   "created_at": "2016-04-04T17:50:22+02:00",
   "updated_at": "2016-04-04T17:50:23+02:00",
-  "state": "confirmed",
   "confirmed_at": "2016-04-04T17:50:23+02:00",
   "failed_at": null,
+  "state": "confirmed",
   "failure_code": null,
   "failure_reason": null,
   "links": [
