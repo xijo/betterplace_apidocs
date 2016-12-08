@@ -76,7 +76,7 @@ It is possible to set multiple facet filters.
       <th align="left">tag</th>
       <td>string</td>
       <td>"Education"</td>
-      <td>The name of the tag, that is unique per client.
+      <td>The name of the tag. It is unique per client.
 </td>
     </tr>
     <tr>
@@ -84,7 +84,7 @@ It is possible to set multiple facet filters.
       <td>number</td>
       <td>23</td>
       <td>The number of <a href="projects_list.md">projects</a>
-that where tagged with this tag.
+that were tagged with this tag.
 </td>
     </tr>
   </table>
@@ -117,7 +117,7 @@ that where tagged with this tag.
   "data": [
     {
       "tag": "Trier",
-      "projects_count": 29,
+      "projects_count": 33,
       "links": [
         {
           "rel": "projects",
@@ -127,7 +127,7 @@ that where tagged with this tag.
     },
     {
       "tag": "KinderJugendliche",
-      "projects_count": 28,
+      "projects_count": 40,
       "links": [
         {
           "rel": "projects",
@@ -137,7 +137,7 @@ that where tagged with this tag.
     },
     {
       "tag": "Familien",
-      "projects_count": 12,
+      "projects_count": 11,
       "links": [
         {
           "rel": "projects",

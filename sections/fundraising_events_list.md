@@ -79,9 +79,9 @@ It is possible to set multiple facet filters.
 It is strongly recommended to <strong>specify an order</strong> with each request.
 The default order might change at any time without notice.
 A recommended order is
-<code>completed:asc| score:desc | rank:desc| last_donation_at:desc</code>
+<code> score:desc|closed:asc|completed:asc|rank:desc|last_donation_at:desc</code>
 (without the spaces). This is the order betterplace.org uses
-<a href="https://www.betterplace.org/en/projects/list?search_form%5Bfilters%5D%5Btype%5D=Group">for the fundraising event list</a>.
+<a href="https://www.betterplace.org/en/projects/list?search_form%5Bfilters%5D%5Btype%5D=FundraisingEvent">for the fundraising event list</a>.
 <br>
 <em>Supported orders are:</em>
 <ul>
@@ -90,7 +90,8 @@ is given.
 <li><code>rank:ASC/DESC</code> – a betterplace.org-specific, platform-wide activity indicator
 <li><code>tax_deductible:ASC/DESC</code> – true (1) or false (0)
 <li><code>last_donation_at:ASC/DESC</code>
-<li><code>completed:asc</code>
+<li><code>completed:ASC/DESC</code>
+<li><code>closed:ASC/DESC</code>
 </ul>
 It is possible to set multiple order parameters.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
@@ -144,7 +145,10 @@ It is possible to set multiple order parameters.
       <th align="left">description</th>
       <td>string</td>
       <td>Lorem ipsum</td>
-      <td>Max 25.000 character</td>
+      <td>A description of the fundraising event. This may contain any of the
+following HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
+Max 25.000 characters.
+</td>
     </tr>
     <tr>
       <th align="left">tax_deductible</th>
@@ -152,8 +156,8 @@ It is possible to set multiple order parameters.
       <td>true</td>
       <td>True if the fundraising event is marked as tax deductible and
 can only support tax deductible projects.
-If so, users can request a tax-receipt for their donation
-that can be used with the german tax authorities.
+If so, users can request a tax receipt for their donation
+that can be used with the German tax authorities.
 </td>
     </tr>
     <tr>
@@ -316,7 +320,7 @@ empty/null for anonymous donations for anonymous donations.
       <th align="left">featured_projects</th>
       <td>A list of <a href="projects_list.md">projects</a> are currently supported by the fundraising event.
 
-Please note, that this project list has no fixed relation to the list of projects that received money by this fundraising event (see <a href="fundraising_events_featured_projects_list.md">Featured Projects List</a>).
+Please note that this project list has no fixed relation to the list of projects that received money by this fundraising event (see <a href="fundraising_events_featured_projects_list.md">Featured Projects List</a>).
 A Fundraising event manager can change the list of supported projects at any time; regardless if they received money before.
 </td>
     </tr>
@@ -325,8 +329,8 @@ A Fundraising event manager can change the list of supported projects at any tim
       <td>Provides a list of forwarded amounts and their receiving projects.
 
 Each fundraising event can have multiple projects that it supports. The fundraising event manager specifies the amount that is forwarded from the fundraising event to the project.
-Please note, that this list of forwarded donations and their corresponding receiving projects is not required to be in sync with the <a href="fundraising_events_featured_projects_list.md">Featured Project List endpoint</a>.
-To find out, if all donations of the fundraising event have been forwarded, please sum the amounts provided by this api endpoint and compare it to the donated amount attribute of the fundraising event api endpoint.
+Please note that this list of forwarded donations and their corresponding receiving projects is not required to be in sync with the <a href="fundraising_events_featured_projects_list.md">Featured Project List endpoint</a>.
+To find out if all donations of the fundraising event have been forwarded, please sum the amounts provided by this api endpoint and compare it to the donated amount attribute of the fundraising event api endpoint.
 </td>
     </tr>
     <tr>
@@ -396,244 +400,50 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 4994,
+  "total_entries": 1465,
   "offset": 0,
-  "total_pages": 1665,
-  "current_page": 1,
+  "total_pages": 49,
+  "current_page": null,
   "per_page": 3,
   "data": [
     {
-      "id": 1838,
-      "created_at": "2009-08-10T17:59:56+02:00",
-      "updated_at": "2016-07-27T13:04:18+02:00",
-      "content_updated_at": "2016-02-23T17:02:59+01:00",
-      "title": "Markenaktion",
-      "description": "Im Rahmen unserer Markenaktion (www.limal.betterplace.org) werden über eBay tolle Produkte verkauft, die von den Herstellern gespendet wurden. Anschließend wird der Erlös daraus über dieses Team transparent an verschiedene Hilfsprojekte in aller Welt weitergeleitet - zu 100 Prozent.",
-      "tax_deductible": true,
-      "donations_prohibited": false,
-      "closed_at": null,
-      "donor_count": 20,
-      "donated_amount_in_cents": 12523479,
+      "id": 13224,
+      "created_at": "2013-01-31T15:09:18+01:00",
+      "updated_at": "2016-10-21T09:35:45+02:00",
+      "content_updated_at": "2015-11-22T08:05:39+01:00",
+      "title": "Matthiass Spendenaktion",
+      "description": "Schön, dass Du meine Spendenaktion bei betterplace.org besuchst! Das Spenden über betterplace.org ist sicher und unkompliziert. betterplace.org leitet das von uns zusammen gesammelte Geld weiter. Wenn Du willst, kannst Du das sogar nachverfolgen: Denn betterplace.org ist nicht nur klasse, um mit einer Aktion Spenden zu sammeln, sondern - durch seine Transparenz - auch toll, um zu sehen, was die Hilfe beim Projekt vor Ort bewirkt.<br><br>Deshalb freue ich mich um so mehr, wenn Du jetzt hier an meine Aktion spendest! Vielen Dank.<br>",
+      "tax_deductible": false,
+      "donations_prohibited": true,
+      "closed_at": "2015-11-22T08:05:38+01:00",
+      "donor_count": 0,
+      "donated_amount_in_cents": 0,
       "requested_amount_in_cents": null,
       "progress_percentage": null,
       "contact": {
-        "id": 6,
-        "name": "Moritz E.",
-        "picture": {
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/000/006/fill_100x100_original_eckert.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/000/006/crop_original_original_eckert.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/moritz_e"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/6/contact_data.json"
-          }
-        ]
-      },
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/001/838/fill_960x500_original_Bild_1.png"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/001/838/fill_730x380_original_Bild_1.png"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/001/838/fill_618x322_original_Bild_1.png"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/001/838/fill_410x214_original_Bild_1.png"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/001/838/fill_270x141_original_Bild_1.png"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/001/838/crop_original_original_Bild_1.png"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/1838.json"
-        },
-        {
-          "rel": "featured_projects",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/1838/featured_projects.json"
-        },
-        {
-          "rel": "forwardings",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/1838/forwardings.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/fundraising-events/1838-markenaktion"
-        },
-        {
-          "rel": "new_client_donation",
-          "href": "https://www.betterplace.org/de/fundraising-events/1838/client_donations/new?client_id=%7Bclient_id%7D",
-          "templated": true
-        },
-        {
-          "rel": "new_donation",
-          "href": "https://www.betterplace.org/de/fundraising-events/1838/donations/new"
-        }
-      ]
-    },
-    {
-      "id": 3457,
-      "created_at": "2010-04-28T17:20:10+02:00",
-      "updated_at": "2016-06-06T14:22:17+02:00",
-      "content_updated_at": "2016-03-21T10:12:29+01:00",
-      "title": "\"Mail raus&Attachment vergessen? 1Euro!\"",
-      "description": "Wir alle machen mal Fehler. Sie zu vermeiden lernt man am besten durch eine kleine Strafe - in diesem Fall einer Spende von einem Euro. Also: Alle die Euch eine Mail schicken, in der das Attachment vergessen wurde, müssen von Euch den Link zu diesem Fundraising-Team gemailt kriegen - und dann einen Euro spenden. Damit schön viel Geld für einen guten Zweck zusammen kommt und von betterplace.org zu 100 Prozent weitergeleitet wird. Und damit alle Attachmentvergesser endlich aus ihren unverzeihlichen Fehlern lernen.",
-      "tax_deductible": true,
-      "donations_prohibited": false,
-      "closed_at": null,
-      "donor_count": 116,
-      "donated_amount_in_cents": 37000,
-      "requested_amount_in_cents": null,
-      "progress_percentage": null,
-      "contact": {
-        "id": 6,
-        "name": "Moritz E.",
-        "picture": {
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/000/006/fill_100x100_original_eckert.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/000/006/crop_original_original_eckert.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/moritz_e"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/6/contact_data.json"
-          }
-        ]
-      },
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/003/457/fill_960x500_original_Bildschirmfoto_2010-04-28_um_17.25.56.png"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/003/457/fill_730x380_original_Bildschirmfoto_2010-04-28_um_17.25.56.png"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/003/457/fill_618x322_original_Bildschirmfoto_2010-04-28_um_17.25.56.png"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/003/457/fill_410x214_original_Bildschirmfoto_2010-04-28_um_17.25.56.png"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/003/457/fill_270x141_original_Bildschirmfoto_2010-04-28_um_17.25.56.png"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/003/457/crop_original_original_Bildschirmfoto_2010-04-28_um_17.25.56.png"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/3457.json"
-        },
-        {
-          "rel": "featured_projects",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/3457/featured_projects.json"
-        },
-        {
-          "rel": "forwardings",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/3457/forwardings.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/fundraising-events/3457-mail-raus-attachment-vergessen-1euro"
-        },
-        {
-          "rel": "new_client_donation",
-          "href": "https://www.betterplace.org/de/fundraising-events/3457/client_donations/new?client_id=%7Bclient_id%7D",
-          "templated": true
-        },
-        {
-          "rel": "new_donation",
-          "href": "https://www.betterplace.org/de/fundraising-events/3457/donations/new"
-        }
-      ]
-    },
-    {
-      "id": 27953,
-      "created_at": "2016-04-22T10:07:18+02:00",
-      "updated_at": "2016-07-18T19:16:47+02:00",
-      "content_updated_at": "2016-04-28T18:08:17+02:00",
-      "title": "Supporting the Future … Now! ",
-      "description": "INNER DEVELOPMENT AND CONTRIBUTION TO THE WORLD (German version below / Deutsche Version weiter unten)<br><br>Already for the 13th time, the non-profit association Sharing the Presence e.V. is hosting the Celebrate Life Festival. The non-profit event will take place from July 28 to August 7, 2016, at the Seminarhof Oberlethe in Wardenburg (Lower Saxony in Germany). <br><br>This year all donated funds will support, with equal amounts, two non-profit initiatives that are working to cope with the refugee crisis in Europe. These are SyrienHilfe e.V. and  ReDI SCHOOL OF DIGITAL INTEGRATION. The goal is to achieve as high a donated amount as possible. It is possible to donate from now on until August 31, 2016!<br><br>SyrienHilfe e.V. provides personal and immediate humanitarian aid in Syria. The association provides those in dire need, on location, not only with food, clothing, lodging and the necessary medical care, but also emotional and moral support, to give the people a part of their dignity back. For more information, go to www.zusammen-fuer-fluechtlinge.de/projects/12586<br><br>ReDI SCHOOL OF DIGITAL INTEGRATION is an international initiative that imparts programming skills to the refugees to increase their chances on the job market and integrate them economically. Companies, but also teachers, tech mentors, job counselors and handymen worldwide can all participate. For more information, go to www.redi-school.org.<br><br>Representatives of the projects will be at the Festival in person on August 5 to present their work. <br><br>www.celebrate-life.info<br><br>Die Zukunft unterstützen … Jetzt! <br><br>INNERLICH WACHSEN UND ZU EINER GEMEINSAMEN WELT BEITRAGEN<br><br>Bereits zum 13. Mal veranstaltet der gemeinnützige Verein Sharing the Presence e.V. das Celebrate Life Festival. Das Non-Profit-Event findet vom 28. Juli bis 07. August `16  auf dem Seminarhof Oberlethe in Wardenburg (D - Nds.) statt. <br><br>In diesem Jahr sollen mit sämtlichen generierten Spendengeldern zu gleichen Teilen zwei Non-Profit-Initiativen zur Bewältigung der Flüchtlingskrise in Europa gefördert werden. Dies sind SyrienHilfe e.V. und  ReDI SCHOOL OF DIGITAL INTEGRATION. Ziel ist eine möglichst hohe Spendensumme. Gespendet werden kann ab sofort bis zum 31. August 2016!<br><br>SyrienHilfe e.V. leistet persönlich und unmittelbar humanitäre Hilfe in Syrien. Der Verein versorgt die Notleidenden vor Ort nicht \"nur\" mit Nahrung, Kleidung, Unterkunft und dem medizinisch Notwendigem, sondern bietet auch seelischen und moralischen Beistand, um den Menschen damit auch einen Teil ihrer Würde wiederzugeben. Infos unter: www.zusammen-fuer-fluechtlinge.de/projects/12586<br><br>ReDI SCHOOL OF DIGITAL INTEGRATION ist eine internationale Initiative, die Flüchtlingen Programmierkenntnisse vermittelt, um deren Chancen auf dem Arbeitsmarkt zu erhöhen und sie wirtschaftlich zu integrieren. Beteiligen können sich weltweit sowohl Unternehmen als auch Lehrer, Tech-Mentoren, Berufsberater und Allrounder. Infos unter: www.redi-school.org<br><br>Vertreter der Projekte werden am 5. August live beim Festival dabei sein, um die Arbeit vorzustellen.<br><br>www.celebrate-life.info",
-      "tax_deductible": true,
-      "donations_prohibited": false,
-      "closed_at": null,
-      "donor_count": 122,
-      "donated_amount_in_cents": 1430003,
-      "requested_amount_in_cents": null,
-      "progress_percentage": null,
-      "contact": {
-        "id": 487274,
-        "name": "T. Hübl",
+        "id": 296030,
+        "name": "M. Eckert",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/487/274/fill_100x100_Celebrate_Life_Logo_2016_RGB.jpg"
+              "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/487/274/crop_original_Celebrate_Life_Logo_2016_RGB.jpg"
+              "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
             }
           ]
         },
         "links": [
           {
             "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/ute_k23"
+            "href": "https://www.betterplace.org/de/users/296030"
           },
           {
             "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/487274/contact_data.json"
+            "href": "https://api.betterplace.org/de/api_v4/users/296030/contact_data.json"
           }
         ]
       },
@@ -642,55 +452,251 @@ access rights in order to see this information.
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/027/953/fill_960x500_1467091736_Betterplace_Widget.jpg"
+            "href": "https://asset1.betterplace.org/assets/default/fundraising_event_profile_picture/fill_960x500_default.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/027/953/fill_730x380_1467091736_Betterplace_Widget.jpg"
+            "href": "https://asset1.betterplace.org/assets/default/fundraising_event_profile_picture/fill_730x380_default.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/027/953/fill_618x322_1467091736_Betterplace_Widget.jpg"
+            "href": "https://asset1.betterplace.org/assets/default/fundraising_event_profile_picture/fill_618x322_default.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/027/953/fill_410x214_1467091736_Betterplace_Widget.jpg"
+            "href": "https://asset1.betterplace.org/assets/default/fundraising_event_profile_picture/fill_410x214_default.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/027/953/fill_270x141_1467091736_Betterplace_Widget.jpg"
+            "href": "https://asset1.betterplace.org/assets/default/fundraising_event_profile_picture/fill_270x141_default.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/027/953/crop_original_1467091736_Betterplace_Widget.jpg"
+            "href": "https://asset1.betterplace.org/assets/default/fundraising_event_profile_picture/crop_original_default.jpg"
           }
         ]
       },
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/27953.json"
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/13224.json"
         },
         {
           "rel": "featured_projects",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/27953/featured_projects.json"
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/13224/featured_projects.json"
         },
         {
           "rel": "forwardings",
-          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/27953/forwardings.json"
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/13224/forwardings.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/fundraising-events/27953-supporting-the-future-now"
+          "href": "https://www.betterplace.org/de/fundraising-events/13224-matthiass-spendenaktion"
         },
         {
           "rel": "new_client_donation",
-          "href": "https://www.betterplace.org/de/fundraising-events/27953/client_donations/new?client_id=%7Bclient_id%7D",
+          "href": "https://www.betterplace.org/de/fundraising-events/13224/client_donations/new?client_id=%7Bclient_id%7D",
           "templated": true
         },
         {
           "rel": "new_donation",
-          "href": "https://www.betterplace.org/de/fundraising-events/27953/donations/new"
+          "href": "https://www.betterplace.org/de/fundraising-events/13224/donations/new"
+        }
+      ]
+    },
+    {
+      "id": 7541,
+      "created_at": "2011-06-10T10:06:31+02:00",
+      "updated_at": "2016-10-21T09:33:54+02:00",
+      "content_updated_at": "2016-02-23T17:06:33+01:00",
+      "title": "Die Band KRACH beim Ryck Jump 2011",
+      "description": "",
+      "tax_deductible": false,
+      "donations_prohibited": true,
+      "closed_at": "2011-06-28T13:55:59+02:00",
+      "donor_count": 2,
+      "donated_amount_in_cents": 4000,
+      "requested_amount_in_cents": null,
+      "progress_percentage": null,
+      "contact": {
+        "id": 187867,
+        "name": "E. Wascher",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/867/fill_100x100_original_240_240-Bild_wei_.JPG"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/187/867/crop_original_original_240_240-Bild_wei_.JPG"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/187867"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/187867/contact_data.json"
+          }
+        ]
+      },
+      "profile_picture": {
+        "fallback": true,
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/007/541/fill_960x500_original_jump4.jpg"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/007/541/fill_730x380_original_jump4.jpg"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/007/541/fill_618x322_original_jump4.jpg"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/007/541/fill_410x214_original_jump4.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/007/541/fill_270x141_original_jump4.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/007/541/crop_original_original_jump4.jpg"
+          }
+        ]
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/7541.json"
+        },
+        {
+          "rel": "featured_projects",
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/7541/featured_projects.json"
+        },
+        {
+          "rel": "forwardings",
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/7541/forwardings.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/fundraising-events/7541-die-band-krach-beim-ryck-jump-2011"
+        },
+        {
+          "rel": "new_client_donation",
+          "href": "https://www.betterplace.org/de/fundraising-events/7541/client_donations/new?client_id=%7Bclient_id%7D",
+          "templated": true
+        },
+        {
+          "rel": "new_donation",
+          "href": "https://www.betterplace.org/de/fundraising-events/7541/donations/new"
+        }
+      ]
+    },
+    {
+      "id": 1867,
+      "created_at": "2009-08-18T09:27:08+02:00",
+      "updated_at": "2016-10-21T09:32:12+02:00",
+      "content_updated_at": "2016-02-23T16:57:33+01:00",
+      "title": "Photoausstattung für die Schule in Ibadan/Nigeria",
+      "description": "",
+      "tax_deductible": false,
+      "donations_prohibited": true,
+      "closed_at": "2016-01-22T08:25:48+01:00",
+      "donor_count": 4,
+      "donated_amount_in_cents": 1500,
+      "requested_amount_in_cents": null,
+      "progress_percentage": null,
+      "contact": {
+        "id": 16621,
+        "name": "R. Appelt",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/016/621/fill_100x100_original_ralfappelt_corner_72.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/016/621/crop_original_original_ralfappelt_corner_72.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/16621"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/16621/contact_data.json"
+          }
+        ]
+      },
+      "profile_picture": {
+        "fallback": true,
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/001/867/fill_960x500_original_mms-logo_l.jpg"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/001/867/fill_730x380_original_mms-logo_l.jpg"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/001/867/fill_618x322_original_mms-logo_l.jpg"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/001/867/fill_410x214_original_mms-logo_l.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/001/867/fill_270x141_original_mms-logo_l.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/001/867/crop_original_original_mms-logo_l.jpg"
+          }
+        ]
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/1867.json"
+        },
+        {
+          "rel": "featured_projects",
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/1867/featured_projects.json"
+        },
+        {
+          "rel": "forwardings",
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/1867/forwardings.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/fundraising-events/1867-photoausstattung-fur-die-schule-in-ibadan-nigeria"
+        },
+        {
+          "rel": "new_client_donation",
+          "href": "https://www.betterplace.org/de/fundraising-events/1867/client_donations/new?client_id=%7Bclient_id%7D",
+          "templated": true
+        },
+        {
+          "rel": "new_donation",
+          "href": "https://www.betterplace.org/de/fundraising-events/1867/donations/new"
         }
       ]
     }

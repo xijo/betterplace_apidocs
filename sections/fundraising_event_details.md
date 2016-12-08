@@ -74,7 +74,10 @@ Use this resource as follows: `/clients/PERMALINK/fundraising-events/ID.json`
       <th align="left">description</th>
       <td>string</td>
       <td>Lorem ipsum</td>
-      <td>Max 25.000 character</td>
+      <td>A description of the fundraising event. This may contain any of the
+following HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
+Max 25.000 characters.
+</td>
     </tr>
     <tr>
       <th align="left">tax_deductible</th>
@@ -82,8 +85,8 @@ Use this resource as follows: `/clients/PERMALINK/fundraising-events/ID.json`
       <td>true</td>
       <td>True if the fundraising event is marked as tax deductible and
 can only support tax deductible projects.
-If so, users can request a tax-receipt for their donation
-that can be used with the german tax authorities.
+If so, users can request a tax receipt for their donation
+that can be used with the German tax authorities.
 </td>
     </tr>
     <tr>
@@ -246,7 +249,7 @@ empty/null for anonymous donations for anonymous donations.
       <th align="left">featured_projects</th>
       <td>A list of <a href="projects_list.md">projects</a> are currently supported by the fundraising event.
 
-Please note, that this project list has no fixed relation to the list of projects that received money by this fundraising event (see <a href="fundraising_events_featured_projects_list.md">Featured Projects List</a>).
+Please note that this project list has no fixed relation to the list of projects that received money by this fundraising event (see <a href="fundraising_events_featured_projects_list.md">Featured Projects List</a>).
 A Fundraising event manager can change the list of supported projects at any time; regardless if they received money before.
 </td>
     </tr>
@@ -255,8 +258,8 @@ A Fundraising event manager can change the list of supported projects at any tim
       <td>Provides a list of forwarded amounts and their receiving projects.
 
 Each fundraising event can have multiple projects that it supports. The fundraising event manager specifies the amount that is forwarded from the fundraising event to the project.
-Please note, that this list of forwarded donations and their corresponding receiving projects is not required to be in sync with the <a href="fundraising_events_featured_projects_list.md">Featured Project List endpoint</a>.
-To find out, if all donations of the fundraising event have been forwarded, please sum the amounts provided by this api endpoint and compare it to the donated amount attribute of the fundraising event api endpoint.
+Please note that this list of forwarded donations and their corresponding receiving projects is not required to be in sync with the <a href="fundraising_events_featured_projects_list.md">Featured Project List endpoint</a>.
+To find out if all donations of the fundraising event have been forwarded, please sum the amounts provided by this api endpoint and compare it to the donated amount attribute of the fundraising event api endpoint.
 </td>
     </tr>
     <tr>
@@ -328,7 +331,7 @@ access rights in order to see this information.
 {
   "id": 19267,
   "created_at": "2014-09-23T21:17:06+02:00",
-  "updated_at": "2015-06-28T11:32:11+02:00",
+  "updated_at": "2016-10-21T09:37:17+02:00",
   "content_updated_at": "2015-06-28T11:32:11+02:00",
   "title": "Gemeinsam gegen Ebola: Deine Spende für Westafrika",
   "description": "Das Ebola-Virus ist für uns* in Westafrika allgegenwärtig: Schüttelt man zur Begrüßung noch die Hand, obwohl die Regierungen davon abraten? Tritt man die Dienstreise in das vom Virus betroffene Nigeria an? Droht die Quarantäne, wenn man bei der Ausreise aus der Region unter Erkältung und Fieber leidet? <br><br>Für die Menschen in Sierra Leone, Liberia und Guinea sind das Luxusprobleme. Dort ist ein normaler Alltag nicht mehr möglich. Im Familienkreis oder der Nachbarschaft gibt es möglicherweise Tote zu beklagen. Der Zugang zu Gesundheitsdienstleistungen ist, auch für andere häufig auftretende Krankheiten wie Malaria, erschwert und kann teilweise nicht mehr gewährleistet werden. <br><br>Viele Ärzte und Krankenschwestern sind selbst gestorben oder haben Angst, sich selbst anzustecken, da es an grundsätzlichen Dingen wie Schutzkleidung und Arzneimitteln fehlt. Unsere Spenden unterstützen Action Medeor beider Ausrüstung zweier neu aufgebauter Isolierstationen in Monrovia, Liberia.<br><br>Die internationale Gemeinschaft reagiert nur sehr langsam – obwohl das Virus bereits seit Anfang des Jahres mehr als 2500 Menschen den Tod gekostet hat. Die langfristigen Folgen für die Volkswirtschaften, die Gesundheitssysteme und das Zusammenleben der Menschen in der Region sind verheerend. <br><br>Wir müssen jetzt handeln, um den Menschen vor Ort und ihren Helfern die notwendigen Materialien zukommen zu lassen. Wir denken dabei auch an unsere Freunde hier in der Region, die wir auf Dienstreisen kennen gelernt haben oder die als Ärzte in Alarmbereitschaft versetzt wurden. Helft uns dabei, den Menschen in ihrer Notlage zu helfen: Teilt diesen Link mit anderen und spendet, auch kleine Beiträge sind willkommen! <br><br>* Jonas lebt seit mehr als zwei Jahren im Senegal, Johanna war für knapp zwei Monate im benachbarten Gambia. Wir beide haben in den letzten Wochen die Nachrichtenlage verfolgt und mit den Menschen vor Ort über die Unsicherheit gesprochen. <br><br>Bild: Jonas Wipfler, Liberia, 2013",
@@ -358,7 +361,7 @@ access rights in order to see this information.
     "links": [
       {
         "rel": "platform",
-        "href": "https://www.betterplace.org/de/users/j_j5"
+        "href": "https://www.betterplace.org/de/users/397832"
       },
       {
         "rel": "contact_data",
@@ -371,27 +374,27 @@ access rights in order to see this information.
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/019/267/fill_960x500_Liberia_1.jpg"
+        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_960x500_Liberia_1.jpg"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/019/267/fill_730x380_Liberia_1.jpg"
+        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_730x380_Liberia_1.jpg"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/019/267/fill_618x322_Liberia_1.jpg"
+        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_618x322_Liberia_1.jpg"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/019/267/fill_410x214_Liberia_1.jpg"
+        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_410x214_Liberia_1.jpg"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/019/267/fill_270x141_Liberia_1.jpg"
+        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_270x141_Liberia_1.jpg"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/uploads/group/profile_picture/000/019/267/crop_original_Liberia_1.jpg"
+        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/crop_original_Liberia_1.jpg"
       }
     ]
   },

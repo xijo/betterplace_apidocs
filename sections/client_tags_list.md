@@ -45,7 +45,7 @@ Results are contained in a *data* attribute.
       <th align="left">tag</th>
       <td>string</td>
       <td>"Education"</td>
-      <td>The name of the tag, that is unique per client.
+      <td>The name of the tag. It is unique per client.
 </td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@ Results are contained in a *data* attribute.
       <td>number</td>
       <td>23</td>
       <td>The number of <a href="projects_list.md">projects</a>
-that where tagged with this tag.
+that were tagged with this tag.
 </td>
     </tr>
   </table>
@@ -86,7 +86,7 @@ that where tagged with this tag.
   "data": [
     {
       "tag": "Bedürftige",
-      "projects_count": 7,
+      "projects_count": 10,
       "links": [
         {
           "rel": "projects",
@@ -96,7 +96,7 @@ that where tagged with this tag.
     },
     {
       "tag": "Behinderte",
-      "projects_count": 6,
+      "projects_count": 4,
       "links": [
         {
           "rel": "projects",

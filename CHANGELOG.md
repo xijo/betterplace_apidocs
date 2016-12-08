@@ -3,6 +3,15 @@ All notable changes to the betterplace.org API v4 will be documented in this
 file. Notifications about changes will also be send to the [mailing list for
 service announcements](README.md#mailing-list-for-service-announcements).
 
+## 2016-12-05
+### Added
+- Added [endpoint](sections/client_donation_pledges_show.md) for [donation_pledges](sections/client_donation_pledges.md).
+
+## 2016-12-01
+### Removed
+- [Opinion Details] endpoint removed
+
+
 ## 2016-06-28
 ### Changed
 - [Opinion Lists](sections/opinions_list.md) now come with the same default order as opinions on betterplace.org - newest first.
@@ -116,7 +125,7 @@ service announcements](README.md#mailing-list-for-service-announcements).
 ## 2015-03-05
 ### Added
 - Added API endpoints for fundraising events and linked to them from all
-  relevent resources. This includes related features for clients as well.
+  relevant resources. This includes related features for clients as well.
   See [here](sections/fundraising_events_list.md) and
   [here](sections/fundraising_event_details.md).
 

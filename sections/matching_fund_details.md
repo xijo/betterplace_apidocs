@@ -156,7 +156,7 @@ belonging to this matching fund
 {
   "id": 2,
   "created_at": "2013-10-14T15:26:19+02:00",
-  "updated_at": "2015-03-10T09:44:38+01:00",
+  "updated_at": "2016-10-27T16:34:11+02:00",
   "activated_at": "2013-10-21T09:54:41+02:00",
   "title": "Jetzt mitmachen – OTTO verdoppelt jede Spende!",
   "description": "### OTTO hilft Hamburgs Stadtgrün – helfen Sie mit!\n\nGemeinsam mit der Loki Schmidt Stiftung und der Stadt Hamburg schließen wir Baumlücken in strukturschwachen Stadtteilen. Diese Lücken entstehen aufgrund von Krankheiten oder mangelnder Standfestigkeit der Straßenbäume.\n\n<img src=\"https://download.betterplace.org/matching-funds/mf_2-otto_description-logos.png\" style=\"height:140px;\" alt=\"\">\n\nSeit 2011 sind Hamburger Bürger aufgerufen, gemeinsam mit den beiden Partner-Organisationen für neue Bäume zu spenden.\n\nBereits in diesem Jahr hat OTTO das Projekt unterstützt und mit 25.000 Euro 50 Baumlücken in Gebieten geschlossen, in denen weniger gespendet wird – nämlich in Mümmelmannsberg, Nettelnburg, Steinbek, Steilshoop und Willhelmsburg!\n\nNun wollen wir noch weitere Bäume pflanzen – und zwar gemeinsam mit Ihnen!\n\n### Das funktioniert folgendermaßen:\n\n1. Sie spenden einen beliebig hohen Betrag auf betterplace.org.  \n2. OTTO verdoppelt Ihren Betrag!  \n3. Sobald durch Sie und OTTO 500 Euro zusammengekommen sind, legt die Stadt Hamburg die restlichen 500 Euro drauf, die für eine Pflanzung notwendig sind.  \n4. Ein Baum wird gepflanzt – Hamburg wird grüner!\n\nIhr Engagement zählt – und OTTO honoriert das mit dieser Verdopplungsaktion bis zu einem Maximalbetrag von 15.000 Euro! Helfen Sie jetzt hier mit!\n\n",

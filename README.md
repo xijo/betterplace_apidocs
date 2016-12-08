@@ -43,14 +43,12 @@ about updates and scheduled downtimes.
     1. [Project **Blog Posts** List](sections/blog_posts_list.md)
     1. [Project **Blog Post** Details](sections/blog_post_details.md)
     1. [Project **Opinions** List](sections/opinions_list.md)
-    1. [Project **Opinion** Details](sections/opinion_details.md)
     1. [Project **Pictures** List](sections/project_pictures_list.md)
     1. [Project **Picture** Details](sections/project_picture_details.md)
   1. **Fundraising Events**
     1. [**Fundraising Events** List and Search](sections/fundraising_events_list.md)
     1. [**Fundraising Events** Details](sections/fundraising_event_details.md)
     1. [Fundraising Event **Opinions** List](sections/opinions_list.md)
-    1. [Fundraising Event **Opinion** Details](sections/opinion_details.md)
     1. [Fundraising Event **Featured Projects** List](sections/fundraising_events_featured_projects_list.md)
     1. [Fundraising Event **Forwarding** List](sections/fundraising_event_forwardings_list.md)
   1. **Volunteering**
@@ -77,7 +75,9 @@ about updates and scheduled downtimes.
   0. [**Client** Donor Contact Data](sections/donor_contact_data_details.md)
   0. [**Client** Donation Pledges](sections/client_donation_pledges.md) [:lock:](#client-api)
   0. [**Client** Mailing Subscribtions](sections/client_mailing_subscriptions.md) [:lock:](#client-api)
-  0. [**Volunteering** List and Search](sections/volunteering_list.md) – 
+  0. [**Client** Volunteering List and Search](sections/volunteering_list.md) – 
+      See client section [and "Client Volunteering Offers"](#client-api)
+  0. [**Client** Volunteering Details](sections/volunteering_details.md) – 
       See client section [and "Client Volunteering Offers"](#client-api)
   0. [**Client** Projects List and Search](sections/projects_list.md) – 
       See client section [and "Client Projects"](#client-api)
@@ -289,8 +289,7 @@ Please contact developers@betterplace.org for more information
 
 ### API Client Libraries
 
-While we currently do not offer any official client API libraries, [Duilio Ruggiero](https://github.com/sinetris) implemented the prototypical
-ruby client [bettery](https://github.com/sinetris/bettery).
+While we currently do not offer any official client API libraries, [Duilio Ruggiero](https://github.com/sinetris) implemented the prototypical ruby client [bettery](https://github.com/sinetris/bettery).
 
 We would love to hear from you if you plan to use/extend bettery or implement your own client and publish the code.
 
@@ -322,8 +321,10 @@ with your questions.
 
 ### Client Projects
 
-Clients projects are projects on betterplace.org that are associated with a client.
-This way clients can control what projects are visible on their platform.
+Clients projects are projects on betterplace.org
+that are associated with an api client
+as part of the services that betterplace.org provides for companies.
+This way clients can control what projects are visible on their external platform.
 
 Some URLs have a special scope for clients. Examples:
 
@@ -338,9 +339,12 @@ projects, the API will return an HTTP error code `404`.
 
 ### Client Volunteering Offers
 
-It is possible to associate volunteering offers with a client in order to control
-which offers will be shown in the API endpoint. It works the same way as with
-projects, see ["Client Projects"](#client-projects).
+Clients volunteering offers are volunteering offers on betterplace.org
+that are associated with an api client
+as part of the services that betterplace.org provides for companies.
+This way clients can control what volunteering offers are visible on their external platform.
+
+It works the same way as with projects, see above (["Client Projects"](#client-projects)).
 
 
 ### Client Authentication
@@ -357,7 +361,7 @@ Username, password and client scope are provided as part of a contract with our
 ### Usage example
 
 The local German newspaper "Trierischer Volksfreund"
-has it's own donation portal at ["Meine Hilfe zählt"](http://www.meine-hilfe-zaehlt.de/).
+has its own donation portal at ["Meine Hilfe zählt"](http://www.meine-hilfe-zaehlt.de/).
 All data is pulled from this API. They also use the betterplace.org
 whitelabel donation form, which is another service betterplace.org provides for clients.
 

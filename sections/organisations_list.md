@@ -10,7 +10,7 @@ Results are contained in a *data* attribute.
 The details and list view show the same data per organisation.
 
 **For [betterplace.org clients](../README.md#client-api):**
-This resource is not avaliable at the moment.
+This resource is not available at the moment.
 
 
 ## URL Parameters
@@ -123,7 +123,7 @@ This may contain <code>br</code> tags.
       <td>boolean</td>
       <td>true</td>
       <td>True if the organisation is a tax-exempt charity.
-If so, Users can request a tax-receipt for donations to that organisation.
+If so, Users can request a tax receipt for donations to that organisation.
 </td>
     </tr>
     <tr>
@@ -299,7 +299,7 @@ access rights in order to see this information.
     {
       "id": 2262,
       "created_at": "2009-11-02T16:12:49+01:00",
-      "updated_at": "2016-07-06T15:03:30+02:00",
+      "updated_at": "2016-11-14T15:14:23+01:00",
       "latitude": 50.91569900512695,
       "longitude": 6.94116020202637,
       "street": "Höninger Weg 104",
@@ -330,7 +330,7 @@ access rights in order to see this information.
         "links": [
           {
             "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/beatrix_h"
+            "href": "https://www.betterplace.org/de/users/20505"
           },
           {
             "rel": "contact_data",
@@ -381,7 +381,7 @@ access rights in order to see this information.
     {
       "id": 125,
       "created_at": "2008-02-06T17:10:42+01:00",
-      "updated_at": "2016-07-06T15:01:06+02:00",
+      "updated_at": "2016-09-05T12:47:59+02:00",
       "latitude": 53.55759811401367,
       "longitude": 9.96815967559815,
       "street": "Neuer Kamp 32",
@@ -412,7 +412,7 @@ access rights in order to see this information.
         "links": [
           {
             "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/johannes_t4"
+            "href": "https://www.betterplace.org/de/users/449830"
           },
           {
             "rel": "contact_data",

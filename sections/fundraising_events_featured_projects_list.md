@@ -120,7 +120,7 @@ by us, otherwise it is null.
       <td>string</td>
       <td></td>
       <td>A description of the project. This may contain any of the following
-HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
 </td>
     </tr>
     <tr>
@@ -128,8 +128,8 @@ HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
       <td>boolean</td>
       <td>true</td>
       <td>True if the project marked as tax deductible.
-If so, Users can request a tax-receipt that can be used
-with the german tax authorities.
+If so, Users can request a tax receipt that can be used
+with the German tax authorities.
 [More about this](http://www.betterplace.org/c/hilfe/projekt-steuerlich-absetzbar/).
 </td>
     </tr>
@@ -138,7 +138,7 @@ with the german tax authorities.
       <td>boolean</td>
       <td>false</td>
       <td>True if the project must not receive donations. This might happen, for example,
-if a tax-receipt of german tax authorities rans out.
+if a tax receipt of German tax authorities ran out.
 
 Please check this flag whenever you display a donation button.
 Should you show a button for a project that cannot receive donations
@@ -256,7 +256,7 @@ donation needs (pre ~2014). This percentage includes those needs.
         </th>
       <td>object</td>
       <td>TODO</td>
-      <td>An organisation, Users will be added later</td>
+      <td>The organisation that carries this project</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -647,7 +647,7 @@ belonging to this matching fund
     {
       "id": 1114,
       "created_at": "2009-03-10T11:12:16+01:00",
-      "updated_at": "2016-08-19T14:30:02+02:00",
+      "updated_at": "2016-12-06T10:47:21+01:00",
       "latitude": 34.531617284782,
       "longitude": 69.13581752939456,
       "street": "Taimani, behind Qasemi Winhouse",
@@ -662,15 +662,15 @@ belonging to this matching fund
       "donations_prohibited": false,
       "completed_at": null,
       "closed_at": null,
-      "open_amount_in_cents": 1757984,
-      "donated_amount_in_cents": 4805868,
-      "positive_opinions_count": 746,
+      "open_amount_in_cents": 1715079,
+      "donated_amount_in_cents": 4848773,
+      "positive_opinions_count": 767,
       "negative_opinions_count": 0,
-      "donor_count": 560,
+      "donor_count": 565,
       "progress_percentage": 73,
       "incomplete_need_count": 10,
       "completed_need_count": 87,
-      "blog_post_count": 95,
+      "blog_post_count": 91,
       "contact": {
         "id": 130618,
         "name": "E. Kinast",
@@ -690,7 +690,7 @@ belonging to this matching fund
         "links": [
           {
             "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/erika_k2"
+            "href": "https://www.betterplace.org/de/users/130618"
           },
           {
             "rel": "contact_data",
@@ -721,30 +721,31 @@ belonging to this matching fund
         ]
       },
       "profile_picture": {
+        "fallback": true,
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_original_girls-merza-sm.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_original_girls-merza-sm.jpg"
           }
         ]
       },

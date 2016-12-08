@@ -71,7 +71,7 @@ and the <a href="client_donation_pledges.md">Client donation pledge endpoint</a>
       <td>string</td>
       <td>"confirmed"</td>
       <td>At the moment, all donations that are returned by the API are "confirmed".
-Unconfirmed donations do not show up at all or disappear after they where revoked.
+Unconfirmed donations do not show up at all or disappear after they were revoked.
 Revocations usually take place during the first 14 days – but there are no guarantees.
 
 Please make sure to check for the "confirmed" state in your application explicitly since
@@ -106,8 +106,9 @@ ThirdPartyApp custom donation form for organisations</a>, for example.
       <th align="left">receiver_type</th>
       <td>string</td>
       <td>"Project"</td>
-      <td>Client donations may go to <code>Project</code>,
-Project <code>Element</code>, <code>FundraisingEvent</code>.
+      <td>Client donations may go to a <code>Project</code>,
+a Project's <code>Element</code>, a <code>FundraisingEvent</code>,
+a <code>Pool</code>.
 </td>
     </tr>
     <tr>
@@ -135,9 +136,12 @@ Project <code>Element</code>, <code>FundraisingEvent</code>.
 
     <tr>
       <th align="left">receiver</th>
-      <td>Link to the <a href="project_details.md">project details</a>
-or <a href="need_details.md">project need details</a>
-that is associated with this donation.
+      <td>Link to the <a href="project_details.md">project details</a>,
+<a href="need_details.md">project need details</a>,
+<a href="fundraising_event_details.md">fundraising event details</a>,
+that is associated with this donation.<br>
+Right now, there is no api end point for donations that are
+redirect or donated to the client pool.
 </td>
     </tr>
     <tr>
@@ -158,9 +162,9 @@ that is associated with this donation.
 
 ```json
 {
-  "total_entries": 14412,
+  "total_entries": 15625,
   "offset": 0,
-  "total_pages": 4804,
+  "total_pages": 5209,
   "current_page": 1,
   "per_page": 3,
   "data": [

@@ -9,7 +9,7 @@ A list of betterplace.org volunteering offers (donate time).
 Results are contained in a *data* attribute.
 
 **For [betterplace.org clients](../README.md#client-api):**
-This resource is not avaliable at the moment.
+This resource is not available at the moment.
 
 
 ## URL Parameters
@@ -205,7 +205,7 @@ The default order is the same as for the
       <td>string</td>
       <td></td>
       <td>A description of the offer. This may contain any of the following
-HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
 </td>
     </tr>
     <tr>
@@ -216,7 +216,7 @@ HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
         </th>
       <td>object</td>
       <td>TODO</td>
-      <td>An organisation, Users will be added later</td>
+      <td>The organisation that carrier this volunteering</td>
     </tr>
     <tr>
       <th align="left">vacancies</th>
@@ -667,58 +667,395 @@ Templated, needs insertion of the client_id.
 
 ```json
 {
-  "total_entries": 6042,
+  "total_entries": 4196,
   "offset": 3,
-  "total_pages": 2014,
+  "total_pages": 1399,
   "current_page": 2,
   "per_page": 3,
   "data": [
     {
-      "id": 6801,
-      "created_at": "2013-02-12T12:58:15+01:00",
-      "updated_at": "2016-07-13T10:01:28+02:00",
-      "latitude": 53.5511,
-      "longitude": 9.99368,
-      "street": "",
-      "zip": "",
-      "city": "Hamburg",
-      "country": "Deutschland",
-      "content_updated_at": "2016-02-23T13:22:58+01:00",
-      "title": "Als Mentor/in bei Kindern die Lust am Lesen wecken",
-      "description": "Unsere ehrenamtlichen Mentoren sind Leselernhelfer. Mit Nachhilfe oder Förderunterricht hat dies nichts zu tun. Mentoren wissen, wie wertvoll Bücher und Bildung sind. Und dass man Lesen fürs Leben lernt, nicht nur für die Schule. Ihr Wissen und ihre Begeisterung geben die Mentoren weiter an Schülerinnen und Schüler, die sich mit Sprache schwer tun.<br><br>Wir suchen Menschen, die:<br>    - selbst Freude am Lesen haben<br>    - geduldig, freundlich und respektvoll mit Kindern umgehen<br>    - Spaß am Gespräch und auch am Zuhören haben<br>    - Menschen aus anderen Kulturen vorurteilsfrei begegnen<br>    - zuverlässig sind<br><br>Einmal wöchentlich treffen sich Mentor und Lesekind für circa eine Stunde in der Schule zur gemeinsamen Lesestunde. Ihre Tätigkeit soll nicht den Deutschunterricht ersetzen und ist auch nicht als Nachhilfe gedacht. Das Lesekind soll keinen Leistungsdruck erleben, sondern mit Freude an die Bücher herangeführt werden. <br><br>MENTOR HAMBURG e.V. bietet den Mentoren:<br>    - eine sorgfältige Vorbereitung für ihre Mentortätigkeit<br>    - eine Vermittlung mit einem Lesekind an einer wohnortsnahen Schule<br>    - regelmäßige Mentorentreffen zum kollegialen Austausch<br>    - vielfältige Weiterbildungsangebote über das ganze Jahr<br>    - Bücherlisten, Lesetipps und Ideen, wie die Lesestunden gestaltet werden könnten<br>    - einmal im Jahr die Möglichkeit gemeinsam mit dem Lesekind ins Theater zu gehen<br>    - die Möglichkeit, kostenlos mit dem Lesekind ins Kinderbuchhaus oder Schulmuseum zu gehen",
+      "id": 7074,
+      "created_at": "2013-03-03T19:43:47+01:00",
+      "updated_at": "2016-11-11T14:12:30+01:00",
+      "latitude": 10.6346,
+      "longitude": -85.4407,
+      "street": " Rincon de La Vieja",
+      "zip": "1000",
+      "city": "Liberia",
+      "country": "Costa Rica",
+      "content_updated_at": "2016-01-17T08:38:25+01:00",
+      "title": "Projekt des nachhaltigen Tourismus in Costa Rica",
+      "description": "Projekt des nachhaltigen Tourismus in der Buena Vista Lodge<br>An den Hängen des Rincon de la Vieja Vulkan und in der Mitte von fünf Nationalparks (Rincón de la Vieja, Santa Rosa, Guanacaste, Santa Elena und El Acha) finden Sie unsere Lodge, die versucht eine autarke organische touristische Unterkunft zu werden , die nachhaltigen Tourismus betreibt und sich zum Ziel gemacht hat die natürlichen Ressourcen so gut wie möglich zu schützen.<br>Ziel unseres Volontär Programm<br>Ziel unseres Freiwilligen Programms ist Bildungsarbeit im Umweltschutz. Der Schwerpunkt dieser Bildungsarbeit konzentriert sich auf die Erlernung einer verantwortungsvollen und nachhaltigen Nutzung der natürlichen Ressourcen durch praktische Tätigkeiten mit dem Ziel dieses Wissen als Multiplikator an andere Menschen weiterzugeben. Unsere Philosophie ist es, die meisten der grundlegenden Produkte, die wir verbrauchen, in einer kostengünstigen und umweltfreundlichen Weise zu erzeugen, unter Berücksichtigung der sozialen, ökologischen, wirtschaftlichen und politischen Vorgaben.<br><br>Ein Agrarwirt der bekannten agrarwirtschaftlichen Universität EARTH, der sich auf die Verwaltung und Nutzung natürlicher Ressourcen spezialisiert hat, wird die Volontäre durch ihr Volontariat begleiten.<br>Nachhaltige Projekte, bei denen Freiwillige Wissen vermittelt wird:<br>Woche eins und zwei: Abfall ist kein Problem sondern bei richtiger Handhabung die Möglichkeit eine neue nutzbare Ressource herzustellen.<br>• Die Biogasanlage als Ressourcenhersteller<br>Auf der Lodge haben wir eine Kläranlage, die wir als produktives System nutzen. Durch die Zuführung aller organischen Abfälle wie Seife, Lebensmittel und Fette (tierische und pflanzliche Fette) wird die Verschmutzung durch physikalische Verfahren verringert (Filter, Sedimentation und Fest-Trennung) und durch biologische Verfahren (Mikroorganismus Aktivitäten) produzieren wir Methan, das für das Kochen, die Wassererwärmung und demnächst zur Stromherstellung genutzt wird. Weiterhin wird natürliches Düngemittel hergestellt und zur gleichen Zeit, reduzieren wir 98% der Wasserverschmutzung.<br>Durch dieses vorbildliche System können in ländlichen Gemeinden wo manchmal Strom nicht zur Verfügung steht, und man teures Propangas oder teure chemische Düngung für die Acker kaufen muss eine kostengünstige, effiziente und nachhaltige Lösung zur Verfügung gestellt.<br>Woche drei: Arbeiten auf der Bio-Farm<br>• Arbeiten in der hoteleigenen Biofarm",
       "carrier": {
-        "latitude": 53.549379,
-        "longitude": 10.008464,
-        "name": "MENTOR - Die Leselernhelfer HAMBURG e.V.",
-        "street": "Hühnerposten 1 C",
-        "city": "Hamburg",
-        "zip": "20539",
+        "latitude": 51.75091934204102,
+        "longitude": 14.64650440216064,
+        "name": "(F.A.W.N.) Deutschland e.V.",
+        "street": "Gubenerstr.36",
+        "city": "Forst/Lausitz",
+        "zip": "03149",
         "country": "Deutschland",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/fill_100x100_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_100x100_original_FAWNLogo2010neu.jpg"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/fill_200x200_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_200x200_original_FAWNLogo2010neu.jpg"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/fill_400x400_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_400x400_original_FAWNLogo2010neu.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/116/crop_original_1_MENTOR_Jubilaeumslogo_RZ1_CMYK-trans.jpg"
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/crop_original_original_FAWNLogo2010neu.jpg"
             }
           ]
         },
         "links": [
           {
             "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/13116.json"
+            "href": "https://api.betterplace.org/de/api_v4/organisations/2089.json"
+          }
+        ]
+      },
+      "vacancies": 6,
+      "image": {
+        "description": "Blick vom Projekt auf Guanacaste bis zum Pazifik",
+        "links": [
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_618x322_P1220394.JPG"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_270x141_P1220394.JPG"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/P1220394.JPG"
+          },
+          {
+            "rel": "thumb",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/thumb_P1220394.JPG"
+          },
+          {
+            "rel": "medium",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/medium_P1220394.JPG"
+          },
+          {
+            "rel": "regular",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/regular_P1220394.JPG"
+          }
+        ]
+      },
+      "contact": {
+        "name": "Ralph Scheel",
+        "phone": "+49 (0) 1577-2623892",
+        "email": "info@fawn.de",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/019/008/fill_100x100_original_Carara-Nationalpark.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/019/008/crop_original_original_Carara-Nationalpark.jpg"
+            }
+          ]
+        },
+        "links": [
+
+        ]
+      },
+      "location_fixed": true,
+      "working_time_selection": "egal wann / nach Vereinbarung",
+      "working_time_weekends": [
+
+      ],
+      "working_time_weekdays": [
+
+      ],
+      "begins_at": null,
+      "ends_at": null,
+      "topics": [
+        "Bildung",
+        "Entwicklungszusammenarbeit",
+        "Kultur, Freizeit & Sport",
+        "Tierschutz & Umwelt"
+      ],
+      "activities": [
+        "Gruppen betreuen",
+        "Büroarbeit",
+        "werken/gärtnern",
+        "organisieren/planen"
+      ],
+      "imported_from": null,
+      "import_information": null,
+      "profile_picture": {
+        "fallback": true,
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_960x500_P1220394.JPG"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_730x380_P1220394.JPG"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_618x322_P1220394.JPG"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_410x214_P1220394.JPG"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_270x141_P1220394.JPG"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/crop_original_P1220394.JPG"
+          }
+        ]
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/7074.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/volunteering/7074-projekt-des-nachhaltigen-tourismus-in-costa-rica"
+        },
+        {
+          "rel": "inquiries",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/7074-projekt-des-nachhaltigen-tourismus-in-costa-rica/inquiries.json",
+          "templated": true
+        }
+      ]
+    },
+    {
+      "id": 7259,
+      "created_at": "2013-03-08T11:45:28+01:00",
+      "updated_at": "2016-07-07T12:37:24+02:00",
+      "latitude": 44.62649917602539,
+      "longitude": -85.78849792480469,
+      "street": null,
+      "zip": null,
+      "city": null,
+      "country": null,
+      "content_updated_at": "2016-02-03T07:23:47+01:00",
+      "title": "Improve our website and online info: Social media expert",
+      "description": "The volunteer will: <br>Help to translate our project blog in Germany<br>Volunteer will help in office work. <br>The volunteer will mobilise his or her network to help spread the word about our crowdfunding campaigns.<br>The volunteer will write online reports and blogs about the implemented work in the organisation. <br>Volunteer will engage in unskillled work like construction of domesticated animal houses. <br>Help in updating our betterplace project page.<br>The volunteer will post pictures of our activities and write comments about them in German.",
+      "carrier": {
+        "latitude": 44.62649917602539,
+        "longitude": -85.78849792480469,
+        "name": "Ndibwami Integrated Rescue Project",
+        "street": "Grant",
+        "city": "Kamapala",
+        "zip": "256",
+        "country": "Uganda",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_100x100_original_NIRP_LOGO.jpg"
+            },
+            {
+              "rel": "fill_200x200",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_200x200_original_NIRP_LOGO.jpg"
+            },
+            {
+              "rel": "fill_400x400",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_400x400_original_NIRP_LOGO.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/crop_original_original_NIRP_LOGO.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/4177.json"
+          }
+        ]
+      },
+      "vacancies": 3,
+      "image": {
+        "description": "Volunteers share business skills with women groups",
+        "links": [
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_618x322_home-office.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_270x141_home-office.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/home-office.jpg"
+          },
+          {
+            "rel": "thumb",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/thumb_home-office.jpg"
+          },
+          {
+            "rel": "medium",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/medium_home-office.jpg"
+          },
+          {
+            "rel": "regular",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/regular_home-office.jpg"
+          }
+        ]
+      },
+      "contact": {
+        "name": "Hellen Nalugo Sabastian",
+        "phone": "+256773779423",
+        "email": "nirpproject@yahoo.com",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/106/107/fill_100x100_original_nalugo.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/106/107/crop_original_original_nalugo.jpg"
+            }
+          ]
+        },
+        "links": [
+
+        ]
+      },
+      "location_fixed": false,
+      "working_time_selection": "egal wann / nach Vereinbarung",
+      "working_time_weekends": [
+
+      ],
+      "working_time_weekdays": [
+
+      ],
+      "begins_at": null,
+      "ends_at": null,
+      "topics": [
+        "Bildung",
+        "Kinder & Jugendliche",
+        "Kranke",
+        "Sozial Benachteiligte"
+      ],
+      "activities": [
+        "Büroarbeit",
+        "programmieren",
+        "PR / Social Media"
+      ],
+      "imported_from": null,
+      "import_information": null,
+      "profile_picture": {
+        "fallback": true,
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_960x500_home-office.jpg"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_730x380_home-office.jpg"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_618x322_home-office.jpg"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_410x214_home-office.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_270x141_home-office.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/crop_original_home-office.jpg"
+          }
+        ]
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/7259.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/volunteering/7259-improve-our-website-and-online-info-social-media-expert"
+        },
+        {
+          "rel": "inquiries",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/7259-improve-our-website-and-online-info-social-media-expert/inquiries.json",
+          "templated": true
+        }
+      ]
+    },
+    {
+      "id": 7268,
+      "created_at": "2013-03-11T18:00:54+01:00",
+      "updated_at": "2016-11-03T11:25:45+01:00",
+      "latitude": 52.52,
+      "longitude": 13.405,
+      "street": "",
+      "zip": "",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "content_updated_at": "2016-01-07T17:20:56+01:00",
+      "title": "\"Pate oder Patin werden und mit einem Neuköllner Kind die Welt neu entdecken\"",
+      "description": "Bevor wir uns hier in Details verlieren, lassen wir erst einmal unsere Patin Linda zu Wort kommen, denn wer könnte besser Beschreiben, was ein Engagement in unserem Projekt ausmacht, als die Engagierten selbst?<br>http://neukoellner-talente.de/paten/paten-stellen-sich-vor/<br><br>Wer neugierig ist und noch mehr wissen will, kann gerne weiter lesen oder sich gleich bei uns im Büro melden: 030 - 62 73 80 14<br><br>---<br><br>http://neukoellner-talente.de/<br><br>Kinder brauchen Zeit, viel Aufmerksamkeit und eine individuelle Förderung, um ihre Stärken und Begabungen zu entdecken und zu entfalten. Mit ihrem Patenschaftsprojekt »Neuköllner Talente« wendet sich die Bürgerstiftung Neukölln an Kinder im Grundschulalter, die entdecken und zeigen wollen, was in ihnen steckt. Vorrangiges Ziel ist es, durch eine intensive 1:1 Betreuung im Rahmen einer Patenschaft, benachteiligten Kindern in dem multiethnischen Berliner Bezirk die Chance zum Entdecken ihrer Interessen und Begabungen, und die Möglichkeit zur Teilhabe zu eröffnen.",
+      "carrier": {
+        "latitude": 52.46874,
+        "longitude": 13.4341,
+        "name": "Bürgerstiftung Neukölln",
+        "street": "Emser Str. 117",
+        "city": "Berlin",
+        "zip": "12051",
+        "country": "Deutschland",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/fill_100x100_profile_thumb_B_rgerstiftung.png"
+            },
+            {
+              "rel": "fill_200x200",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/fill_200x200_profile_thumb_B_rgerstiftung.png"
+            },
+            {
+              "rel": "fill_400x400",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/fill_400x400_profile_thumb_B_rgerstiftung.png"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/crop_original_profile_thumb_B_rgerstiftung.png"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/12964.json"
           }
         ]
       },
@@ -728,44 +1065,44 @@ Templated, needs insertion of the client_id.
         "links": [
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_618x322_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_618x322_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_270x141_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_270x141_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/thumb_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/thumb_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/medium_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/medium_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/regular_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/regular_TalentePatInnenaufruf_2.jpg"
           }
         ]
       },
       "contact": {
-        "name": "Sandra Weis",
-        "phone": "",
-        "email": "info@mentor-hamburg.de",
+        "name": "Deniz Eroglu",
+        "phone": "030 627 380 14",
+        "email": "info@neukoellner-talente.de",
         "picture": {
           "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/993/fill_100x100_original_MENTOR_HH_Logo.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/293/450/fill_100x100_original_00b1f1a4aa.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/993/crop_original_original_MENTOR_HH_Logo.jpg"
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/293/450/crop_original_original_00b1f1a4aa.jpg"
             }
           ]
         },
@@ -786,13 +1123,11 @@ Templated, needs insertion of the client_id.
       "topics": [
         "Bildung",
         "Kinder & Jugendliche",
-        "Flüchtlinge & Migranten",
-        "Sozial Benachteiligte"
+        "Kultur, Freizeit & Sport",
+        "Flüchtlinge & Migranten"
       ],
       "activities": [
-        "beraten/coachen",
-        "besuchen/begleiten",
-        "Nachhilfe/vorlesen"
+        "besuchen/begleiten"
       ],
       "imported_from": null,
       "import_information": null,
@@ -801,376 +1136,42 @@ Templated, needs insertion of the client_id.
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_960x500_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_960x500_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_730x380_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_730x380_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_618x322_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_618x322_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_410x214_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_410x214_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/fill_270x141_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_270x141_TalentePatInnenaufruf_2.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/801/crop_original_Foto-MENTOR-2.jpg"
+            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/crop_original_TalentePatInnenaufruf_2.jpg"
           }
         ]
       },
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6801.json"
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/7268.json"
         },
         {
           "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6801-als-mentor-in-bei-kindern-die-lust-am-lesen-wecken"
+          "href": "https://www.betterplace.org/de/volunteering/7268-pate-oder-patin-werden-und-mit-einem-neukollner-kind-die-welt-neu-entdecken"
         },
         {
           "rel": "inquiries",
-          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/6801-als-mentor-in-bei-kindern-die-lust-am-lesen-wecken/inquiries.json",
-          "templated": true
-        }
-      ]
-    },
-    {
-      "id": 6831,
-      "created_at": "2013-02-13T18:44:17+01:00",
-      "updated_at": "2016-03-01T12:38:46+01:00",
-      "latitude": 0.1893,
-      "longitude": 34.9484,
-      "street": "57726",
-      "zip": "",
-      "city": "Kisumu",
-      "country": "Kenia",
-      "content_updated_at": "2016-03-01T12:38:46+01:00",
-      "title": "experience the diverse village stories and mythologies",
-      "description": "Teaching and instructing young children to read and write",
-      "carrier": {
-        "latitude": -0.15000000596046,
-        "longitude": 35.20000076293945,
-        "name": "Center For People Development",
-        "street": "Akodhe Loth road",
-        "city": "Kisumu",
-        "zip": "40107",
-        "country": "Kenia",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/fill_100x100_profile_thumb_LOGO_2.png"
-            },
-            {
-              "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/fill_200x200_profile_thumb_LOGO_2.png"
-            },
-            {
-              "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/fill_400x400_profile_thumb_LOGO_2.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/629/crop_original_profile_thumb_LOGO_2.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/4629.json"
-          }
-        ]
-      },
-      "vacancies": 2,
-      "image": {
-        "description": "",
-        "links": [
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
-          },
-          {
-            "rel": "thumb",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.betterplace.png"
-          },
-          {
-            "rel": "medium",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.betterplace.png"
-          },
-          {
-            "rel": "regular",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.betterplace.png"
-          }
-        ]
-      },
-      "contact": {
-        "name": "PETER OTIENO",
-        "phone": "+254722261101",
-        "email": "khayombe@gmail.com",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/127/272/fill_100x100_peter_o320140319-23207-8rvpxr.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/127/272/crop_original_peter_o320140319-23207-8rvpxr.jpg"
-            }
-          ]
-        },
-        "links": [
-
-        ]
-      },
-      "location_fixed": true,
-      "working_time_selection": "egal wann / nach Vereinbarung",
-      "working_time_weekends": [
-
-      ],
-      "working_time_weekdays": [
-
-      ],
-      "begins_at": null,
-      "ends_at": null,
-      "topics": [
-        "Bildung",
-        "Kinder & Jugendliche"
-      ],
-      "activities": [
-        "Nachhilfe/vorlesen"
-      ],
-      "imported_from": null,
-      "import_information": null,
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.betterplace.png"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.betterplace.png"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.betterplace.png"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6831.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6831-experience-the-diverse-village-stories-and-mythologies"
-        },
-        {
-          "rel": "inquiries",
-          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/6831-experience-the-diverse-village-stories-and-mythologies/inquiries.json",
-          "templated": true
-        }
-      ]
-    },
-    {
-      "id": 6843,
-      "created_at": "2013-02-14T18:55:53+01:00",
-      "updated_at": "2016-02-22T10:50:07+01:00",
-      "latitude": 7.52694,
-      "longitude": 1.12667,
-      "street": "Doulassame",
-      "zip": "",
-      "city": "Atakpamé",
-      "country": "Togo",
-      "content_updated_at": "2016-02-22T10:50:07+01:00",
-      "title": "Mit Kreativiät und Engagement den Schulalltag gehörloser Kinder bereichern!",
-      "description": "Zur Unterstützung unseres Lehrers an der Gehörlosenschule in Atakpamé (Togo) suchen wir freiwillige Helfer. Sie helfen bei verschiedenen Aufgaben, lernen die Gebärdensprache, betreuen die Kinder und unterrichten nach Einarbeitung eigenverantwortlich eine Kleingruppe. Natürlich sind eigene Ideen und Projekte bei Schülern und Lehrer sehr willkommen: Kunst, Theater, Sport, Spiele, Wettbewerbe, Ausflüge.. Ihre Kreativität ist gefragt!<br><br>Vorraussetzungen:<br>Freude am Umgang mit Kindern, Einfühlungsvermögen, Kreativität, Verantwortungsbewusstsein, Engagement und vorallem Geduld!!<br><br>Der/Die Freiwillige ist NICHT über uns versichert und trägt selbst alle Kosten! Gerne organisieren wir die Unterbringung vor Ort - (Bevorzugt in Gastfamilien)! Außerdem wird der/die Freiwillige während seiner/ihrer gesamten Aufenthaltszeit von unseren Mitarbeitern betreut! Auf Wunsch findet vor Arbeitsantritt ein Sprachkurs der Landes- und Gebärdensprache statt.<br>Nach erfolgreicher Tätigkeit stellen wir dem/der Freiwilligen ein Zertifikat aus.<br><br>Dauer des Einsatzes: mind. 3 Wochen<br>                                  höchs. 24 Monate (Ausnahmen möglich)<br>Der Einstieg ist, ab September 2013, während des kompletten Jahres möglich. Die Schule ist Anfang Juli bis Ende September geschlossen.<br>Zum Abreisezeitpunkt sollte der Freiwillige bereits volljährig sein! <br>Ausnahmen nur in Absprache mit den Eltern.<br><br>Bewerbung:<br>*Lebenslauf<br>*Motivationsschreiben<br>*Abschlusszeugnis<br><br>Gerne stehe ich Ihnen für weitere Fragen und zusätzliche Informationen zur Verfügung!<br><br>Liebe Grüße,<br>Carola Burkl",
-      "carrier": {
-        "latitude": 7.5269444,
-        "longitude": 1.1266667,
-        "name": "Engagement Enfants sans Limites",
-        "street": "Doulassame",
-        "city": "Atakpamé",
-        "zip": "",
-        "country": "Togo",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/fill_100x100_profile_thumb_logoaufwei_.png"
-            },
-            {
-              "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/fill_200x200_profile_thumb_logoaufwei_.png"
-            },
-            {
-              "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/fill_400x400_profile_thumb_logoaufwei_.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/013/144/crop_original_profile_thumb_logoaufwei_.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/13144.json"
-          }
-        ]
-      },
-      "vacancies": 2,
-      "image": {
-        "description": "Eine Freiwillige bei der Arbeit mit einer Schülerin der ersten Klasse. Zählen von 1 bis 10",
-        "links": [
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_618x322_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_270x141_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/thumb_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/medium_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/regular_861691_484177131642632_1960199284_n.jpg"
-          }
-        ]
-      },
-      "contact": {
-        "name": "Carola Burkl",
-        "phone": "015777329641",
-        "email": "carola.burkl@schlucht.net",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/291/196/fill_100x100_original_IMG_3402.JPG"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/291/196/crop_original_original_IMG_3402.JPG"
-            }
-          ]
-        },
-        "links": [
-
-        ]
-      },
-      "location_fixed": true,
-      "working_time_selection": "regelmäßig/langfristig",
-      "working_time_weekends": [
-
-      ],
-      "working_time_weekdays": [
-        "vormittags",
-        "nachmittags"
-      ],
-      "begins_at": null,
-      "ends_at": null,
-      "topics": [
-        "Bildung",
-        "Kinder & Jugendliche",
-        "Menschen mit Behinderung",
-        "Menschenrechte"
-      ],
-      "activities": [
-        "Gruppen betreuen",
-        "malen/gestalten",
-        "Sport machen",
-        "Nachhilfe/vorlesen"
-      ],
-      "imported_from": null,
-      "import_information": null,
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_960x500_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_730x380_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_618x322_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_410x214_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/fill_270x141_861691_484177131642632_1960199284_n.jpg"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/006/843/crop_original_861691_484177131642632_1960199284_n.jpg"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/6843.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/6843-mit-kreativiat-und-engagement-den-schulalltag-gehorloser-kinder-bereichern"
-        },
-        {
-          "rel": "inquiries",
-          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/6843-mit-kreativiat-und-engagement-den-schulalltag-gehorloser-kinder-bereichern/inquiries.json",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/7268-pate-oder-patin-werden-und-mit-einem-neukollner-kind-die-welt-neu-entdecken/inquiries.json",
           "templated": true
         }
       ]

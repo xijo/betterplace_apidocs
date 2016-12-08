@@ -1,11 +1,12 @@
 
-# Opinions List ⇄ [Details](opinion_details.md)
+# Opinions List
 
 ```Rebol
 GET https://api.betterplace.org/de/api_v4/projects/1114/opinions.json?facets=has_message%3Atrue&order=created_at%3AASC
 ```
 
 A list of betterplace.org projects opinions (donate money).
+(There is no details view for opinions.)
 
 ```Rebol
 GET https://api.betterplace.org/de/api_v4/fundraising_events/19267/opinions.json?facets=has_message:true&order=created_at:AASC
@@ -97,11 +98,8 @@ It is possible to set multiple order parameters.
 <li><code>facets=score:positive</code> / <code>negative</code> only positive / negative opinion.
 <li><code>facets=has_message:true</code> / <code>false</code> only opinions with / without a message.
 <li><code>facets=has_donation:true</code> / <code>false</code> only opinions with / without a donation.
-Note that "has_donation:true" might also show donations where <code>donated_amount_in_cents</code> is not avaliable,
+Note that "has_donation:true" might also show donations where <code>donated_amount_in_cents</code> is not available,
 see 'donated_amount_in_cents' response attribute documentation for details.
-<br>
-Known issue: ATM forwarding donations will be filtered with "has_donation:true" but shown with "has_donation:false".
-
 </ul>
 It is possible to set multiple facet filters.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
@@ -266,12 +264,6 @@ empty/null for anonymous donations for anonymous donations.
   </tr>
 
     <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
-(<a href="opinion_details.md">opinion details</a>)
-</td>
-    </tr>
-    <tr>
       <th align="left">project</th>
       <td>Link to the project this opinion belongs to
 (<a href="project_details.md">project details</a>)
@@ -318,27 +310,23 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 746,
+  "total_entries": 16,
   "offset": 0,
-  "total_pages": 249,
-  "current_page": 1,
+  "total_pages": 1,
+  "current_page": null,
   "per_page": 3,
   "data": [
     {
-      "id": 937147,
-      "created_at": "2016-07-20T19:07:35+02:00",
-      "updated_at": "2016-07-20T19:07:35+02:00",
-      "donated_amount_in_cents": 102,
+      "id": 1408913,
+      "created_at": "2016-12-06T10:47:12+01:00",
+      "updated_at": "2016-12-06T10:47:21+01:00",
+      "donated_amount_in_cents": 2000,
       "matched_amount_in_cents": 0,
       "matched": false,
       "score": "positive",
       "author": null,
       "message": "",
       "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/937147.json"
-        },
         {
           "rel": "project",
           "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
@@ -346,20 +334,39 @@ access rights in order to see this information.
       ]
     },
     {
-      "id": 937146,
-      "created_at": "2016-07-20T18:57:26+02:00",
-      "updated_at": "2016-07-20T18:57:26+02:00",
-      "donated_amount_in_cents": 102,
-      "matched_amount_in_cents": 0,
-      "matched": false,
+      "id": 6669,
+      "created_at": "2011-03-28T22:20:44+02:00",
+      "updated_at": "2016-11-30T08:50:45+01:00",
       "score": "positive",
-      "author": null,
-      "message": "",
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/937146.json"
+      "author": {
+        "id": 175319,
+        "name": "B. Gomez",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+            }
+          ]
         },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/175319"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/175319/contact_data.json"
+          }
+        ]
+      },
+      "message": "Skateistan is using skateboarding to provide the youth of Afghanistan a positive outlet.  In a war-torn country where the youth make up a vast majority of the population, Skateistan is providing the youth a positive outlet where they can grow, learn, and interact with students from diverse backgrounds.",
+      "links": [
         {
           "rel": "project",
           "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
@@ -367,20 +374,39 @@ access rights in order to see this information.
       ]
     },
     {
-      "id": 937145,
-      "created_at": "2016-07-20T18:55:12+02:00",
-      "updated_at": "2016-07-20T18:55:12+02:00",
-      "donated_amount_in_cents": 102,
-      "matched_amount_in_cents": 0,
-      "matched": false,
+      "id": 5548,
+      "created_at": "2010-11-25T20:55:23+01:00",
+      "updated_at": "2010-11-25T20:55:23+01:00",
       "score": "positive",
-      "author": null,
-      "message": "",
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions/937145.json"
+      "author": {
+        "id": 132423,
+        "name": "R. Bader",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/132/423/fill_100x100_original_Picture_1.png"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/132/423/crop_original_original_Picture_1.png"
+            }
+          ]
         },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/132423"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/132423/contact_data.json"
+          }
+        ]
+      },
+      "message": "I spent six months this year as a volunteer with Skateistan. During my internship I taught creative arts and multimedia in classroom, taught skateboarding to over 100 girls every week, liaised with international media, wrote donor reports and proposals, managed online content, and worked with Afghan staff/volunteers to pass on responsibilities and a sense of ownership. The children that attend Skateistan are so grateful to have the sports and educational opportunities open to them, and every single day the NGO is growing and improving its work with youth in Afghanistan. Skateistan is the most important, exciting and rewarding thing I've ever been a part of.",
+      "links": [
         {
           "rel": "project",
           "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"

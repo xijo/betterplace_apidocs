@@ -83,7 +83,7 @@ Use this resource as follows: `/clients/PERMALINK/pool.json`
 {
   "id": 4,
   "created_at": "2016-01-14T15:12:34+01:00",
-  "updated_at": "2016-07-18T20:15:57+02:00",
+  "updated_at": "2016-11-20T16:39:05+01:00",
   "links": [
     {
       "rel": "self",

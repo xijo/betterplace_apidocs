@@ -89,7 +89,10 @@ field always has the value <code>BlogPost</code>.
       <th align="left">body</th>
       <td>string</td>
       <td>I am so happy to hear about the first donation for the Good Gifted Garden. If I told Chun …</td>
-      <td>The body may contain html such as links, embedded videos, and pictures.</td>
+      <td>The body may contain html such as links, embedded videos, and picture or
+any of the following HTML tags:
+<code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -263,114 +266,13 @@ access rights in order to see this information.
 
 ```json
 {
-  "total_entries": 95,
+  "total_entries": 0,
   "offset": 0,
-  "total_pages": 48,
-  "current_page": 1,
+  "total_pages": 1,
+  "current_page": null,
   "per_page": 2,
   "data": [
-    {
-      "id": 10413,
-      "created_at": "2009-10-28T11:48:26+01:00",
-      "updated_at": "2009-10-28T11:51:35+01:00",
-      "lang": "de",
-      "type": "BlogPost",
-      "title": "Kabul: Eröffnung der Skatehalle am 29.10.2009",
-      "body": "<p>Seit zwei Jahren arbeitet das Skateistan-Team mit ganzer Kraft daran, einen indoor Skatepark in Kabul zu er&ouml;ffnen. Dementsprechend gl&uuml;cklich sind Alle, nun die die offizielle Er&ouml;ffnung Kabul's gr&ouml;&szlig;ter Sport-und Skatehalle bekannt geben zu k&ouml;nnen. Am 29. Oktober findet die feierliche Er&ouml;ffnung endlich statt. Dieser Meilenstein konnte nur durch die Zusammenarbeit von afghanischen und internationalen Teams erm&ouml;glicht werden - und nat&uuml;rlich durch Ihre Spendengelder!</p>\r\n<p>Die Er&ouml;ffnungsfeier wird mit kurzen Reden von G&auml;sten und Gratulaten aus aller Welt beginnen. Danach zeigen die afghanischen Kinder, was sie auf den Skateboards schon gelernt haben. Auch international bekannte Skate-Profis werden vor Ort sein und die neuen Rampen und Hindernissen einweihen. Bilder der Veranstaltung finden Sie in den n&auml;chsten Tagen hier auf Betterplace.</p>",
-      "payout": null,
-      "author": {
-        "id": 11872,
-        "name": "j. wardag",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/011/872/fill_100x100_original_jana.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/011/872/crop_original_original_jana.jpg"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/jana_w2"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/11872/contact_data.json"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/blog_posts/10413.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan/news/10413"
-        },
-        {
-          "rel": "documentation",
-          "href": "https://github.com/betterplace/betterplace_apidocs/blob/master/sections/blog_post_details.md"
-        }
-      ]
-    },
-    {
-      "id": 5029,
-      "created_at": "2009-05-21T10:50:46+02:00",
-      "updated_at": "2014-02-26T15:27:11+01:00",
-      "lang": "de",
-      "type": "BlogPost",
-      "title": "Skateistan-Trailer",
-      "body": "<p><a href=\"http://youtube.com/watch?v=i6W6_G-h6is\">http://youtube.com/watch?v=i6W6_G-h6is</a></p>",
-      "payout": null,
-      "author": {
-        "id": 9238,
-        "name": "M. Henninger",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/009/238/fill_100x100_original_maxn_skate.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/009/238/crop_original_original_maxn_skate.jpg"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/max_h2"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/9238/contact_data.json"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/blog_posts/5029.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan/news/5029"
-        },
-        {
-          "rel": "documentation",
-          "href": "https://github.com/betterplace/betterplace_apidocs/blob/master/sections/blog_post_details.md"
-        }
-      ]
-    }
+
   ]
 }
 ```

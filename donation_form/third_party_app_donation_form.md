@@ -16,9 +16,9 @@ This feature is distinct from our [json-API v4](https://github.com/betterplace/b
 ### Example Integrations
 
 * [Ablass App](http://www.ablass-app.de/), where you can clean your conscience
-* [Donatify me](http://donatify.me/), where you can get Edward to do stuff for you
-* [Seeds of Kindness 3](http://yoursiblings.org/portico/seeds-of-kindness-3), where you get a mp3 download link after your donation. Also there is a leader board and referrer-system
 * [MADAide](http://madaide.org/?page_id=578), where you can donate to mark a specific piece of the football field with your name
+* _(Closed)_ [Donatify me](http://donatify.me/), where you can get Edward to do stuff for you
+* _(Closed)_ [Seeds of Kindness 3](http://yoursiblings.org/portico/seeds-of-kindness-3), where you get a mp3 download link after your donation. Also there is a leader board and referrer-system
 
 
 ### UserFlow
@@ -51,7 +51,7 @@ We will check your proposal and get back to you. This is a special service in te
 ```
 * Project url: The URL to your betterplace.org's project.
 * Description: A short description of the web application that you plan on building.
-* Callback url production: The URL that we redirect users to after a successfull donation (see 'How to use it').
+* Callback url production: The URL that we redirect users to after a successful donation (see 'How to use it').
 * Callback url staging: This is optional. betterplace.org can provide a staging system that uses this staging callback url.
 * Contact e-mail: To keep you posted about changes.
 ```
@@ -149,7 +149,7 @@ Please not that the ThirdPartyApp custom donation for does not allow color and l
 
 ### Redirect URL and response parameter
 
-This URL is part of the configuration that needs to be done by betterplace.org (see [How to get it](#how-to-get-it)). We will redirect the donor to this URL after a successfull donation. We will also extend the URL with the following reponse parameter.
+This URL is part of the configuration that needs to be done by betterplace.org (see [How to get it](#how-to-get-it)). We will redirect the donor to this URL after a successful donation. We will also extend the URL with the following reponse parameter.
 
 *Cool urls dont change:* We cannot change this URL after we created you ThirPartyApp ID. Please consider redirecting inside your application.
 
@@ -172,7 +172,7 @@ https://www.you-app.cool/callback.php?status=DONATION_COMPLETE&donation_client_r
       <code>?status=DONATION_COMPLETE</code>
     </td>
     <td>
-      The status which tells you all is good. Its a bit redundant since there is only this one status ;-)
+      The status which tells you all is good. It’s a bit redundant since there is only this one status ;-)
     </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ https://www.you-app.cool/callback.php?status=DONATION_COMPLETE&donation_client_r
       <code>&receiver_type=group&receiver_id=seeds-of-kindness-3</code>
     </td>
     <td>
-      The receiver type and id that you specified when opening the form. "Group" stands for "Fundraising Event".
+      The receiver type and id that you specified when opening the form. "FundraisingEvent" stands for "Fundraising Event".
     </td>
   </tr>
   <tr>

@@ -2,13 +2,13 @@
 # Volunteering Details ⇄ [List](volunteering_list.md)
 
 ```Rebol
-GET https://api.betterplace.org/de/api_v4/volunteering/39655.json
+GET https://api.betterplace.org/de/api_v4/volunteering/41982.json
 ```
 
 The details of a betterplace.org volunteering offer (donate time).
 
 **For [betterplace.org clients](../README.md#client-api):**
-This resource is not avaliable at the moment.
+This resource is not available at the moment.
 
 
 ## URL Parameters
@@ -22,7 +22,7 @@ This resource is not avaliable at the moment.
   </tr>
   <tr>
     <th align="left">id</th>
-    <td><code>39655</code></td>
+    <td><code>41982</code></td>
     <td>yes</td>
     <td>Volunteering-id as an integer number ≥ 1.</td>
   </tr>
@@ -111,7 +111,7 @@ This resource is not avaliable at the moment.
       <td>string</td>
       <td></td>
       <td>A description of the offer. This may contain any of the following
-HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
 </td>
     </tr>
     <tr>
@@ -122,7 +122,7 @@ HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
         </th>
       <td>object</td>
       <td>TODO</td>
-      <td>An organisation, Users will be added later</td>
+      <td>The organisation that carrier this volunteering</td>
     </tr>
     <tr>
       <th align="left">vacancies</th>
@@ -573,44 +573,44 @@ Templated, needs insertion of the client_id.
 
 ```json
 {
-  "id": 39655,
-  "created_at": "2016-07-19T02:41:52+02:00",
-  "updated_at": "2016-07-19T02:41:52+02:00",
-  "latitude": 52.5276,
-  "longitude": 13.4682,
-  "street": "",
-  "zip": "10369",
-  "city": "Berlin",
-  "country": "Deutschland",
-  "content_updated_at": "2016-07-19T02:41:52+02:00",
-  "title": "Kursangebot für unbegleitete minderjährige Flüchtlinge",
-  "description": "<p>Die abw gGmbH hat ein Wohnprojekt für unbegleitete minderjährige Flüchtlinge, die z.T. schon seit Monaten auf Plätze in Deutschkursen oder Willkommensklassen warten. Wir würden diese Angebotslücke gerne mit Hilfe von Ehrenamtlichen schließen und an möglichst vielen Tagen in der Woche ein ca. dreistündiges Angebot für diese Jugendlichen machen. Über geeignete Räumlichkeiten verfügen wir in Lichtenberg. Sie stehen vormittags zwischen 9 und 13 Uhr zur Verfügung. Vorgesehen sind 4 - 5 TN. Das Kursangebot sollte umfassen: Deutsch als Fremdsprache (Lehrwerke sind vorhanden) und auf einfachem Niveau auch andere Aufgaben (z.B. Rechnen oder Landeskunde). Auch kreative Angebote wie z.B. ein Fotokurs wären denkbar. Vorschläge der Ehrenamtlichen werden gerne aufgenommen. Da das Projekt noch im Aufbau ist, ist eine Mitarbeit an der Feinplanung problemlos möglich.</p><br><br><p>Voraussetzungen: gute Deutschkenntnisse in Wort und Schrift, Allgemeinwissen, Geduld, didaktisches Geschick, Freude am interkulturellen Umgang</p><br><br><p>Zeitbedarf: 1 x wöchentlich ca. 3 Std.</p><br><br><p>Dauer: nach Vereinbarung</p><br><br><p>Gültigkeit: 04.06.2016-31.12.2016</p><br><br><p><strong>Tätigkeiten</strong>:</p><br><br><ul>\n<li>Freizeit gestalten und Spaß erleben</li>\n<br><li>Beraten und zuhören</li>\n<br><li>Üben, Nachhilfe geben und unterrichten</li>\n</ul>",
+  "id": 41982,
+  "created_at": "2016-11-21T03:01:11+01:00",
+  "updated_at": "2016-11-21T03:01:11+01:00",
+  "latitude": 48.369,
+  "longitude": 10.8974,
+  "street": null,
+  "zip": null,
+  "city": null,
+  "country": null,
+  "content_updated_at": "2016-11-21T03:01:11+01:00",
+  "title": "Repair-Café Haunstetten",
+  "description": "<p>Nachhaltigkeit heißt das Stichwort:</p><br><br><p>Viele (kleine) Elektrogeräte könnten viel länger ihren Dienst tun - dass sie versagen, liegt oft an ärgerlichen Kleinigkeiten wie defektem Schalter oder dergleichen. Im Repair-Café bekommen BürgerInnen Hilfe und Unterstützung einzuschätzen, ob eine Reparatur überhaupt sinnvoll und möglich ist. Evtl. kann ein Gerät auch vor Ort wieder in Gang gebracht werden. Dazu sucht das Sozialzentrum Freiwillige.</p><br><br><ul>\n<li>Der oder die Freiwillige benötigt eine elektrotechnische Ausbildung</li>\n<br>\n</ul><ul>\n<li>Ausstattung mit Medien / Arbeitsmaterialien</li>\n<br>\t<li>Fahrtkostenerstattung</li>\n<br>\t<li>Haftpflichtversicherung</li>\n<br>\t<li>Unfallversicherung</li>\n</ul>",
   "carrier": {
-    "latitude": 52.5317,
-    "longitude": 13.3827,
-    "name": "Stiftung Gute-Tat.de",
-    "street": "Zinnowitzer Straße 1",
-    "city": "Berlin",
-    "zip": "10115",
+    "latitude": 48.369,
+    "longitude": 10.8974,
+    "name": "Freiwilligen-Zentrum-Augsburg",
+    "street": "Philippine-Welser-Str. 5A",
+    "city": "Augsburg",
+    "zip": "86150",
     "country": "Deutschland",
     "picture": {
       "fallback": true,
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.betterplace.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.jpg"
         },
         {
           "rel": "fill_200x200",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.betterplace.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.jpg"
         },
         {
           "rel": "fill_400x400",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.betterplace.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.jpg"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.betterplace.jpg"
+          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.jpg"
         }
       ]
     },
@@ -624,40 +624,40 @@ Templated, needs insertion of the client_id.
     "links": [
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
       },
       {
         "rel": "thumb",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.png"
       },
       {
         "rel": "medium",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.png"
       },
       {
         "rel": "regular",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.png"
       }
     ]
   },
   "contact": {
-    "name": "Beate Bera",
-    "phone": "",
-    "email": "b.bera@gute-tat.de",
+    "name": "Heike Steinborn-Graue",
+    "phone": "450 422-0",
+    "email": "info@freiwilligen-zentrum-augsburg.de",
     "picture": null,
     "links": [
 
     ]
   },
-  "location_fixed": true,
+  "location_fixed": false,
   "working_time_selection": "egal wann / nach Vereinbarung",
   "working_time_weekends": [
 
@@ -668,18 +668,18 @@ Templated, needs insertion of the client_id.
   "begins_at": null,
   "ends_at": null,
   "topics": [
-    "Kinder & Jugendliche"
+
   ],
   "activities": [
 
   ],
   "imported_from": "aktion_mensch",
   "import_information": {
-    "created_at": "2016-07-18T00:00:00+02:00",
-    "updated_at": "2016-07-18T00:00:00+02:00",
+    "created_at": "2016-11-20T00:00:00+01:00",
+    "updated_at": "2016-11-20T00:00:00+01:00",
     "import_type": "Bettertime::AktionMensch::Import",
-    "import_id": "nf-7460",
-    "imported_at": "2016-07-19T02:41:52+02:00",
+    "import_id": "fn-107456",
+    "imported_at": "2016-11-21T03:01:11+01:00",
     "links": [
 
     ]
@@ -689,42 +689,42 @@ Templated, needs insertion of the client_id.
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.png"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.png"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.betterplace.png"
+        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.png"
       }
     ]
   },
   "links": [
     {
       "rel": "self",
-      "href": "https://api.betterplace.org/de/api_v4/volunteering/39655.json"
+      "href": "https://api.betterplace.org/de/api_v4/volunteering/41982.json"
     },
     {
       "rel": "platform",
-      "href": "https://www.betterplace.org/de/volunteering/39655-kursangebot-fur-unbegleitete-minderjahrige-fluchtlinge"
+      "href": "https://www.betterplace.org/de/volunteering/41982-repair-cafe-haunstetten"
     },
     {
       "rel": "inquiries",
-      "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/39655-kursangebot-fur-unbegleitete-minderjahrige-fluchtlinge/inquiries.json",
+      "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/41982-repair-cafe-haunstetten/inquiries.json",
       "templated": true
     }
   ]

@@ -41,14 +41,12 @@ every two weeks or once a month. At the end of this time, the client
 will sum all pledges in the client system, wire us the donations and
 also send us a CSV file which allows betterplace.org to check the amounts.
 
-Required fields for the CSV files are:
-- receiver_type
-- receiver_id
-- amount_in_cents
-- first_name
-- last_name
-- client_reference
-- datetime (ISO8601 with Timezone)
+The fields for the CSV files are:
+- receiver_type, eg. `Project`
+- receiver_id, eg. `1114`
+- amount_in_cents, eg. `12000`
+- client_reference, eg. `123123123123
+- datetime (ISO8601 with Timezone), eg `2007-11-01T13:15:30Z`
 
 Please use these names as column titles, use utf-8, use ","
 as a separator and force double quotes around all values.
@@ -69,7 +67,8 @@ donation pledge is now saved and queued and will be processed
 by background workers. This part takes place asynchronously and might
 take up to a few minutes, especially in high traffic scenarios.
 Please make sure that you queue and retry your API calls until you
-receive a 202 response from us. Note that we will book only one
+receive clear answer (202, 422, 404, etc.) from us.
+Note that we will book only one
 donation per <code>client_reference</code> so there's no need to
 worry about retrying the pledge-sending.
 

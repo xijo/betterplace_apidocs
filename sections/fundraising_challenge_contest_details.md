@@ -8,7 +8,7 @@ GET https://api.betterplace.org/de/api_v4/contests/1.json
 The details of a contest.
 
 One fundraising challenge can have multiple contests, each with
-it's own timeframe (begins_at, ends_at).
+its own timeframe (begins_at, ends_at).
 
 The contest level only shows general information.
 Everything else is part of the [result lists](fundraising_challenge_contest_results_list.md).

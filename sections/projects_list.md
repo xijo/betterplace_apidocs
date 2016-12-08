@@ -144,7 +144,7 @@ It is possible to set multiple facet filters.
 <br>
 It is strongly recommended to <strong>specify an order</strong> with each request.
 The default order might change at any time without notice.
-A recommended order is <code>completed:asc| score:desc | rank:desc|
+A recommended order is <code>score:desc | completed:asc | rank:desc|
 last_donation_at:desc</code> (without the spaces). This is the order betterplace.org uses
 <a href="http://www.betterplace.org/en/projects/list">for the project list</a>.
 <br>
@@ -259,7 +259,7 @@ by us, otherwise it is null.
       <td>string</td>
       <td></td>
       <td>A description of the project. This may contain any of the following
-HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
+HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
 </td>
     </tr>
     <tr>
@@ -267,8 +267,8 @@ HTML tags: <code>br, strong, b, em, i, ul, ol, li, p</code>.
       <td>boolean</td>
       <td>true</td>
       <td>True if the project marked as tax deductible.
-If so, Users can request a tax-receipt that can be used
-with the german tax authorities.
+If so, Users can request a tax receipt that can be used
+with the German tax authorities.
 [More about this](http://www.betterplace.org/c/hilfe/projekt-steuerlich-absetzbar/).
 </td>
     </tr>
@@ -277,7 +277,7 @@ with the german tax authorities.
       <td>boolean</td>
       <td>false</td>
       <td>True if the project must not receive donations. This might happen, for example,
-if a tax-receipt of german tax authorities rans out.
+if a tax receipt of German tax authorities ran out.
 
 Please check this flag whenever you display a donation button.
 Should you show a button for a project that cannot receive donations
@@ -395,7 +395,7 @@ donation needs (pre ~2014). This percentage includes those needs.
         </th>
       <td>object</td>
       <td>TODO</td>
-      <td>An organisation, Users will be added later</td>
+      <td>The organisation that carries this project</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -777,16 +777,16 @@ belonging to this matching fund
 
 ```json
 {
-  "total_entries": 2,
+  "total_entries": 1,
   "offset": 0,
   "total_pages": 1,
-  "current_page": 1,
+  "current_page": null,
   "per_page": 3,
   "data": [
     {
       "id": 1114,
       "created_at": "2009-03-10T11:12:16+01:00",
-      "updated_at": "2016-08-19T14:30:02+02:00",
+      "updated_at": "2016-12-06T10:47:21+01:00",
       "latitude": 34.531617284782,
       "longitude": 69.13581752939456,
       "street": "Taimani, behind Qasemi Winhouse",
@@ -801,15 +801,15 @@ belonging to this matching fund
       "donations_prohibited": false,
       "completed_at": null,
       "closed_at": null,
-      "open_amount_in_cents": 1757984,
-      "donated_amount_in_cents": 4805868,
-      "positive_opinions_count": 746,
+      "open_amount_in_cents": 1715079,
+      "donated_amount_in_cents": 4848773,
+      "positive_opinions_count": 767,
       "negative_opinions_count": 0,
-      "donor_count": 560,
+      "donor_count": 565,
       "progress_percentage": 73,
       "incomplete_need_count": 10,
       "completed_need_count": 87,
-      "blog_post_count": 95,
+      "blog_post_count": 91,
       "contact": {
         "id": 130618,
         "name": "E. Kinast",
@@ -829,7 +829,7 @@ belonging to this matching fund
         "links": [
           {
             "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/erika_k2"
+            "href": "https://www.betterplace.org/de/users/130618"
           },
           {
             "rel": "contact_data",
@@ -860,30 +860,31 @@ belonging to this matching fund
         ]
       },
       "profile_picture": {
+        "fallback": true,
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_original_girls-merza-sm.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_original_girls-merza-sm.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1470148588_crop_original_bp1469456919_IMG_0548.JPG"
+            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_original_girls-merza-sm.jpg"
           }
         ]
       },
@@ -925,152 +926,6 @@ belonging to this matching fund
         {
           "rel": "new_donation",
           "href": "https://www.betterplace.org/de/projects/1114/donations/new"
-        }
-      ]
-    },
-    {
-      "id": 6233,
-      "created_at": "2011-02-25T08:48:43+01:00",
-      "updated_at": "2016-08-19T14:30:02+02:00",
-      "latitude": 11.55883121490479,
-      "longitude": 104.9174423217773,
-      "street": null,
-      "zip": null,
-      "city": "Phnom Penh",
-      "country": "Kambodscha",
-      "content_updated_at": "2016-02-29T09:00:37+01:00",
-      "activated_at": "2011-02-25T09:03:15+01:00",
-      "title": "Skateistan Cambodia",
-      "description": "Skateistan Cambodia began operations in March 2011, building the country's first skatepark in Phnom Penh. Since then the NGO has been teaching skateboarding and creative arts classes with marginalized and streetworking Khmer youth six days a week. <br><br>Skateboarding is a low-barrier, accessible activity that attracts girls and boys of all backgrounds and abilities. The interest from Cambodia's youth has grown so much since March 2011 that Skateistan Cambodia is now building its own facility to accommodate more than the 150 youth we currently work with weekly.<br><br>By building a safe and covered Skateistan facility in Phnom Pehn, Skateistan will provide year-round opportunities for youth to engage in recreational activities that encourages girls and boys of all backgrounds to build relationships with one another, while increasing their self-confidence and leadership skills. The facility will also have classroom spaces providing creative arts and multimedia activities for the students.<br><br>Partnering with local, best-practice NGOs in Cambodia, such as Pour un Sourire d'Enfant (PSE), Friends Intl., and Tiny Toones, Skateistan Cambodia also aims to use skateboarding as a tool to create a bridge between at-risk youth and the quality support services already existing in Phnom Penh.<br><br>Help us grow this grassroots project and create a safe space for all Cambodian youth to be a part of!",
-      "tax_deductible": true,
-      "donations_prohibited": false,
-      "completed_at": null,
-      "closed_at": null,
-      "open_amount_in_cents": 51596,
-      "donated_amount_in_cents": 569404,
-      "positive_opinions_count": 56,
-      "negative_opinions_count": 0,
-      "donor_count": 53,
-      "progress_percentage": 91,
-      "incomplete_need_count": 1,
-      "completed_need_count": 15,
-      "blog_post_count": 35,
-      "contact": {
-        "id": 272452,
-        "name": "A. Buck",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/272/452/fill_100x100_original_11545_216544438618_2260714_n.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/272/452/crop_original_original_11545_216544438618_2260714_n.jpg"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "platform",
-            "href": "https://www.betterplace.org/de/users/alixandra_b"
-          },
-          {
-            "rel": "contact_data",
-            "href": "https://api.betterplace.org/de/api_v4/users/272452/contact_data.json"
-          }
-        ]
-      },
-      "carrier": {
-        "name": "Skateistan",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/001/054/fill_100x100_original_betterplace-logo.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/001/054/crop_original_original_betterplace-logo.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/1054.json"
-          }
-        ]
-      },
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/006/233/fill_960x500_original_327569_368768896527128_1081473646_o.jpg"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/006/233/fill_730x380_original_327569_368768896527128_1081473646_o.jpg"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/006/233/fill_618x322_original_327569_368768896527128_1081473646_o.jpg"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/006/233/fill_410x214_original_327569_368768896527128_1081473646_o.jpg"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/006/233/fill_270x141_original_327569_368768896527128_1081473646_o.jpg"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/006/233/crop_original_original_327569_368768896527128_1081473646_o.jpg"
-          }
-        ]
-      },
-      "active_matching_fund": null,
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/6233.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/projects/6233-skateistan-cambodia"
-        },
-        {
-          "rel": "opinions",
-          "href": "https://api.betterplace.org/de/api_v4/projects/6233/opinions.json"
-        },
-        {
-          "rel": "pictures",
-          "href": "https://api.betterplace.org/de/api_v4/projects/6233/pictures.json"
-        },
-        {
-          "rel": "needs",
-          "href": "https://api.betterplace.org/de/api_v4/projects/6233/needs.json"
-        },
-        {
-          "rel": "blog_posts",
-          "href": "https://api.betterplace.org/de/api_v4/projects/6233/blog_posts.json"
-        },
-        {
-          "rel": "matching_funds",
-          "href": "https://api.betterplace.org/de/api_v4/matching_funds.json?project_id=6233"
-        },
-        {
-          "rel": "new_client_donation",
-          "href": "https://www.betterplace.org/de/projects/6233/client_donations/new?client_id=%7Bclient_id%7D",
-          "templated": true
-        },
-        {
-          "rel": "new_donation",
-          "href": "https://www.betterplace.org/de/projects/6233/donations/new"
         }
       ]
     }
