@@ -1,5 +1,5 @@
 
-# Client Donation Pledges
+# Client Donation Pledges ⇄ [Details](client_donation_pledge_details.md)
 
 ```Rebol
 POST https://api.betterplace.org/de/api_v4/clients/volksfreund/projects/1114/donation_pledges.json

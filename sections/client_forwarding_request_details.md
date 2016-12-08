@@ -1,5 +1,5 @@
 
-# Client Forwarding Request Status Page ⇄ [List](client_forwarding_requests.md)
+# Client Forwarding Request Status Page ⇄ [List](client_forwarding_requests_list.md)
 
 ```Rebol
 GET https://api.betterplace.org/de/api_v4/clients/some_client/forwarding_requests/1337.json
@@ -10,13 +10,6 @@ GET https://api.betterplace.org/de/api_v4/clients/some_client/forwarding_request
 After submitting a forwarding request, you can request a status of the asynchronous
 forwarding job. It returns a JSON response, containing information about its status,
 including failure reasons in the case of a failure.
-
-#### Failure Reasons and Codes ####
-The following failure codes are defined:
-- `pool_missing` - No pool available
-- `pool_empty` - Not enough money on the pool
-- `receiver_prohibited_from_receiving_donations` - The forwarding request's receiver may not receive donations
-- `donation_invalid` - Generic error, look at `failure_reason` for details
 
 
 ## URL Parameters

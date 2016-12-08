@@ -1,5 +1,5 @@
 
-# Client Donation Pledges Status Page
+# Client Donation Pledges Status Page ⇄ [List](client_donation_pledges_list.md)
 
 ```Rebol
 GET https://api.betterplace.org/de/api_v4/clients/devk/donation_pledges/1170.json
