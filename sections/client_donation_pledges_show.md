@@ -107,6 +107,27 @@ This state is final.
       <td>DateTime (ISO8601 with Timezone)</td>
     </tr>
     <tr>
+      <th align="left">failure_code</th>
+      <td>string</td>
+      <td>pool_missing</td>
+      <td>A set of failure codes.<br>
+You could use this to choose follow up actions in
+your application. More details about each error are
+part of the <code>failure_reason</code>.
+<ul>
+<li><code>pool_missing</code> No pool available
+<li><code>pool_empty</code> Not enough money on the pool
+<li><code>receiver_prohibited_from_receiving_donations</code> The forwarding request's receiver may not receive donations
+<li><code>donation_invalid</code> Generic error, look at `failure_reason` for details
+</ul>
+This list might be extended at any time. Please
+make sure you receive a notification if you encounter
+a new code. Codes will note be removed but might be
+depricated and not used anymore at some point in the
+future.
+</td>
+    </tr>
+    <tr>
       <th align="left">failure_reason</th>
       <td>string</td>
       <td></td>
@@ -147,6 +168,7 @@ string.
   "state": "confirmed",
   "confirmed_at": "2016-04-04T17:50:23+02:00",
   "failed_at": null,
+  "failure_code": null,
   "failure_reason": null,
   "links": [
     {
