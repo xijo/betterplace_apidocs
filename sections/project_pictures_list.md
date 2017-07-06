@@ -41,7 +41,11 @@ projects, the API will return a `404` HTTP code.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+<td>
+
+Project id as an integer number ≥ 14.
+
+</td>
   </tr>
 </table>
 
@@ -59,27 +63,43 @@ projects, the API will return a `404` HTTP code.
     </tr>
     <tr>
       <th align="left">id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">description</th>
-      <td>string</td>
-      <td>Yada…</td>
-      <td>Description of the picture</td>
+      <td><code>string</code></td>
+      <td><code>Yada…</code></td>
+<td>
+
+Description of the picture
+
+</td>
     </tr>
   </table>
 </table>
@@ -91,18 +111,41 @@ projects, the API will return a `404` HTTP code.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
+    <tr>
+<th align="left">
 
-    <tr>
-      <th align="left">image</th>
-      <td>Link to the original image as uploaded by the user</td>
+image
+
+</th>
+<td>
+
+Link to the original image as uploaded by the user
+
+</td>
     </tr>
     <tr>
-      <th align="left">self</th>
-      <td>The single resource for this picture</td>
+<th align="left">
+
+self
+
+</th>
+<td>
+
+The single resource for this picture
+
+</td>
     </tr>
     <tr>
-      <th align="left">parent</th>
-      <td>The parent object of this picture.</td>
+<th align="left">
+
+parent
+
+</th>
+<td>
+
+The parent object of this picture.
+
+</td>
     </tr>
 </table>
 
@@ -110,65 +153,65 @@ projects, the API will return a `404` HTTP code.
 
 ```json
 {
-  "total_entries": 35,
+  "total_entries": 7,
   "offset": 3,
-  "total_pages": 12,
+  "total_pages": 3,
   "current_page": 2,
   "per_page": 3,
   "data": [
     {
-      "id": 68085,
-      "created_at": "2012-07-23T14:25:15+02:00",
-      "updated_at": "2014-03-26T22:13:34+01:00",
-      "description": "Kids practice to jump at Mekroyan Fountain, Kabul",
-      "links": [
-        {
-          "rel": "image",
-          "href": ""
-        },
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/68085.json"
-        },
-        {
-          "rel": "parent",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
-        }
-      ]
-    },
-    {
-      "id": 68086,
-      "created_at": "2012-07-23T14:30:13+02:00",
-      "updated_at": "2014-03-26T22:13:36+01:00",
-      "description": "Afghan Skate Instructor Merza showing his skills at an old Soviet swimming pool on Bibi Maru Hill, Kabul",
-      "links": [
-        {
-          "rel": "image",
-          "href": ""
-        },
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/68086.json"
-        },
-        {
-          "rel": "parent",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
-        }
-      ]
-    },
-    {
-      "id": 31767,
-      "created_at": "2012-07-23T14:45:29+02:00",
-      "updated_at": "2014-03-13T04:10:36+01:00",
+      "id": 159066,
+      "created_at": "2017-06-09T14:38:34+02:00",
+      "updated_at": "2017-07-06T11:32:28+02:00",
       "description": null,
       "links": [
         {
           "rel": "image",
-          "href": ""
+          "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159066/bp1497011914_1.2.1.JPG"
         },
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/31767.json"
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159066.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        }
+      ]
+    },
+    {
+      "id": 159067,
+      "created_at": "2017-06-09T14:38:44+02:00",
+      "updated_at": "2017-07-06T11:32:28+02:00",
+      "description": null,
+      "links": [
+        {
+          "rel": "image",
+          "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159067/bp1497011924_2.2.1.JPG"
+        },
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159067.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        }
+      ]
+    },
+    {
+      "id": 159068,
+      "created_at": "2017-06-09T14:38:51+02:00",
+      "updated_at": "2017-07-06T11:32:28+02:00",
+      "description": null,
+      "links": [
+        {
+          "rel": "image",
+          "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159068/bp1497011931_4.1.2.JPG"
+        },
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159068.json"
         },
         {
           "rel": "parent",

@@ -25,14 +25,22 @@ including failure reasons in the case of a failure.
     <th align="left">client_id</th>
     <td><code>some_client</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
   <tr>
     <th align="left">id</th>
     <td><code>1337</code></td>
     <td>yes</td>
-    <td>          The ID of the forwarding request, normally returned within the
+<td>
+
+          The ID of the forwarding request, normally returned within the
           response of a successful forwarding request POST.
+
+
 </td>
   </tr>
 </table>
@@ -50,7 +58,6 @@ including failure reasons in the case of a failure.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
   <th colspan="2">No response example defined</th>
 </table>
 

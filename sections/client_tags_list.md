@@ -25,7 +25,11 @@ Results are contained in a *data* attribute.
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client id</td>
+<td>
+
+The betterplace.org-internal client id
+
+</td>
   </tr>
 </table>
 
@@ -43,17 +47,25 @@ Results are contained in a *data* attribute.
     </tr>
     <tr>
       <th align="left">tag</th>
-      <td>string</td>
-      <td>"Education"</td>
-      <td>The name of the tag. It is unique per client.
+      <td><code>string</code></td>
+      <td><code>"Education"</code></td>
+<td>
+
+The name of the tag. It is unique per client.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">projects_count</th>
-      <td>number</td>
-      <td>23</td>
-      <td>The number of <a href="projects_list.md">projects</a>
+      <td><code>number</code></td>
+      <td><code>23</code></td>
+<td>
+
+The number of <a href="projects_list.md">projects</a>
 that were tagged with this tag.
+
+
 </td>
     </tr>
   </table>
@@ -66,10 +78,17 @@ that were tagged with this tag.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">projects</th>
-      <td>Link to the <a href="projects_list.md">project list</a> of all projects that are tagged with this tag for the current client.
+<th align="left">
+
+projects
+
+</th>
+<td>
+
+Link to the <a href="client_tag_projects_list.md">client-tag projects list</a> – all projects that are tagged with given client-tag.
+
+
 </td>
     </tr>
 </table>
@@ -86,7 +105,7 @@ that were tagged with this tag.
   "data": [
     {
       "tag": "Bedürftige",
-      "projects_count": 10,
+      "projects_count": 12,
       "links": [
         {
           "rel": "projects",
@@ -95,8 +114,8 @@ that were tagged with this tag.
       ]
     },
     {
-      "tag": "Behinderte",
-      "projects_count": 4,
+      "tag": "Inklusion",
+      "projects_count": 9,
       "links": [
         {
           "rel": "projects",

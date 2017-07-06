@@ -27,7 +27,11 @@ to make sure you only request data that is associated with one of your projects.
     <th align="left">id</th>
     <td><code>125</code></td>
     <td>yes</td>
-    <td>Organisation-id as an integer number ≥ 14.</td>
+<td>
+
+Organisation-id as an integer number ≥ 14.
+
+</td>
   </tr>
 </table>
 
@@ -45,92 +49,148 @@ to make sure you only request data that is associated with one of your projects.
     </tr>
     <tr>
       <th align="left">id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">latitude</th>
-      <td>number</td>
-      <td>52.499007</td>
-      <td>Decimal degrees based on user input</td>
+      <td><code>number</code></td>
+      <td><code>52.499007</code></td>
+<td>
+
+Decimal degrees based on user input
+
+</td>
     </tr>
     <tr>
       <th align="left">longitude</th>
-      <td>number</td>
-      <td>13.44947</td>
-      <td>Decimal degrees based on user input</td>
+      <td><code>number</code></td>
+      <td><code>13.44947</code></td>
+<td>
+
+Decimal degrees based on user input
+
+</td>
     </tr>
     <tr>
       <th align="left">street</th>
-      <td>null &#124; string</td>
-      <td>"Schlesische Straße 26"</td>
-      <td>Street address</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"Schlesische Straße 26"</code></td>
+<td>
+
+Street address
+
+</td>
     </tr>
     <tr>
       <th align="left">zip</th>
-      <td>null &#124; string</td>
-      <td>"10997"</td>
-      <td>ZIP code</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"10997"</code></td>
+<td>
+
+ZIP code
+
+</td>
     </tr>
     <tr>
       <th align="left">city</th>
-      <td>null &#124; string</td>
-      <td>"Berlin"</td>
-      <td>Name of the city</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"Berlin"</code></td>
+<td>
+
+Name of the city
+
+</td>
     </tr>
     <tr>
       <th align="left">country</th>
-      <td>null &#124; string</td>
-      <td>"Deutschland"</td>
-      <td>Name of the country</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"Deutschland"</code></td>
+<td>
+
+Name of the country
+
+</td>
     </tr>
     <tr>
       <th align="left">content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">slug</th>
-      <td>string</td>
-      <td>vivaconagua</td>
-      <td><a href="http://en.wikipedia.org/wiki/Clean_URL#Slug">URL slug</a>
+      <td><code>string</code></td>
+      <td><code>vivaconagua</code></td>
+<td>
+
+<a href="http://en.wikipedia.org/wiki/Clean_URL#Slug">URL slug</a>
 for the permalink
+
+
 </td>
     </tr>
     <tr>
       <th align="left">name</th>
-      <td>string</td>
-      <td>"Viva con Agua de Sankt Pauli e.V."</td>
-      <td>Name of the organisation</td>
+      <td><code>string</code></td>
+      <td><code>"Viva con Agua de Sankt Pauli e.V."</code></td>
+<td>
+
+Name of the organisation
+
+</td>
     </tr>
     <tr>
       <th align="left">description</th>
-      <td>string</td>
-      <td></td>
-      <td>A description of the organisation.
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+A description of the organisation.
 This may contain <code>br</code> tags.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">tax_deductible</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>True if the organisation is a tax-exempt charity.
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+True if the organisation is a tax-exempt charity.
 If so, Users can request a tax receipt for donations to that organisation.
+
+
 </td>
     </tr>
     <tr>
@@ -139,9 +199,13 @@ If so, Users can request a tax receipt for donations to that organisation.
             ↓contact
           </a>
         </th>
-      <td>object</td>
-      <td></td>
-      <td>The public contact person for this organisation.</td>
+      <td><code>object</code></td>
+      <td><code></code></td>
+<td>
+
+The public contact person for this organisation.
+
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -149,9 +213,13 @@ If so, Users can request a tax receipt for donations to that organisation.
             ↓picture
           </a>
         </th>
-      <td>null &#124; object</td>
-      <td></td>
-      <td>TODO</td>
+      <td><code>null &#124; object</code></td>
+      <td><code></code></td>
+<td>
+
+TODO
+
+</td>
     </tr>
   </table>
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
@@ -165,19 +233,27 @@ If so, Users can request a tax receipt for donations to that organisation.
     </tr>
     <tr>
       <th align="left">contact.id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">contact.name</th>
-      <td>null &#124; string</td>
-      <td>"Till B."</td>
-      <td>Display name of a betterplace.org user.
+      <td><code>null &#124; string</code></td>
+      <td><code>"Till B."</code></td>
+<td>
+
+Display name of a betterplace.org user.
 Possible formats: "Till B.", "T. Behnke", "Till Behnke".
 
 In the case of donation-opinions the name might also be
 empty/null for anonymous donations for anonymous donations.
+
+
 </td>
     </tr>
     <tr>
@@ -186,9 +262,13 @@ empty/null for anonymous donations for anonymous donations.
             ↓contact.picture
           </a>
         </th>
-      <td>object</td>
-      <td>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</td>
-      <td>User profile picture or a fallback image</td>
+      <td><code>object</code></td>
+      <td><code>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</code></td>
+<td>
+
+User profile picture or a fallback image
+
+</td>
     </tr>
   </table>
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
@@ -202,9 +282,13 @@ empty/null for anonymous donations for anonymous donations.
     </tr>
     <tr>
       <th align="left">contact.picture.fallback</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether a fallback image is given or not</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether a fallback image is given or not
+
+</td>
     </tr>
   </table>
 ### <a id="picture" href="#picture-ref">↑Nested Attributes: picture</a>
@@ -218,9 +302,13 @@ empty/null for anonymous donations for anonymous donations.
     </tr>
     <tr>
       <th align="left">picture.fallback</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether a fallback image is given or not</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether a fallback image is given or not
+
+</td>
     </tr>
   </table>
 </table>
@@ -232,64 +320,159 @@ empty/null for anonymous donations for anonymous donations.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
+    <tr>
+<th align="left">
 
-    <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
+self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="organisation_details.md">organisation details</a>)
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">platform</th>
-      <td>Permalink to betterplace.org</td>
-    </tr>
-    <tr>
-      <th align="left">projects</th>
-      <td>Link to the <a href="projects_list.md">project list</a> of this organisation
+<th align="left">
+
+platform
+
+</th>
+<td>
+
+Permalink to betterplace.org
+
 </td>
     </tr>
     <tr>
-      <th align="left">website</th>
-      <td>Link to the website of this organisation.</td>
+<th align="left">
+
+projects
+
+</th>
+<td>
+
+Link to the <a href="projects_list.md">project list</a> of this organisation
+
+
+</td>
     </tr>
     <tr>
-      <th align="left">contact.platform</th>
-      <td>The user's profile on betterplace.org.
+<th align="left">
+
+website
+
+</th>
+<td>
+
+Link to the website of this organisation.
+
+</td>
+    </tr>
+    <tr>
+<th align="left">
+
+contact.platform
+
+</th>
+<td>
+
+The user's profile on betterplace.org.
 To view a user profile you have to be logged in.
 This array is empty if the user has no useraccount
 with betterplace.org but donated via one of our partner.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">contact.contact_data</th>
-      <td>The user's contact data. Please note that you need to be
+<th align="left">
+
+contact.contact_data
+
+</th>
+<td>
+
+The user's contact data. Please note that you need to be
 <a href="../README.md#client-api">authenticated as a client</a> with matching
 access rights in order to see this information.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">contact.picture.fill_100x100</th>
-      <td>100×100 Pixel</td>
+<th align="left">
+
+contact.picture.fill_100x100
+
+</th>
+<td>
+
+100×100 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">contact.picture.original</th>
-      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
+<th align="left">
+
+contact.picture.original
+
+</th>
+<td>
+
+Maximum sized image. This is the original image with default-cropping or user-cropping applied.
+
+</td>
     </tr>
     <tr>
-      <th align="left">picture.fill_100x100</th>
-      <td>100×100 Pixel</td>
+<th align="left">
+
+picture.fill_100x100
+
+</th>
+<td>
+
+100×100 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">picture.fill_200x200</th>
-      <td>200×200 Pixel</td>
+<th align="left">
+
+picture.fill_200x200
+
+</th>
+<td>
+
+200×200 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">picture.fill_400x400</th>
-      <td>400×400 Pixel</td>
+<th align="left">
+
+picture.fill_400x400
+
+</th>
+<td>
+
+400×400 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">picture.original</th>
-      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
+<th align="left">
+
+picture.original
+
+</th>
+<td>
+
+Maximum sized image. This is the original image with default-cropping or user-cropping applied.
+
+</td>
     </tr>
 </table>
 
@@ -299,7 +482,7 @@ access rights in order to see this information.
 {
   "id": 125,
   "created_at": "2008-02-06T17:10:42+01:00",
-  "updated_at": "2016-09-05T12:47:59+02:00",
+  "updated_at": "2017-01-27T11:21:03+01:00",
   "latitude": 53.55759811401367,
   "longitude": 9.96815967559815,
   "street": "Neuer Kamp 32",
@@ -319,11 +502,11 @@ access rights in order to see this information.
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/449/830/fill_100x100_Johannes1.jpg"
+          "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/449/830/fill_100x100_bp1486485430_Profil_klein.jpg"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/449/830/crop_original_Johannes1.jpg"
+          "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/449/830/crop_original_bp1486485430_Profil_klein.jpg"
         }
       ]
     },

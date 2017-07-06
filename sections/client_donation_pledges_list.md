@@ -45,7 +45,7 @@ The fields for the CSV files are:
 - receiver_type, eg. `Project`
 - receiver_id, eg. `1114`
 - amount_in_cents, eg. `12000`
-- client_reference, eg. `123123123123
+- client_reference, eg. `123123123123`
 - datetime (ISO8601 with Timezone), eg `2007-11-01T13:15:30Z`
 
 Please use these names as column titles, use utf-8, use ","
@@ -100,24 +100,36 @@ betterplace.org).
     <th align="left">language</th>
     <td><code>en</code></td>
     <td>yes</td>
-    <td>The donation is marked with the language you use in your URL.
+<td>
+
+The donation is marked with the language you use in your URL.
 A Project manager can use this language information for their
 donation thank you message, for example. To target a lang see <a
 href="../README.md#addressing-the-locale-of-a-resource">API setting
 lang</a>.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
   <tr>
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+<td>
+
+Project id as an integer number ≥ 14.
+
+</td>
   </tr>
 </table>
 
@@ -159,43 +171,61 @@ are optional.
   <tr>
     <th align="left">first_name</th>
     <td><code>Max</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>First name of the donor.</td>
+<td>
+
+First name of the donor.
+
+</td>
   </tr>
   <tr>
     <th align="left">last_name</th>
     <td><code>Mustermann</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>Last name of the donor.</td>
+<td>
+
+Last name of the donor.
+
+</td>
   </tr>
   <tr>
     <th align="left">email</th>
     <td><code>mm@example.com</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>Email address of the donor.
+<td>
+
+Email address of the donor.
 Only valid email addresses will be accepted.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">amount_in_cents</th>
     <td><code>100</code></td>
-    <td>number</td>
+    <td><code>number</code></td>
     <td>yes</td>
-    <td>The amount of cents that are donated.
+<td>
+
+The amount of cents that are donated.
 Must be a positive integer between
 1
 and 100000.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">client_reference</th>
     <td><code>djksbf23u4sjkdn234p</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>A unique identifier for this transaction.
+<td>
+
+A unique identifier for this transaction.
 With this reference one can find the donation and its status later
 by using the client_reference-facet on the
 <a href="client_donations_list.md">donation list endpoint</a>.
@@ -207,68 +237,92 @@ the donation pledge endpoint will still respond with success.
 However the pledge will <em>not be processed</em> into a donation but ignored.
 <br>
 This is to make sure that one transaction is only processed once.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">earmark</th>
     <td><code>123</code></td>
-    <td>number</td>
+    <td><code>number</code></td>
     <td>no</td>
-    <td>An "earmark" indicating which need this donation should go to.
+<td>
+
+An "earmark" indicating which need this donation should go to.
 <em>Attention:</em> this parameter may be completely ignored by the API
 at any time. There is no guarantee that the earmark will have an effect
 on the donation, and support for the feature may be pulled in the
 future.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">street</th>
     <td><code>Rheinstrasse 202</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>The street of the donors address.
+<td>
+
+The street of the donors address.
 Used to issue a donation receipt if the donation is tax deductible.
 This field is mandatory by default, but optional with validate_address=false.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">city</th>
     <td><code>Wiesbaden</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>The city of the donors address.
+<td>
+
+The city of the donors address.
 Used to issue a donation receipt if the donation is tax deductible.
 This field is mandatory by default, but optional with validate_address=false.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">zip</th>
     <td><code>65185</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>Zip code of the city or region the donor lives in.
+<td>
+
+Zip code of the city or region the donor lives in.
 Used to issue a donation receipt if the donation is tax deductible.
 This field is mandatory by default, but optional with validate_address=false.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">country_code</th>
     <td><code>DE</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>ISO2 code of the country the donor lives in. A list of valid ISO2 codes
+<td>
+
+ISO2 code of the country the donor lives in. A list of valid ISO2 codes
 can be found at <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements">
 Wikipedia ISO_3166-1_alpha-2</a>. Used to issue a donation receipt if
 the donation is tax deductible.
 This field is mandatory by default, but optional with validate_address=false.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">validate_address</th>
     <td><code>false</code></td>
-    <td>boolean</td>
+    <td><code>boolean</code></td>
     <td>no</td>
-    <td>Pass <code>false</code> to allow donations without a donor address.
+<td>
+
+Pass <code>false</code> to allow donations without a donor address.
 <br>
 <em>Attention:</em> Donation receipts can only be issued to donors who
 provide their full address details. Therefore a warning might be
@@ -277,6 +331,8 @@ donation receipt, or that they will only get a receipt if they do enter
 their address.
 <br>
 True by default.
+
+
 </td>
   </tr>
 </table>
@@ -294,18 +350,26 @@ True by default.
     </tr>
     <tr>
       <th align="left">status</th>
-      <td>string</td>
-      <td>accepted</td>
-      <td>HTTP status code as a descriptive string.
+      <td><code>string</code></td>
+      <td><code>accepted</code></td>
+<td>
+
+HTTP status code as a descriptive string.
 For a list of codes, <a href="http://httpstatus.es/">see httpstatus.es</a>.
 Example: "accepted" for code 202
+
+
 </td>
     </tr>
     <tr>
       <th align="left">status_code</th>
-      <td>number</td>
-      <td>202</td>
-      <td>HTTP status code as an integer number, e.g. 202.
+      <td><code>number</code></td>
+      <td><code>202</code></td>
+<td>
+
+HTTP status code as an integer number, e.g. 202.
+
+
 </td>
     </tr>
   </table>
@@ -318,11 +382,18 @@ Example: "accepted" for code 202
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">location</th>
-      <td>Location where the created/updated resource can be viewed or more
+<th align="left">
+
+location
+
+</th>
+<td>
+
+Location where the created/updated resource can be viewed or more
 information about it can be gathered.
+
+
 </td>
     </tr>
 </table>

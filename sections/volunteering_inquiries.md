@@ -37,13 +37,21 @@ entity). [More error codes](../README.md#http-status-codes).
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
   <tr>
     <th align="left">volunteering_id</th>
     <td><code>37443</code></td>
     <td>yes</td>
-    <td>volunteering/job description id as an integer number.</td>
+<td>
+
+volunteering/job description id as an integer number.
+
+</td>
   </tr>
 </table>
 
@@ -82,62 +90,94 @@ are optional.
   <tr>
     <th align="left">first_name</th>
     <td><code>Peter</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>The first name of the user</td>
+<td>
+
+The first name of the user
+
+</td>
   </tr>
   <tr>
     <th align="left">last_name</th>
     <td><code>Paul</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>The last name of the user</td>
+<td>
+
+The last name of the user
+
+</td>
   </tr>
   <tr>
     <th align="left">email</th>
     <td><code>peter.paul@betterplace.org</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>The email of the user</td>
+<td>
+
+The email of the user
+
+</td>
   </tr>
   <tr>
     <th align="left">phone</th>
     <td><code>+49 (0)30 / 123456</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>no</td>
-    <td>The phone number of the user</td>
+<td>
+
+The phone number of the user
+
+</td>
   </tr>
   <tr>
     <th align="left">availability</th>
     <td><code>I can help every Sunday evening.</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>Information about the user’s availability.
+<td>
+
+Information about the user’s availability.
 How much time would he like to spend, what are his preferred dates,
 would he prefer a short-term or a long-term involvement, etc.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">profile</th>
     <td><code>I have taken care of kittens many times before.</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>no</td>
-    <td>Information about the user himself, his skills, etc.</td>
+<td>
+
+Information about the user himself, his skills, etc.
+
+</td>
   </tr>
   <tr>
     <th align="left">questions</th>
     <td><code>Will I work in a team or on my own?</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>no</td>
-    <td>Any questions the user might have about the offer</td>
+<td>
+
+Any questions the user might have about the offer
+
+</td>
   </tr>
   <tr>
     <th align="left">terms_of_use</th>
     <td><code>true</code></td>
-    <td>boolean</td>
+    <td><code>boolean</code></td>
     <td>yes</td>
-    <td>Confirmation that the user has accepted the privacy terms,
+<td>
+
+Confirmation that the user has accepted the privacy terms,
 e.g. via a checkbox.
+
+
 </td>
   </tr>
 </table>
@@ -155,18 +195,26 @@ e.g. via a checkbox.
     </tr>
     <tr>
       <th align="left">status</th>
-      <td>string</td>
-      <td>accepted</td>
-      <td>HTTP status code as a descriptive string.
+      <td><code>string</code></td>
+      <td><code>accepted</code></td>
+<td>
+
+HTTP status code as a descriptive string.
 For a list of codes, <a href="http://httpstatus.es/">see httpstatus.es</a>.
 Example: "accepted" for code 202
+
+
 </td>
     </tr>
     <tr>
       <th align="left">status_code</th>
-      <td>number</td>
-      <td>202</td>
-      <td>HTTP status code as an integer number, e.g. 202.
+      <td><code>number</code></td>
+      <td><code>202</code></td>
+<td>
+
+HTTP status code as an integer number, e.g. 202.
+
+
 </td>
     </tr>
   </table>
@@ -179,11 +227,18 @@ Example: "accepted" for code 202
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">location</th>
-      <td>Location where the created/updated resource can be viewed or more
+<th align="left">
+
+location
+
+</th>
+<td>
+
+Location where the created/updated resource can be viewed or more
 information about it can be gathered.
+
+
 </td>
     </tr>
 </table>

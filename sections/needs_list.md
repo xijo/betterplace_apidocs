@@ -28,30 +28,42 @@ to make sure you only request data that is associated with one of your projects.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+<td>
+
+Project id as an integer number ≥ 14.
+
+</td>
   </tr>
   <tr>
     <th align="left">facets</th>
     <td><code>completed:false</code></td>
     <td>no</td>
-    <td>Filter the result set.
+<td>
+
+Filter the result set.
 Documented and supported filters are:
 <ul>
   <li><code>completed:true/false</code> – is this need fully funded?
 </ul>
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">order</th>
     <td><code>position:ASC</code></td>
     <td>no</td>
-    <td>Order the result set. Documented and supported orders are:
+<td>
+
+Order the result set. Documented and supported orders are:
 <ul>
   <li><code>created_at:asc/desc</code> – DESC: Latest needs first.
   <li><code>position:asc/desc</code> – Priority of the need defined by the project manager
 </ul>
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
+
+
 </td>
   </tr>
 </table>
@@ -70,69 +82,109 @@ Documented and supported filters are:
     </tr>
     <tr>
       <th align="left">id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">title</th>
-      <td>string</td>
-      <td></td>
-      <td>Max 50 character</td>
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+Max 50 character
+
+</td>
     </tr>
     <tr>
       <th align="left">description</th>
-      <td>string</td>
-      <td></td>
-      <td></td>
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+
+
+</td>
     </tr>
     <tr>
       <th align="left">completed</th>
-      <td>boolean</td>
-      <td>false</td>
-      <td>True if the need is 100 % financed</td>
+      <td><code>boolean</code></td>
+      <td><code>false</code></td>
+<td>
+
+True if the need is 100 % financed
+
+</td>
     </tr>
     <tr>
       <th align="left">progress_percentage</th>
-      <td>number</td>
-      <td>82</td>
-      <td>% financed</td>
+      <td><code>number</code></td>
+      <td><code>82</code></td>
+<td>
+
+% financed
+
+</td>
     </tr>
     <tr>
       <th align="left">donated_amount_in_cents</th>
-      <td>number</td>
-      <td>12382</td>
-      <td>How many cents are donated already.
+      <td><code>number</code></td>
+      <td><code>12382</code></td>
+<td>
+
+How many cents are donated already.
 This includes all donations that can be given to a need
 (direct donation, forwarding of project donation,
 forwarding of organisation donation,
 forwarding of fundraising event donations,
 offline donations and also(!) external donations)
+
+
 </td>
     </tr>
     <tr>
       <th align="left">open_amount_in_cents</th>
-      <td>number</td>
-      <td>12382</td>
-      <td>How many cents are still needed to complete the need</td>
+      <td><code>number</code></td>
+      <td><code>12382</code></td>
+<td>
+
+How many cents are still needed to complete the need
+
+</td>
     </tr>
     <tr>
       <th align="left">requested_amount_in_cents</th>
-      <td>number</td>
-      <td>12382</td>
-      <td>How much money is needed in total</td>
+      <td><code>number</code></td>
+      <td><code>12382</code></td>
+<td>
+
+How much money is needed in total
+
+</td>
     </tr>
   </table>
 </table>
@@ -144,26 +196,57 @@ offline donations and also(!) external donations)
     <th>Linkname</th>
     <th>Description</th>
   </tr>
+    <tr>
+<th align="left">
 
-    <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
+self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="need_details.md">need details</a>)
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">project</th>
-      <td>Link to the related <a href="project_details.md">project's details</a>
+<th align="left">
+
+project
+
+</th>
+<td>
+
+Link to the related <a href="project_details.md">project's details</a>
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">new_client_donation</th>
-      <td>Link to the donation form. Templated, needs insertion of the client_id.
+<th align="left">
+
+new_client_donation
+
+</th>
+<td>
+
+Link to the donation form. Templated, needs insertion of the client_id.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">new_donation</th>
-      <td>Link to the regular donation form.
+<th align="left">
+
+new_donation
+
+</th>
+<td>
+
+Link to the regular donation form.
+
+
 </td>
     </tr>
 </table>
@@ -241,20 +324,20 @@ offline donations and also(!) external donations)
       ]
     },
     {
-      "id": 5228,
-      "created_at": "2009-03-10T11:38:39+01:00",
-      "updated_at": "2013-10-29T01:16:31+01:00",
-      "title": "Warme Mahlzeiten",
-      "description": "Wer sich viel bewegt, der muss auch richtig essen: Mit nur 50 Euro im Monat lassen sich 8-10 warme Mahlzeiten für rund 30 Waisenkinder bereitstellen, die zweimal in der Woche von dem Skateistan-Team besucht werden und lernen Skateboard zu fahren.",
-      "completed": true,
-      "progress_percentage": 100.0,
-      "donated_amount_in_cents": 5000,
-      "open_amount_in_cents": 0,
-      "requested_amount_in_cents": 5000,
+      "id": 143000,
+      "created_at": "2016-04-06T10:53:18+02:00",
+      "updated_at": "2017-06-08T14:31:45+02:00",
+      "title": "deutsche version 42;",
+      "description": "deutsche version 42;",
+      "completed": false,
+      "progress_percentage": 0.0,
+      "donated_amount_in_cents": 0,
+      "open_amount_in_cents": 55000,
+      "requested_amount_in_cents": 55000,
       "links": [
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs/5228.json"
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs/143000.json"
         },
         {
           "rel": "project",
@@ -262,12 +345,12 @@ offline donations and also(!) external donations)
         },
         {
           "rel": "new_client_donation",
-          "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D&donation_earmark_id=5228",
+          "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D&donation_earmark_id=143000",
           "templated": true
         },
         {
           "rel": "new_donation",
-          "href": "https://www.betterplace.org/de/projects/1114/donations/new?donation_earmark_id=5228"
+          "href": "https://www.betterplace.org/de/projects/1114/donations/new?donation_earmark_id=143000"
         }
       ]
     }

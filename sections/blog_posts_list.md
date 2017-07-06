@@ -31,7 +31,11 @@ to make sure you only request data that is associated with one of your projects.
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+<td>
+
+Project id as an integer number ≥ 14.
+
+</td>
   </tr>
 </table>
 
@@ -49,60 +53,78 @@ to make sure you only request data that is associated with one of your projects.
     </tr>
     <tr>
       <th align="left">id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">lang</th>
-      <td>string</td>
-      <td>en</td>
-      <td>Blog posts have only one language at the moment</td>
+      <td><code>string</code></td>
+      <td><code>en</code></td>
+<td>
+
+Blog posts have only one language at the moment
+
+</td>
     </tr>
     <tr>
       <th align="left">type</th>
-      <td>string</td>
-      <td>BlogPost</td>
-      <td>Blogposts are always created by a user, and this
+      <td><code>string</code></td>
+      <td><code>BlogPost</code></td>
+<td>
+
+Blogposts are always created by a user, and this
 field always has the value <code>BlogPost</code>.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">title</th>
-      <td>string</td>
-      <td>Thank you from Beijing</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th align="left">body</th>
-      <td>string</td>
-      <td>I am so happy to hear about the first donation for the Good Gifted Garden. If I told Chun …</td>
-      <td>The body may contain html such as links, embedded videos, and picture or
-any of the following HTML tags:
-<code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
+      <td><code>string</code></td>
+      <td><code>Thank you from Beijing</code></td>
+<td>
+
+
+
 </td>
     </tr>
     <tr>
-        <th align="left" style="white-space: nowrap">
-          <a id="payout-ref" href="#payout">
-            ↓payout
-          </a>
-        </th>
-      <td>null &#124; object</td>
-      <td>TODO</td>
-      <td></td>
+      <th align="left">body</th>
+      <td><code>string</code></td>
+      <td><code>I am so happy to hear about the first donation for the Good Gifted Garden. If I told Chun …</code></td>
+<td>
+
+The body may contain html such as links, embedded videos, and picture or
+any of the following HTML tags:
+```a, b, br, div, em, i, iframe, img, li, ol, p, strong, ul```.
+
+
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -110,53 +132,15 @@ any of the following HTML tags:
             ↓author
           </a>
         </th>
-      <td>string</td>
-      <td>"Till B."</td>
-      <td>Display name of a betterplace.org user.
+      <td><code>string</code></td>
+      <td><code>"Till B."</code></td>
+<td>
+
+Display name of a betterplace.org user.
 Possible formats: "Till B.", "T. Behnke", "Till Behnke"
+
+
 </td>
-    </tr>
-  </table>
-### <a id="payout" href="#payout-ref">↑Nested Attributes: payout</a>
-
-  <table>
-    <tr>
-      <th>Attribute</th>
-      <th>Types</th>
-      <th>Example</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-        <th align="left" style="white-space: nowrap">
-          <a id="payout.needs-ref" href="#payout.needs">
-            ↓payout.needs
-          </a>
-        </th>
-      <td>array</td>
-      <td>TODO</td>
-      <td>TODO</td>
-    </tr>
-  </table>
-### <a id="payout.needs" href="#payout.needs-ref">↑Nested Attributes: payout.needs</a>
-
-  <table>
-    <tr>
-      <th>Attribute</th>
-      <th>Types</th>
-      <th>Example</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <th align="left">payout.needs.need_title</th>
-      <td>string</td>
-      <td>Schoolbooks</td>
-      <td>Title of the need</td>
-    </tr>
-    <tr>
-      <th align="left">payout.needs.payout_amount_in_cents</th>
-      <td>string</td>
-      <td>2300</td>
-      <td>Amount paid out to that need</td>
     </tr>
   </table>
 ### <a id="author" href="#author-ref">↑Nested Attributes: author</a>
@@ -170,19 +154,27 @@ Possible formats: "Till B.", "T. Behnke", "Till Behnke"
     </tr>
     <tr>
       <th align="left">author.id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">author.name</th>
-      <td>null &#124; string</td>
-      <td>"Till B."</td>
-      <td>Display name of a betterplace.org user.
+      <td><code>null &#124; string</code></td>
+      <td><code>"Till B."</code></td>
+<td>
+
+Display name of a betterplace.org user.
 Possible formats: "Till B.", "T. Behnke", "Till Behnke".
 
 In the case of donation-opinions the name might also be
 empty/null for anonymous donations for anonymous donations.
+
+
 </td>
     </tr>
     <tr>
@@ -191,9 +183,13 @@ empty/null for anonymous donations for anonymous donations.
             ↓author.picture
           </a>
         </th>
-      <td>object</td>
-      <td>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</td>
-      <td>User profile picture or a fallback image</td>
+      <td><code>object</code></td>
+      <td><code>//asset1.betterplace.org ↪/uploads/user/profile_picture ↪/000/000/001 ↪/fill_100x100_original_tb.jpg</code></td>
+<td>
+
+User profile picture or a fallback image
+
+</td>
     </tr>
   </table>
 ### <a id="author.picture" href="#author.picture-ref">↑Nested Attributes: author.picture</a>
@@ -207,9 +203,13 @@ empty/null for anonymous donations for anonymous donations.
     </tr>
     <tr>
       <th align="left">author.picture.fallback</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether a fallback image is given or not</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether a fallback image is given or not
+
+</td>
     </tr>
   </table>
 </table>
@@ -221,44 +221,99 @@ empty/null for anonymous donations for anonymous donations.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
+    <tr>
+<th align="left">
 
-    <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
+self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="blog_post_details.md">blog post details</a>)
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">platform</th>
-      <td>Permalink to betterplace.org</td>
-    </tr>
-    <tr>
-      <th align="left">documentation</th>
-      <td>Link to this resource in the documentation
+<th align="left">
+
+platform
+
+</th>
+<td>
+
+Permalink to betterplace.org
+
 </td>
     </tr>
     <tr>
-      <th align="left">author.platform</th>
-      <td>The user's profile on betterplace.org.
+<th align="left">
+
+documentation
+
+</th>
+<td>
+
+Link to this resource in the documentation
+
+
+</td>
+    </tr>
+    <tr>
+<th align="left">
+
+author.platform
+
+</th>
+<td>
+
+The user's profile on betterplace.org.
 To view a user profile you have to be logged in.
 This array is empty if the user has no useraccount
 with betterplace.org but donated via one of our partner.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">author.contact_data</th>
-      <td>The user's contact data. Please note that you need to be
+<th align="left">
+
+author.contact_data
+
+</th>
+<td>
+
+The user's contact data. Please note that you need to be
 <a href="../README.md#client-api">authenticated as a client</a> with matching
 access rights in order to see this information.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">author.picture.fill_100x100</th>
-      <td>100×100 Pixel</td>
+<th align="left">
+
+author.picture.fill_100x100
+
+</th>
+<td>
+
+100×100 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">author.picture.original</th>
-      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
+<th align="left">
+
+author.picture.original
+
+</th>
+<td>
+
+Maximum sized image. This is the original image with default-cropping or user-cropping applied.
+
+</td>
     </tr>
 </table>
 
@@ -268,8 +323,8 @@ access rights in order to see this information.
 {
   "total_entries": 0,
   "offset": 0,
-  "total_pages": 1,
-  "current_page": null,
+  "total_pages": 0,
+  "current_page": 1,
   "per_page": 2,
   "data": [
 

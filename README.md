@@ -21,21 +21,25 @@ about updates and scheduled downtimes.
 
 ## Table of content
 
-0. **General information** [↓ below](#general-information)
-  0. Request Parameter Format [↓ below](#request-parameter-format)
-  0. Addressing the locale of a resource [↓ below](#addressing-the-locale-of-a-resource)
-  0. Pagination [↓ below](#pagination)
-  0. Picture formats [↓ below](#picture-formats)
-  0. HTTP Status Codes [↓ below](#http-status-codes)
-  0. Error Messages [↓ below](#error-messages)
-  0. [Changelog](CHANGELOG.md)
-  0. Known issues [↓ below](#known-issues)
-  0. API Client Libraries [↓ below](#api-client-libraries)
-  0. Code examples [↓ below](#code-examples)
-  0. Example apps [↓ below](#example-apps)
+### **General information**
 
-2. **Public API**
-  1. **Projects**
+1. General information [↓ below](#general-information)
+1. Request Parameter Format [↓ below](#request-parameter-format)
+1. Addressing the locale of a resource [↓ below](#addressing-the-locale-of-a-resource)
+1. Pagination [↓ below](#pagination)
+1. HTML Sanitization of string attributes [↓ below](#sanitization)
+1. Picture formats [↓ below](#picture-formats)
+1. HTTP Status Codes [↓ below](#http-status-codes)
+1. Error Messages [↓ below](#error-messages)
+1. Known issues [↓ below](#known-issues)
+1. API Client Libraries [↓ below](#api-client-libraries)
+1. Code examples [↓ below](#code-examples)
+1. Example apps [↓ below](#example-apps)
+1. [Changelog](CHANGELOG.md)
+
+### **Public API**
+
+1. **Projects**
     1. [**Projects** List and Search](sections/projects_list.md)
     1. [**Project** Details](sections/project_details.md)
     1. [Project **Needs** List](sections/needs_list.md)
@@ -45,56 +49,61 @@ about updates and scheduled downtimes.
     1. [Project **Opinions** List](sections/opinions_list.md)
     1. [Project **Pictures** List](sections/project_pictures_list.md)
     1. [Project **Picture** Details](sections/project_picture_details.md)
-  1. **Fundraising Events**
+1. **Fundraising Events**
     1. [**Fundraising Events** List and Search](sections/fundraising_events_list.md)
     1. [**Fundraising Events** Details](sections/fundraising_event_details.md)
     1. [Fundraising Event **Opinions** List](sections/opinions_list.md)
     1. [Fundraising Event **Featured Projects** List](sections/fundraising_events_featured_projects_list.md)
     1. [Fundraising Event **Forwarding** List](sections/fundraising_event_forwardings_list.md)
-  1. **Volunteering**
+1. **Volunteering**
     1. [**Volunteering** List and Search](sections/volunteering_list.md)
     1. [**Volunteering** Details](sections/volunteering_details.md)
     1. [Volunteering **Inquiries**](sections/volunteering_inquiries.md)
-  1. **Organisations**
+1. **Organisations**
     1. [**Organisations** List](sections/organisations_list.md)
     1. [**Organisation** Details](sections/organisation_details.md)
-  1. **MatchingFunds**
+1. **MatchingFunds**
     1. [**MatchingFunds** List](sections/matching_funds_list.md)
     1. [**MatchingFund** Details](sections/matching_fund_details.md)
-  1. **FundraisingChallenge**
-    1. [Fundraising Challenge **Contest** Details](sections/fundraising_challenge_contest_details.md)
-    1. [Fundraising Challenge Contest **Results** List](sections/fundraising_challenge_contest_results_list.md)
 
-3. **Client API** [↓ below](#client-api)
-  0. Client Projects [↓ below](#client-projects)
-  0. Client Authentication [↓ below](#client-authentication)
-  0. [**Client** Details](sections/client_details.md)
-  0. [**Client** Project Statistics](sections/client_project_statistics.md)
-  0. [**Client** Fundraising Event Statistics](sections/client_fundraising_event_statistics.md)
-  0. [**Client** Donations List](sections/client_donations_list.md)
-  0. [**Client** Donor Contact Data](sections/donor_contact_data_details.md)
-  0. [**Client** Donation Pledges List](sections/client_donation_pledges_list.md) [:lock:](#client-api)
-  0. [**Client** Donation Pledge Details](sections/client_donation_pledge_details.md) [:lock:](#client-api)
-  0. [**Client** Forwarding Requests List](sections/client_forwarding_requests_list.md) [:lock:](#client-api)
-  0. [**Client** Forwarding Request Details](sections/client_forwarding_request_details.md) [:lock:](#client-api)
-  0. [**Client** Mailing Subscribtions](sections/client_mailing_subscriptions.md) [:lock:](#client-api)
-  0. [**Client** Volunteering List and Search](sections/volunteering_list.md) – 
+### **Client API**
+
+1. **General Information**
+    1. General Information [↓ below](#client-api)
+    1. Client Projects [↓ below](#client-projects)
+    1. Client Authentication [↓ below](#client-authentication)
+    1. [**Client** Details](sections/client_details.md)
+    1. [**Client** Project Statistics](sections/client_project_statistics.md)
+    1. [**Client** Fundraising Event Statistics](sections/client_fundraising_event_statistics.md)
+1. **Donations**
+    1. [**Client** Donation Pledges List](sections/client_donation_pledges_list.md) [:lock:](#client-api)
+    1. [**Client** Donation Pledge Details](sections/client_donation_pledge_details.md) [:lock:](#client-api)
+    1. [**Client** Forwarding Requests List](sections/client_forwarding_requests_list.md) [:lock:](#client-api)
+    1. [**Client** Forwarding Request Details](sections/client_forwarding_request_details.md) [:lock:](#client-api)
+    1. [**Client** Donations List](sections/client_donations_list.md)
+1. **Contact Data**
+    1. [**Client** Donor Contact Data](sections/donor_contact_data_details.md)
+    1. [**User** Contact Data Details](sections/contact_data_details.md) [:lock:](#client-api)
+1. **Projects**
+    1. [**Client** Projects List and Search](sections/projects_list.md) – 
+        See client section [and "Client Projects"](#client-api)
+    1. [**Client** Project Details](sections/project_details.md) – 
+        See client section [and "Client Projects"](#client-api)
+    1. [**Client** Blog Posts List](sections/blog_posts_list.md) – See client section
+    1. [**Client** Mailing Subscribtions](sections/client_mailing_subscriptions.md) [:lock:](#client-api)
+1. **Tags**
+    1. [**Client** Tags List](sections/client_tags_list.md)
+    1. [**Client**-Tag Projects List](sections/client_tag_projects_list.md)
+    1. [**Client**-Project Tags List](sections/client_project_tags_list.md)
+1. **Volunteering**
+    1. [**Client** Volunteering List and Search](sections/volunteering_list.md) – 
       See client section [and "Client Volunteering Offers"](#client-api)
-  0. [**Client** Volunteering Details](sections/volunteering_details.md) – 
+    1. [**Client** Volunteering Details](sections/volunteering_details.md) – 
       See client section [and "Client Volunteering Offers"](#client-api)
-  0. [**Client** Projects List and Search](sections/projects_list.md) – 
-      See client section [and "Client Projects"](#client-api)
-  0. [**Client** Project Details](sections/project_details.md) – 
-      See client section [and "Client Projects"](#client-api)
-  0. [**Client** Blog Posts List](sections/blog_posts_list.md) – See client section
-  0. [**Client** Project Opinions List](sections/opinions_list.md) – See client section
-  0. [**Client** Tags List](sections/client_tags_list.md)
-  0. [**Client**-Project Tags List](sections/client_project_tags_list.md)
-  0. [**User** Contact Data Details](sections/contact_data_details.md) [:lock:](#client-api)
 
-4. **Organisation API**
-  1. [ThirdPartyApp custom donation form for organisations](donation_form/third_party_app_donation_form.md)
+### **Organisation API**
 
+1. [ThirdPartyApp custom donation form for organisations](donation_form/third_party_app_donation_form.md)
 
 ## General information
 
@@ -194,12 +203,25 @@ The following attributes are returned in all list view responses:
 </table>
 
 
+### Sanitization
+
+Every string attribute returned in a JSON document is sanitized HTML. By
+default only ```a, b, br, em, i, li, ol, p, strong, ul``` tags are allowed.
+If an attribute allows for a different set of tags it is specified in the
+documentation of this field under the "Response Attributes" headline.
+We might adapt the allowed this set of tags at any time without further notice,
+e.g. to avert upcoming security problems.
+
+
 ### Picture formats
 
-Please note that all over the API only the `original` image version will always be available. There are additional image versions
-for various entities, e.g. fill_960x500 for projects. You can use these versions, but they might change in the future!
+Please note that all over the API only the `original` image version will always
+be available. There are additional image versions for various entities, e.g.
+fill_960x500 for projects. You can use these versions, but they might change in
+the future!
 
-To avoid problems, stay tuned and subscribe to the [Mailing list for service announcements ↑](#mailing-list-for-service-announcements).
+To avoid problems, stay tuned and subscribe to the [Mailing list for service
+announcements ↑](#mailing-list-for-service-announcements).
 
 
 ### HTTP Status Codes

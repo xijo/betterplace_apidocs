@@ -25,7 +25,9 @@ This resource is not available at the moment.
     <th align="left">scope</th>
     <td><code>location</code></td>
     <td>no</td>
-    <td>Use the scope to specify how the search query <code>q</code> should behave:
+<td>
+
+Use the scope to specify how the search query <code>q</code> should behave:
 <ul>
 <li>"no scope" (default) performs a full text search
 <li><code>human_name</code> searches only on the manager-fullname and carrier-fullname.
@@ -36,13 +38,17 @@ This resource is not available at the moment.
   We then return all entities that are within this rectangle.
 </ul>
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">around</th>
     <td><code>10997 Berlin, Germany</code></td>
     <td>no</td>
-    <td>Order the results by the distance to the given location from near to far.
+<td>
+
+Order the results by the distance to the given location from near to far.
 <br>
 Location can be provided as …
 <br>
@@ -60,13 +66,17 @@ you can use any search that works for google maps.
 <br>
 Check the <code>around_location</code> to see what latitude/longitude
 values have been used for the query.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">around_distance</th>
     <td><code>25km</code></td>
     <td>no</td>
-    <td>In combination with the <code>around</code> parameter the search will be
+<td>
+
+In combination with the <code>around</code> parameter the search will be
 limited to results whose location is closer than the given value to the
 location provided through the <code>around</code> parameter. Possible
 values are all integer values followed by <code>m</code> for meters or
@@ -74,43 +84,67 @@ values are all integer values followed by <code>m</code> for meters or
 <br>
 When <code>around_distance</code> is given without <code>around</code> it
 will be ignored.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">nelat</th>
     <td><code>51.123</code></td>
     <td>no</td>
-    <td>For geographic bound filterning: The northeast corner's latitude.</td>
+<td>
+
+For geographic bound filterning: The northeast corner's latitude.
+
+</td>
   </tr>
   <tr>
     <th align="left">nelng</th>
     <td><code>12.123</code></td>
     <td>no</td>
-    <td>For geographic bound filterning: The northeast corner's longitude.</td>
+<td>
+
+For geographic bound filterning: The northeast corner's longitude.
+
+</td>
   </tr>
   <tr>
     <th align="left">swlat</th>
     <td><code>51.001</code></td>
     <td>no</td>
-    <td>For geographic bound filterning: The southwest corner's latitude.</td>
+<td>
+
+For geographic bound filterning: The southwest corner's latitude.
+
+</td>
   </tr>
   <tr>
     <th align="left">swlng</th>
     <td><code>12.001</code></td>
     <td>no</td>
-    <td>For geographic bound filterning: The southwest corner's longitude.</td>
+<td>
+
+For geographic bound filterning: The southwest corner's longitude.
+
+</td>
   </tr>
   <tr>
     <th align="left">q</th>
     <td><code>Homework help</code></td>
     <td>no</td>
-    <td>Search query. The searches behaviour is based on the scope.</td>
+<td>
+
+Search query. The searches behaviour is based on the scope.
+
+</td>
   </tr>
   <tr>
     <th align="left">order</th>
     <td><code>content_updated_at:ASC</code></td>
     <td>no</td>
-    <td>Order the result by <code>has_image</code> (default),
+<td>
+
+Order the result by <code>has_image</code> (default),
 <code>content_updated_at</code> (second default). Use the optional
 <code>ASC</code> (default) or <code>DESC</code>.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
@@ -118,6 +152,8 @@ will be ignored.
 The default order is the same as for the
 <a href="http://www.betterplace.org/en/volunteering/list">betterplace.org volunteering list</a>:
 <code>has_image:desc| carrier_has_image:desc| content_updated_at:desc</code>
+
+
 </td>
   </tr>
 </table>
@@ -136,76 +172,124 @@ The default order is the same as for the
     </tr>
     <tr>
       <th align="left">id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">latitude</th>
-      <td>number</td>
-      <td>52.499007</td>
-      <td>Decimal degrees based on user input</td>
+      <td><code>number</code></td>
+      <td><code>52.499007</code></td>
+<td>
+
+Decimal degrees based on user input
+
+</td>
     </tr>
     <tr>
       <th align="left">longitude</th>
-      <td>number</td>
-      <td>13.44947</td>
-      <td>Decimal degrees based on user input</td>
+      <td><code>number</code></td>
+      <td><code>13.44947</code></td>
+<td>
+
+Decimal degrees based on user input
+
+</td>
     </tr>
     <tr>
       <th align="left">street</th>
-      <td>null &#124; string</td>
-      <td>"Schlesische Straße 26"</td>
-      <td>Street address</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"Schlesische Straße 26"</code></td>
+<td>
+
+Street address
+
+</td>
     </tr>
     <tr>
       <th align="left">zip</th>
-      <td>null &#124; string</td>
-      <td>"10997"</td>
-      <td>ZIP code</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"10997"</code></td>
+<td>
+
+ZIP code
+
+</td>
     </tr>
     <tr>
       <th align="left">city</th>
-      <td>null &#124; string</td>
-      <td>"Berlin"</td>
-      <td>Name of the city</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"Berlin"</code></td>
+<td>
+
+Name of the city
+
+</td>
     </tr>
     <tr>
       <th align="left">country</th>
-      <td>null &#124; string</td>
-      <td>"Deutschland"</td>
-      <td>Name of the country</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>"Deutschland"</code></td>
+<td>
+
+Name of the country
+
+</td>
     </tr>
     <tr>
       <th align="left">content_updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">title</th>
-      <td>string</td>
-      <td>TODO</td>
-      <td>Max 100 character unless the volunteering is imported</td>
+      <td><code>string</code></td>
+      <td><code>TODO</code></td>
+<td>
+
+Max 100 character unless the volunteering is imported
+
+</td>
     </tr>
     <tr>
       <th align="left">description</th>
-      <td>string</td>
-      <td></td>
-      <td>A description of the offer. This may contain any of the following
-HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>.
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+A description of the offer. This may contain any of the following
+HTML tags: ```a, b, br, div, em, i, iframe, img, li, ol, p, strong, ul```.
+
+
 </td>
     </tr>
     <tr>
@@ -214,15 +298,23 @@ HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>
             ↓carrier
           </a>
         </th>
-      <td>object</td>
-      <td>TODO</td>
-      <td>The organisation that carrier this volunteering</td>
+      <td><code>object</code></td>
+      <td><code>TODO</code></td>
+<td>
+
+The organisation that carrier this volunteering
+
+</td>
     </tr>
     <tr>
       <th align="left">vacancies</th>
-      <td>number</td>
-      <td>1</td>
-      <td>The number of volunteers that are needed, provided by the manager</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+The number of volunteers that are needed, provided by the manager
+
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -230,9 +322,13 @@ HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>
             ↓image
           </a>
         </th>
-      <td>null &#124; object</td>
-      <td>TODO</td>
-      <td>Each volunteering has one optional image / DEPRECATED, will be removed after 5/2015</td>
+      <td><code>null &#124; object</code></td>
+      <td><code>TODO</code></td>
+<td>
+
+Each volunteering has one optional image / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -240,82 +336,122 @@ HTML tags: <code>a, br, strong, b, em, i, ul, ol, li, p, div, img, iframe</code>
             ↓contact
           </a>
         </th>
-      <td>object</td>
-      <td>TODO</td>
-      <td>Contact person, contact data and contact address</td>
+      <td><code>object</code></td>
+      <td><code>TODO</code></td>
+<td>
+
+Contact person, contact data and contact address
+
+</td>
     </tr>
     <tr>
       <th align="left">location_fixed</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether the volunteering offer is limited to a certain location or if it may be
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether the volunteering offer is limited to a certain location or if it may be
 executed remotely.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">working_time_selection</th>
-      <td>string</td>
-      <td>regular commitment</td>
-      <td>Working time selection, specifies if this is a one-time event or if
+      <td><code>string</code></td>
+      <td><code>regular commitment</code></td>
+<td>
+
+Working time selection, specifies if this is a one-time event or if
 this volunteering can takes place regulary.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">working_time_weekends</th>
-      <td>array</td>
-      <td>["in the mornings"]</td>
-      <td>Up to three working time preferences. They specify when this volunteering
+      <td><code>array</code></td>
+      <td><code>["in the mornings"]</code></td>
+<td>
+
+Up to three working time preferences. They specify when this volunteering
 should take place on weekends.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">working_time_weekdays</th>
-      <td>array</td>
-      <td>["in the mornings"]</td>
-      <td>Up to three working time preferences. They specify when this volunteering
+      <td><code>array</code></td>
+      <td><code>["in the mornings"]</code></td>
+<td>
+
+Up to three working time preferences. They specify when this volunteering
 should take place on weekdays.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">begins_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">ends_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">topics</th>
-      <td>array</td>
-      <td>["Development cooperation", "Children & youth"]</td>
-      <td>Up to 4 categories that describe, what for which causes you need volunteers.
+      <td><code>array</code></td>
+      <td><code>["Development cooperation", "Children & youth"]</code></td>
+<td>
+
+Up to 4 categories that describe, what for which causes you need volunteers.
 Results are translated to the requested language.
 Possible results: "Animal & environment protection", "Culture & sports",
 "Children & youth", "Development cooperation ", "DisabledEducation", "Elderly people",
 "Human rights", "Refugees & immigrants", "Invalid", "Local help", "Socially deprived"
+
+
 </td>
     </tr>
     <tr>
       <th align="left">activities</th>
-      <td>array &#124; null</td>
-      <td>["consulting/coaching", "office work"]</td>
-      <td>Up to 4 categories that describe, what for which causes you need volunteers.
+      <td><code>array &#124; null</code></td>
+      <td><code>["consulting/coaching", "office work"]</code></td>
+<td>
+
+Up to 4 categories that describe, what for which causes you need volunteers.
 Results are translated to the requested language.
 Possible results: "consulting/coaching", "crafting/gardening", "doing sports",
 "doing the chores", "group care", "nursing/parenting", "office work",
 "organising/managing", "painting/designing", "tutoring/reading",
 "visiting/accompanying", "writing/translating"
+
+
 </td>
     </tr>
     <tr>
       <th align="left">imported_from</th>
-      <td>null &#124; string</td>
-      <td>aktion_mensch</td>
-      <td>Betterplace imports volunteering offers from Aktions Mensch.</td>
+      <td><code>null &#124; string</code></td>
+      <td><code>aktion_mensch</code></td>
+<td>
+
+Betterplace imports volunteering offers from Aktions Mensch.
+
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -323,10 +459,14 @@ Possible results: "consulting/coaching", "crafting/gardening", "doing sports",
             ↓import_information
           </a>
         </th>
-      <td>null &#124; object</td>
-      <td>TODO</td>
-      <td>Meta data concerning the import of this volunteering offer, if it
+      <td><code>null &#124; object</code></td>
+      <td><code>TODO</code></td>
+<td>
+
+Meta data concerning the import of this volunteering offer, if it
 was indeed imported.
+
+
 </td>
     </tr>
     <tr>
@@ -335,9 +475,13 @@ was indeed imported.
             ↓profile_picture
           </a>
         </th>
-      <td>null &#124; object</td>
-      <td></td>
-      <td>TODO</td>
+      <td><code>null &#124; object</code></td>
+      <td><code></code></td>
+<td>
+
+TODO
+
+</td>
     </tr>
   </table>
 ### <a id="carrier" href="#carrier-ref">↑Nested Attributes: carrier</a>
@@ -351,45 +495,73 @@ was indeed imported.
     </tr>
     <tr>
       <th align="left">carrier.latitude</th>
-      <td>number</td>
-      <td>52.499007</td>
-      <td>Decimal degrees based on user input</td>
+      <td><code>number</code></td>
+      <td><code>52.499007</code></td>
+<td>
+
+Decimal degrees based on user input
+
+</td>
     </tr>
     <tr>
       <th align="left">carrier.longitude</th>
-      <td>number</td>
-      <td>13.44947</td>
-      <td>Decimal degrees based on user input</td>
+      <td><code>number</code></td>
+      <td><code>13.44947</code></td>
+<td>
+
+Decimal degrees based on user input
+
+</td>
     </tr>
     <tr>
       <th align="left">carrier.name</th>
-      <td>string</td>
-      <td>"Viva con Agua de Sankt Pauli e.V."</td>
-      <td>An organisation name, Users will be added later</td>
+      <td><code>string</code></td>
+      <td><code>"Viva con Agua de Sankt Pauli e.V."</code></td>
+<td>
+
+An organisation name, Users will be added later
+
+</td>
     </tr>
     <tr>
       <th align="left">carrier.street</th>
-      <td>string</td>
-      <td>"Rosenstr. 3"</td>
-      <td>Contact data for the organisation</td>
+      <td><code>string</code></td>
+      <td><code>"Rosenstr. 3"</code></td>
+<td>
+
+Contact data for the organisation
+
+</td>
     </tr>
     <tr>
       <th align="left">carrier.city</th>
-      <td>string</td>
-      <td>"Berlin"</td>
-      <td>Contact data for the organisation</td>
+      <td><code>string</code></td>
+      <td><code>"Berlin"</code></td>
+<td>
+
+Contact data for the organisation
+
+</td>
     </tr>
     <tr>
       <th align="left">carrier.zip</th>
-      <td>string</td>
-      <td>"10123"</td>
-      <td>Contact data for the organisation</td>
+      <td><code>string</code></td>
+      <td><code>"10123"</code></td>
+<td>
+
+Contact data for the organisation
+
+</td>
     </tr>
     <tr>
       <th align="left">carrier.country</th>
-      <td>string</td>
-      <td>"Germany"</td>
-      <td>Contact data for the organisation</td>
+      <td><code>string</code></td>
+      <td><code>"Germany"</code></td>
+<td>
+
+Contact data for the organisation
+
+</td>
     </tr>
     <tr>
         <th align="left" style="white-space: nowrap">
@@ -397,9 +569,13 @@ was indeed imported.
             ↓carrier.picture
           </a>
         </th>
-      <td>null &#124; object</td>
-      <td></td>
-      <td>TODO</td>
+      <td><code>null &#124; object</code></td>
+      <td><code></code></td>
+<td>
+
+TODO
+
+</td>
     </tr>
   </table>
 ### <a id="carrier.picture" href="#carrier.picture-ref">↑Nested Attributes: carrier.picture</a>
@@ -413,9 +589,13 @@ was indeed imported.
     </tr>
     <tr>
       <th align="left">carrier.picture.fallback</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether a fallback image is given or not</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether a fallback image is given or not
+
+</td>
     </tr>
   </table>
 ### <a id="image" href="#image-ref">↑Nested Attributes: image</a>
@@ -429,9 +609,13 @@ was indeed imported.
     </tr>
     <tr>
       <th align="left">image.description</th>
-      <td>string</td>
-      <td></td>
-      <td>Image description</td>
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+Image description
+
+</td>
     </tr>
   </table>
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
@@ -445,26 +629,38 @@ was indeed imported.
     </tr>
     <tr>
       <th align="left">contact.name</th>
-      <td>string</td>
-      <td>Till Behnke</td>
-      <td>Fullname of the contact person.
+      <td><code>string</code></td>
+      <td><code>Till Behnke</code></td>
+<td>
+
+Fullname of the contact person.
 For imported volunteering offers, this is the
 contact-name that is provided on import.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">contact.phone</th>
-      <td>string</td>
-      <td>030 - 7676 4488 44</td>
-      <td>Phone number for direct contact.
+      <td><code>string</code></td>
+      <td><code>030 - 7676 4488 44</code></td>
+<td>
+
+Phone number for direct contact.
 No validations on input apply.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">contact.email</th>
-      <td>string</td>
-      <td>support@betterplace.org</td>
-      <td>Plain text email-address for direct contact
+      <td><code>string</code></td>
+      <td><code>support@betterplace.org</code></td>
+<td>
+
+Plain text email-address for direct contact
+
+
 </td>
     </tr>
     <tr>
@@ -473,9 +669,13 @@ No validations on input apply.
             ↓contact.picture
           </a>
         </th>
-      <td>object</td>
-      <td>//assets.betterplace.org/…</td>
-      <td>User profile picture or a fallback image</td>
+      <td><code>object</code></td>
+      <td><code>//assets.betterplace.org/…</code></td>
+<td>
+
+User profile picture or a fallback image
+
+</td>
     </tr>
   </table>
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
@@ -489,9 +689,13 @@ No validations on input apply.
     </tr>
     <tr>
       <th align="left">contact.picture.fallback</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether a fallback image is given or not</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether a fallback image is given or not
+
+</td>
     </tr>
   </table>
 ### <a id="import_information" href="#import_information-ref">↑Nested Attributes: import_information</a>
@@ -505,38 +709,58 @@ No validations on input apply.
     </tr>
     <tr>
       <th align="left">import_information.created_at</th>
-      <td>null &#124; string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone) when the imported record was actually created.
+      <td><code>null &#124; string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone) when the imported record was actually created.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">import_information.updated_at</th>
-      <td>null &#124; string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone) when the imported record was
+      <td><code>null &#124; string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone) when the imported record was
 actually updated last.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">import_information.import_type</th>
-      <td>string</td>
-      <td>"Import::ImportFormat"</td>
-      <td>Type of import this record originated from.</td>
+      <td><code>string</code></td>
+      <td><code>"Import::ImportFormat"</code></td>
+<td>
+
+Type of import this record originated from.
+
+</td>
     </tr>
     <tr>
       <th align="left">import_information.import_id</th>
-      <td>string</td>
-      <td>"foo:23"</td>
-      <td>Unique identifier for this imported record.
+      <td><code>string</code></td>
+      <td><code>"foo:23"</code></td>
+<td>
+
+Unique identifier for this imported record.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">import_information.imported_at</th>
-      <td>string</td>
-      <td>"1994-11-15T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone) when the record was imported at
+      <td><code>string</code></td>
+      <td><code>"1994-11-15T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone) when the record was imported at
 betterplace.
+
+
 </td>
     </tr>
   </table>
@@ -551,9 +775,13 @@ betterplace.
     </tr>
     <tr>
       <th align="left">profile_picture.fallback</th>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Specifies whether a fallback image is given or not</td>
+      <td><code>boolean</code></td>
+      <td><code>true</code></td>
+<td>
+
+Specifies whether a fallback image is given or not
+
+</td>
     </tr>
   </table>
 </table>
@@ -565,101 +793,276 @@ betterplace.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
+<th align="left">
+
+self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="volunteering_details.md">volunteering details</a>)
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">platform</th>
-      <td>Permalink to betterplace.org</td>
+<th align="left">
+
+platform
+
+</th>
+<td>
+
+Permalink to betterplace.org
+
+</td>
     </tr>
     <tr>
-      <th align="left">inquiries</th>
-      <td>The URL to which inquiries about this offer can be POSTed
+<th align="left">
+
+inquiries
+
+</th>
+<td>
+
+The URL to which inquiries about this offer can be POSTed
 (<a href="volunteering_inquiries.md">inquiry details</a>).
 Templated, needs insertion of the client_id.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">carrier.self</th>
-      <td>Link to this resource itself
+<th align="left">
+
+carrier.self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="organisation_details.md">organisation details</a>)
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">carrier.picture.fill_100x100</th>
-      <td>100×100 Pixel</td>
+<th align="left">
+
+carrier.picture.fill_100x100
+
+</th>
+<td>
+
+100×100 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">carrier.picture.fill_200x200</th>
-      <td>200×200 Pixel</td>
+<th align="left">
+
+carrier.picture.fill_200x200
+
+</th>
+<td>
+
+200×200 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">carrier.picture.fill_400x400</th>
-      <td>400×400 Pixel</td>
+<th align="left">
+
+carrier.picture.fill_400x400
+
+</th>
+<td>
+
+400×400 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">carrier.picture.original</th>
-      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
+<th align="left">
+
+carrier.picture.original
+
+</th>
+<td>
+
+Maximum sized image. This is the original image with default-cropping or user-cropping applied.
+
+</td>
     </tr>
     <tr>
-      <th align="left">image.fill_618x322</th>
-      <td>618×322 Pixel / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+image.fill_618x322
+
+</th>
+<td>
+
+618×322 Pixel / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">image.fill_270x141</th>
-      <td>270×141 Pixel / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+image.fill_270x141
+
+</th>
+<td>
+
+270×141 Pixel / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">image.original</th>
-      <td>Original size / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+image.original
+
+</th>
+<td>
+
+Original size / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">image.thumb</th>
-      <td>Thumbnail size / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+image.thumb
+
+</th>
+<td>
+
+Thumbnail size / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">image.medium</th>
-      <td>Medium size / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+image.medium
+
+</th>
+<td>
+
+Medium size / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">image.regular</th>
-      <td>Regular size / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+image.regular
+
+</th>
+<td>
+
+Regular size / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">contact.picture.fill_100x100</th>
-      <td>100×100 Pixel</td>
+<th align="left">
+
+contact.picture.fill_100x100
+
+</th>
+<td>
+
+100×100 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">contact.picture.original</th>
-      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
+<th align="left">
+
+contact.picture.original
+
+</th>
+<td>
+
+Maximum sized image. This is the original image with default-cropping or user-cropping applied.
+
+</td>
     </tr>
     <tr>
-      <th align="left">profile_picture.fill_960x500</th>
-      <td>950×500 Pixel</td>
+<th align="left">
+
+profile_picture.fill_960x500
+
+</th>
+<td>
+
+950×500 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">profile_picture.fill_730x380</th>
-      <td>730×380 Pixel</td>
+<th align="left">
+
+profile_picture.fill_730x380
+
+</th>
+<td>
+
+730×380 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">profile_picture.fill_618x322</th>
-      <td>618×322 Pixel / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+profile_picture.fill_618x322
+
+</th>
+<td>
+
+618×322 Pixel / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">profile_picture.fill_410x214</th>
-      <td>410×214 Pixel</td>
+<th align="left">
+
+profile_picture.fill_410x214
+
+</th>
+<td>
+
+410×214 Pixel
+
+</td>
     </tr>
     <tr>
-      <th align="left">profile_picture.fill_270x141</th>
-      <td>270×141 Pixel / DEPRECATED, will be removed after 5/2015</td>
+<th align="left">
+
+profile_picture.fill_270x141
+
+</th>
+<td>
+
+270×141 Pixel / DEPRECATED, will be removed after 5/2015
+
+</td>
     </tr>
     <tr>
-      <th align="left">profile_picture.original</th>
-      <td>Maximum sized image. This is the original image with default-cropping or user-cropping applied.</td>
+<th align="left">
+
+profile_picture.original
+
+</th>
+<td>
+
+Maximum sized image. This is the original image with default-cropping or user-cropping applied.
+
+</td>
     </tr>
 </table>
 
@@ -667,16 +1070,16 @@ Templated, needs insertion of the client_id.
 
 ```json
 {
-  "total_entries": 4196,
+  "total_entries": 3556,
   "offset": 3,
-  "total_pages": 1399,
+  "total_pages": 1186,
   "current_page": 2,
   "per_page": 3,
   "data": [
     {
       "id": 7074,
       "created_at": "2013-03-03T19:43:47+01:00",
-      "updated_at": "2016-11-11T14:12:30+01:00",
+      "updated_at": "2016-12-02T11:43:35+01:00",
       "latitude": 10.6346,
       "longitude": -85.4407,
       "street": " Rincon de La Vieja",
@@ -843,9 +1246,179 @@ Templated, needs insertion of the client_id.
       ]
     },
     {
+      "id": 7088,
+      "created_at": "2013-03-04T15:13:39+01:00",
+      "updated_at": "2017-01-12T11:37:29+01:00",
+      "latitude": 52.367,
+      "longitude": 13.093,
+      "street": "Inselhof / Bisamkiez",
+      "zip": "14478",
+      "city": "Potdam",
+      "country": "Deutschland",
+      "content_updated_at": "2017-01-12T11:37:29+01:00",
+      "title": "Stadt der Kinder - mit Kindern eine Stadt aus Holz bauen",
+      "description": "Kinder zwischen 6 und 12 Jahren schaffen sich ihre eigene Welt. In den ersten beiden Ferienwochen werden gut 180 Kinder täglich ihre \"Stadt der Kinder\" aus Holz und mit richtigen Werkzeugen bauen. Kinder aus ganz Potsdam werden zusammen kommen und etwas Einmaliges schaffen. Die Stadt der Kinder erhielt den Zukunftspreis 2008 des renomierten Institut für Zukunftsstudien und Technologiebewertung. Die Jury verlieh den Preis für die vorbildliche Leistung sowie das großartige soziale Engagement, um Kindern aus sozial schwächeren Millieus eine gerechtere und perspektivreiche Zukunft zu ermöglichen.<br>Auch in den nächsten Sommerferien werden sich wieder Potsdamer Organisationen zusammen schließen, um dieses Projekt zu verwirklichen.<br>Doch damit die \"Stadt der Kinder\" Wirklichkeit werden kann, sind wir auf die Unterstützung der \"Erwachsenenwelt\" angewiesen und auf begeisterte, engagierte Menschen, die mit Kindern eine kleine, bunte Welt erfinden wollen.",
+      "carrier": {
+        "latitude": 52.37762,
+        "longitude": 13.09718,
+        "name": "KUBUS | G.f. Kultur, Begegnung und soziale Arbeit",
+        "street": "Schilfhof 28",
+        "city": "Potsdam",
+        "zip": "14478",
+        "country": "Deutschland",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_100x100_KUBUS_Word_cloud.jpg"
+            },
+            {
+              "rel": "fill_200x200",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_200x200_KUBUS_Word_cloud.jpg"
+            },
+            {
+              "rel": "fill_400x400",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_400x400_KUBUS_Word_cloud.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/crop_original_KUBUS_Word_cloud.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/973.json"
+          }
+        ]
+      },
+      "vacancies": 30,
+      "image": {
+        "description": "",
+        "links": [
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
+          },
+          {
+            "rel": "thumb",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.png"
+          },
+          {
+            "rel": "medium",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.png"
+          },
+          {
+            "rel": "regular",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.png"
+          }
+        ]
+      },
+      "contact": {
+        "name": "Stadt der Kinder Potsdam",
+        "phone": "",
+        "email": "info@stadtderkinder-potsdam.de",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/009/fill_100x100_original_2010_Stadt-der-Kinder-0.JPG"
+            },
+            {
+              "rel": "original",
+              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/009/crop_original_original_2010_Stadt-der-Kinder-0.JPG"
+            }
+          ]
+        },
+        "links": [
+
+        ]
+      },
+      "location_fixed": true,
+      "working_time_selection": "regelmäßig/langfristig",
+      "working_time_weekends": [
+
+      ],
+      "working_time_weekdays": [
+        "vormittags",
+        "nachmittags"
+      ],
+      "begins_at": null,
+      "ends_at": null,
+      "topics": [
+        "Bildung",
+        "Nachbarschaft",
+        "Kinder & Jugendliche",
+        "Kultur, Freizeit & Sport"
+      ],
+      "activities": [
+        "Gruppen betreuen",
+        "malen/gestalten",
+        "werken/gärtnern",
+        "organisieren/planen"
+      ],
+      "imported_from": null,
+      "import_information": null,
+      "profile_picture": {
+        "fallback": true,
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.png"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.png"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
+          },
+          {
+            "rel": "original",
+            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.png"
+          }
+        ]
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/volunteering/7088.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/volunteering/7088-stadt-der-kinder-mit-kindern-eine-stadt-aus-holz-bauen"
+        },
+        {
+          "rel": "inquiries",
+          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/7088-stadt-der-kinder-mit-kindern-eine-stadt-aus-holz-bauen/inquiries.json",
+          "templated": true
+        }
+      ]
+    },
+    {
       "id": 7259,
       "created_at": "2013-03-08T11:45:28+01:00",
-      "updated_at": "2016-07-07T12:37:24+02:00",
+      "updated_at": "2016-12-12T13:37:47+01:00",
       "latitude": 44.62649917602539,
       "longitude": -85.78849792480469,
       "street": null,
@@ -1006,172 +1579,6 @@ Templated, needs insertion of the client_id.
         {
           "rel": "inquiries",
           "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/7259-improve-our-website-and-online-info-social-media-expert/inquiries.json",
-          "templated": true
-        }
-      ]
-    },
-    {
-      "id": 7268,
-      "created_at": "2013-03-11T18:00:54+01:00",
-      "updated_at": "2016-11-03T11:25:45+01:00",
-      "latitude": 52.52,
-      "longitude": 13.405,
-      "street": "",
-      "zip": "",
-      "city": "Berlin",
-      "country": "Deutschland",
-      "content_updated_at": "2016-01-07T17:20:56+01:00",
-      "title": "\"Pate oder Patin werden und mit einem Neuköllner Kind die Welt neu entdecken\"",
-      "description": "Bevor wir uns hier in Details verlieren, lassen wir erst einmal unsere Patin Linda zu Wort kommen, denn wer könnte besser Beschreiben, was ein Engagement in unserem Projekt ausmacht, als die Engagierten selbst?<br>http://neukoellner-talente.de/paten/paten-stellen-sich-vor/<br><br>Wer neugierig ist und noch mehr wissen will, kann gerne weiter lesen oder sich gleich bei uns im Büro melden: 030 - 62 73 80 14<br><br>---<br><br>http://neukoellner-talente.de/<br><br>Kinder brauchen Zeit, viel Aufmerksamkeit und eine individuelle Förderung, um ihre Stärken und Begabungen zu entdecken und zu entfalten. Mit ihrem Patenschaftsprojekt »Neuköllner Talente« wendet sich die Bürgerstiftung Neukölln an Kinder im Grundschulalter, die entdecken und zeigen wollen, was in ihnen steckt. Vorrangiges Ziel ist es, durch eine intensive 1:1 Betreuung im Rahmen einer Patenschaft, benachteiligten Kindern in dem multiethnischen Berliner Bezirk die Chance zum Entdecken ihrer Interessen und Begabungen, und die Möglichkeit zur Teilhabe zu eröffnen.",
-      "carrier": {
-        "latitude": 52.46874,
-        "longitude": 13.4341,
-        "name": "Bürgerstiftung Neukölln",
-        "street": "Emser Str. 117",
-        "city": "Berlin",
-        "zip": "12051",
-        "country": "Deutschland",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/fill_100x100_profile_thumb_B_rgerstiftung.png"
-            },
-            {
-              "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/fill_200x200_profile_thumb_B_rgerstiftung.png"
-            },
-            {
-              "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/fill_400x400_profile_thumb_B_rgerstiftung.png"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/012/964/crop_original_profile_thumb_B_rgerstiftung.png"
-            }
-          ]
-        },
-        "links": [
-          {
-            "rel": "self",
-            "href": "https://api.betterplace.org/de/api_v4/organisations/12964.json"
-          }
-        ]
-      },
-      "vacancies": 20,
-      "image": {
-        "description": "",
-        "links": [
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_618x322_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_270x141_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/thumb_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/medium_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/regular_TalentePatInnenaufruf_2.jpg"
-          }
-        ]
-      },
-      "contact": {
-        "name": "Deniz Eroglu",
-        "phone": "030 627 380 14",
-        "email": "info@neukoellner-talente.de",
-        "picture": {
-          "fallback": true,
-          "links": [
-            {
-              "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/293/450/fill_100x100_original_00b1f1a4aa.jpg"
-            },
-            {
-              "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/293/450/crop_original_original_00b1f1a4aa.jpg"
-            }
-          ]
-        },
-        "links": [
-
-        ]
-      },
-      "location_fixed": true,
-      "working_time_selection": "egal wann / nach Vereinbarung",
-      "working_time_weekends": [
-
-      ],
-      "working_time_weekdays": [
-
-      ],
-      "begins_at": null,
-      "ends_at": null,
-      "topics": [
-        "Bildung",
-        "Kinder & Jugendliche",
-        "Kultur, Freizeit & Sport",
-        "Flüchtlinge & Migranten"
-      ],
-      "activities": [
-        "besuchen/begleiten"
-      ],
-      "imported_from": null,
-      "import_information": null,
-      "profile_picture": {
-        "fallback": true,
-        "links": [
-          {
-            "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_960x500_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_730x380_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_618x322_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_410x214_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/fill_270x141_TalentePatInnenaufruf_2.jpg"
-          },
-          {
-            "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/268/crop_original_TalentePatInnenaufruf_2.jpg"
-          }
-        ]
-      },
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/volunteering/7268.json"
-        },
-        {
-          "rel": "platform",
-          "href": "https://www.betterplace.org/de/volunteering/7268-pate-oder-patin-werden-und-mit-einem-neukollner-kind-die-welt-neu-entdecken"
-        },
-        {
-          "rel": "inquiries",
-          "href": "https://api.betterplace.org/de/api_v4/clients/%7Bclient_id%7D/volunteering/7268-pate-oder-patin-werden-und-mit-einem-neukollner-kind-die-welt-neu-entdecken/inquiries.json",
           "templated": true
         }
       ]

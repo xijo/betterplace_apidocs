@@ -30,19 +30,29 @@ request as explained below.
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink</td>
+<td>
+
+The betterplace.org-internal client permalink
+
+</td>
   </tr>
   <tr>
     <th align="left">project_id</th>
     <td><code>4425</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+<td>
+
+Project id as an integer number ≥ 14.
+
+</td>
   </tr>
   <tr>
     <th align="left">order</th>
     <td><code>projects_count:DESC</code></td>
     <td>no</td>
-    <td>Order the result set.
+<td>
+
+Order the result set.
 <br>
 It is strongly recommended to <strong>specify an order</strong> with each request.
 The default order might change at any time without notice.
@@ -56,6 +66,8 @@ A recommended order is
 </ul>
 It is possible to set multiple facet filters.
 <a href="../README.md#request-parameter-format">Learn how to format the parameter</a>.
+
+
 </td>
   </tr>
 </table>
@@ -74,17 +86,25 @@ It is possible to set multiple facet filters.
     </tr>
     <tr>
       <th align="left">tag</th>
-      <td>string</td>
-      <td>"Education"</td>
-      <td>The name of the tag. It is unique per client.
+      <td><code>string</code></td>
+      <td><code>"Education"</code></td>
+<td>
+
+The name of the tag. It is unique per client.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">projects_count</th>
-      <td>number</td>
-      <td>23</td>
-      <td>The number of <a href="projects_list.md">projects</a>
+      <td><code>number</code></td>
+      <td><code>23</code></td>
+<td>
+
+The number of <a href="projects_list.md">projects</a>
 that were tagged with this tag.
+
+
 </td>
     </tr>
   </table>
@@ -97,10 +117,17 @@ that were tagged with this tag.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">projects</th>
-      <td>Link to the <a href="projects_list.md">project list</a> of all projects that are tagged with this tag for the current client.
+<th align="left">
+
+projects
+
+</th>
+<td>
+
+Link to the <a href="client_tag_projects_list.md">client-tag projects list</a> – all projects that are tagged with given client-tag.
+
+
 </td>
     </tr>
 </table>
@@ -127,7 +154,7 @@ that were tagged with this tag.
     },
     {
       "tag": "KinderJugendliche",
-      "projects_count": 40,
+      "projects_count": 42,
       "links": [
         {
           "rel": "projects",
@@ -137,7 +164,7 @@ that were tagged with this tag.
     },
     {
       "tag": "Familien",
-      "projects_count": 11,
+      "projects_count": 12,
       "links": [
         {
           "rel": "projects",

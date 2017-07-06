@@ -23,7 +23,11 @@ A list of forwarings from the fundraising event to its projects.
     <th align="left">fundraising_event_id</th>
     <td><code>19267</code></td>
     <td>yes</td>
-    <td>Fundraising Event id as an integer number ≥ 1.</td>
+<td>
+
+Fundraising Event id as an integer number ≥ 1.
+
+</td>
   </tr>
 </table>
 
@@ -41,9 +45,13 @@ A list of forwarings from the fundraising event to its projects.
     </tr>
     <tr>
       <th align="left">forwarded_amount_in_cents</th>
-      <td>number</td>
-      <td>12300</td>
-      <td>The amount in cents the fundraising event has forwarded to this project.
+      <td><code>number</code></td>
+      <td><code>12300</code></td>
+<td>
+
+The amount in cents the fundraising event has forwarded to this project.
+
+
 </td>
     </tr>
   </table>
@@ -56,10 +64,17 @@ A list of forwarings from the fundraising event to its projects.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">project</th>
-      <td>Link to the <a href="project_details.md">project</a> to which the money was forwarded.
+<th align="left">
+
+project
+
+</th>
+<td>
+
+Link to the <a href="project_details.md">project</a> to which the money was forwarded.
+
+
 </td>
     </tr>
 </table>
@@ -72,7 +87,7 @@ A list of forwarings from the fundraising event to its projects.
   "offset": 0,
   "total_pages": 1,
   "current_page": 1,
-  "per_page": 30,
+  "per_page": 25,
   "data": [
     {
       "forwarded_amount_in_cents": 123,

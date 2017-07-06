@@ -80,13 +80,21 @@ provided by betterplace.org).
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
   <tr>
     <th align="left">project_id</th>
     <td><code>1114</code></td>
     <td>yes</td>
-    <td>Project id as an integer number ≥ 14.</td>
+<td>
+
+Project id as an integer number ≥ 14.
+
+</td>
   </tr>
 </table>
 
@@ -119,20 +127,26 @@ are optional.
   <tr>
     <th align="left">amount_in_cents</th>
     <td><code>100</code></td>
-    <td>number</td>
+    <td><code>number</code></td>
     <td>yes</td>
-    <td>The amount of cents that are forwarded.
+<td>
+
+The amount of cents that are forwarded.
 Must be a positive integer between
 1
 and 100000.
+
+
 </td>
   </tr>
   <tr>
     <th align="left">client_reference</th>
     <td><code>djksbf23u4sjkdn234p</code></td>
-    <td>string</td>
+    <td><code>string</code></td>
     <td>yes</td>
-    <td>A unique identifier for this transaction.
+<td>
+
+A unique identifier for this transaction.
 With this reference one can find the donation and its status later
 by using the client_reference-facet on the
 <a href="client_donations_list.md">donation list endpoint</a>.
@@ -144,6 +158,8 @@ the donation pledge endpoint will still respond with success.
 However the pledge will <em>not be processed</em> into a donation but ignored.
 <br>
 This is to make sure that one transaction is only processed once.
+
+
 </td>
   </tr>
 </table>
@@ -161,18 +177,26 @@ This is to make sure that one transaction is only processed once.
     </tr>
     <tr>
       <th align="left">status</th>
-      <td>string</td>
-      <td>accepted</td>
-      <td>HTTP status code as a descriptive string.
+      <td><code>string</code></td>
+      <td><code>accepted</code></td>
+<td>
+
+HTTP status code as a descriptive string.
 For a list of codes, <a href="http://httpstatus.es/">see httpstatus.es</a>.
 Example: "accepted" for code 202
+
+
 </td>
     </tr>
     <tr>
       <th align="left">status_code</th>
-      <td>number</td>
-      <td>202</td>
-      <td>HTTP status code as an integer number, e.g. 202.
+      <td><code>number</code></td>
+      <td><code>202</code></td>
+<td>
+
+HTTP status code as an integer number, e.g. 202.
+
+
 </td>
     </tr>
   </table>
@@ -185,11 +209,18 @@ Example: "accepted" for code 202
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">location</th>
-      <td>Location where the created/updated resource can be viewed or more
+<th align="left">
+
+location
+
+</th>
+<td>
+
+Location where the created/updated resource can be viewed or more
 information about it can be gathered.
+
+
 </td>
     </tr>
 </table>

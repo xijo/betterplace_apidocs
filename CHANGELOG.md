@@ -3,9 +3,28 @@ All notable changes to the betterplace.org API v4 will be documented in this
 file. Notifications about changes will also be send to the [mailing list for
 service announcements](README.md#mailing-list-for-service-announcements).
 
+## 2017-06-16
+### Added
+- Added `donations_count` integer to [project details](sections/project_details.md).
+- Added `comments_count` integer to [project details](sections/project_details.md).
+
+### Removed
+- Removed [endpoint](sections/opinions_list.md) for clients
+
+### Changed
+- Deprecated `positive_opinions_count` and `negative_opinions_count` on [project](sections/project_details.md) as well as `positive_or_negative` on [opinion](sections/opinion_list.md)
+
+
+## 2017-03-03
+### Removed
+- Removed [Fundraising Challenge] endpoint
+
+
 ## 2016-12-05
 ### Added
-- Added [endpoint](sections/client_donation_pledges_show.md) for [donation_pledges](sections/client_donation_pledges.md).
+- Added [endpoint](sections/client_donation_pledge_details.md) for [donation pledges](sections/client_donation_pledges_list.md).
+- Added [endpoint](sections/client_forwarding_request_details.md) for [forwarding requests](sections/client_forwarding_requests_list.md).
+
 
 ## 2016-12-01
 ### Removed

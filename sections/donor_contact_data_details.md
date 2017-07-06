@@ -31,13 +31,21 @@ See [betterplace.org clients](../README.md#client-api).
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
   <tr>
     <th align="left">client_donation_id</th>
     <td><code>V9mxWWAeuVK9PtJw9mrZRyRk</code></td>
     <td>yes</td>
-    <td>The betterplace.org donation token or given client reference.</td>
+<td>
+
+The betterplace.org donation token or given client reference.
+
+</td>
   </tr>
 </table>
 
@@ -55,21 +63,33 @@ See [betterplace.org clients](../README.md#client-api).
     </tr>
     <tr>
       <th align="left">first_name</th>
-      <td>string</td>
-      <td>Peter</td>
-      <td>The first name of the user or donor.</td>
+      <td><code>string</code></td>
+      <td><code>Peter</code></td>
+<td>
+
+The first name of the user or donor.
+
+</td>
     </tr>
     <tr>
       <th align="left">last_name</th>
-      <td>string</td>
-      <td>Paul</td>
-      <td>The last name of the user or donor.</td>
+      <td><code>string</code></td>
+      <td><code>Paul</code></td>
+<td>
+
+The last name of the user or donor.
+
+</td>
     </tr>
     <tr>
       <th align="left">email</th>
-      <td>string</td>
-      <td>peter.paul@betterplace.org</td>
-      <td>The email address of the user or donor.</td>
+      <td><code>string</code></td>
+      <td><code>peter.paul@betterplace.org</code></td>
+<td>
+
+The email address of the user or donor.
+
+</td>
     </tr>
   </table>
 </table>
@@ -81,7 +101,6 @@ See [betterplace.org clients](../README.md#client-api).
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
   <th colspan="2">No response example defined</th>
 </table>
 

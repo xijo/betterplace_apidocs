@@ -26,13 +26,19 @@ Results are contained in a *data* attribute.
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
   <tr>
     <th align="left">facets</th>
     <td><code>client_reference:922ec9b-etc</code></td>
     <td>no</td>
-    <td>You can search for a specific client_reference: <code>?facets=client_reference:54</code>
+<td>
+
+You can search for a specific client_reference: <code>?facets=client_reference:54</code>
 
 <br>
 Example:
@@ -44,6 +50,8 @@ Example:
 This feature is only used in some cases that relate to the
 <a href="../donation_form/third_party_app_donation_form.md">ThirdPartyApp custom donation form for organisations</a>
 and the <a href="client_donation_pledges.md">Client donation pledge endpoint</a>.
+
+
 </td>
   </tr>
 </table>
@@ -62,66 +70,98 @@ and the <a href="client_donation_pledges.md">Client donation pledge endpoint</a>
     </tr>
     <tr>
       <th align="left">amount_in_cents</th>
-      <td>number</td>
-      <td>10100</td>
-      <td>Donated amount in cents</td>
+      <td><code>number</code></td>
+      <td><code>10100</code></td>
+<td>
+
+Donated amount in cents
+
+</td>
     </tr>
     <tr>
       <th align="left">state</th>
-      <td>string</td>
-      <td>"confirmed"</td>
-      <td>At the moment, all donations that are returned by the API are "confirmed".
+      <td><code>string</code></td>
+      <td><code>"confirmed"</code></td>
+<td>
+
+At the moment, all donations that are returned by the API are "confirmed".
 Unconfirmed donations do not show up at all or disappear after they were revoked.
 Revocations usually take place during the first 14 days – but there are no guarantees.
 
 Please make sure to check for the "confirmed" state in your application explicitly since
 we might add a "revoked" state in the future.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">token</th>
-      <td>string</td>
-      <td>ofMmTgfiPL-n1dDlNmFWqTQN</td>
-      <td>A token uniquely identifies a donation on the platform.
+      <td><code>string</code></td>
+      <td><code>ofMmTgfiPL-n1dDlNmFWqTQN</code></td>
+<td>
+
+A token uniquely identifies a donation on the platform.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">client_reference</th>
-      <td>string</td>
-      <td>922ec9b-etc</td>
-      <td>Client Donations can be identified via a custom client reference token.
+      <td><code>string</code></td>
+      <td><code>922ec9b-etc</code></td>
+<td>
+
+Client Donations can be identified via a custom client reference token.
 
 This <code>donation_client_reference</code> can be provided by users of our
 <a href="../donation_form/third_party_app_donation_form.md">
 ThirdPartyApp custom donation form for organisations</a>, for example.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">receiver_type</th>
-      <td>string</td>
-      <td>"Project"</td>
-      <td>Client donations may go to a <code>Project</code>,
+      <td><code>string</code></td>
+      <td><code>"Project"</code></td>
+<td>
+
+Client donations may go to a <code>Project</code>,
 a Project's <code>Element</code>, a <code>FundraisingEvent</code>,
 a <code>Pool</code>.
+
+
 </td>
     </tr>
     <tr>
       <th align="left">receiver_id</th>
-      <td>number</td>
-      <td>1114</td>
-      <td>The id of the project, project element or fundraising event.</td>
+      <td><code>number</code></td>
+      <td><code>1114</code></td>
+<td>
+
+The id of the project, project element or fundraising event.
+
+</td>
     </tr>
     <tr>
       <th align="left">receiver_title</th>
-      <td>string</td>
-      <td>"Skateistan Afghanistan"</td>
-      <td>The title of the project, project element or fundraising event.</td>
+      <td><code>string</code></td>
+      <td><code>"Skateistan Afghanistan"</code></td>
+<td>
+
+The title of the project, project element or fundraising event.
+
+</td>
     </tr>
   </table>
 </table>
@@ -133,27 +173,50 @@ a <code>Pool</code>.
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">receiver</th>
-      <td>Link to the <a href="project_details.md">project details</a>,
+<th align="left">
+
+receiver
+
+</th>
+<td>
+
+Link to the <a href="project_details.md">project details</a>,
 <a href="need_details.md">project need details</a>,
 <a href="fundraising_event_details.md">fundraising event details</a>,
 that is associated with this donation.<br>
 Right now, there is no api end point for donations that are
 redirect or donated to the client pool.
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
+<th align="left">
+
+self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="client_donation_details.md">client donation details</a>)
+
+
 </td>
     </tr>
     <tr>
-      <th align="left">donor_contact_data</th>
-      <td>Link to the donor contact data
+<th align="left">
+
+donor_contact_data
+
+</th>
+<td>
+
+Link to the donor contact data
 (<a href="donor_contact_data_details.md">donor contact data details</a>)
+
+
 </td>
     </tr>
 </table>
@@ -162,9 +225,9 @@ redirect or donated to the client pool.
 
 ```json
 {
-  "total_entries": 15625,
+  "total_entries": 17068,
   "offset": 0,
-  "total_pages": 5209,
+  "total_pages": 5690,
   "current_page": 1,
   "per_page": 3,
   "data": [

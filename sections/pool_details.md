@@ -24,7 +24,11 @@ Use this resource as follows: `/clients/PERMALINK/pool.json`
     <th align="left">client_id</th>
     <td><code>payback</code></td>
     <td>yes</td>
-    <td>The betterplace.org-internal client permalink.</td>
+<td>
+
+The betterplace.org-internal client permalink.
+
+</td>
   </tr>
 </table>
 
@@ -42,21 +46,33 @@ Use this resource as follows: `/clients/PERMALINK/pool.json`
     </tr>
     <tr>
       <th align="left">id</th>
-      <td>number</td>
-      <td>1</td>
-      <td>An integer number ≥ 1</td>
+      <td><code>number</code></td>
+      <td><code>1</code></td>
+<td>
+
+An integer number ≥ 1
+
+</td>
     </tr>
     <tr>
       <th align="left">created_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
     <tr>
       <th align="left">updated_at</th>
-      <td>string</td>
-      <td>"1994-11-05T13:15:30Z"</td>
-      <td>DateTime (ISO8601 with Timezone)</td>
+      <td><code>string</code></td>
+      <td><code>"1994-11-05T13:15:30Z"</code></td>
+<td>
+
+DateTime (ISO8601 with Timezone)
+
+</td>
     </tr>
   </table>
 </table>
@@ -68,11 +84,18 @@ Use this resource as follows: `/clients/PERMALINK/pool.json`
     <th>Linkname</th>
     <th>Description</th>
   </tr>
-
     <tr>
-      <th align="left">self</th>
-      <td>Link to this resource itself
+<th align="left">
+
+self
+
+</th>
+<td>
+
+Link to this resource itself
 (<a href="pool_details.md">pool details</a>)
+
+
 </td>
     </tr>
 </table>
@@ -83,7 +106,7 @@ Use this resource as follows: `/clients/PERMALINK/pool.json`
 {
   "id": 4,
   "created_at": "2016-01-14T15:12:34+01:00",
-  "updated_at": "2016-11-20T16:39:05+01:00",
+  "updated_at": "2017-03-06T23:21:10+01:00",
   "links": [
     {
       "rel": "self",
