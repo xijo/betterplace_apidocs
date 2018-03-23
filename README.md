@@ -76,10 +76,10 @@ about updates and scheduled downtimes.
     1. [**Client** Project Statistics](sections/client_project_statistics.md)
     1. [**Client** Fundraising Event Statistics](sections/client_fundraising_event_statistics.md)
 1. **Donations**
-    1. [**Client** Donation Pledges List](sections/client_donation_pledges_list.md) [:lock:](#client-api)
-    1. [**Client** Donation Pledge Details](sections/client_donation_pledge_details.md) [:lock:](#client-api)
-    1. [**Client** Forwarding Requests List](sections/client_forwarding_requests_list.md) [:lock:](#client-api)
-    1. [**Client** Forwarding Request Details](sections/client_forwarding_request_details.md) [:lock:](#client-api)
+    1. [**Client** Donation Pledge Creation](sections/client_donation_pledges_creation.md) [:lock:](#client-api)
+    1. [**Client** Donation Pledge Status](sections/client_donation_pledge_status.md) [:lock:](#client-api)
+    1. [**Client** Forwarding Request Creation](sections/client_forwarding_requests_list.md) [:lock:](#client-api)
+    1. [**Client** Forwarding Request Status](sections/client_forwarding_request_details.md) [:lock:](#client-api)
     1. [**Client** Donations List](sections/client_donations_list.md)
 1. **Contact Data**
     1. [**Client** Donor Contact Data](sections/donor_contact_data_details.md)

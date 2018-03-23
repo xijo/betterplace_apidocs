@@ -33,6 +33,7 @@ matching-fund-id as an integer number ≥ 9.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -165,7 +166,7 @@ The URL of the logo image.
     <tr>
       <th align="left">maximum_matching_amount_in_cents</th>
       <td><code>number</code></td>
-      <td><code>20000</code></td>
+      <td><code>10000</code></td>
 <td>
 
 Up to this amount donations get matched by the matching fund
@@ -252,8 +253,8 @@ Link to this resource in the documentation
   "provided_amount_in_cents": 521500,
   "donated_amount_in_cents": 521500,
   "state": "closed",
-  "logo_url": null,
-  "maximum_matching_amount_in_cents": 20000,
+  "logo_url": "http://jop.betterplace.test/uploads/matching_fund/logo/000/000/002/bp1477578851_OTTO_QUADRAT_4c_M-mid.png",
+  "maximum_matching_amount_in_cents": 10000,
   "links": [
     {
       "rel": "self",

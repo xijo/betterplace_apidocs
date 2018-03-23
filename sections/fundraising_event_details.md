@@ -35,6 +35,7 @@ Fundraising Event id as an integer number ≥ 1.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -224,6 +225,7 @@ TODO
 </td>
     </tr>
   </table>
+
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
 
   <table>
@@ -273,6 +275,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
 
   <table>
@@ -293,6 +296,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="profile_picture" href="#profile_picture-ref">↑Nested Attributes: profile_picture</a>
 
   <table>
@@ -557,15 +561,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
     "id": 397832,
     "name": "J. &amp; J.",
     "picture": {
-      "fallback": true,
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/397/832/fill_100x100_JoJo.jpg"
+          "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/397/832/fill_100x100_JoJo.jpg"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/397/832/crop_original_JoJo.jpg"
+          "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/397/832/crop_original_JoJo.jpg"
         }
       ]
     },
@@ -581,31 +584,30 @@ Maximum sized image. This is the original image with default-cropping or user-cr
     ]
   },
   "profile_picture": {
-    "fallback": true,
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_960x500_Liberia_1.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_960x500_Liberia_1.jpg"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_730x380_Liberia_1.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_730x380_Liberia_1.jpg"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_618x322_Liberia_1.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_618x322_Liberia_1.jpg"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_410x214_Liberia_1.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_410x214_Liberia_1.jpg"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_270x141_Liberia_1.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/fill_270x141_Liberia_1.jpg"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/crop_original_Liberia_1.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/fundraising_event/profile_picture/000/019/267/crop_original_Liberia_1.jpg"
       }
     ]
   },

@@ -35,6 +35,7 @@ Volunteering-id as an integer number ≥ 1.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -358,6 +359,7 @@ TODO
 </td>
     </tr>
   </table>
+
 ### <a id="carrier" href="#carrier-ref">↑Nested Attributes: carrier</a>
 
   <table>
@@ -452,6 +454,7 @@ TODO
 </td>
     </tr>
   </table>
+
 ### <a id="carrier.picture" href="#carrier.picture-ref">↑Nested Attributes: carrier.picture</a>
 
   <table>
@@ -472,6 +475,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="image" href="#image-ref">↑Nested Attributes: image</a>
 
   <table>
@@ -492,6 +496,7 @@ Image description
 </td>
     </tr>
   </table>
+
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
 
   <table>
@@ -552,6 +557,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
 
   <table>
@@ -572,6 +578,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="import_information" href="#import_information-ref">↑Nested Attributes: import_information</a>
 
   <table>
@@ -638,6 +645,7 @@ betterplace.
 </td>
     </tr>
   </table>
+
 ### <a id="profile_picture" href="#profile_picture-ref">↑Nested Attributes: profile_picture</a>
 
   <table>
@@ -969,19 +977,19 @@ Maximum sized image. This is the original image with default-cropping or user-cr
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.jpg"
+          "href": "https://betterplace-assets.betterplace.org/assets/default/square_profile_picture/fill_100x100_default.jpg"
         },
         {
           "rel": "fill_200x200",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.jpg"
+          "href": "https://betterplace-assets.betterplace.org/assets/default/square_profile_picture/fill_200x200_default.jpg"
         },
         {
           "rel": "fill_400x400",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.jpg"
+          "href": "https://betterplace-assets.betterplace.org/assets/default/square_profile_picture/fill_400x400_default.jpg"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/assets/default/square_profile_picture/crop_original_default.jpg"
+          "href": "https://betterplace-assets.betterplace.org/assets/default/square_profile_picture/crop_original_default.jpg"
         }
       ]
     },
@@ -995,27 +1003,27 @@ Maximum sized image. This is the original image with default-cropping or user-cr
     "links": [
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
       },
       {
         "rel": "thumb",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/thumb_default.png"
       },
       {
         "rel": "medium",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/medium_default.png"
       },
       {
         "rel": "regular",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/regular_default.png"
       }
     ]
   },
@@ -1060,27 +1068,27 @@ Maximum sized image. This is the original image with default-cropping or user-cr
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.png"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.png"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.png"
+        "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.png"
       }
     ]
   },

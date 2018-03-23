@@ -27,6 +27,7 @@ This resource is not available at the moment.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -211,6 +212,7 @@ TODO
 </td>
     </tr>
   </table>
+
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
 
   <table>
@@ -260,6 +262,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
 
   <table>
@@ -280,6 +283,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="picture" href="#picture-ref">↑Nested Attributes: picture</a>
 
   <table>
@@ -494,15 +498,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "id": 20505,
         "name": "B.  Hell",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/020/505/fill_100x100_original_Hell__Beatrix.JPG"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/020/505/fill_100x100_original_Hell__Beatrix.JPG"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/020/505/crop_original_original_Hell__Beatrix.JPG"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/020/505/crop_original_original_Hell__Beatrix.JPG"
             }
           ]
         },
@@ -518,23 +521,22 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         ]
       },
       "picture": {
-        "fallback": true,
         "links": [
           {
             "rel": "fill_100x100",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/262/fill_100x100_original_UNICEFLogoClaimrgb.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/262/fill_100x100_original_UNICEFLogoClaimrgb.jpg"
           },
           {
             "rel": "fill_200x200",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/262/fill_200x200_original_UNICEFLogoClaimrgb.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/262/fill_200x200_original_UNICEFLogoClaimrgb.jpg"
           },
           {
             "rel": "fill_400x400",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/262/fill_400x400_original_UNICEFLogoClaimrgb.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/262/fill_400x400_original_UNICEFLogoClaimrgb.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/262/crop_original_original_UNICEFLogoClaimrgb.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/262/crop_original_original_UNICEFLogoClaimrgb.jpg"
           }
         ]
       },
@@ -576,15 +578,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "id": 449830,
         "name": "Johannes T.",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/449/830/fill_100x100_bp1486485430_Profil_klein.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/449/830/fill_100x100_bp1486485430_Profil_klein.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/449/830/crop_original_bp1486485430_Profil_klein.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/449/830/crop_original_bp1486485430_Profil_klein.jpg"
             }
           ]
         },
@@ -600,23 +601,22 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         ]
       },
       "picture": {
-        "fallback": true,
         "links": [
           {
             "rel": "fill_100x100",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/125/fill_100x100_VcA_Projektlogo.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/125/fill_100x100_VcA_Projektlogo.jpg"
           },
           {
             "rel": "fill_200x200",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/125/fill_200x200_VcA_Projektlogo.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/125/fill_200x200_VcA_Projektlogo.jpg"
           },
           {
             "rel": "fill_400x400",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/125/fill_400x400_VcA_Projektlogo.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/125/fill_400x400_VcA_Projektlogo.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/125/crop_original_VcA_Projektlogo.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/125/crop_original_VcA_Projektlogo.jpg"
           }
         ]
       },

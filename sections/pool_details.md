@@ -35,6 +35,7 @@ The betterplace.org-internal client permalink.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -106,7 +107,7 @@ Link to this resource itself
 {
   "id": 4,
   "created_at": "2016-01-14T15:12:34+01:00",
-  "updated_at": "2017-03-06T23:21:10+01:00",
+  "updated_at": "2018-03-23T10:26:09+01:00",
   "links": [
     {
       "rel": "self",

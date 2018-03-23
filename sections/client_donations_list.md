@@ -59,6 +59,7 @@ and the <a href="client_donation_pledges.md">Client donation pledge endpoint</a>
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -232,74 +233,74 @@ Link to the donor contact data
   "per_page": 3,
   "data": [
     {
-      "amount_in_cents": 1000,
+      "amount_in_cents": 200,
       "state": "confirmed",
-      "token": "328db52eb745be52f3b5aaf0",
+      "token": "84ecb93ca721b1869523d52c",
       "client_reference": null,
-      "created_at": "2010-10-28T14:44:49+02:00",
-      "receiver_type": "Project",
-      "receiver_id": 4807,
-      "receiver_title": "Kleinbus für den Palais e.V. Trier",
+      "created_at": "2011-12-13T13:48:15+01:00",
+      "receiver_type": "FundraisingEvent",
+      "receiver_id": 8821,
+      "receiver_title": "Stark fürs Leben - für die Zukunft unserer Kinder",
       "links": [
         {
           "rel": "receiver",
-          "href": "https://api.betterplace.org/de/api_v4/projects/4807.json"
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/8821.json"
         },
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/328db52eb745be52f3b5aaf0.json"
+          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/84ecb93ca721b1869523d52c.json"
         },
         {
           "rel": "donor_contact_data",
-          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/328db52eb745be52f3b5aaf0/donor_contact_data.json"
+          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/84ecb93ca721b1869523d52c/donor_contact_data.json"
         }
       ]
     },
     {
       "amount_in_cents": 100,
       "state": "confirmed",
-      "token": "7d775febc93584375ab07136",
+      "token": "a8e4b36b25c6230f6121c5bb",
       "client_reference": null,
-      "created_at": "2010-10-28T17:48:16+02:00",
-      "receiver_type": "Project",
-      "receiver_id": 4798,
-      "receiver_title": "Hilfe für Jugendliche mit krebskranken Eltern",
+      "created_at": "2012-05-23T16:41:06+02:00",
+      "receiver_type": "FundraisingEvent",
+      "receiver_id": 9866,
+      "receiver_title": "Fab&amp;Vivien Nr. 3 | The third fundraising bet",
       "links": [
         {
           "rel": "receiver",
-          "href": "https://api.betterplace.org/de/api_v4/projects/4798.json"
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/9866.json"
         },
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/7d775febc93584375ab07136.json"
+          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/a8e4b36b25c6230f6121c5bb.json"
         },
         {
           "rel": "donor_contact_data",
-          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/7d775febc93584375ab07136/donor_contact_data.json"
+          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/a8e4b36b25c6230f6121c5bb/donor_contact_data.json"
         }
       ]
     },
     {
-      "amount_in_cents": 400,
+      "amount_in_cents": 1000,
       "state": "confirmed",
-      "token": "86be4452d4afb0f2d56f0add",
+      "token": "172ffaf284a1dfa408fdeb77",
       "client_reference": null,
-      "created_at": "2010-10-29T09:46:25+02:00",
-      "receiver_type": "Project",
-      "receiver_id": 4798,
-      "receiver_title": "Hilfe für Jugendliche mit krebskranken Eltern",
+      "created_at": "2012-06-12T16:53:03+02:00",
+      "receiver_type": "FundraisingEvent",
+      "receiver_id": 10987,
+      "receiver_title": "Touchrugbyturnier",
       "links": [
         {
           "rel": "receiver",
-          "href": "https://api.betterplace.org/de/api_v4/projects/4798.json"
+          "href": "https://api.betterplace.org/de/api_v4/fundraising_events/10987.json"
         },
         {
           "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/86be4452d4afb0f2d56f0add.json"
+          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/172ffaf284a1dfa408fdeb77.json"
         },
         {
           "rel": "donor_contact_data",
-          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/86be4452d4afb0f2d56f0add/donor_contact_data.json"
+          "href": "https://api.betterplace.org/de/api_v4/clients/volksfreund/client_donations/172ffaf284a1dfa408fdeb77/donor_contact_data.json"
         }
       ]
     }

@@ -3,6 +3,16 @@ All notable changes to the betterplace.org API v4 will be documented in this
 file. Notifications about changes will also be send to the [mailing list for
 service announcements](README.md#mailing-list-for-service-announcements).
 
+## 2017-08-15
+### Added
+- Added support for `tracking_via` to [donation pledges](sections/client_donation_pledges_list.md) and [forwarding requests](sections/client_forwarding_requests_list.md).
+
+
+## 2017-07-20
+### Added
+- Added `summary` to [project details](sections/project_details.md).
+
+
 ## 2017-06-16
 ### Added
 - Added `donations_count` integer to [project details](sections/project_details.md).

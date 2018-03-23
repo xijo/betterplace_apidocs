@@ -79,6 +79,7 @@ It is possible to set multiple order parameters.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -208,6 +209,7 @@ any of the following HTML tags:
 </td>
     </tr>
   </table>
+
 ### <a id="author" href="#author-ref">↑Nested Attributes: author</a>
 
   <table>
@@ -257,6 +259,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="author.picture" href="#author.picture-ref">↑Nested Attributes: author.picture</a>
 
   <table>
@@ -404,15 +407,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
       "author": {
         "name": "Johannes O.",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/assets/default/donation_profile_picture/fill_100x100_default.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/donation/profile_picture/d94/884/32c58c9bb85f004661cfa5bdc614e0dc2/fill_100x100_bp1480344002_crop_original_bp1469459430_20160505-DSC_0627.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/assets/default/donation_profile_picture/fill_100x100_default.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/donation/profile_picture/d94/884/32c58c9bb85f004661cfa5bdc614e0dc2/crop_original_bp1480344002_crop_original_bp1469459430_20160505-DSC_0627.jpg"
             }
           ]
         },

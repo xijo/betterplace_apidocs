@@ -47,6 +47,7 @@ The betterplace.org-internal client permalink.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

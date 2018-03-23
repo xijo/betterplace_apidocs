@@ -1,12 +1,12 @@
 
-# Client Forwarding Requests ⇄ [Details](client_forwarding_request_details.md)
+# Creating a Client Forwarding Request ⇄ [Status](client_forwarding_request_details.md)
 
 ```Rebol
 POST https://api.betterplace.org/de/api_v4/clients/volksfreund/projects/1114/forwarding_requests.json
 ```
 
 Transfer money from a client donation pool to a Project. The request has
-to be a POST request  with a JSON body. Here is
+to be a POST request with a JSON body. Here is
 [a flow chart that describes this process in full](http://ixwphj.axshare.com/donation-pledge-flow.html).
 
 **:lock: Only available if authenticated as a client.**
@@ -110,7 +110,8 @@ are optional.
 ```json
 {
   "amount_in_cents": 100,
-  "client_reference": "djksbf23u4sjkdn234p"
+  "client_reference": "djksbf23u4sjkdn234p",
+  "tracking_via": "campaign-0815"
 }
 ```
 
@@ -162,9 +163,25 @@ This is to make sure that one transaction is only processed once.
 
 </td>
   </tr>
+  <tr>
+    <th align="left">tracking_via</th>
+    <td><code>campaign-0815</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+<td>
+
+A tracking identifier for the current campaign, origin or similar
+information. Default is blank.
+<br>
+Allowed characters are <code>a-zA-Z0-9_-</code>.
+
+
+</td>
+  </tr>
 </table>
 
 ## Response Attributes
+
 
 ### Root Attributes
 

@@ -184,6 +184,7 @@ e.g. via a checkbox.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

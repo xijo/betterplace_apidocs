@@ -34,6 +34,7 @@ Fundraising Event id as an integer number ≥ 1.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

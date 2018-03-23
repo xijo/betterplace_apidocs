@@ -48,6 +48,7 @@ Blogpost id as an integer number ≥ 9.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -149,6 +150,7 @@ Possible formats: "Till B.", "T. Behnke", "Till Behnke"
 </td>
     </tr>
   </table>
+
 ### <a id="author" href="#author-ref">↑Nested Attributes: author</a>
 
   <table>
@@ -198,6 +200,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="author.picture" href="#author.picture-ref">↑Nested Attributes: author.picture</a>
 
   <table>

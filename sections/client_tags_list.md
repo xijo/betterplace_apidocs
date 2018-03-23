@@ -36,6 +36,7 @@ The betterplace.org-internal client id
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

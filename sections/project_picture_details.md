@@ -49,6 +49,7 @@ Picture-id as an integer number ≥ 1.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -150,18 +151,18 @@ The parent object of this picture.
 
 ```json
 {
-  "id": 159072,
-  "created_at": "2017-06-28T15:06:33+02:00",
-  "updated_at": "2017-07-06T11:32:28+02:00",
-  "description": " oder unten mit der Griffleiste ver oder unten mit der Griffleiste ver",
+  "id": 159071,
+  "created_at": "2017-06-28T15:06:23+02:00",
+  "updated_at": "2017-07-19T14:14:43+02:00",
+  "description": null,
   "links": [
     {
       "rel": "image",
-      "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159072/bp1498655193_IMG_1152.jpg"
+      "href": "https://betterplace-assets.betterplace.org/uploads/project/image/000/001/114/159071/bp1498655183_IMG_1138.jpg"
     },
     {
       "rel": "self",
-      "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159072.json"
+      "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159071.json"
     },
     {
       "rel": "parent",

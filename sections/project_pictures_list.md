@@ -52,6 +52,7 @@ Project id as an integer number ≥ 14.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -160,26 +161,6 @@ The parent object of this picture.
   "per_page": 3,
   "data": [
     {
-      "id": 159066,
-      "created_at": "2017-06-09T14:38:34+02:00",
-      "updated_at": "2017-07-06T11:32:28+02:00",
-      "description": null,
-      "links": [
-        {
-          "rel": "image",
-          "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159066/bp1497011914_1.2.1.JPG"
-        },
-        {
-          "rel": "self",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159066.json"
-        },
-        {
-          "rel": "parent",
-          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
-        }
-      ]
-    },
-    {
       "id": 159067,
       "created_at": "2017-06-09T14:38:44+02:00",
       "updated_at": "2017-07-06T11:32:28+02:00",
@@ -187,7 +168,7 @@ The parent object of this picture.
       "links": [
         {
           "rel": "image",
-          "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159067/bp1497011924_2.2.1.JPG"
+          "href": "https://betterplace-assets.betterplace.org/uploads/project/image/000/001/114/159067/bp1497011924_2.2.1.JPG"
         },
         {
           "rel": "self",
@@ -207,11 +188,31 @@ The parent object of this picture.
       "links": [
         {
           "rel": "image",
-          "href": "https://asset1.betterplace.org/uploads/project/image/000/001/114/159068/bp1497011931_4.1.2.JPG"
+          "href": "https://betterplace-assets.betterplace.org/uploads/project/image/000/001/114/159068/bp1497011931_4.1.2.JPG"
         },
         {
           "rel": "self",
           "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159068.json"
+        },
+        {
+          "rel": "parent",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        }
+      ]
+    },
+    {
+      "id": 159069,
+      "created_at": "2017-06-09T14:38:59+02:00",
+      "updated_at": "2017-07-06T11:32:28+02:00",
+      "description": null,
+      "links": [
+        {
+          "rel": "image",
+          "href": "https://betterplace-assets.betterplace.org/uploads/project/image/000/001/114/159069/bp1497011939_6.2.2.JPG"
+        },
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures/159069.json"
         },
         {
           "rel": "parent",

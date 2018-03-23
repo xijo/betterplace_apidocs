@@ -52,6 +52,7 @@ The betterplace.org donation token or given client reference.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

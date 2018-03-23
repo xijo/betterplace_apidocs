@@ -161,6 +161,7 @@ The default order is the same as for the
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -484,6 +485,7 @@ TODO
 </td>
     </tr>
   </table>
+
 ### <a id="carrier" href="#carrier-ref">↑Nested Attributes: carrier</a>
 
   <table>
@@ -578,6 +580,7 @@ TODO
 </td>
     </tr>
   </table>
+
 ### <a id="carrier.picture" href="#carrier.picture-ref">↑Nested Attributes: carrier.picture</a>
 
   <table>
@@ -598,6 +601,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="image" href="#image-ref">↑Nested Attributes: image</a>
 
   <table>
@@ -618,6 +622,7 @@ Image description
 </td>
     </tr>
   </table>
+
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
 
   <table>
@@ -678,6 +683,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
 
   <table>
@@ -698,6 +704,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="import_information" href="#import_information-ref">↑Nested Attributes: import_information</a>
 
   <table>
@@ -764,6 +771,7 @@ betterplace.
 </td>
     </tr>
   </table>
+
 ### <a id="profile_picture" href="#profile_picture-ref">↑Nested Attributes: profile_picture</a>
 
   <table>
@@ -1070,9 +1078,9 @@ Maximum sized image. This is the original image with default-cropping or user-cr
 
 ```json
 {
-  "total_entries": 3556,
+  "total_entries": 3555,
   "offset": 3,
-  "total_pages": 1186,
+  "total_pages": 1185,
   "current_page": 2,
   "per_page": 3,
   "data": [
@@ -1098,23 +1106,22 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "zip": "03149",
         "country": "Deutschland",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_100x100_original_FAWNLogo2010neu.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_100x100_original_FAWNLogo2010neu.jpg"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_200x200_original_FAWNLogo2010neu.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_200x200_original_FAWNLogo2010neu.jpg"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_400x400_original_FAWNLogo2010neu.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/089/fill_400x400_original_FAWNLogo2010neu.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/002/089/crop_original_original_FAWNLogo2010neu.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/002/089/crop_original_original_FAWNLogo2010neu.jpg"
             }
           ]
         },
@@ -1131,27 +1138,27 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "links": [
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_618x322_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_618x322_P1220394.JPG"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_270x141_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_270x141_P1220394.JPG"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/P1220394.JPG"
           },
           {
             "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/thumb_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/thumb_P1220394.JPG"
           },
           {
             "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/medium_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/medium_P1220394.JPG"
           },
           {
             "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/regular_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/regular_P1220394.JPG"
           }
         ]
       },
@@ -1160,15 +1167,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "phone": "+49 (0) 1577-2623892",
         "email": "info@fawn.de",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/019/008/fill_100x100_original_Carara-Nationalpark.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/019/008/fill_100x100_original_Carara-Nationalpark.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/019/008/crop_original_original_Carara-Nationalpark.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/019/008/crop_original_original_Carara-Nationalpark.jpg"
             }
           ]
         },
@@ -1201,31 +1207,30 @@ Maximum sized image. This is the original image with default-cropping or user-cr
       "imported_from": null,
       "import_information": null,
       "profile_picture": {
-        "fallback": true,
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_960x500_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_960x500_P1220394.JPG"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_730x380_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_730x380_P1220394.JPG"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_618x322_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_618x322_P1220394.JPG"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_410x214_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_410x214_P1220394.JPG"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_270x141_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/fill_270x141_P1220394.JPG"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/crop_original_P1220394.JPG"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/074/crop_original_P1220394.JPG"
           }
         ]
       },
@@ -1267,23 +1272,22 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "zip": "14478",
         "country": "Deutschland",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_100x100_KUBUS_Word_cloud.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_100x100_KUBUS_Word_cloud.jpg"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_200x200_KUBUS_Word_cloud.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_200x200_KUBUS_Word_cloud.jpg"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_400x400_KUBUS_Word_cloud.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/973/fill_400x400_KUBUS_Word_cloud.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/000/973/crop_original_KUBUS_Word_cloud.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/000/973/crop_original_KUBUS_Word_cloud.jpg"
             }
           ]
         },
@@ -1300,27 +1304,27 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "links": [
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
           },
           {
             "rel": "thumb",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/thumb_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/thumb_default.png"
           },
           {
             "rel": "medium",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/medium_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/medium_default.png"
           },
           {
             "rel": "regular",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/regular_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/regular_default.png"
           }
         ]
       },
@@ -1329,15 +1333,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "phone": "",
         "email": "info@stadtderkinder-potsdam.de",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/009/fill_100x100_original_2010_Stadt-der-Kinder-0.JPG"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/294/009/fill_100x100_original_2010_Stadt-der-Kinder-0.JPG"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/294/009/crop_original_original_2010_Stadt-der-Kinder-0.JPG"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/294/009/crop_original_original_2010_Stadt-der-Kinder-0.JPG"
             }
           ]
         },
@@ -1375,27 +1378,27 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_960x500_default.png"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_730x380_default.png"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_618x322_default.png"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_410x214_default.png"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/fill_270x141_default.png"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.png"
+            "href": "https://betterplace-assets.betterplace.org/assets/default/job_description_profile_picture/crop_original_default.png"
           }
         ]
       },
@@ -1437,23 +1440,22 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "zip": "256",
         "country": "Uganda",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_100x100_original_NIRP_LOGO.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_100x100_original_NIRP_LOGO.jpg"
             },
             {
               "rel": "fill_200x200",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_200x200_original_NIRP_LOGO.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_200x200_original_NIRP_LOGO.jpg"
             },
             {
               "rel": "fill_400x400",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_400x400_original_NIRP_LOGO.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/004/177/fill_400x400_original_NIRP_LOGO.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/004/177/crop_original_original_NIRP_LOGO.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/004/177/crop_original_original_NIRP_LOGO.jpg"
             }
           ]
         },
@@ -1470,27 +1472,27 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "links": [
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_618x322_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_618x322_home-office.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_270x141_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_270x141_home-office.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/home-office.jpg"
           },
           {
             "rel": "thumb",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/thumb_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/thumb_home-office.jpg"
           },
           {
             "rel": "medium",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/medium_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/medium_home-office.jpg"
           },
           {
             "rel": "regular",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/regular_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/regular_home-office.jpg"
           }
         ]
       },
@@ -1499,15 +1501,14 @@ Maximum sized image. This is the original image with default-cropping or user-cr
         "phone": "+256773779423",
         "email": "nirpproject@yahoo.com",
         "picture": {
-          "fallback": true,
           "links": [
             {
               "rel": "fill_100x100",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/106/107/fill_100x100_original_nalugo.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/106/107/fill_100x100_original_nalugo.jpg"
             },
             {
               "rel": "original",
-              "href": "https://asset1.betterplace.org/uploads/user/profile_picture/000/106/107/crop_original_original_nalugo.jpg"
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/106/107/crop_original_original_nalugo.jpg"
             }
           ]
         },
@@ -1539,31 +1540,30 @@ Maximum sized image. This is the original image with default-cropping or user-cr
       "imported_from": null,
       "import_information": null,
       "profile_picture": {
-        "fallback": true,
         "links": [
           {
             "rel": "fill_960x500",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_960x500_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_960x500_home-office.jpg"
           },
           {
             "rel": "fill_730x380",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_730x380_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_730x380_home-office.jpg"
           },
           {
             "rel": "fill_618x322",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_618x322_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_618x322_home-office.jpg"
           },
           {
             "rel": "fill_410x214",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_410x214_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_410x214_home-office.jpg"
           },
           {
             "rel": "fill_270x141",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_270x141_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/fill_270x141_home-office.jpg"
           },
           {
             "rel": "original",
-            "href": "https://asset1.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/crop_original_home-office.jpg"
+            "href": "https://betterplace-assets.betterplace.org/uploads/bettertime/job_description/profile_picture/000/007/259/crop_original_home-office.jpg"
           }
         ]
       },

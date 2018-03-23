@@ -71,6 +71,7 @@ Order the result set. Documented and supported orders are:
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -326,13 +327,13 @@ Link to the regular donation form.
     {
       "id": 143000,
       "created_at": "2016-04-06T10:53:18+02:00",
-      "updated_at": "2017-06-08T14:31:45+02:00",
+      "updated_at": "2018-01-16T09:50:22+01:00",
       "title": "deutsche version 42;",
       "description": "deutsche version 42;",
-      "completed": false,
-      "progress_percentage": 0.0,
-      "donated_amount_in_cents": 0,
-      "open_amount_in_cents": 55000,
+      "completed": true,
+      "progress_percentage": 100.0,
+      "donated_amount_in_cents": 55000,
+      "open_amount_in_cents": 0,
       "requested_amount_in_cents": 55000,
       "links": [
         {

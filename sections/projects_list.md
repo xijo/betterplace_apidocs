@@ -209,6 +209,7 @@ It is possible to set multiple order parameters.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -355,6 +356,17 @@ HTML tags: ```a, b, br, div, em, i, iframe, img, li, ol, p, strong, ul```.
 </td>
     </tr>
     <tr>
+      <th align="left">summary</th>
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+A short summary of the project..
+
+
+</td>
+    </tr>
+    <tr>
       <th align="left">tax_deductible</th>
       <td><code>boolean</code></td>
       <td><code>true</code></td>
@@ -496,8 +508,8 @@ Count of confirmed donations for this project
 <td>
 
 Count of all comments for this project. This contains positive and negative
-reviews of the project, questions and answer by the project manager, as well
-as comments from users.
+reviews of the project, questions and answers by the project manager, as
+well as comments from users.
 
 
 </td>
@@ -631,6 +643,7 @@ the data from the appropriate endpoint.
 </td>
     </tr>
   </table>
+
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
 
   <table>
@@ -680,6 +693,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
 
   <table>
@@ -700,6 +714,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="carrier" href="#carrier-ref">↑Nested Attributes: carrier</a>
 
   <table>
@@ -744,6 +759,7 @@ The organisation logo, user profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="carrier.picture" href="#carrier.picture-ref">↑Nested Attributes: carrier.picture</a>
 
   <table>
@@ -764,6 +780,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="profile_picture" href="#profile_picture-ref">↑Nested Attributes: profile_picture</a>
 
   <table>
@@ -784,6 +801,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="active_matching_fund" href="#active_matching_fund-ref">↑Nested Attributes: active_matching_fund</a>
 
   <table>
@@ -916,7 +934,7 @@ The URL of the logo image.
     <tr>
       <th align="left">active_matching_fund.maximum_matching_amount_in_cents</th>
       <td><code>number</code></td>
-      <td><code>20000</code></td>
+      <td><code>10000</code></td>
 <td>
 
 Up to this amount donations get matched by the matching fund
@@ -924,6 +942,7 @@ Up to this amount donations get matched by the matching fund
 </td>
     </tr>
   </table>
+
 ### <a id="closed_notice" href="#closed_notice-ref">↑Nested Attributes: closed_notice</a>
 
   <table>
@@ -1336,13 +1355,462 @@ information for the donors.
 
 ```json
 {
-  "total_entries": 0,
+  "total_entries": 3,
   "offset": 0,
-  "total_pages": 0,
+  "total_pages": 1,
   "current_page": 1,
   "per_page": 3,
   "data": [
-
+    {
+      "id": 49876,
+      "created_at": "2016-11-07T17:06:41+01:00",
+      "updated_at": "2017-08-07T10:28:32+02:00",
+      "latitude": -26.19943231282456,
+      "longitude": 28.0458325040039,
+      "street": "",
+      "zip": "1937",
+      "city": "Johannesburg",
+      "country": "Südafrika",
+      "content_updated_at": "2017-08-07T10:25:18+02:00",
+      "activated_at": "2016-11-25T16:26:46+01:00",
+      "title": " Unterstütze gleiche Rechte für Mädchen GIVE HER FIVE. Spende 5€. ",
+      "description": "<div>▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾▾<br><strong>Wir brauchen eure Unterstützung für alle Mädchen, denen wir das Skaten ermöglichen möchten. Mach mit und GIVE HER FIVE. Spende 5€. </strong><br><br>Mit <strong>GIVE HER FIVE</strong> starten wir eine neue Kampagne, die speziell Mädchen unterstützt. 50% unserer Students, die an den Programmen Skate And Create, Back To School und Youth Leadership teilnehmen sind Mädchen. Wir wollen, dass Skateistan noch mehr Mädchen die Möglichkeit geben kann, skaten zu lernen. Skateistan glaubt daran, dass Mädchen das gleiche Recht haben, sicher zu sein, Sport zu treiben, zur Schule zu gehen, selbstsicher zu sein und eine Führungskraft zu werden.<br><br>Ab dem 5. Dezember sammeln wir mit <strong>GIVE HER FIVE</strong> bis zum 31. Dezember 100.000 $ <br><br>\n</div>",
+      "summary": "Wir brauchen EUCH für alle Mädchen, denen wir das Skaten ermöglichen mit GIVE HER FIVE. Skateistan glaubt, dass Mädchen das gleiche Recht haben, sicher zu sein, Sport zu treiben, zur Schule zu gehen, selbstsicher zu sein und Führungskraft zu werden.",
+      "tax_deductible": true,
+      "donations_prohibited": false,
+      "completed_at": null,
+      "closed_at": null,
+      "open_amount_in_cents": 112600,
+      "donated_amount_in_cents": 37400,
+      "positive_opinions_count": 12,
+      "negative_opinions_count": 0,
+      "donations_count": 12,
+      "comments_count": 0,
+      "donor_count": 10,
+      "progress_percentage": 24,
+      "incomplete_need_count": 3,
+      "completed_need_count": 1,
+      "blog_post_count": 4,
+      "contact": {
+        "id": 506119,
+        "name": "Nicole E.",
+        "picture": {
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/506/119/fill_100x100_bp1482236798_Profilbild.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://betterplace-assets.betterplace.org/uploads/user/profile_picture/000/506/119/crop_original_bp1482236798_Profilbild.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/506119"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/506119/contact_data.json"
+          }
+        ]
+      },
+      "carrier": {
+        "name": "Skateistan",
+        "city": "Berlin",
+        "picture": {
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/fill_100x100_bp1513097328_ai3.png"
+            },
+            {
+              "rel": "original",
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/crop_original_bp1513097328_ai3.png"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/1054.json"
+          }
+        ]
+      },
+      "profile_picture": {
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/049/876/fill_960x500_bp1479987430_Give_Her_Five_-_Campaign_Image_-_Play_sport_-_SA.jpg"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/049/876/fill_730x380_bp1479987430_Give_Her_Five_-_Campaign_Image_-_Play_sport_-_SA.jpg"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/049/876/fill_618x322_bp1479987430_Give_Her_Five_-_Campaign_Image_-_Play_sport_-_SA.jpg"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/049/876/fill_410x214_bp1479987430_Give_Her_Five_-_Campaign_Image_-_Play_sport_-_SA.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/049/876/fill_270x141_bp1479987430_Give_Her_Five_-_Campaign_Image_-_Play_sport_-_SA.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/049/876/crop_original_bp1479987430_Give_Her_Five_-_Campaign_Image_-_Play_sport_-_SA.jpg"
+          }
+        ]
+      },
+      "active_matching_fund": null,
+      "closed_notice": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/49876.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/projects/49876-unterstutze-gleiche-rechte-fur-madchen-give-her-five-spende-5"
+        },
+        {
+          "rel": "opinions",
+          "href": "https://api.betterplace.org/de/api_v4/projects/49876/opinions.json"
+        },
+        {
+          "rel": "pictures",
+          "href": "https://api.betterplace.org/de/api_v4/projects/49876/pictures.json"
+        },
+        {
+          "rel": "needs",
+          "href": "https://api.betterplace.org/de/api_v4/projects/49876/needs.json"
+        },
+        {
+          "rel": "blog_posts",
+          "href": "https://api.betterplace.org/de/api_v4/projects/49876/blog_posts.json"
+        },
+        {
+          "rel": "video",
+          "href": "https://www.youtube.com/watch?v=OtFu0EwGNTY"
+        },
+        {
+          "rel": "matching_funds",
+          "href": "https://api.betterplace.org/de/api_v4/matching_funds.json?project_id=49876"
+        },
+        {
+          "rel": "new_client_donation",
+          "href": "https://www.betterplace.org/de/projects/49876/client_donations/new?client_id=%7Bclient_id%7D",
+          "templated": true
+        },
+        {
+          "rel": "new_donation",
+          "href": "https://www.betterplace.org/de/projects/49876/donations/new"
+        }
+      ]
+    },
+    {
+      "id": 6233,
+      "created_at": "2011-02-25T08:48:43+01:00",
+      "updated_at": "2017-08-07T10:28:32+02:00",
+      "latitude": 11.55883121490479,
+      "longitude": 104.9174423217773,
+      "street": null,
+      "zip": null,
+      "city": "Phnom Penh",
+      "country": "Kambodscha",
+      "content_updated_at": "2017-08-07T10:25:18+02:00",
+      "activated_at": "2011-02-25T09:03:15+01:00",
+      "title": "Skateistan Cambodia",
+      "description": "Skateistan Cambodia began operations in March 2011, building the country's first skatepark in Phnom Penh. Since then the NGO has been teaching skateboarding and creative arts classes with marginalized and streetworking Khmer youth six days a week. <br><br>Skateboarding is a low-barrier, accessible activity that attracts girls and boys of all backgrounds and abilities. The interest from Cambodia's youth has grown so much since March 2011 that Skateistan Cambodia is now building its own facility to accommodate more than the 150 youth we currently work with weekly.<br><br>By building a safe and covered Skateistan facility in Phnom Pehn, Skateistan will provide year-round opportunities for youth to engage in recreational activities that encourages girls and boys of all backgrounds to build relationships with one another, while increasing their self-confidence and leadership skills. The facility will also have classroom spaces providing creative arts and multimedia activities for the students.<br><br>Partnering with local, best-practice NGOs in Cambodia, such as Pour un Sourire d'Enfant (PSE), Friends Intl., and Tiny Toones, Skateistan Cambodia also aims to use skateboarding as a tool to create a bridge between at-risk youth and the quality support services already existing in Phnom Penh.<br><br>Help us grow this grassroots project and create a safe space for all Cambodian youth to be a part of!",
+      "summary": "Skateistan Cambodia uses skateboarding as a tool for empowerment in Phnom Penh. This sport and educational NGO works with over 150 Cambodian youth (ages 5-18) each week.",
+      "tax_deductible": true,
+      "donations_prohibited": false,
+      "completed_at": null,
+      "closed_at": null,
+      "open_amount_in_cents": 382996,
+      "donated_amount_in_cents": 590304,
+      "positive_opinions_count": 58,
+      "negative_opinions_count": 0,
+      "donations_count": 58,
+      "comments_count": 2,
+      "donor_count": 55,
+      "progress_percentage": 60,
+      "incomplete_need_count": 8,
+      "completed_need_count": 15,
+      "blog_post_count": 36,
+      "contact": {
+        "id": 287126,
+        "name": "M. Bergler",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://betterplace-assets.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://betterplace-assets.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/287126"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/287126/contact_data.json"
+          }
+        ]
+      },
+      "carrier": {
+        "name": "Skateistan",
+        "city": "Berlin",
+        "picture": {
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/fill_100x100_bp1513097328_ai3.png"
+            },
+            {
+              "rel": "original",
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/crop_original_bp1513097328_ai3.png"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/1054.json"
+          }
+        ]
+      },
+      "profile_picture": {
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/006/233/fill_960x500_original_327569_368768896527128_1081473646_o.jpg"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/006/233/fill_730x380_original_327569_368768896527128_1081473646_o.jpg"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/006/233/fill_618x322_original_327569_368768896527128_1081473646_o.jpg"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/006/233/fill_410x214_original_327569_368768896527128_1081473646_o.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/006/233/fill_270x141_original_327569_368768896527128_1081473646_o.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/006/233/crop_original_original_327569_368768896527128_1081473646_o.jpg"
+          }
+        ]
+      },
+      "active_matching_fund": null,
+      "closed_notice": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/6233.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/projects/6233-skateistan-cambodia"
+        },
+        {
+          "rel": "opinions",
+          "href": "https://api.betterplace.org/de/api_v4/projects/6233/opinions.json"
+        },
+        {
+          "rel": "pictures",
+          "href": "https://api.betterplace.org/de/api_v4/projects/6233/pictures.json"
+        },
+        {
+          "rel": "needs",
+          "href": "https://api.betterplace.org/de/api_v4/projects/6233/needs.json"
+        },
+        {
+          "rel": "blog_posts",
+          "href": "https://api.betterplace.org/de/api_v4/projects/6233/blog_posts.json"
+        },
+        {
+          "rel": "matching_funds",
+          "href": "https://api.betterplace.org/de/api_v4/matching_funds.json?project_id=6233"
+        },
+        {
+          "rel": "new_client_donation",
+          "href": "https://www.betterplace.org/de/projects/6233/client_donations/new?client_id=%7Bclient_id%7D",
+          "templated": true
+        },
+        {
+          "rel": "new_donation",
+          "href": "https://www.betterplace.org/de/projects/6233/donations/new"
+        }
+      ]
+    },
+    {
+      "id": 1114,
+      "created_at": "2009-03-10T11:12:16+01:00",
+      "updated_at": "2018-03-19T10:01:12+01:00",
+      "latitude": 54.2015711,
+      "longitude": 8.86044419999996,
+      "street": "Hillgroven 1",
+      "zip": "",
+      "city": "Hellschen-Heringsand-Unterschaar",
+      "country": "Deutschland",
+      "content_updated_at": "2017-11-23T17:36:37+01:00",
+      "activated_at": "2009-03-10T12:29:29+01:00",
+      "title": "Skateistan Afghanistan",
+      "description": "<div>With 68% of Afghanistan’s population under the age of 25, Skateistan strongly believes that youth are the ones most capable of bringing about social change.<br><br>Skateistan is an Afghan NGO which operates Afghanistan’s (and the world’s) first co-educational skateboarding school. The Skateistan school engages nearly 400 Kabul youth weekly through skateboarding, and provides them with new opportunities in cross-cultural interaction, education, and personal empowerment programs. <br><br>The students (ages 5-17) come from all of Afghanistan’s diverse ethnic and socioeconomic backgrounds, and include 40% female students, hundreds of streetworking children, and youth with disabilities. They develop skills in skazxcteboarding, leadership, problem-solving, multimedia, and creative arts. The students themselves decide what they want to learn; we connect them with a safe space and opportunities for them to develop the skills that they consider important. <br><br>For Afghan girls Skateistan's programming is especially important as there are very few recreational opportunities for females. For example, it is not culturally acceptable for girls in Afghanistan to ride bicycles or play sports in public. <br><br>Skateistan has been active in Kabul since 2007 - with our facility built in 2009 - and in that time we’ve seen that Afghan youth of all ethnicities, genders, and socioeconomic backgrounds love to skateboard. Skateistan brings them together, equipping young men and women to lead their communities toward social change and development.<br><br>In 2012 Skateistan will be opening its second Afghan facility in Mazar-e-Sharif, Northern Afghanistan. It will have space to teach up to 1000 youth weekly.<br><br>Our program gives hundreds of oppressed youth a voice. Education and the opportunity for self-expression can break the cycles of poverty, illiteracy and exclusion, with sport paving the way.</div>",
+      "summary": "Skateistan wurde als humanitäres Hilfsprojekt für Kinder und Jugendliche in Afghanistan im Jahr 2007 gegründet. Skateistan will Kindern in Kabul neue Perspektiven eröffnen, Vorurteile abbauen, Gleichberechtigung fördern und Freude bringen.",
+      "tax_deductible": true,
+      "donations_prohibited": false,
+      "completed_at": null,
+      "closed_at": null,
+      "open_amount_in_cents": 1314181,
+      "donated_amount_in_cents": 5249671,
+      "positive_opinions_count": 774,
+      "negative_opinions_count": 0,
+      "donations_count": 774,
+      "comments_count": 22,
+      "donor_count": 575,
+      "progress_percentage": 79,
+      "incomplete_need_count": 7,
+      "completed_need_count": 90,
+      "blog_post_count": 92,
+      "contact": {
+        "id": 287126,
+        "name": "M. Bergler",
+        "picture": {
+          "fallback": true,
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://betterplace-assets.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+            },
+            {
+              "rel": "original",
+              "href": "https://betterplace-assets.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "platform",
+            "href": "https://www.betterplace.org/de/users/287126"
+          },
+          {
+            "rel": "contact_data",
+            "href": "https://api.betterplace.org/de/api_v4/users/287126/contact_data.json"
+          }
+        ]
+      },
+      "carrier": {
+        "name": "Skateistan",
+        "city": "Berlin",
+        "picture": {
+          "links": [
+            {
+              "rel": "fill_100x100",
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/fill_100x100_bp1513097328_ai3.png"
+            },
+            {
+              "rel": "original",
+              "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/crop_original_bp1513097328_ai3.png"
+            }
+          ]
+        },
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://api.betterplace.org/de/api_v4/organisations/1054.json"
+          }
+        ]
+      },
+      "profile_picture": {
+        "links": [
+          {
+            "rel": "fill_960x500",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1511454997_20170926-DSC_0337.jpg"
+          },
+          {
+            "rel": "fill_730x380",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1511454997_20170926-DSC_0337.jpg"
+          },
+          {
+            "rel": "fill_618x322",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1511454997_20170926-DSC_0337.jpg"
+          },
+          {
+            "rel": "fill_410x214",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1511454997_20170926-DSC_0337.jpg"
+          },
+          {
+            "rel": "fill_270x141",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1511454997_20170926-DSC_0337.jpg"
+          },
+          {
+            "rel": "original",
+            "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1511454997_20170926-DSC_0337.jpg"
+          }
+        ]
+      },
+      "active_matching_fund": null,
+      "closed_notice": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114.json"
+        },
+        {
+          "rel": "platform",
+          "href": "https://www.betterplace.org/de/projects/1114-skateistan-afghanistan"
+        },
+        {
+          "rel": "opinions",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/opinions.json"
+        },
+        {
+          "rel": "pictures",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/pictures.json"
+        },
+        {
+          "rel": "needs",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/needs.json"
+        },
+        {
+          "rel": "blog_posts",
+          "href": "https://api.betterplace.org/de/api_v4/projects/1114/blog_posts.json"
+        },
+        {
+          "rel": "matching_funds",
+          "href": "https://api.betterplace.org/de/api_v4/matching_funds.json?project_id=1114"
+        },
+        {
+          "rel": "new_client_donation",
+          "href": "https://www.betterplace.org/de/projects/1114/client_donations/new?client_id=%7Bclient_id%7D",
+          "templated": true
+        },
+        {
+          "rel": "new_donation",
+          "href": "https://www.betterplace.org/de/projects/1114/donations/new"
+        }
+      ]
+    }
   ]
 }
 ```

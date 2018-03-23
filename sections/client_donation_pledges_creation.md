@@ -1,5 +1,5 @@
 
-# Client Donation Pledges ⇄ [Details](client_donation_pledge_details.md)
+# Creating a Client Donation Pledge ⇄ [Status](client_donation_pledge_status.md)
 
 ```Rebol
 POST https://api.betterplace.org/de/api_v4/clients/volksfreund/projects/1114/donation_pledges.json
@@ -54,6 +54,18 @@ as a separator and force double quotes around all values.
 Here is [a flow chart describing the process](http://ixwphj.axshare.com/money-transfer-flow.html).
 
 
+#### Sending donation pledges to the pool
+
+It is possible to send donation pledges directly to the pool, by
+submitting to this endpoint instead of the project specific one:
+
+`POST https://api.betterplace.org/de/api_v4/clients/{CLIENT}/pool/donation_pledges.json`
+
+This endpoint will respond and behave like described above, but the
+money will be stored on the pool. Clients can later forward this money to
+projects they choose.
+
+
 #### Response and error codes:
 
 [A list of all response and error codes](../README.md#http-status-codes).
@@ -97,21 +109,6 @@ betterplace.org).
     <th>Description</th>
   </tr>
   <tr>
-    <th align="left">language</th>
-    <td><code>en</code></td>
-    <td>yes</td>
-<td>
-
-The donation is marked with the language you use in your URL.
-A Project manager can use this language information for their
-donation thank you message, for example. To target a lang see <a
-href="../README.md#addressing-the-locale-of-a-resource">API setting
-lang</a>.
-
-
-</td>
-  </tr>
-  <tr>
     <th align="left">client_id</th>
     <td><code>volksfreund</code></td>
     <td>yes</td>
@@ -149,6 +146,7 @@ are optional.
   "email": "mm@example.com",
   "amount_in_cents": 100,
   "client_reference": "djksbf23u4sjkdn234p",
+  "tracking_via": "campaign-0815",
   "earmark": 123,
   "street": "Rheinstrasse 202",
   "city": "Wiesbaden",
@@ -242,6 +240,21 @@ This is to make sure that one transaction is only processed once.
 </td>
   </tr>
   <tr>
+    <th align="left">tracking_via</th>
+    <td><code>campaign-0815</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+<td>
+
+A tracking identifier for the current campaign, origin or similar
+information. Default is blank.
+<br>
+Allowed characters are <code>a-zA-Z0-9_-</code>.
+
+
+</td>
+  </tr>
+  <tr>
     <th align="left">earmark</th>
     <td><code>123</code></td>
     <td><code>number</code></td>
@@ -319,7 +332,7 @@ This field is mandatory by default, but optional with validate_address=false.
     <th align="left">validate_address</th>
     <td><code>false</code></td>
     <td><code>boolean</code></td>
-    <td>no</td>
+    <td>yes</td>
 <td>
 
 Pass <code>false</code> to allow donations without a donor address.
@@ -338,6 +351,7 @@ True by default.
 </table>
 
 ## Response Attributes
+
 
 ### Root Attributes
 

@@ -140,6 +140,7 @@ State of the subscription: active/inactive
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

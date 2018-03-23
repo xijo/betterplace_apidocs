@@ -75,6 +75,7 @@ It is possible to set multiple facet filters.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>

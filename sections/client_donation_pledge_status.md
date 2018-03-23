@@ -1,5 +1,5 @@
 
-# Client Donation Pledges Status Page ⇄ [List](client_donation_pledges_list.md)
+# Client Donation Pledges Status ⇄ [Creation](client_donation_pledges_creation.md)
 
 ```Rebol
 GET https://api.betterplace.org/de/api_v4/clients/devk/donation_pledges/1170.json
@@ -7,11 +7,12 @@ GET https://api.betterplace.org/de/api_v4/clients/devk/donation_pledges/1170.jso
 
 **For [betterplace.org clients](../README.md#client-api) only:**
 
-After submitting a donation pledge, you can request a status of the asynchronous
+After submitting a donation pledge, you should check the status of the asynchronous
 pledge job. It returns a JSON response, containing information about its status,
 including failure reasons in the case of a failure.
 
-**Be aware that you don't get a donation pledge ID yet in order to use this endpoint. This will change soon.**
+**TODO: Be aware that you need a donation pledge ID to use this endpoint which is not
+fully implemented yet. Please contact us in case you need it!**
 
 
 ## URL Parameters
@@ -30,11 +31,6 @@ including failure reasons in the case of a failure.
 <td>
 
 The donation is marked with the language you use in your URL.
-A Project manager can use this language information for their
-donation thank you message, for example. To target a lang see <a
-href="../README.md#addressing-the-locale-of-a-resource">API setting
-lang</a>.
-
 
 </td>
   </tr>
@@ -54,7 +50,11 @@ The betterplace.org-internal client permalink.
     <td>yes</td>
 <td>
 
-Donation Pledge id as an integer number.
+The ID of the donation pledge.
+
+TODO: In the future this will be returned within the
+response of a successful donation pledge POST.
+
 
 </td>
   </tr>
@@ -62,6 +62,7 @@ Donation Pledge id as an integer number.
 
 
 ## Response Attributes
+
 
 ### Root Attributes
 

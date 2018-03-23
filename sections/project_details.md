@@ -35,6 +35,7 @@ Project id as an integer number ≥ 14.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
@@ -181,6 +182,17 @@ HTML tags: ```a, b, br, div, em, i, iframe, img, li, ol, p, strong, ul```.
 </td>
     </tr>
     <tr>
+      <th align="left">summary</th>
+      <td><code>string</code></td>
+      <td><code></code></td>
+<td>
+
+A short summary of the project..
+
+
+</td>
+    </tr>
+    <tr>
       <th align="left">tax_deductible</th>
       <td><code>boolean</code></td>
       <td><code>true</code></td>
@@ -322,8 +334,8 @@ Count of confirmed donations for this project
 <td>
 
 Count of all comments for this project. This contains positive and negative
-reviews of the project, questions and answer by the project manager, as well
-as comments from users.
+reviews of the project, questions and answers by the project manager, as
+well as comments from users.
 
 
 </td>
@@ -457,6 +469,7 @@ the data from the appropriate endpoint.
 </td>
     </tr>
   </table>
+
 ### <a id="contact" href="#contact-ref">↑Nested Attributes: contact</a>
 
   <table>
@@ -506,6 +519,7 @@ User profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="contact.picture" href="#contact.picture-ref">↑Nested Attributes: contact.picture</a>
 
   <table>
@@ -526,6 +540,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="carrier" href="#carrier-ref">↑Nested Attributes: carrier</a>
 
   <table>
@@ -570,6 +585,7 @@ The organisation logo, user profile picture or a fallback image
 </td>
     </tr>
   </table>
+
 ### <a id="carrier.picture" href="#carrier.picture-ref">↑Nested Attributes: carrier.picture</a>
 
   <table>
@@ -590,6 +606,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="profile_picture" href="#profile_picture-ref">↑Nested Attributes: profile_picture</a>
 
   <table>
@@ -610,6 +627,7 @@ Specifies whether a fallback image is given or not
 </td>
     </tr>
   </table>
+
 ### <a id="active_matching_fund" href="#active_matching_fund-ref">↑Nested Attributes: active_matching_fund</a>
 
   <table>
@@ -742,7 +760,7 @@ The URL of the logo image.
     <tr>
       <th align="left">active_matching_fund.maximum_matching_amount_in_cents</th>
       <td><code>number</code></td>
-      <td><code>20000</code></td>
+      <td><code>10000</code></td>
 <td>
 
 Up to this amount donations get matched by the matching fund
@@ -750,6 +768,7 @@ Up to this amount donations get matched by the matching fund
 </td>
     </tr>
   </table>
+
 ### <a id="closed_notice" href="#closed_notice-ref">↑Nested Attributes: closed_notice</a>
 
   <table>
@@ -1164,31 +1183,32 @@ information for the donors.
 {
   "id": 1114,
   "created_at": "2009-03-10T11:12:16+01:00",
-  "updated_at": "2017-06-30T15:06:53+02:00",
-  "latitude": 34.531617284782,
-  "longitude": 69.13581752939456,
-  "street": "Taimani, behind Qasemi Winhouse",
+  "updated_at": "2018-03-19T10:01:12+01:00",
+  "latitude": 54.2015711,
+  "longitude": 8.86044419999996,
+  "street": "Hillgroven 1",
   "zip": "",
-  "city": "Kabul",
-  "country": "Afghanistan",
-  "content_updated_at": "2017-06-02T11:01:45+02:00",
+  "city": "Hellschen-Heringsand-Unterschaar",
+  "country": "Deutschland",
+  "content_updated_at": "2017-11-23T17:36:37+01:00",
   "activated_at": "2009-03-10T12:29:29+01:00",
   "title": "Skateistan Afghanistan",
-  "description": "With 68% of Afghanistan’s population under the age of 25, Skateistan strongly believes that youth are the ones most capable of bringing about social change.<br><br>Skateistan is an Afghan NGO which operates Afghanistan’s (and the world’s) first co-educational skateboarding school. The Skateistan school engages nearly 400 Kabul youth weekly through skateboarding, and provides them with new opportunities in cross-cultural interaction, education, and personal empowerment programs. <br><br>The students (ages 5-17) come from all of Afghanistan’s diverse ethnic and socioeconomic backgrounds, and include 40% female students, hundreds of streetworking children, and youth with disabilities. They develop skills in skateboarding, leadership, problem-solving, multimedia, and creative arts. The students themselves decide what they want to learn; we connect them with a safe space and opportunities for them to develop the skills that they consider important. <br><br>For Afghan girls Skateistan's programming is especially important as there are very few recreational opportunities for females. For example, it is not culturally acceptable for girls in Afghanistan to ride bicycles or play sports in public. <br><br>Skateistan has been active in Kabul since 2007 - with our facility built in 2009 - and in that time we’ve seen that Afghan youth of all ethnicities, genders, and socioeconomic backgrounds love to skateboard. Skateistan brings them together, equipping young men and women to lead their communities toward social change and development.<br><br>In 2012 Skateistan will be opening its second Afghan facility in Mazar-e-Sharif, Northern Afghanistan. It will have space to teach up to 1000 youth weekly.<br><br>Our program gives hundreds of oppressed youth a voice. Education and the opportunity for self-expression can break the cycles of poverty, illiteracy and exclusion, with sport paving the way.",
+  "description": "<div>With 68% of Afghanistan’s population under the age of 25, Skateistan strongly believes that youth are the ones most capable of bringing about social change.<br><br>Skateistan is an Afghan NGO which operates Afghanistan’s (and the world’s) first co-educational skateboarding school. The Skateistan school engages nearly 400 Kabul youth weekly through skateboarding, and provides them with new opportunities in cross-cultural interaction, education, and personal empowerment programs. <br><br>The students (ages 5-17) come from all of Afghanistan’s diverse ethnic and socioeconomic backgrounds, and include 40% female students, hundreds of streetworking children, and youth with disabilities. They develop skills in skazxcteboarding, leadership, problem-solving, multimedia, and creative arts. The students themselves decide what they want to learn; we connect them with a safe space and opportunities for them to develop the skills that they consider important. <br><br>For Afghan girls Skateistan's programming is especially important as there are very few recreational opportunities for females. For example, it is not culturally acceptable for girls in Afghanistan to ride bicycles or play sports in public. <br><br>Skateistan has been active in Kabul since 2007 - with our facility built in 2009 - and in that time we’ve seen that Afghan youth of all ethnicities, genders, and socioeconomic backgrounds love to skateboard. Skateistan brings them together, equipping young men and women to lead their communities toward social change and development.<br><br>In 2012 Skateistan will be opening its second Afghan facility in Mazar-e-Sharif, Northern Afghanistan. It will have space to teach up to 1000 youth weekly.<br><br>Our program gives hundreds of oppressed youth a voice. Education and the opportunity for self-expression can break the cycles of poverty, illiteracy and exclusion, with sport paving the way.</div>",
+  "summary": "Skateistan wurde als humanitäres Hilfsprojekt für Kinder und Jugendliche in Afghanistan im Jahr 2007 gegründet. Skateistan will Kindern in Kabul neue Perspektiven eröffnen, Vorurteile abbauen, Gleichberechtigung fördern und Freude bringen.",
   "tax_deductible": true,
-  "donations_prohibited": true,
+  "donations_prohibited": false,
   "completed_at": null,
   "closed_at": null,
-  "open_amount_in_cents": 1386611,
-  "donated_amount_in_cents": 5177241,
-  "positive_opinions_count": 764,
+  "open_amount_in_cents": 1314181,
+  "donated_amount_in_cents": 5249671,
+  "positive_opinions_count": 774,
   "negative_opinions_count": 0,
-  "donations_count": 764,
-  "comments_count": 21,
-  "donor_count": 573,
-  "progress_percentage": 78,
-  "incomplete_need_count": 8,
-  "completed_need_count": 89,
+  "donations_count": 774,
+  "comments_count": 22,
+  "donor_count": 575,
+  "progress_percentage": 79,
+  "incomplete_need_count": 7,
+  "completed_need_count": 90,
   "blog_post_count": 92,
   "contact": {
     "id": 287126,
@@ -1198,11 +1218,11 @@ information for the donors.
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+          "href": "https://betterplace-assets.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
+          "href": "https://betterplace-assets.betterplace.org/assets/default/user_profile_picture/fill_100x100_default.jpg"
         }
       ]
     },
@@ -1224,11 +1244,11 @@ information for the donors.
       "links": [
         {
           "rel": "fill_100x100",
-          "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/001/054/fill_100x100_bp1492761817_4ad13cf7-62a3-4f45-8448-10e1447f537b.png"
+          "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/fill_100x100_bp1513097328_ai3.png"
         },
         {
           "rel": "original",
-          "href": "https://asset1.betterplace.org/uploads/organisation/profile_picture/000/001/054/crop_original_bp1492761817_4ad13cf7-62a3-4f45-8448-10e1447f537b.png"
+          "href": "https://betterplace-assets.betterplace.org/uploads/organisation/profile_picture/000/001/054/crop_original_bp1513097328_ai3.png"
         }
       ]
     },
@@ -1243,27 +1263,27 @@ information for the donors.
     "links": [
       {
         "rel": "fill_960x500",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1496394104_20160505-DSC_0627.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_960x500_bp1511454997_20170926-DSC_0337.jpg"
       },
       {
         "rel": "fill_730x380",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1496394104_20160505-DSC_0627.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_730x380_bp1511454997_20170926-DSC_0337.jpg"
       },
       {
         "rel": "fill_618x322",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1496394104_20160505-DSC_0627.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_618x322_bp1511454997_20170926-DSC_0337.jpg"
       },
       {
         "rel": "fill_410x214",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1496394104_20160505-DSC_0627.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_410x214_bp1511454997_20170926-DSC_0337.jpg"
       },
       {
         "rel": "fill_270x141",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1496394104_20160505-DSC_0627.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/fill_270x141_bp1511454997_20170926-DSC_0337.jpg"
       },
       {
         "rel": "original",
-        "href": "https://asset1.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1496394104_20160505-DSC_0627.jpg"
+        "href": "https://betterplace-assets.betterplace.org/uploads/project/profile_picture/000/001/114/crop_original_bp1511454997_20170926-DSC_0337.jpg"
       }
     ]
   },

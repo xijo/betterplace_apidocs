@@ -39,6 +39,7 @@ User-id as an integer number.
 
 ## Response Attributes
 
+
 ### Root Attributes
 
   <table>
